@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexcanged:导入时编码是否转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="capitalassettypes" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+	<capitalassettypes>
+		<assettypeno/>
+		<assettypename/>
+		<deprmethodnum/>
+		<deprtype/>
+		<dblbvrate/>
+		<unit/>
+		<life/>
+		<modelid/>
+		<assetsubjectnum/>
+		<deprtotalsubjectnum/>
+		<decpresubjectnum/>
+		<bnotcanretdecvalue/>
+		<cleanupsubjectnum/>
+		<bnewassetdepr/>
+	</capitalassettypes>
+</ufinterface>
+<!--
+说明:本模版用于固定资产资产类别的导入导出;
+
+assettypeno		VarChar	20	非空	资产类别编码	
+assettypename		VarChar	40	非空	资产类别名称	
+deprmethodnum		VarChar	2	可空	折旧方法编码	
+deprtype			Int		可空	计提属性编码	取值定义:	总不提 = 0;总提 = 1;正常 = 2;
+dblbvrate			Float		可空	净残值率		大于等于0小于1
+unit 			VarChar	10	可空	计量单位	
+life			Int		可空	使用年限(月)	大于等于0并且小于等于999*12
+modelid 			VarChar	3	可空	卡片样式
+assetsubjectnum		VarChar	15	可空	固定资产入账科目	
+deprtotalsubjectnum	VarChar	15	可空	累计折旧入账科目
+decpresubjectnum		VarChar	15	可空	减值准备入账科目
+bnotcanretdecvalue		Boolean 		可空 	不允许转回减值准备	缺省为[True]
+
+cleanupsubjectnum		VarChar	15	可空	固定资产清理入账科目
+bnewassetdepr			Boolean 	非空 	新增当月计提折旧		缺省为[固定资产系统选项-新增当月计提折旧参数值]
+-->

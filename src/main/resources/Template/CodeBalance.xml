@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--凭证 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换  exportneedexch导出时是否要根据对照表替换 renewproofno:凭证导入是否重新编号-->
+<ufinterface roottag="codebalance" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" renewproofno="" version="2.0">
+  <codebalance code="">
+    <account_code />
+    <auxiliary_accounting />
+    <date />
+    <voucher_type />
+    <voucher_id />
+    <abstract />
+    <currency />
+    <direction />
+    <debit_quantity />
+    <primary_debit_currency />
+    <natural_debit_currency />
+    <credit_quantity />
+    <primary_credit_currency />
+    <natural_credit_currency />
+    <end_quantity />
+    <primary_end_currency />
+    <natural_end_currency />
+    <departmentcode />
+    <personcode />
+    <customercode />
+    <suppliercode />
+    <item_class />
+    <item_id />
+    <operator />
+    <bill_type />
+    <bill_id />
+    <bill_date />
+    <reserve1 />
+    <reserve2 />
+  </codebalance>
+</ufinterface>
+<!--fiscal_year 会计年度
+
+
+	是否有辅助核算,0或1	
+
+
+	业务员
+
+
+	票号
+
+
+-->

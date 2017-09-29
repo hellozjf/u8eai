@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--工资项目 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="salaryitem" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <salaryitem>
+    <personno />
+    <personname />
+    <persongradeno />
+    <departmentno />
+    <salarygradeno />
+    <year />
+    <month />
+    <salarygradename />
+    <entry name="U8.AA.EAI.XML.Template.SalaryItem.0001" type="" />
+    <entry name="U8.AA.EAI.XML.Template.SalaryItem.0002" type="" />
+    <entry name="U8.AA.EAI.XML.Template.SalaryItem.0003" type="" />
+    <entry name="U8.AA.EAI.XML.Template.SalaryItem.0004" type="" />
+    <entry name="U8.AA.EAI.XML.Template.SalaryItem.0005" type="" />
+    <entry name="U8.AA.EAI.XML.Template.SalaryItem.0006" type="" />
+    <entry name="U8.AA.EAI.XML.Template.SalaryItem.0007" type="" />
+    <!--
+
+
+..............
+
+
+-->
+  </salaryitem>
+</ufinterface>
+<!--
+
+
+personno	varchar	10	非空	人员编号	
+
+
+personname	varchar	40	非空	人员姓名	
+
+
+persongradeno   int             非空    人员类别编号
+
+
+departmentno	varchar	40	非空	部门编号	必须取值于部门档案
+
+
+salarygradeno	varchar	3	非空	工资类别号	必须取值于(001-999)之间
+
+
+salarygradename varchar 40  	非空	工资类别名称	
+
+
+year		int 		非空	工资年		合法的公历日期
+
+
+month		tinyint		非空	工资月份	合法的公历日期
+
+
+entry   	varchar 100     可空    工资项目名称
+
+
+type            varchar 1	可空    工资项目类型   	0 数值 1 字符
+
+
+
+
+
+应发合计（系统固定项目）	
+
+
+扣款合计（系统固定项目）	
+
+
+实发合计（系统固定项目）	
+
+
+本月扣零（系统固定项目）	
+
+
+上月扣零（系统固定项目）	
+
+
+代扣税  （系统固定项目）
+
+
+计件工资（系统固定项目）	
+
+
+
+
+
+...	用户定义		可空		名称必须在工资系统已经定义
+
+
+
+
+
+-->

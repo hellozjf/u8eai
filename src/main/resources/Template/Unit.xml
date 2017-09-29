@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 计量单位 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="unit" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <unit>
+    <code />
+    <name />
+    <group_code />
+    <barcode />
+    <main_flag />
+    <changerate />
+    <portion />
+    <SerialNum />
+    <censingular />
+    <cenplural />
+    <!-- 8.700 -->
+    <cunitrefinvcode />
+  </unit>
+</ufinterface>
+<!--
+元素名称	描述	数据类型	是否非空	有效值范围	备注
+code	计量单位编码	varchar(10)	Yes	"	计量单位组编码"	
+name	计量单位名称	varchar(20)	Yes	计量单位组名称	
+group_code	计量单位组编码	varchar(10)	Yes	组类别（0 无换算 1 固定换算 2 浮动）	
+barcode	对应条形码中的编码	varchar(30)	No	不允许重复
+main_flag	主计量单位标志	bit	Yes	组类别为1和2的计量单位组中只允许出现一条带有主计量单	
+changerate	换算率	float(8)	No		
+portion	合理浮动比例	float(8)	No		
+SerialNum	辅计量单位序号		No		
+censingular	英文名称单数		No		
+cenplural	英文名称复数		No		
+cunitrefinvcode	对应存货编码		No				
+-->

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 银行档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="aa_bank" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <aa_bank>
+    <code />
+    <name />
+    <bindfixlen />
+    <iindaccnolen />
+    <iindautoinputlen />
+    <cindunitcode />
+    <bcomdfixlen />
+    <icomaccnolen />
+  </aa_bank>
+  <i_id />
+</ufinterface>
+<!--
+元素名称	描述	数据类型	是否非空	有效值范围	备注
+code	银行编码	varchar(5)	Yes		
+name	银行名称	varchar(50)	Yes		
+bindfixlen	个人账号是否定长	bit	No		
+iindaccnolen	个人账号长度	tinyint	No		
+iindautoinputlen	自动带出的个人账号长度	tinyint	No		
+cindunitcode	单位编码	varchar(7)	No		
+bcomdfixlen	企业账号是否定长	bit	No		
+icomaccnolen	企业账号长度	tinyint	No		
+I_id	银行标识	int	No			
+-->

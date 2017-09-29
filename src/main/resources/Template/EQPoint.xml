@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--测量点记录uroottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="eqpoint" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <eqpoint>
+    <header>
+      <cpointcode>
+      </cpointcode>
+      <cmaker>
+      </cmaker>
+      <dtdate>
+      </dtdate>
+      <cchecker>
+      </cchecker>
+      <dtaudit>
+      </dtaudit>
+      <cmemo>
+      </cmemo>
+      <cdefine1>
+      </cdefine1>
+      <cdefine2>
+      </cdefine2>
+      <cdefine3>
+      </cdefine3>
+      <cdefine4>
+      </cdefine4>
+      <cdefine5>
+      </cdefine5>
+      <cdefine6>
+      </cdefine6>
+      <cdefine7>
+      </cdefine7>
+      <cdefine8>
+      </cdefine8>
+      <cdefine9>
+      </cdefine9>
+      <cdefine10>
+      </cdefine10>
+      <cdefine11>
+      </cdefine11>
+      <cdefine12>
+      </cdefine12>
+      <cdefine13>
+      </cdefine13>
+      <cdefine14>
+      </cdefine14>
+      <cdefine15>
+      </cdefine15>
+      <cdefine16>
+      </cdefine16>
+    </header>
+    <body>
+      <entry>
+        <cposcode>
+        </cposcode>
+        <dblvalue>
+        </dblvalue>
+        <dtposit>
+        </dtposit>
+        <cdefine22>
+        </cdefine22>
+        <cdefine23>
+        </cdefine23>
+        <cdefine24>
+        </cdefine24>
+        <cdefine25>
+        </cdefine25>
+        <cdefine26>
+        </cdefine26>
+        <cdefine27>
+        </cdefine27>
+        <cdefine28>
+        </cdefine28>
+        <cdefine29>
+        </cdefine29>
+        <cdefine30>
+        </cdefine30>
+        <cdefine31>
+        </cdefine31>
+        <cdefine32>
+        </cdefine32>
+        <cdefine33>
+        </cdefine33>
+        <cdefine34>
+        </cdefine34>
+        <cdefine35>
+        </cdefine35>
+        <cdefine36>
+        </cdefine36>
+        <cdefine37>
+        </cdefine37>
+      </entry>
+    </body>
+  </eqpoint>
+</ufinterface>
+<!--
+
+
+HEAD:
+
+
+
+
+
+cpointcode	nvarchar	非空	60  测量点记录编码
+
+
+cmaker	        nvarchar	非空	80  制单人
+
+
+dtdate	        datetime	非空	8   制单日期
+
+
+cchecker	nvarchar	可空	80  审核人
+
+
+dtaudit	    	datetime	可空	8   审核日期
+
+
+cmemo		nvarchar	可空	400 备注
+
+
+cdefine1	nvarchar	可空	40  表头自定义项
+
+
+cdefine2	nvarchar	可空	40  表头自定义项
+
+
+cdefine3	nvarchar	可空	40  表头自定义项
+
+
+cdefine4	datetime	可空	8   表头自定义项
+
+
+cdefine5	int	        可空	4   表头自定义项
+
+
+cdefine6	datetime	可空	8   表头自定义项
+
+
+cdefine7	float		可空	8   表头自定义项
+
+
+cdefine8	nvarchar	可空	8   表头自定义项
+
+
+cdefine9	nvarchar	可空	16  表头自定义项
+
+
+cdefine10	nvarchar	可空	120 表头自定义项
+
+
+cdefine11	nvarchar	可空	240 表头自定义项
+
+
+cdefine12	nvarchar	可空	240 表头自定义项
+
+
+cdefine13	nvarchar	可空	240 表头自定义项
+
+
+cdefine14	nvarchar	可空	240 表头自定义项
+
+
+cdefine15	int		可空	4   表头自定义项
+
+
+cdefine16	float		可空	8   表头自定义项
+
+
+
+
+
+BODY:
+
+
+
+
+
+cposcode	nvarchar	非空	40   测量点编码
+
+
+dblvalue	float		非空	8    测量值
+
+
+dtposit		datetime	非空	8    测量日期
+
+
+cmemo		nvarchar	可空	400  备注
+
+
+cdefine22	nvarchar	可空	120  表体自定义项
+
+
+cdefine23	nvarchar	可空	120  表体自定义项
+
+
+cdefine24	nvarchar	可空	120  表体自定义项
+
+
+cdefine25	nvarchar	可空	120  表体自定义项
+
+
+cdefine26	real		可空	4    表体自定义项
+
+
+cdefine27	real		可空	4    表体自定义项
+
+
+cdefine28	nvarchar	可空	240  表体自定义项
+
+
+cdefine29	nvarchar	可空	240  表体自定义项
+
+
+cdefine30	nvarchar	可空	240  表体自定义项
+
+
+cdefine31	nvarchar	可空	240  表体自定义项
+
+
+cdefine32	nvarchar	可空	240  表体自定义项
+
+
+cdefine33	nvarchar	可空	240  表体自定义项
+
+
+cdefine34	int		可空	4    表体自定义项
+
+
+cdefine35	int		可空	4    表体自定义项
+
+
+cdefine36	datetime	可空	8    表体自定义项
+
+
+cdefine37	datetime	可空	8    表体自定义项
+
+
+
+
+
+-->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="gb2312"?>
+<ufinterface roottag="u8api" receiver="u8" sender="001" proc="modify">
+  <u8apiservice>
+    <apiurl value = "U8API/otherin/Update"/>
+    <apiParams>
+      <param name = "sVouchType" value = "08" datatype = "int"/>
+      <param name = "DomHead" datatype = "bo" discription="表头dom">
+        <head type="bo" discription="表头只能有一行">
+          <field name="id" value="1" row="0"/>
+          <field name="ccode" value="0000000001" row="0"/>
+          <field name="ddate" value="2011-01-26" row="0"/>          
+          <field name="cwhname" value="仓库1" row="0"/>
+          <!-- 其他字段详见“U8API资源管理器”中库存模块下的其他入库单表头各字段描述。
+            <field name="cmodifyperson" value="demo" row="0"/>
+            <field name="dmodifydate" value="2011-01-26" row="0"/>
+            ……
+            <field name="cpersoncode" value="01" row="0"/>
+          -->
+        </head>
+      </param>
+      <param name = "domBody" datatype = "bo" discription="表体dom">
+        <body type="bo" discription="表体可以有多行">
+          <field name="autoid" value="1" row="0"/>
+          <field name="cinvcode" value="00006" row="0"/>
+          <field name="editprop" value="M" row="0"/>
+          <!-- 其他字段详见“U8API资源管理器”中库存模块下的其他入库单表体各字段描述。
+            <field name="cmodifyperson" value="demo" row="0"/>
+            <field name="dmodifydate" value="2011-01-26" row="0"/>
+            ……
+            <field name="cpersoncode" value="01" row="0"/>
+          -->
+        </body>
+      </param>
+      <param name = "domPosition" datatype = "object"/>
+      <param name = "cnnFrom" datatype = "ADODB.Connection"/>
+      <param name = "domPos" datatype = "int"/>
+      <param name = "bCheck" value = "true" datatype = "bool"/>
+      <param name = "bBeforCheckStock" value = "true" datatype = "bool"/>
+      <param name = "bIsRedVouch" value = "false" datatype = "bool"/>
+      <param name = "sAddedState" value = "" datatype = "string"/>
+      <param name = "bUpdateNeedEas" value = "true" datatype = "bool"/>
+    </apiParams>
+    <returnParams>
+      <param name = "errMsg"/>
+    </returnParams>
+  </u8apiservice>
+</ufinterface>
+

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--物料资源清单 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="ResourceList" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <ResourceList>
+    <Header>
+      <ResListId />
+      <InvCode />
+      <Free1 />
+      <Free2 />
+      <Free3 />
+      <Free4 />
+      <Free5 />
+      <Free6 />
+      <Free7 />
+      <Free8 />
+      <Free9 />
+      <Free10 />
+    </Header>
+    <Body>
+      <ResListDId />
+      <ResListId />
+      <WcCode />
+      <ResCode />
+      <BaseType />
+      <BaseQtyN />
+      <BaseQtyD />
+    </Body>
+  </ResourceList>
+</ufinterface>
+<!-- 
+
+
+ResListId	int 	     	资源清单Id	非空  
+
+
+InvCode  	varchar(20)  	存货编码  	可空
+
+
+Free1  		varchar(20)  	自由项1  	可空
+
+
+Free2  		varchar(20)  	自由项2  	可空
+
+
+Free3  		varchar(20)  	自由项3  	可空
+
+
+Free4  		varchar(20)  	自由项4  	可空
+
+
+Free5  		varchar(20)  	自由项5  	可空
+
+
+Free6  		varchar(20)  	自由项6  	可空
+
+
+Free7  		varchar(20)  	自由项7  	可空
+
+
+Free8  		varchar(20)  	自由项8  	可空
+
+
+Free9  		varchar(20)  	自由项9  	可空
+
+
+Free10 		varchar(20)  	自由项10  	可空
+
+
+ResListDId	int 	     	资源清单明细Id	非空  
+
+
+ResListId	int 	     	资源清单Id	非空  
+
+
+ResCode		varchar(6)	资源代号  	非空
+
+
+WcCode		varchar(8)	工作中心代号 	非空  
+
+
+BaseType  	tinyint  	基准类型  	可空
+
+
+BaseQtyN  	Udt_QTY  	基本用量分子  	可空
+
+
+BaseQtyD  	Udt_QTY  	基本用量分母 	可空
+
+
+
+
+
+-->

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--单据类型与收发类别对照表,所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="vouchrdcontrapose" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <vouchrdcontrapose>
+    <cvbtid />
+    <cvrrcode />
+    <cvrscode />
+  </vouchrdcontrapose>
+  <i_id />
+</ufinterface>
+<!--
+
+
+	cVBTID	单据业务类型 	varchar	4 	False 
+
+
+	cVRRCode	收类别编码 	varchar	5 	True 
+
+
+	cVRSCode	发类别编码 	varchar	5 	True 
+
+
+
+
+
+-->

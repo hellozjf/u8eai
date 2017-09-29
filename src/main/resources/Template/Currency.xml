@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 币种 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="currency" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch=" " version="2.0">
+  <currency id="">
+    <id />
+    <code />
+    <name />
+    <caltype />
+    <precision />
+    <error />
+    <otherused />
+  </currency>
+</ufinterface>
+<!--
+元素名称	描述	数据类型	是否非空	有效值范围	备注
+id	自动编号	int(4)	Yes		
+code	币种编码	varchar(8)	Yes		主表关联项
+name	币种名称	varchar(4)	Yes		
+caltype	折算方式	bit(1)	    No	True_外币*汇率=本币,False_外币/汇率=本币	
+precision	小数位数	tinyint(1)	No		
+error	最大误差	real(4)	No		外币折算为本币时的最大误差
+otherused	其它系统是否使用	int(4)	No	由其它系统填写,0_未使用,非0_已使用,-1_本位币	
+-->

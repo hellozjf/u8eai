@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 交易单位分类 大小写必须和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="unitclass" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <unitclass cclassid="" cclassname="" />
+</ufinterface>
+<!--必需字段：分类编码、分类名称
+
+
+    一次性导入导出的数据量不能超过10000条记录-->
+<!--
+
+
+cclassid	Varchar	2	非空 分类编码
+
+
+cclassname	Varchar	20	非空 分类名称
+
+
+-->

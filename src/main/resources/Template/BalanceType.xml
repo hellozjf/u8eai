@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="gb2312"?><!-- 结算方式 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符--><!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换--><ufinterface roottag="balancetype" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <balancetype id="">
+    <code />
+    <name />
+    <flag />
+    <code_rank />
+    <end_rank_flag />
+    <!-- 8.700 -->
+    <issbilltype />
+    <!-- U810.0 -->
+    <bPortalSettle />
+  </balancetype>
+</ufinterface><!--
+
+
+code	结算方式编码  varchar(3)	      编码规则由GradeDef表中KEYWORD=settlestyle的记录说明	主表关联项
+
+
+name	结算方式名称		varchar(12)
+
+
+flag	是否票据管理		bit(1)
+
+
+rank	编码级次		tinyint(1)
+
+
+end_rank_flag	是否末级   bit(1)
+
+bPortalSettle	bit  结算方式中增加“允许门户结算”选项，默认为否
+
+-->

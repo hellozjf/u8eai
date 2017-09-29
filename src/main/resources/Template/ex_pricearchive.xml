@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="ex_pricearchive" billtype="" docid="" receiver="" sender="" proc="ADD" codeexchanged="N" exportneedexch="Y" version="2.0">
+  <ex_pricearchive>
+    <header>
+      <exch_name />
+      <incotermcode />
+    </header>
+    <body>
+      <entry>
+        <dccode />
+        <cccode />
+        <invccode />
+        <pricecomunitname />
+        <pricecomunitcode />
+        <free1 />
+        <free2 />
+        <free3 />
+        <free4 />
+        <free5 />
+        <free6 />
+        <free7 />
+        <free8 />
+        <free9 />
+        <free10 />
+        <cuscode />
+        <upperqty />
+        <lowerqty />
+        <lowprice />
+        <normprice />
+        <invaliddate />
+        <validdate />
+        <invcode />
+        <invstd />
+      </entry>
+    </body>
+  </ex_pricearchive>
+</ufinterface>
+
+
+
+<!--
+元素名称 = cccode	描述 = 客户分类编码	数据类型 = 1	是否非空 = 0
+元素名称 = cuscode	描述 = 客户编号	数据类型 = 1	是否非空 = 1
+元素名称 = dccode	描述 = 地区分类编码	数据类型 = 1	是否非空 = 0
+元素名称 = free1	描述 = 自由项1	数据类型 = 1	是否非空 = 0
+元素名称 = free10	描述 = 自由项10	数据类型 = 1	是否非空 = 0
+元素名称 = free2	描述 = 自由项2	数据类型 = 1	是否非空 = 0
+元素名称 = free3	描述 = 自由项3	数据类型 = 1	是否非空 = 0
+元素名称 = free4	描述 = 自由项4	数据类型 = 1	是否非空 = 0
+元素名称 = free5	描述 = 自由项5	数据类型 = 1	是否非空 = 0
+元素名称 = free6	描述 = 自由项6	数据类型 = 1	是否非空 = 0
+元素名称 = free7	描述 = 自由项7	数据类型 = 1	是否非空 = 0
+元素名称 = free8	描述 = 自由项8	数据类型 = 1	是否非空 = 0
+元素名称 = free9	描述 = 自由项9	数据类型 = 1	是否非空 = 0
+元素名称 = invccode	描述 = 存货大类	数据类型 = 1	是否非空 = 0
+元素名称 = invcode	描述 = 出口成品存货编码	数据类型 = 1	是否非空 = 0
+元素名称 = invcode	描述 = 进口料件存货编码	数据类型 = 1	是否非空 = 0
+元素名称 = invstd	描述 = 进口料件规格	数据类型 = 1	是否非空 = 0
+元素名称 = pricecomunitcode	描述 = 计量单位编码	数据类型 = 1	是否非空 = 0
+元素名称 = pricecomunitname	描述 = 计量单位	数据类型 = 1	是否非空 = 1
+元素名称 = invaliddate	描述 = 失效日期	数据类型 = 5	是否非空 = 0
+元素名称 = validdate	描述 = 生效日期	数据类型 = 5	是否非空 = 1
+元素名称 = lowerqty	描述 = 数量下限	数据类型 = 4	是否非空 = 0
+元素名称 = lowprice	描述 = 最低售价	数据类型 = 4	是否非空 = 0
+元素名称 = normprice	描述 = 基准价	数据类型 = 4	是否非空 = 1
+元素名称 = upperqty	描述 = 数量上限	数据类型 = 4	是否非空 = 0
+
+
+
+-->

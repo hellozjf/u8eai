@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="material" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <material id="">
+    <departmentno />
+    <productno />
+    <inventoryno />
+    <serial />
+    <price />
+    <quantity />
+    <period />
+    <totalmoney />
+    <free1 />
+    <free2 />
+    <free3 />
+    <free4 />
+    <free5 />
+    <free6 />
+    <free7 />
+    <free8 />
+    <free9 />
+    <free10 />
+    <bomver />
+    <bomvertd />
+    <moroutesn />
+    <mocode />
+    <mosubsn />
+    <ompflag />
+    <sfree1 />
+    <sfree2 />
+    <sfree3 />
+    <sfree4 />
+    <sfree5 />
+    <sfree6 />
+    <sfree7 />
+    <sfree8 />
+    <sfree9 />
+    <sfree10 />
+	<badjust />
+  </material>
+</ufinterface>
+<!--
+departmentno	Varchar	20	非空	部门编号或工作中心	必须取值于部门档案、工作中心档案
+productno	Varchar	20	可空	产品编码		必须取值于产品结构父项
+inventoryno	Varchar	20	非空	存货编码		必须取值于存货档案
+serial		Varchar	10	可空	批号			批号必须在成本系统已经定义。
+price		float	8	可空	单价			大于0
+quantity	float	8	非空	耗量			大于0
+period		integer	4	非空	期间			1到12
+totalmoney	float	8	可空	总金额			大于0
+free1		Varchar	20	可空	结构自由项1		必须取值于BOM档案	
+free2		Varchar	20	可空	结构自由项2		必须取值于BOM档案	
+free3		Varchar	20	可空	结构自由项3		必须取值于BOM档案	
+free4		Varchar	20	可空	结构自由项4		必须取值于BOM档案	
+free5		Varchar	20	可空	结构自由项5		必须取值于BOM档案	
+free6		Varchar	20	可空	结构自由项6		必须取值于BOM档案	
+free7		Varchar	20	可空	结构自由项7		必须取值于BOM档案	
+free8		Varchar	20	可空	结构自由项8		必须取值于BOM档案	
+free9		Varchar	20	可空	结构自由项9		必须取值于BOM档案	
+free10		Varchar	20	可空	结构自由项10		必须取值于BOM档案	
+bomver		Varchar	20	可空	BOM版本号		必须取值于BOM档案	
+bomvertd	Varchar	20	可空	替代标识		必须取值于BOM档案	
+moroutesn	int		可空	工序行号		必须取值于工艺路线	
+mocode		Varchar	20	可空	定单号			定单必须在制造系统已经定义。
+mosubsn		int		可空	定单行号		定单行号必须在制造系统已经定义。
+sfree1 		Varchar	20	可空	结构自由项1		必须取值于BOM档案
+sfree2 		Varchar	20	可空	结构自由项1		必须取值于BOM档案
+sfree3 		Varchar	20	可空	结构自由项1		必须取值于BOM档案
+sfree4 		Varchar	20	可空	结构自由项1		必须取值于BOM档案
+sfree5 		Varchar	20	可空	结构自由项1		必须取值于BOM档案
+sfree6 		Varchar	20	可空	结构自由项1		必须取值于BOM档案
+sfree7 		Varchar	20	可空	结构自由项1		必须取值于BOM档案
+sfree8 		Varchar	20	可空	结构自由项1		必须取值于BOM档案
+sfree9 		Varchar	20	可空	结构自由项1		必须取值于BOM档案
+sfree10 	Varchar	20	可空	结构自由项1		必须取值于BOM档案
+badjust 	int	可空	是否调整单数据
+-->

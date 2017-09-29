@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ufinterface roottag="ex_fare" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <ex_fare>
+    <header>
+      <cal />
+      <code />
+      <cuscode />
+      <define1 />
+      <define10 />
+      <define11 />
+      <define12 />
+      <define13 />
+      <define14 />
+      <define15 />
+      <define16 />
+      <define2 />
+      <define3 />
+      <define4 />
+      <define5 />
+      <define6 />
+      <define7 />
+      <define8 />
+      <define9 />
+      <depcode />
+      <exch_name />
+      <faretype />
+      <frominvoice />
+      <personcode />
+      <receiveaddress />
+      <receivecompany />
+      <receiveperson />
+      <vencode />
+      <date />
+      <exchrate />
+      <dec />
+      <ivtid />
+      <dcreditstart />
+      <dgatheringdate />
+      <icreditdays />
+      <csourcetype />
+      <csourcecode />
+      <ctowhich />
+      <cgatheringplan />
+      <cgeneralordercode />
+      <cpaycode />
+    </header>
+    <body>
+      <entry>
+        <ordercode />
+        <citem />
+        <citemclass />
+        <define22 />
+        <define23 />
+        <define24 />
+        <define25 />
+        <define26 />
+        <define27 />
+        <define28 />
+        <define29 />
+        <define30 />
+        <define31 />
+        <define32 />
+        <define33 />
+        <define34 />
+        <define35 />
+        <define36 />
+        <define37 />
+        <expcname />
+        <expname />
+        <free1 />
+        <free10 />
+        <free2 />
+        <free3 />
+        <free4 />
+        <free5 />
+        <free6 />
+        <free7 />
+        <free8 />
+        <free9 />
+        <invcode />
+        <memo />
+        <money />
+        <natmoney />
+        <capportionmeasure />
+        <bserviceinfare />
+        <citem_class />
+        <citem_cname />
+        <citemcode />
+        <citemname />
+              <iciqbookid />
+      <cciqbookcode />
+      <cciqcode />
+      <fciqchangrate />
+      </entry>
+    </body>
+  </ex_fare>
+</ufinterface>

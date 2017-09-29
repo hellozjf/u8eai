@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--客户存货对照表,所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="cusinvcontrapose" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <cusinvcontrapose>
+    <ccuscode />
+    <cinvcode />
+    <ccusinvcode />
+    <ccusinvname />
+    <iteststyle />
+    <idtmethod />
+    <fdtrate />
+    <fdtnum />
+    <cdtunit />
+    <idtstyle />
+    <iqtmethod />
+    <idtlevel />
+    <cdtaql />
+    <boutinvdt />
+    <!-- 8.700 -->
+    <crulecode />
+  </cusinvcontrapose>
+  <i_id />
+</ufinterface>
+<!--
+
+元素名称                          描述                                              数据类型             是否可空
+ccuscode                      客户编码                                          nvarchar(20)		否
+cinvcode                      存货编码                                          nvarchar(20)		否
+ccusinvcode                   客户存货编码                                      nvarchar(40)
+ccusinvname                   客户存货名称                                      nvarchar(100)
+iteststyle                    检验方式                                          smallint
+idtmethod                     抽检规则                                          smallint
+fdtrate                       抽检率                                            float
+fdtnum                        抽检量                                            float
+cdtunit                       检验计量单位                                      nvarchar(35)
+idtstyle                      检验严格度                                        smallint
+idtlevel                      检验水平                                          smallint
+cdtaql                        AQL                                               nvarchar(20)
+boutinvdt                     是否发货检验                                      bit		       否
+crulecode                     自定义抽检规则编码                                nvarchar(20)
+
+-->

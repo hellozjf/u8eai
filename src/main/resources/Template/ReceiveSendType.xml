@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="gb2312"?><!-- 收发类别 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符--><!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换--><ufinterface roottag="receivesendtype" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <receivesendtype>
+    <code />
+    <name />
+    <sort />
+    <rsflag />
+    <end_flag />
+    <oppsubject_code />
+    <!-- U810.0 -->
+    <bRetail />
+  </receivesendtype>
+</ufinterface><!--
+
+
+code	  varchar       5       收发类别编码
+
+
+name	  varchar       12      收发类别名称
+
+
+sort	  tinyint       1       编码级次
+
+
+rsflag	  int           4       收发标记   1收  0发		
+
+
+end_flag  bit           1       末级标记  		
+
+
+oppsubject_code	varchar	15	可空	对方科目编码	必须是Code表总已经存在的，且有末级标志的科目编码。
+				
+bRetail bit 			可空    表“适用零售”
+
+-->

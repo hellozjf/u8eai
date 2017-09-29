@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--标准工序 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="Operation" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <Operation>
+    <OperationDetail>
+      <OperationId />
+      <OpCode />
+      <Description />
+      <WcCode />
+      <RltOptionFlag />
+      <SubFlag />
+      <SVendorCode />
+      <Remark />
+      <OperationInspId />
+      <Define22 />
+      <Define23 />
+      <Define24 />
+      <Define25 />
+      <Define26 />
+      <Define27 />
+      <Define28 />
+      <Define29 />
+      <Define30 />
+      <Define31 />
+      <Define32 />
+      <Define33 />
+      <Define34 />
+      <Define35 />
+      <Define36 />
+      <Define37 />
+    </OperationDetail>
+    <OperationRes>
+      <OperationResId />
+      <OperationId />
+      <SortSeq />
+      <ResCode />
+      <BaseType />
+      <BaseQtyN />
+      <BaseQtyD />
+      <PlanFlag />
+      <ResActivity />
+    </OperationRes>
+    <OperationInsp>
+      <OperationInspId />
+      <QTMethod />
+      <DtMethod />
+      <DtRate />
+      <DtNum />
+      <DtStyle />
+      <QcProjectCode />
+      <QtLevel />
+      <AqlVal />
+    </OperationInsp>
+  </Operation>
+</ufinterface>
+<!-- 
+
+
+OperationId  	int   		标准工序Id		非空	
+
+
+OpCode  	varchar(10)  	标准工序代号  		非空
+
+
+Description  	varchar(60) 	说明  			可空
+
+
+WcCode 		varchar(8)  	工作中心代号  		可空
+
+
+RltOptionFlag  	bit  		是/否与选项相关(1/0)  	非空
+
+
+SubFlag  	bit  		是/否委外工序(1/0)  	非空
+
+
+SVendorCode  	varchar(20)  	委外商代号  		可空
+
+
+Remark  	varchar(255)  	备注  			可空
+
+
+OperationInspId int  		标准工序检验资料Id  	可空
+
+
+Define22  	varchar(60) 	表体自定义项1 		可空
+
+
+Define23  	varchar(60) 	表体自定义项2 		可空
+
+
+Define24  	varchar(60)  	表体自定义项3		可空
+
+
+Define25  	varchar(60)  	表体自定义项4		可空
+
+
+Define26  	real  		表体自定义项5		可空
+
+
+Define27  	real  		表体自定义项6		可空
+
+
+Define28  	varchar(120)  	表体自定义项7		可空
+
+
+Define29  	varchar(120)  	表体自定义项8		可空
+
+
+Define30  	varchar(120)  	表体自定义项9		可空
+
+
+Define31  	varchar(120)  	表体自定义项10		可空
+
+
+Define32  	varchar(120)  	表体自定义项11		可空
+
+
+Define33  	varchar(120)  	表体自定义项12		可空
+
+
+Define34  	int  		表体自定义项13		可空
+
+
+Define35  	int  		表体自定义项14		可空
+
+
+Define36  	datetime  	表体自定义项15		可空
+
+
+Define37  	datetime  	表体自定义项16		可空
+
+
+OperationResId  int		资源资料Id		非空
+
+
+OperationId  	int  		标准工序ID  		非空
+
+
+SortSeq  	int  		行号  			非空
+
+
+ResCode		varchar(6)	资源代号  		可空
+
+
+BaseType  	tinyint  	基准类型（批次/物料，资源使用量的计算基准）  可空
+
+
+BaseQtyN  	Udt_QTY  	基本用量-分子  		可空
+
+
+BaseQtyD  	Udt_QTY  	基本用量分母  		可空
+
+
+PlanFlag  	tinyint  	计划否:1-是/0-否/2-前一个/3-下一个  可空
+
+
+ResActivity  	varchar(60)  	资源活动 	可空
+
+
+OperationInspId int   		检验资料Id	非空
+
+
+QTMethod  	int  		检验方式(1-免检/2-全检/3-破坏性抽检/4-非破坏性抽检)  	可空
+
+
+DtMethod  	int  		抽检方案(1-按比例抽检/2-定量抽检/3-按国标抽检)  	可空
+
+
+DtRate  	Udt_Rate100  	抽检率  可空
+
+
+DtNum  		Udt_QTY  	抽检量  可空
+
+
+DtStyle  	smallint  	抽检方式(正常/加严/放宽)  可空
+
+
+QcProjectId  	int  		质量检验方案  	可空
+
+
+QtLevel  	smallint  	检验水平  	可空
+
+
+AqlVal  	int  		AQL值 		可空
+
+
+-->

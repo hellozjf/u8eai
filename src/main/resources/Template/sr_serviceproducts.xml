@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 服务产品 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换 -->
+<ufinterface roottag="sr_serviceproducts" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <sr_serviceproducts>
+    <header>
+      <code />
+      <csndefine1 />
+      <csndefine2 />
+      <csndefine3 />
+      <csndefine4 />
+      <csndefine5 />
+      <csndefine6 />
+      <csndefine7 />
+      <csndefine8 />
+      <csndefine9 />
+      <csndefine10 />
+      <inventorycode  />
+	  <free1 />
+      <free2 />
+      <free3 />
+      <free4 />
+      <free5 />
+      <free6 />
+      <free7 />
+      <free8 />
+      <free9 />
+      <free10 />
+      <cpurchasercode />
+      <ccuscode />
+      <cstate />
+      <bisoutsourcing />
+      <cavgworkload />
+      <bispigeonhole />
+      <orderformcode />
+      <consignmentcode />
+      <cdeliverydate />
+      <dserviceenddate />
+      <cremark />
+      <define1 />
+      <define2 />
+      <define3 />
+      <define4 />
+      <define5 />
+      <define6 />
+      <define7 />
+      <define8 />
+      <define9 />
+      <define10 />
+      <define11 />
+      <define12 />
+      <define13 />
+      <define14 />
+      <define15 />
+      <define16 />
+      <ccreator />
+      <dcreateddate />
+    </header>
+  </sr_serviceproducts>
+</ufinterface>
+<!-- 
+code 		产品序列编号	varchar (10) 	非空	必须唯一
+cSNDefine1	序列号属性1	nvarchar(40) 可空	
+cSNDefine2	序列号属性2	nvarchar(40) 可空
+cSNDefine3	序列号属性3	nvarchar(40) 可空
+cSNDefine4	序列号属性4	nvarchar(40) 可空
+cSNDefine5	序列号属性5	nvarchar(40) 可空
+cSNDefine6	序列号属性6	nvarchar(40) 可空
+cSNDefine7	序列号属性7	nvarchar(40) 可空
+cSNDefine8	序列号属性8	nvarchar(40) 可空
+cSNDefine9	序列号属性9	nvarchar(40) 可空
+cSNDefine10	序列号属性10	nvarchar(40) 可空
+inventorycode 	存货编号	varchar (40) 	非空	必须取值于存货档案
+free1		存货自由项 1	可空
+free2		存货自由项 2	可空	
+free10		存货自由项 10	可空
+cPurchaserCode	购买客户编码	nvarchar(40) 可空
+cCusCode		最终客户编码	nvarchar(40)	非空
+cState			状态			非空
+bIsOutsourcing	是否外购		非空
+cAvgWorkload	工作量			可空
+bIsPigeonhole	是否归档		非空
+orderFormCode	订单号			可空
+consignmentCode 发货单号		可空
+cDeliveryDate	发货日期		可空
+dServiceEndDate	保修截止日		可空
+cRemark			备注			可空
+define1 	自定义字段1	varchar (20) 	可空	
+define2 	自定义字段2	varchar (20) 	可空	
+define3 	自定义字段3	varchar (20) 	可空	
+define4 	自定义字段4	datetime可空	
+define5 	自定义字段5	smallint可空	
+define6 	自定义字段6	datetime 可空	
+define7 	自定义字段7	float 可空	
+define8 	自定义字段8	varchar (4)可空	
+define9 	自定义字段9	varchar (8) 可空	
+define10 	自定义字段10	varchar (60) 可空	
+define11 	自定义字段11	varchar (120) 可空	
+define12 	自定义字段12	varchar (120) 可空	
+define13 	自定义字段13	varchar (120) 	可空	
+define14 	自定义字段14	varchar (120) 	可空	
+define15 	自定义字段15	int	可空	
+define16 	自定义字段16	float	可空	
+cCreator	制单人			非空
+dCreatedDate 制单日期		非空
+-->

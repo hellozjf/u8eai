@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexcanged:导入时编码是否转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="capitalvouchers" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <capitalvouchers>
+    <header>
+      <vouchertype />
+      <assetno />
+      <voucherdata />
+      <currency />
+      <exchangerate />
+      <memreason />
+      <siteafter />
+      <worktotal />
+      <accwork />
+      <workunit />
+      <transdate />
+      <transperiod />
+      <operator />
+    </header>
+    <body>
+      <entry>
+        <assetno />
+        <deptno />
+        <deptscale />
+        <depreciationitemno />
+        <depreciationitemname />
+        <relativeprojectno />
+        <relativeprojectname />
+        <relativecItemclsId />
+      </entry>
+    </body>
+  </capitalvouchers>
+</ufinterface>
+<!--
+固定资产变动单节点定义
+==========================
+主表:
+节点名称		节点意义		类型		是否可空	约束
+vouchertype	变动单类型	Integer	-	非空	当前账套中已存在的变动单类型编号(范围:1～13，定义见下面)
+assertno	资产编号		VarChar	37	非空	当前账套中已存在的资产编号
+voucherdata	变动内容		varChar	50	非空	
+currency	币种名称		varChar	8	可空	当前账套中已存在的币种(若为空则默认为等于当前账套的本位币)
+exchangerate	汇率		Float	-	可空	(若为空则默认为1)
+memreason	变动原因		Text	-	非空	
+siteafter	变动后存放地点	varChar	50	可空	
+worktotal	工作总量		Float		可空	大于等于0
+accwork		累计工作量	Float		可空	大于等于0并且小于等于工作总量
+workunit	工作量单位	varChar	10	可空		
+transdate	变动日期		DateTime	可空	大于等于(最新会计期间内)最新会计日期(若为空则默认为当前最新会计日期)
+transperiod	变动期间		Integer	-	可空	等于最新会计期间(若为空则默认为当前最新会计期间)
+operator	经手人		varChar	20	可空	当前账套中已存在的用户名(若为空则默认为本系统当前登录用户)
+
+子表:
+assertno		资产编号		VarChar	37	非空		
+deptno			部门编号		VarChar	12	非空	部门档案的最末级编号
+deptscale		使用比例		Float		可空	大于0并且小于等于1
+depreciationitemno	对应折旧科目编码	varChar	15	可空	已存在的科目编号
+depreciationitemname	对应折旧科目名称	varChar	50	可空	已存在的科目名称
+relativeprojectno	对应项目编码	varChar	20	可空	已存在的项目编码
+relativeprojectname	对应项目名称	varChar	50	可空	已存在的项目名称
+relativecItemclsId      项目大类		VarChar2	可空 	已存在的项目大类
+
+==========================
+变动单类型编号约定:
+  原值增加 	= 1       
+  原值减少 	= 2       
+  部门转移 	= 3     
+  使用状况调整 	= 4   
+  累计折旧调整 	= 5      
+  可使用月份调整	= 6     
+  折旧方法调整 	= 7     
+  工作总量调整 	= 8  
+  净残值调整 	= 9(注意：本类型变动<变动内容>节点定义为<变动后净残值>)
+  类别调整 	= 10    
+  计提减值准备 	= 11     
+  转回减值准备 	= 12  
+  减值准备期初	= 13 
+==========================
+变动内容<sVoucherData>详细定义
+变动单类型								<变动内容>定义
+原值增加/原值减少/计提减值准备/转回减值准备/减值准备期初			变动数值
+折旧方法调整								变动后折旧方法			
+部门转移									无意义（变动后部门由子表数据表示）
+类别调整/使用状况调整/累计折旧调整/可使用月份调整/工作总量调整/净残值调整	变动后数值	
+==========================
+-->

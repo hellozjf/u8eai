@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--  工作中心档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符
+
+
+  -->
+<!-- roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="WorkCenters" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <WorkCenters>
+    <WorkCenter>
+      <WcId />
+      <WcCode />
+      <Description />
+      <CalendarCode />
+      <ProductLineFlag />
+      <DeptCode />
+    </WorkCenter>
+  </WorkCenters>
+</ufinterface>
+<!-- 
+
+
+WcId  		int 		工作中心Id	非空
+
+
+WcCode  	varchar(8)  	工作中心代号  	可空
+
+
+Description  	varchar(60)  	名称  		可空
+
+
+CalendarId  	int  		行事历Id  	可空
+
+
+ProductLineFlag bit  		是否生产线  	非空
+
+
+DeptCode  	varchar(12)  	部门 		可空
+
+
+  -->

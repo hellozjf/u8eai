@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--应收应付 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="oughtreceive" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <oughtreceive>
+    <header>
+      <id />
+      <vouchertype />
+      <code />
+      <relatevouchercode />
+      <date />
+      <cust_vendor_code />
+      <deptcode />
+      <personcode />
+      <item_classcode />
+      <item_code />
+      <digest />
+      <subjectcode />
+      <currency_name />
+      <currency_rate />
+      <bdebitcredit />
+      <natamount />
+      <amount />
+      <paycondition_code />
+      <operator />
+      <flag />
+      <quantity />
+      <define1 />
+      <define2 />
+      <define3 />
+      <define4 />
+      <define5 />
+      <define6 />
+      <define7 />
+      <define8 />
+      <define9 />
+      <define10 />
+      <define11 />
+      <define12 />
+      <define13 />
+      <define14 />
+      <define15 />
+      <define16 />
+      <startflag />
+    </header>
+    <body>
+      <entry>
+        <headid />
+        <cust_vendor_code />
+        <deptcode />
+        <personcode />
+        <item_classcode />
+        <item_code />
+        <digest />
+        <subjectcode />
+        <currency_name />
+        <currency_rate />
+        <bdebitcredit />
+        <natamount />
+        <amount />
+      </entry>
+    </body>
+  </oughtreceive>
+</ufinterface>
+<!--
+
+
+id		varchar	32	子表关联项	
+
+
+vouchertype	varchar	2	非空	单据类型	应收单为"R0"，应付单为"P0"
+
+
+code		varchar	30	非空	应收/付单据号	单据类型+单据好不允许重复
+
+
+relatevouchercode	varchar	30	可空	对应单据号（用于红票对冲）	
+
+
+date		datetime	非空	单据日期	
+
+
+cust_vendor_code varchar20	非空	单位编号	单据类型为"R0"时必须是Customer.cCusCode表中已经存在的记录，单据类型为"P0"时必须是Vendor.cCVenCode表中已经存在的记录
+
+
+deptcode	varchar	12	可空	部门编码	必须是Department.cDepCode表中已经存在的记录
+
+
+personcode	varchar	8	可空	职员编码	必须是Person.cPersonCode表中已经存在的记录
+
+
+item_classcode	varchar	2	可空	项目大类编码	必须是Fitem.citem_class表中已经存在的记录
+
+
+item_code	varchar	20	可空	项目编码	根据项目大类编码检查其相应的项目编码
+
+
+digest		varchar	60	可空	摘要	
+
+
+subjectcode	varchar	15	可空	科目编码	必须是Code.cCode表中的记录，单据类型为"R0"时，必须是应收受控科目，单据类型为"P0"时，必须是应付受控科目。
+
+
+currency_name	varchar	8	非空	币种	必须是Foreigncurrency. cexch_name已经存在的记录
+
+
+currency_rate	float		可空	汇率	
+
+
+bdebitcredit	bit		可空	借贷方向(借：True；贷：False)	单据类型为"R0"时置为1，单据类型为"P0"时置为0
+
+
+natamount	money		可空	本币金额	
+
+
+amount		money		可空	原币金额	
+
+
+natbalance	money		非空	本币余额	将本币金额写入该字段
+
+
+balancy		money		可空	原币余额	将原币金额写入该字段
+
+
+paycondition_code   varchar3	可空	付款条件	必须是PayCondition。CPayCode表中已经存在的记录
+
+
+operator	varchar	20	可空	操作员姓名	必须是UA_User表中已经存在的记录
+
+
+flag		varchar	2	非空	标志("AR":应收, "AP":应付)	单据类型为"R0"时必须是标志为"AR"， 单据类型为"P0"时必须标志为"AP"。
+
+
+quantity	float		可空	数量	
+
+
+leavquantity	float		可空	剩余数量	将数量写入该字段
+
+
+define1		varchar	20	可空	自定义字段1	
+
+
+define2		varchar	20	可空	自定义字段2	
+
+
+define3		varchar	20	可空	自定义字段3	
+
+
+define4		datetime	可空	自定义字段4	
+
+
+define5		int		可空	自定义字段5	
+
+
+define6		datetime	可空	自定义字段6	
+
+
+define7		float		可空	自定义字段7	
+
+
+define8		varchar	4	可空	自定义字段8	
+
+
+define9		varchar	8	可空	自定义字段9	
+
+
+define10	varchar	60	可空	自定义字段10	
+
+
+define11	Varchar	120	可空	自定义字段11	
+
+
+define12	Varchar	120	可空	自定义字段12	
+
+
+define13	Varchar	120	可空	自定义字段13	
+
+
+define14	Varchar	120	可空	自定义字段14	
+
+
+define15	Int		可空	自定义字段15	
+
+
+define16	Float		可空	自定义字段16	
+
+
+startflag       bit             可空     期初标志
+
+
+
+
+
+headid		varchar	32		主表关联项	必须是Ap_Vouch.cLink表中已经有的记录
+
+
+cust_vendor_code	varchar	20	单位编号	表体科目核算类型为客户时必须是Customer.cCusCode表中已经存在的记录，表体科目核算类型为供应商时必须是Vendor.cCVenCode表中已经存在的记录
+
+
+deptcode	varchar	12		部门编码	必须是Department.cDepCode表中已经存在的记录
+
+
+personcode	varchar	8		职员编码	必须是Person.cPersonCode表中已经存在的记录
+
+
+item_classcode	varchar	2		项目大类编码	必须是Fitem.citem_class表中已经存在的记录
+
+
+item_code	varchar	20		项目编码	根据项目大类检查相应的项目编码、
+
+
+digest		varchar	60		摘要	
+
+
+subjectcode	Varchar	15		科目编码	必须是Code.cCode表中已经存在的编码，且不能有应收/付受控标志。
+
+
+currency_name	Varchar	8		币种		必须是Foreigncurrency. cexch_name已经存在的记录
+
+
+currency_rate	Float			汇率	
+
+
+bdebitcredit	Bit			借贷方向	借为1，贷为0
+
+
+natamount	money			本币金额	
+
+
+amount		money			原币金额	
+
+
+			
+
+
+-->

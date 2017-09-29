@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 凭证类别 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="dsign" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <dsign id="">
+    <i_id />
+    <type />
+    <order_code />
+    <type_name />
+    <other_use_flag />
+  </dsign>
+</ufinterface>
+<!--必填 type 凭证类别编号
+
+
+type_name 凭证类别名称-->
+<!--
+
+
+i_id		int4	             编辑时的唯一标识		
+
+
+type		varchar	2	     凭证类别字	主表关联项	不分级	
+
+
+order_code	tinyint	1	     凭证类别排序号	修改顺序号时要修改凭证表和收付款结算表	
+
+
+type_name	varchar	14	     凭证类别名称	
+
+
+other_use_flag	int	  	     其它系统是否使用    由其它系统填写,0_未使用,非0_已使用
+
+
+-->

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 项目预算子表 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+  -->
+<ufinterface roottag="pm_budgetSub" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <budgetSub>
+    <iverid />
+    <citemcode />
+    <ckeycode1 />
+    <ckeycode2 />
+    <celementcode />
+    <ccodemx />
+    <inumber />
+    <inumbersum />
+    <inumberctl />
+    <iuprice />
+    <ibudget />
+    <imoneysum />
+    <imoneyctl />
+    <inumberadd />
+    <ibudgetadd />
+  </budgetSub>
+</ufinterface>
+<!--必需字段预算版本ID、项目编码
+    一次性导入导出的数据量不能超过10000条记录-->
+<!--
+iVerId		int	4	非空 预算版本ID
+cItemCode	Varchar	20	非空 项目编码
+cKeyCode1	Varchar	120	可空 核算关键字1
+cKeyCode2	Varchar	120	可空 核算关键字2 
+cElementCode    varchar 60      非空 项目要素编码
+ccodemx         varchar 60      非空 项目要素明细编码
+iNumber         float           非空 预算数量
+inumbersum      float           可空 预算期初发生数量
+inumberctl      float           可空 预算累计发生数量
+iBudget         money           非空 预算金额
+iMoneySum       money           可空 预算期初发生金额
+iMoneyCtl       money           可空 预算累计发生金额
+iNumberAdd      float           可空 追加数量
+iBudgetAdd      money           可空 追加金额
+-->

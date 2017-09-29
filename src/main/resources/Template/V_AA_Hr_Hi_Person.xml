@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 人员档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="v_aa_hr_hi_person" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <v_aa_hr_hi_person tablename="hr_hi_person">
+    <code />
+    <name />
+    <cPsn_NameEN />
+    <JobNumber />
+    <cpsnproperty />
+    <rsex />
+    <rEmployState />
+    <rpersontype />
+    <EmploymentForm />
+    <!-- V11.0新增 Begin-->
+    <cdutyclass />
+    <cjobcode />
+    <cjobgradecode />
+    <cjobrankcode />
+    <rIDType />
+    <vIDNo />
+    <!-- V11.0新增 End-->
+    <bpsnperson />
+    <cdept_num />
+    <cpsnbankcode />
+    <cpsnaccount />
+    <dbirthdate />    
+    <cpsnmobilephone />
+    <cpsnfphone />
+    <cpsnophone />
+    <cpsninphone />
+    <cpsnemail />
+    <cpsnfaddr />
+    <cpsnpostcode />
+    <cpsnpostaddr />
+    <cpsnqqcode />
+    <cpsnurl />
+    <cpsnoseat />
+    <cpersonprop />
+    <cdepcode />
+    <fcreditquantity />
+    <icredate />
+    <ccregrade />
+    <dpvaliddate />
+    <dpinvaliddate />
+    <rNativePlace />
+    <rNational />
+    <rhealthStatus />
+    <rMarriStatus />
+    <MPicture />
+    <rPerResidence />
+    <vAliaName />
+    <dJoinworkDate />
+    <dEnterDate />
+    <dRegularDate />
+    <vSSNo />
+    <dEnterUnitDate />
+    <bProbation />
+  </v_aa_hr_hi_person>
+</ufinterface>
+<!--
+元素名称                           描述                                              数据类型
+code                          人员编码                                          nvarchar(20)		否
+name                          人员姓名                                          nvarchar(40)		否
+cPsn_NameEN                   英文名                                            nvarchar(50)	
+JobNumber                     工号                                              nvarchar(50)		
+cpsnproperty                  人员属性                                          nvarchar(20)
+rsex                          性别                                              nvarchar(30)
+rEmployState                  雇佣状态                                         nvarchar(30)
+rpersontype                   人员类别                                          nvarchar(30)
+EmploymentForm                用工形式                                          nvarchar(40)
+cdutyclass                    班组编码                                          nvarchar(2)
+cJobCode                      职位编码                                          nvarchar(20)
+cJobGradeCode                 职等编码                                          nvarchar(30)
+cJobRankCode                  职级编码                                          nvarchar(30)  
+bpsnperson                    是否业务员                                        bit		否
+cdept_num                     部门编码                                          nvarchar(30)
+cpsnbankcode                  银行                                              nvarchar(5)
+cpsnaccount                   账号                                              nvarchar(50)
+dbirthdate                    出生日期                                          fd_udt_id
+vidno                         身份证号                                          nvarchar(18)
+cpsnmobilephone               手机号                                            nvarchar(100)
+cpsnfphone                    家庭电话                                          nvarchar(100)
+cpsnophone                    办公电话                                          nvarchar(100)
+cpsninphone                   内线电话                                          nvarchar(100)
+cpsnemail                     Email地址                                         nvarchar(100)
+cpsnfaddr                     家庭住址                                          nvarchar(255)
+cpsnpostcode                  邮政编码                                          nvarchar(6)
+cpsnpostaddr                  通讯地址                                          nvarchar(255)
+cpsnqqcode                    QQ号                                              nvarchar(20)
+cpsnurl                       个人网址                                          nvarchar(50)
+cpsnoseat                     工位                                              nvarchar(20)
+-->

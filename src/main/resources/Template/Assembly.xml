@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--成套件 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换-->
+<ufinterface roottag="assembly" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <assembly>
+    <assemblycode>
+    </assemblycode>
+    <fittingcode>
+    </fittingcode>
+    <fittingquantity>
+    </fittingquantity>
+    <fittingnumber>
+    </fittingnumber>
+    <fittingcost>
+    </fittingcost>
+    <fittingprice>
+    </fittingprice>
+    <cAComunitCode>
+    </cAComunitCode>
+  </assembly>
+</ufinterface>
+<!--
+
+
+数据字段名	类型	长度	是否为空	说明	合法性要求
+
+
+assemblycode	Varchar	20	非空	套装件编码	必须是Inventory表中的编码，且该编码对应记录有成套件管理标志
+
+
+fittingcode	Varchar	20	非空	单件编码	必须是Inventory表中的编码，且该编码对应记录不能带有劳务属性，且套装件编码相同的情况下不允许出现相同的单件编码
+
+
+fittingquantity	Float	8	可空	单件数量	
+
+
+fittingnumber	Float	8	可空	单件件数	
+
+
+fittingcost	Float	8	可空	单件成本	
+
+
+fittingprice	Float	8	可空	单件单价	
+
+
+
+
+
+-->

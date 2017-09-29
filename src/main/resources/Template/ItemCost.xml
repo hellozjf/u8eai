@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--项目成本 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="pm_itemcost" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <itemcost id="">
+    <iperiod />
+    <ccentercode />
+    <citemcode />
+    <ckeycode1 />
+    <ckeycode2 />
+    <celementcode />
+    <iamount />
+    <detail>
+      <cost_detail_statement>
+        <cost_detail id="" ccodemx="" inumber="" iuprice="" iamount="" />
+      </cost_detail_statement>
+    </detail>
+  </itemcost>
+</ufinterface>
+<!-- 现将各数据项说明如下 
+
+ 	iperiod 		smallint	期间	
+ 	ccentercode 		varchar(15)	责任中心  	
+ 	citemcode 		varchar(60)	项目编码   		
+  	ckeycode1 		varchar (3)	核算关键字1	
+ 	ckeycode2 		varchar (30)	核算关键字1 
+ 	celementcode   	                        项目要素编码
+ 	iamount 		datetime	成本金额 
+ 		
+        detail 明细
+            	cost_detail 		成本明细
+            	cost_flow 			明细项目:
+			ccodemx  	明细编码
+			inumber 	数量
+			iuprice         单价
+			iamount         金额
+
+-->

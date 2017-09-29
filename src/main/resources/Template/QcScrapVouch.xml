@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--期初不合格品单 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="qcscrapvouch" billtype="" docid="" receiver="u8" sender="" proc="Add" codeexchanged="" exportneedexch="" version="2.0">
+  <qcscrapvouch>
+    <header>
+      <code />
+      <warehousecode />
+      <date />
+      <receivecode />
+      <departmentcode />
+      <personcode />
+      <vendorcode />
+      <checkcode />
+      <checkdate />
+      <checkperson />
+      <templatenumber />
+      <memory />
+      <maker />
+      <define1 />
+      <define2 />
+      <define3 />
+      <define4 />
+      <define5 />
+      <define6 />
+      <define7 />
+      <define8 />
+      <define9 />
+      <define10 />
+      <define11 />
+      <define12 />
+      <define13 />
+      <define14 />
+      <define15 />
+      <define16 />
+    </header>
+    <body>
+      <entry>
+        <inventorycode />
+        <assitantunit />
+        <quantity />
+        <number />
+        <price />
+        <cost />
+        <plancost />
+        <planprice />
+        <serial />
+        <itemclasscode />
+        <itemclassname />
+        <itemcode />
+        <itemname />
+        <makedate />
+        <validdate />
+        <massunit />
+        <massdate />
+        <gspstate />
+        <free1 />
+        <free2 />
+        <free3 />
+        <free4 />
+        <free5 />
+        <free6 />
+        <free7 />
+        <free8 />
+        <free9 />
+        <free10 />
+        <define22 />
+        <define23 />
+        <define24 />
+        <define25 />
+        <define26 />
+        <define27 />
+        <define28 />
+        <define29 />
+        <define30 />
+        <define31 />
+        <define32 />
+        <define33 />
+        <define34 />
+        <define35 />
+        <define36 />
+        <define37 />
+      </entry>
+    </body>
+  </qcscrapvouch>
+</ufinterface>
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+date		单据日期	datetime	非空	
+
+
+code		单据号		varchar	30	非空	
+
+
+receivecode	收发类别编码	varchar	5	可空	
+
+
+departmentcode	部门编码	varchar	12	可空	
+
+
+personcode	职员编码	varchar	8	可空	
+
+
+vendorcode	供应商编码	varchar	20	可空	。必须是供应商档案中已有的供应商
+
+
+
+
+
+checkcode	检验单号	varchar		可空	长度=检验单号
+
+
+
+
+checkdate	检验日期	datetime		可空	
+
+
+checkperson	检验员		varchar	8	可空	必须是职员档案中已有的职员
+
+
+
+
+templatenumber	模版号		int	4	可空	如果不空应检查模版号是否合法，如果不合法则取当前单据类型默认的模版号。
+
+
+
+
+
+
+
+memory		备注		varchar	60	可空	
+
+
+maker		制单人		varchar	20	非空
+
+
+define1		自定义字段1	varchar	20	可空	
+
+
+define2		自定义字段2	varchar	20	可空	
+
+
+define3		自定义字段3	varchar	20	可空	
+
+
+define4		自定义字段4	datetime	8	可空	
+
+
+define5		自定义字段5	int	4	可空	
+
+
+define6		自定义字段6	datetime	8	可空	
+
+
+define7		自定义字段7	float	8	可空	
+
+
+define8		自定义字段8	varchar	4	可空	
+
+
+define9		自定义字段9	varchar	8	可空	
+
+
+define10	自定义字段10	varchar	60	可空	
+
+
+define11	自定义字段11	varchar	120	可空	
+
+
+define12	自定义字段12	varchar	120	可空	
+
+
+define13	自定义字段13	varchar	120	可空	
+
+
+define14	自定义字段14	varchar	120	可空	
+
+
+define15	自定义字段15	int	4	可空	
+
+
+define16	自定义字段16	float	8	可空	
+
+
+auditdate	审核日期	datetime	8	可空	
+
+
+
+
+
+inventorycode	存货编码	varchar	20	非空	必须是存货档案中已有的存货
+
+
+
+
+free1		自由项1	varchar	20	可空	有自由项管理的存货必须非空；非空时必须是自由项档案中已有的自由项
+
+
+free2		自由项2	varchar	20	可空	同上
+
+
+free3		自由项3	varchar	20	可空	同上
+
+
+free4		自由项4	varchar	20	可空	同上
+
+
+free5		自由项5	varchar	20	可空	同上
+
+
+free6		自由项6	varchar	20	可空	同上
+
+
+free7		自由项7	varchar	20	可空	同上
+
+
+free8		自由项8	varchar	20	可空	同上
+
+
+free9		自由项9	varchar	20	可空	同上
+
+
+free10		自由项10	varchar	20	可空	同上
+
+
+
+
+
+quantity	数量（主记量数量）	float	8	可空	应收（发）数量和数量不能同时为空
+
+
+assitantunit	辅记量单位	varchar	10	可空	必须是当前存货的计量单位组中已有的计量单位。
+
+
+
+
+number		件数	float	8	可空	有辅计量单位的存货不能为空。必须满足件数*换算率=数量
+
+
+price		金额	money	8	可空	必须满足数量*单价=金额
+
+
+planunitcost	计划价售价	float	8	可空	非负
+
+
+planprice	计划金额或售价金额	money	8	可空	必须满足数量*计划价（售价）=计划金额（售价金额）
+
+
+serial		批号	varchar	20	可空	批次管理的存货	
+
+
+makedate	生产日期			可空	
+
+
+validdate	失效日期	datetime	8	可空	
+
+
+
+
+
+itemclasscode	项目大类编码	varchar	10	可空	
+
+
+itemclassname	项目大类名称	varchar	20	可空	
+
+
+itemcode	项目编码	varchar	20	可空	
+
+
+itemname	项目名称	varchar	60	可空	
+
+
+define22	表体自定义项22	varchar	60	可空	
+
+
+define23	表体自定义项23	varchar	60	可空	
+
+
+define24	表体自定义项24	varchar	60	可空	
+
+
+define25	表体自定义项25	varchar	60	可空	
+
+
+define26	表体自定义项26	float		可空	
+
+
+define27	表体自定义项27	float		可空	
+
+
+define28	表体自定义项28	varchar	120	可空	
+
+
+define29	表体自定义项29	varchar	120	可空	
+
+
+define30	表体自定义项30	varchar	120	可空	
+
+
+define31	表体自定义项31	varchar	120	可空	
+
+
+define32	表体自定义项32	varchar	120	可空	
+
+
+define33	表体自定义项33	varchar	120	可空	
+
+
+define34	表体自定义项34	int		可空	
+
+
+define35	表体自定义项35	int		可空	
+
+
+define36	表体自定义项36	datetime	可空	
+
+
+define37	表体自定义项37	datetime	可空	
+
+
+massdate	保质期天数 	int		可空
+
+
+massunit 保质期单位  varchar 10  可空,为年月日
+
+
+
+
+
+ 
+
+
+-->

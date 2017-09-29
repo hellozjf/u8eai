@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--销售存货调价单roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="saleinvpricejust" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <saleinvpricejust>
+    <header>
+      <id>
+      </id>
+      <ddate>
+      </ddate>
+      <ccode>
+      </ccode>
+      <cmaker>
+      </cmaker>
+      <cpersoncode>
+      </cpersoncode>
+      <cmainmemo>
+      </cmainmemo>
+      <cdepcode>
+      </cdepcode>
+      <cdefine1>
+      </cdefine1>
+      <cdefine2>
+      </cdefine2>
+      <cdefine3>
+      </cdefine3>
+      <cdefine4>
+      </cdefine4>
+      <cdefine5>
+      </cdefine5>
+      <cdefine6>
+      </cdefine6>
+      <cdefine7>
+      </cdefine7>
+      <cdefine8>
+      </cdefine8>
+      <cdefine9>
+      </cdefine9>
+      <cdefine10>
+      </cdefine10>
+      <cdefine11>
+      </cdefine11>
+      <cdefine12>
+      </cdefine12>
+      <cdefine13>
+      </cdefine13>
+      <cdefine14>
+      </cdefine14>
+      <cdefine15>
+      </cdefine15>
+      <cdefine16>
+      </cdefine16>
+    </header>
+    <body>
+      <id>
+      </id>
+      <operationtype>
+      </operationtype>
+      <ipriceid>
+      </ipriceid>
+      <cinvcode>
+      </cinvcode>
+      <cfree1>
+      </cfree1>
+      <cfree2>
+      </cfree2>
+      <cfree3>
+      </cfree3>
+      <cfree4>
+      </cfree4>
+      <cfree5>
+      </cfree5>
+      <cfree6>
+      </cfree6>
+      <cfree7>
+      </cfree7>
+      <cfree8>
+      </cfree8>
+      <cfree9>
+      </cfree9>
+      <cfree10>
+      </cfree10>
+      <iuprice1>
+      </iuprice1>
+      <isaleprice1>
+      </isaleprice1>
+      <iuprice2>
+      </iuprice2>
+      <isaleprice2>
+      </isaleprice2>
+      <iuprice3>
+      </iuprice3>
+      <isaleprice3>
+      </isaleprice3>
+      <iuprice4>
+      </iuprice4>
+      <isaleprice4>
+      </isaleprice4>
+      <iuprice5>
+      </iuprice5>
+      <isaleprice5>
+      </isaleprice5>
+      <iuprice6>
+      </iuprice6>
+      <isaleprice6>
+      </isaleprice6>
+      <iuprice7>
+      </iuprice7>
+      <isaleprice7>
+      </isaleprice7>
+      <iuprice8>
+      </iuprice8>
+      <isaleprice8>
+      </isaleprice8>
+      <iuprice9>
+      </iuprice9>
+      <isaleprice9>
+      </isaleprice9>
+      <iuprice10>
+      </iuprice10>
+      <isaleprice10>
+      </isaleprice10>
+      <cdefine22>
+      </cdefine22>
+      <cdefine23>
+      </cdefine23>
+      <cdefine24>
+      </cdefine24>
+      <cdefine25>
+      </cdefine25>
+      <cdefine26>
+      </cdefine26>
+      <cdefine27>
+      </cdefine27>
+      <cdefine28>
+      </cdefine28>
+      <cdefine29>
+      </cdefine29>
+      <cdefine30>
+      </cdefine30>
+      <cdefine31>
+      </cdefine31>
+      <cdefine32>
+      </cdefine32>
+      <cdefine33>
+      </cdefine33>
+      <cdefine34>
+      </cdefine34>
+      <cdefine35>
+      </cdefine35>
+      <cdefine36>
+      </cdefine36>
+      <cdefine37>
+      </cdefine37>
+      <dstartdate>
+      </dstartdate>
+      <denddate>
+      </denddate>
+      <fminquantity>
+      </fminquantity>
+      <cbodymemo>
+      </cbodymemo>
+      <iinvscost>
+      </iinvscost>
+      <bsales>
+      </bsales>
+    </body>
+  </saleinvpricejust>
+</ufinterface>
+<!--
+表头定义
+create table SA_InvPriceJustMain (
+   id                   bigint               not null,
+   ddate                datetime             null,
+   ccode                nvarchar(30)         null,
+   cmaker               nvarchar(20)         null,
+   cpersoncode          nvarchar(20)         null,
+   cmainmemo            nvarchar(120)        null,
+   cverifier            nvarchar(20)         null,
+   dverifydate          datetime             null,
+   cdepcode             nvarchar(12)         null,
+   ivtid                bigint               null,
+   ufts                 timestamp            null,
+   cdefine1             nvarchar(20)         null,
+   cdefine2             nvarchar(20)         null,
+   cdefine3             nvarchar(20)         null,
+   cdefine4             datetime             null,
+   cdefine5             int                  null,
+   cdefine6             datetime             null,
+   cdefine7             float                null,
+   cdefine8             nvarchar(4)          null,
+   cdefine9             nvarchar(8)          null,
+   cdefine10            nvarchar(60)         null,
+   cdefine11            nvarchar(120)        null,
+   cdefine12            nvarchar(120)        null,
+   cdefine13            nvarchar(120)        null,
+   cdefine14            nvarchar(120)        null,
+   cdefine15            int                  null,
+   cdefine16            float                null,
+   constraint PK_SA_INVPRICEJUSTMAIN primary key  (id)
+
+-->

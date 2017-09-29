@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 货位档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="position" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <position>
+    <code />
+    <name />
+    <grade />
+    <end_flag />
+    <warehouse_code />
+    <maxcubage />
+    <maxweight />
+    <remark />
+    <barcode />
+  </position>
+</ufinterface>
+<!--
+元素名称	描述	数据类型	是否非空	有效值范围	备注
+code	货位编码	varchar(20)	Yes		编码规则由GradeDef表提供
+name	货位名称	varchar(30)	Yes	不允许重复	
+grade	编码级次	smallint(2)	No	必须取值于(1-9)之间，且符合GradeDef表中编码级次要求	
+end_flag	是否末级	bit	No	是末级的编码其后续不应该再有编码，如101已是末级，101之后就不应该有类似10101这样的编码	
+warehouse_code	仓库编码	varchar(10)	Yes	必须是WareHouse表中的编码	
+maxcubage	最大体积	float(8)	No		
+maxweight	最大重量	float(8)	No		
+remark	备注	varchar(30)	No		
+barcode	对应条形码中的编码	varchar(30)	No	必须是WareHouse表中的编码	
+-->

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="gb2312"?><!-- 仓库档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符--><!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换--><ufinterface roottag="warehouse" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <warehouse>
+    <code />
+    <name />
+    <depart_code />
+    <address />
+    <phone />
+    <person />
+    <valuestyle />
+    <whmanage />
+    <ration />
+    <memo />
+    <!--bfreeze/-->
+    <barcode />
+    <bmrp />
+    <brop />
+    <!-- 8.600 -->
+    <iwhproperty />
+    <!-- 8.700 -->
+    <bcontrolserial />
+    <bincost />
+    <binavailcalcu />
+    <bproxywh />
+    <isaconmode />
+    <iexconmode />
+    <istconmode />
+    <!-- 8.720 -->
+    <bbondedwh />
+    <!-- U890 -->
+    <bwhasset />
+    <fwhquota />
+    <!-- U810.0 -->
+    <dWhEndDate />
+    <bshop />
+  </warehouse>
+</ufinterface><!--
+元素名称                            描述                                              数据类型            是否可空
+code                          仓库编码                                          nvarchar(10)		否
+name                          仓库名称                                          nvarchar(20)
+depart_code                   部门编码                                          nvarchar(12)
+address                       仓库地址                                          nvarchar(255)
+phone                         电话                                              nvarchar(100)
+person                        负责人                                            nvarchar(10)
+valuestyle                    计价方式                                          nvarchar(12)		否
+whmanage                      是否货位管理                                      bit		        否
+ration                        资金定额                                          float
+memo                          备注                                              nvarchar(20)
+barcode                       对应条形码                                        nvarchar(30)
+bmrp                          是否参与MRP运算                                   bit		        否
+brop                          是否参与ROP计算                                   bit		        否
+iwhproperty                   仓库属性                                          smallint		否
+bcontrolserial                控制序列号                                        bit		        否
+bincost                       记入成本                                          bit		        否
+binavailcalcu                 纳入可用量计算                                    bit		        否
+bproxywh                      代管仓                                            bit		        否
+isaconmode                    销售可用量控制方式                                smallint		否
+iexconmode                    出口可用量控制方式                                smallint		否
+istconmode                    库存可用量控制方式                                smallint		否
+dWhEndDate     Datetime	      停用日期		否
+
+bshop     bit	      门店		否
+-->

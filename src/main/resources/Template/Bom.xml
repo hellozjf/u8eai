@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--物料清单 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+  -->
+<ufinterface roottag="Bom" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <Bom>
+    <Version>
+      <BomId />
+      <BomType />
+      <Version />
+      <VersionDesc />
+      <VersionEffDate />
+      <IdentCode />
+      <IdentDesc />
+      <Define1 />
+      <Define2 />
+      <Define3 />
+      <Define4 />
+      <Define5 />
+      <Define6 />
+      <Define7 />
+      <Define8 />
+      <Define9 />
+      <Define10 />
+      <Define11 />
+      <Define12 />
+      <Define13 />
+      <Define14 />
+      <Define15 />
+      <Define16 />
+      <Status />
+    </Version>
+    <Parent>
+      <BomId />
+      <InvCode />
+      <Free1 />
+      <Free2 />
+      <Free3 />
+      <Free4 />
+      <Free5 />
+      <Free6 />
+      <Free7 />
+      <Free8 />
+      <Free9 />
+      <Free10 />
+      <ParentScrap />
+    </Parent>
+    <Component>
+      <OpComponentId />
+      <BomId />
+      <SortSeq />
+      <OpSeq />
+      <InvCode />
+      <Free1 />
+      <Free2 />
+      <Free3 />
+      <Free4 />
+      <Free5 />
+      <Free6 />
+      <Free7 />
+      <Free8 />
+      <Free9 />
+      <Free10 />
+      <EffBegDate />
+      <EffEndDate />
+      <FVFlag />
+      <BaseQtyN />
+      <BaseQtyD />
+      <CompScrap />
+      <ByproductFlag />
+      <OptionsId />
+      <AuxUnitCode />
+      <ChangeRate />
+      <AuxBaseQtyN />
+      <ProductType />
+      <Define22 />
+      <Define23 />
+      <Define24 />
+      <Define25 />
+      <Define26 />
+      <Define27 />
+      <Define28 />
+      <Define29 />
+      <Define30 />
+      <Define31 />
+      <Define32 />
+      <Define33 />
+      <Define34 />
+      <Define35 />
+      <Define36 />
+      <Define37 />
+    </Component>
+    <ComponentOpt>
+      <OptionsId />
+      <Offset />
+      <WIPType />
+      <AccuCostFlag />
+      <DrawDeptCode />
+      <Whcode />
+      <OptionalFlag />
+      <MutexRule />
+      <PlanFactor />
+    </ComponentOpt>
+    <ComponentSub>
+      <ComponentSubId />
+      <OpComponentId />
+      <Sequence />
+      <InvCode />
+      <Free1 />
+      <Free2 />
+      <Free3 />
+      <Free4 />
+      <Free5 />
+      <Free6 />
+      <Free7 />
+      <Free8 />
+      <Free9 />
+      <Free10 />
+      <Factor />
+      <EffBegDate />
+      <EffEndDate />
+    </ComponentSub>
+    <ComponentRmk>
+      <RemarkId />
+      <OpComponentId />
+      <SortSeq />
+      <Remark />
+    </ComponentRmk>
+    <ComponentLoc>
+      <LocationId />
+      <OpComponentId />
+      <SortSeq />
+      <Loc />
+    </ComponentLoc>
+  </Bom>
+</ufinterface>
+<!--
+BomId   	int          	BOM Id			非空
+BomType  	tinyint		BOM类型(主要/替代)    	非空
+Version   	int         	版本号  		BOM类型为主要时非空，否则为空
+VersionDesc   	varchar(60) 	版本说明    		BOM类型为主要时非空，否则为空
+VersionEffDate	datetime			版本生效日			BOM类型为主要时非空，否则为空
+IdentCode	varchar(20)	替代标识	BOM类型为替代时非空，否则为空
+IdentDesc	varchar(60)	替代说明	BOM类型为替代时非空，否则为空
+Define1		varchar(20)	自定项1			可空
+Define2		varchar(20)	自定项2			可空
+Define3		varchar(20)	自定项3		可空
+Define4		datetime	自定项4		可空
+Define5		int		自定项5		可空
+Define6		datetime	自定项6		可空
+Define7		real		自定项7		可空
+Define8		varchar(20)	自定项8		可空
+Define9		varchar(20)	自定项9		可空
+Define10	varchar(20)	自定项10	可空
+Define11	varchar(20)	自定项11	可空
+Define12	varchar(20)	自定项12	可空
+Define13	varchar(20)	自定项13	可空
+Define14	varchar(20)	自定项14	可空
+Define15	int		自定项15	可空
+Define16	real		自定项16	可空
+InvCode  	varchar(20)  	母件存货编码  	可空
+Free1  		varchar(20)  	母件自由项1  	可空
+Free2  		varchar(20)  	母件自由项2  	可空
+Free3  		varchar(20)  	母件自由项3  	可空
+Free4  		varchar(20)  	母件自由项4  	可空
+Free5  		varchar(20)  	母件自由项5  	可空
+Free6  		varchar(20)  	母件自由项6  	可空
+Free7  		varchar(20)  	母件自由项7  	可空
+Free8  		varchar(20)  	母件自由项8  	可空
+Free9  		varchar(20)  	母件自由项9  	可空
+Free10 		varchar(20)  	母件自由项10  	可空
+ParentScrap  	Udt_Rate  	母件损耗率 	可空
+OpComponentId  	int 		子件资料Id	非空
+SortSeq  	int  		序号  		非空
+OpSeq  		char(4)  	工序代号  	可空
+InvCode  	varchar(20)  	子件存货编码  	可空
+Free1  		varchar(20)  	子件自由项1  	可空
+Free2  		varchar(20)  	子件自由项2  	可空
+Free3  		varchar(20)  	子件自由项3  	可空
+Free4  		varchar(20)  	子件自由项4  	可空
+Free5  		varchar(20)  	子件自由项5  	可空
+Free6  		varchar(20)  	子件自由项6  	可空
+Free7  		varchar(20)  	子件自由项7  	可空
+Free8  		varchar(20)  	子件自由项8  	可空
+Free9  		varchar(20)  	子件自由项9  	可空
+Free10 		varchar(20)  	子件自由项10  	可空
+EffBegDate  	datetime  	子件生效日  	可空
+EffEndDate  	datetime  	子件失效日  	可空
+FVFlag  	tinyint  	固定/变动批量(0/1)  可空
+BaseQtyN  	Udt_QTY  	基本用量-分子  	可空	
+BaseQtyD  	Udt_QTY  	基本用量-分母  	可空
+CompScrap  	Udt_Rate  	子件损耗率  	可空
+ByproductFlag  	bit  		是否联副产品  	非空
+OptionsId  	int  		选项资料Id  	可空
+Offset  	smallint  	偏置期  	可空
+WIPType  	tinyint  	WIP属性(1入库/2工序/3领料/4虚拟)  可空
+AccuCostFlag  	bit  		是/否累计成本（1/0）  可空
+DrawDeptCode  	varchar(12)  	领料部门  	可空
+Whcode  	varchar(10)  	仓库 		可空	
+OptionalFlag  	bit  		是否可选(1/0)  	非空
+MutexRule  	tinyint  	互斥原则(1-ONE/2-ALL/3-ANY/4-AL0)  可空
+PlanFactor  	Udt_Rate100  	计划比例 	可空
+ComponentSubId  int  		替代料资料Id	非空
+OpComponentId  	int  		子件资料Id  	非空
+Sequence  	int  		替代序号  	非空
+InvCode  	varchar(20)  	替代料存货编码  可空
+Free1  		varchar(20)  	替代料自由项1  	可空
+Free2  		varchar(20)  	替代料自由项2  	可空
+Free3  		varchar(20)  	替代料自由项3  	可空
+Free4  		varchar(20)  	替代料自由项4  	可空
+Free5  		varchar(20)  	替代料自由项5  	可空
+Free6  		varchar(20)  	替代料自由项6  	可空
+Free7  		varchar(20)  	替代料自由项7  	可空
+Free8  		varchar(20)  	替代料自由项8  	可空
+Free9  		varchar(20)  	替代料自由项9  	可空
+Free10 		varchar(20)  	替代料自由项10  可空
+Factor  	Udt_Rate100  	替代比例  	可空
+EffBegDate  	datetime  	生效日期  	可空
+EffEndDate  	datetime  	失效日期  	可空
+RemarkId  	int		备注资料Id 	非空
+OpComponentId 	int  		子件资料Id  	非空
+SortSeq  	int  		序号  		非空
+Remark  	varchar(255)  	备注说明 	可空
+LocationId  	int  		定位符资料Id	非空
+OpComponentId  	int  		子件资料Id  	非空
+SortSeq  	int  		序号  		非空
+Loc  		varchar(255)  	定位符 		可空
+
+-->

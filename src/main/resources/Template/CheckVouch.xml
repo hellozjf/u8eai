@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--盘点单 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="checkvouch" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <checkvouch>
+    <header>
+      <id />
+      <csource />
+      <btransflag />
+      <auditperson />
+      <depcode />
+      <irdcode />
+      <ordcode />
+      <whcode />
+      <personcode />
+      <code />
+      <positioncode />
+      <batch />
+      <vtid />
+      <date />
+      <accountdate />
+      <memory />
+      <maker />
+      <property />
+      <accountperiod />
+      <define1 />
+      <define2 />
+      <define3 />
+      <define4 />
+      <define5 />
+      <define6 />
+      <define7 />
+      <define8 />
+      <define9 />
+      <define10 />
+      <define11 />
+      <define12 />
+      <define13 />
+      <define14 />
+      <define15 />
+      <define16 />
+    </header>
+    <body>
+      <entry>
+        <id />
+        <barcode />
+        <code />
+        <inventorycode />
+        <free1 />
+        <free2 />
+        <free3 />
+        <free4 />
+        <free5 />
+        <free6 />
+        <free7 />
+        <free8 />
+        <free9 />
+        <free10 />
+        <quantity />
+        <cmassunit />
+        <cmassunitname />
+        <assitantunit />
+        <assitantunitname />
+        <number />
+        <positioncode />
+        <accountquantity />
+        <accountnum />
+        <adjustinquantity />
+        <adjustinnum />
+        <adjustoutquantity />
+        <adjustoutnum />
+        <reasonablewaste />
+        <actualwaste />
+        <planprice />
+        <plancost />
+        <price />
+        <cost />
+        <recordsid />
+        <define22 />
+        <define23 />
+        <define24 />
+        <define25 />
+        <define26 />
+        <define27 />
+        <define28 />
+        <define29 />
+        <define30 />
+        <define31 />
+        <define32 />
+        <define33 />
+        <define34 />
+        <define35 />
+        <define36 />
+        <define37 />
+        <subconsignmentid />
+        <bvencode />
+        <invouchcode />
+        <iMassDate />
+        <massunit />
+        <serial />
+        <makedate />
+        <validdate />
+        <rdsid />
+        <itemclasscode />
+        <itemclassname />
+        <itemcode />
+        <itemname />
+        <checkreason />
+        <sodid />
+        <saletype />
+      </entry>
+    </body>
+  </checkvouch>
+</ufinterface>
+
+<!--
+
+id                  int                 盘点单主表标识                           
+btransflag          nvarchar(20)        是否传递                                    可空
+auditperson         nvarchar(40)        审核人                                     可空
+depcode             nvarchar(40)        转入部门编码                                 
+irdcode             nvarchar(40)        入库类别编码                                  可空
+ordcode             nvarchar(40)        出库类别编码                                  可空
+whcode              nvarchar(40)        仓库编码                                   
+personcode          nvarchar(40)        业务员编码                                   可空
+code                nvarchar(40)        盘点单据号                                   可空
+positioncode        nvarchar(40)        货位编码                                   
+batch               nvarchar(20)        盘点批号                                    可空
+vtid                int                 单据模板号                                   可空
+date                date                单据日期                                  
+accountdate         date                盘点日期                                    
+memory              nvarchar(20)        备注                                      可空
+maker               nvarchar(40)        制单人                                     可空
+property            nvarchar(40)        盘点仓库属性                                  可空
+accountperiod       nvarchar(40)        盘点会计期间                                  可空
+define1             nvarchar(40)        自定义字段1                                  可空
+define2             nvarchar(40)        自定义字段2                                  可空
+define3             nvarchar(40)        自定义字段3                                  可空
+define4             date                自定义字段4                                  可空
+define5             int                 自定义字段5                                  可空
+define6             date                自定义字段6                                  可空
+define7             float               自定义字段7                                  可空
+define8             nvarchar(40)        自定义字段8                                  可空
+define9             nvarchar(40)        自定义字段9                                  可空
+define10            nvarchar(40)        自定义字段10                                 可空
+define11            nvarchar(40)        自定义字段11                                 可空
+define12            nvarchar(40)        自定义字段12                                 可空
+define13            nvarchar(40)        自定义字段13                                 可空
+define14            nvarchar(40)        自定义字段14                                 可空
+define15            int                 自定义字段15                                 可空
+define16            float               自定义字段16                                 可空
+csource             nvarchar(20)        自由项10                                   可空
+id                  nvarchar(20)        盘点单主表标识                                 可空
+barcode             nvarchar(20)        条形码                                     可空
+code                nvarchar(40)        盘点单据号                                   可空
+inventorycode       nvarchar(20)        存货编码                                   
+free1               nvarchar(20)        自由项1                                    可空
+free2               nvarchar(20)        自由项2                                    可空
+free3               nvarchar(20)        自由项3                                    可空
+free4               nvarchar(20)        自由项4                                    可空
+free5               nvarchar(20)        自由项5                                    可空
+free6               nvarchar(20)        自由项6                                    可空
+free7               nvarchar(20)        自由项7                                    可空
+free8               nvarchar(20)        自由项8                                    可空
+free9               nvarchar(20)        自由项9                                    可空
+free10              nvarchar(20)        自由项10                                   可空
+quantity            nvarchar(20)        盘点数量（主记量数量）                         
+cmassunit           nvarchar(20)        主计量单位                                   
+cmassunitname       nvarchar(20)        主计量单位名称                                 可空
+assitantunit        nvarchar(20)        辅记量单位                                   可空
+assitantunitname    nvarchar(20)        辅计量单位名称                                 可空
+number              nvarchar(20)        盘点件数                                    可空
+positioncode        nvarchar(40)        货位编码                                  
+accountquantity     nvarchar(20)        账面数量（主记量数量）                             可空
+accountnum          nvarchar(20)        账面件数                                    可空
+adjustinquantity    nvarchar(20)        调整入库数量（主记量数量）                           可空
+adjustinnum         nvarchar(20)        调整入库件数                                  可空
+adjustoutquantity   nvarchar(20)        调整出库数量（主记量数量）                           可空
+adjustoutnum        nvarchar(20)        调整出库件数                                  可空
+reasonablewaste     nvarchar(20)        合理损耗率                                   可空
+actualwaste         nvarchar(20)        实际损耗率                                   可空
+planprice           nvarchar(20)        计划单价                                    可空
+plancost            nvarchar(20)        计划金额或售价金额                               可空
+price               nvarchar(20)        实际单价                                    可空
+cost                nvarchar(20)        实际金额                                    可空
+recordsid           nvarchar(20)        ID号                                     可空
+define22            nvarchar(20)        表体自定义项22                                可空
+define23            nvarchar(20)        表体自定义项23                                可空
+define24            nvarchar(20)        表体自定义项24                                可空
+define25            nvarchar(20)        表体自定义项25                                可空
+define26            nvarchar(20)        表体自定义项26                                可空
+define27            nvarchar(20)        表体自定义项27                                可空
+define28            nvarchar(20)        表体自定义项28                                可空
+define29            nvarchar(20)        表体自定义项29                                可空
+define30            nvarchar(20)        表体自定义项30                                可空
+define31            nvarchar(20)        表体自定义项31                                可空
+define32            nvarchar(20)        表体自定义项32                                可空
+define33            nvarchar(20)        表体自定义项33                                可空
+define34            nvarchar(20)        表体自定义项34                                可空
+define35            nvarchar(20)        表体自定义项35                                可空
+define36            nvarchar(20)        表体自定义项36                                可空
+define37            nvarchar(20)        表体自定义项37                                可空
+subconsignmentid    nvarchar(20)        盘点单子表ID                                 可空
+bvencode            nvarchar(20)        供应商编码                                   可空
+invouchcode         nvarchar(20)        对应入库单号                                  可空
+imassdate           nvarchar(20)                                                可空
+massunit            nvarchar(20)        保质期单位                                   可空
+serial              nvarchar(20)        批号                                      可空
+makedate            nvarchar(20)        生产日期                                    可空
+validdate           nvarchar(20)        失效日期                                    可空
+rdsid               nvarchar(20)        收发记录子表标识                                可空
+itemclasscode       nvarchar(20)        项目大类编码                                  可空
+itemclassname       nvarchar(20)        项目大类名称                                  可空
+itemcode            nvarchar(20)        项目编码                                    可空
+itemname            nvarchar(20)        项目名称                                    可空
+checkreason         nvarchar(20)        盘点原因                                    可空
+sodid               nvarchar(20)        销售订单子表ID                                可空
+saletype            nvarchar(20)        销售类型                                    可空
+
+-->
+

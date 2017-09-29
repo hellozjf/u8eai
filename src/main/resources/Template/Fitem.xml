@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--项目档案roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="fitem" docid="" proc="" billtype="" receiver="" sender="" codeexchanged="" exportneedexch="">
+  <fitem citem_class="" citem_name="" citem_text="" crule="">
+    <structure>
+      <field citem_sqr="" cfield_name="" ctext="" imode="" itype="" ilength="" iscale="" blist="" bsum="" bref="" isubitem="" idefine="" bprimarykey="" isource="" ctablename="" cfieldname="" iwidth="" ialign="" />
+    </structure>
+    <itemclass citemccode="" citemcname="" iitemcgrade="" bitemcend="">
+    </itemclass>
+  </fitem>
+</ufinterface>
+<!--
+
+
+元素fitem 项目大类
+
+
+	属性  citem_class  项目大类编码		
+
+
+	属性  citem_name   项目大类名称	不支持存货核算类项目的导入导出功能
+
+
+	属性  citem_text   核算名称
+
+
+	属性  crule        项目编码规则
+
+
+元素structure	项目表结构
+
+
+
+
+
+元素field 项目表字段
+
+
+	属性  citem_sqr 字段顺序号		
+
+
+	属性  cfield_name   项目大类名称	
+
+
+	属性  ctext   字段标题
+
+
+	属性  imode   字段类型 0_自动编号,1_项目编号,2_项目名称,3_是否结算,4_所属分类码,5_其他系统是否使用,6_其它
+
+
+	属性  itype 数据类型 1_整数,2_实数,3_文本,4_日期,5_逻辑		
+
+
+	属性  ilength   长度	
+
+
+	属性  iscale   小数位数
+
+
+	属性  blist    字段是否列示
+
+
+	属性  bsum     字段是否汇总
+
+
+	属性  bref    是否可参照		
+
+
+	属性  isubitem  是否项目字表字段  0_项目表字段 1_项目子表字段	
+
+
+	属性  idefine   所对应的自定义项 
+
+
+	属性  bprimarykey      是否关键字
+
+
+	属性  isource=""    来源 0_手工输入 1_系统档案		
+
+
+	属性  ctablename=""     对应的系统档案表名	
+
+
+	属性  cfieldname   对应的系统档案表字段
+
+
+元素itemclass	项目分类
+
+
+	属性  citemccode 项目分类编码		
+
+
+	属性  citemcname   项目分类名称	
+
+
+	属性  iitemcgrade   项目分类级次
+
+
+	属性  bitemcend   是否末级 true 末级 false 非末级
+
+
+ -->

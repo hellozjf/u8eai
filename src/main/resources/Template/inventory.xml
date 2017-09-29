@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 存货档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符--><!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+  --><ufinterface roottag="inventory" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <inventory>
+    <header>
+      <code />
+      <name />
+      <InvAddCode />
+      <specs />
+      <sort_code />
+      <main_supplier />
+      <main_measure />
+      <assist_measure />
+      <switch_item />
+      <inv_position />
+      <sale_flag />
+      <purchase_flag />
+      <selfmake_flag />
+      <prod_consu_flag />
+      <in_making_flag />
+      <tax_serv_flag />
+      <suit_flag />
+      <exchange_rate />
+      <tax_rate />
+      <unit_weight />
+      <unit_volume />
+      <pro_sale_price />
+      <ref_cost />
+      <ref_sale_price />
+      <bottom_sale_price />
+      <new_cost />
+      <advance_period />
+      <ecnomic_batch />
+      <safe_stock />
+      <top_stock />
+      <bottom_stock />
+      <backlog />
+      <ABC_type />
+      <qlty_guarantee_flag />
+      <batch_flag />
+      <entrust_flag />
+      <backlog_flag />
+      <start_date />
+      <end_date />
+      <free_item1 />
+      <free_item2 />
+      <self_define1 />
+      <self_define2 />
+      <self_define3 />
+      <discount_flag />
+      <top_source_price />
+      <quality />
+      <retailprice />
+      <price1 />
+      <price2 />
+      <price3 />
+      <CreatePerson />
+      <ModifyPerson />
+      <ModifyDate />
+      <subscribe_point />
+      <avgquantity />
+      <pricetype />
+      <bfixunit />
+      <outline />
+      <inline />
+      <overdate />
+      <warndays />
+      <expense_rate />
+      <btrack />
+      <bserial />
+      <bbarcode />
+      <barcode />
+      <auth_class />
+      <self_define4 />
+      <self_define5 />
+      <self_define6 />
+      <self_define7 />
+      <self_define8 />
+      <self_define9 />
+      <self_define10 />
+      <self_define11 />
+      <self_define12 />
+      <self_define13 />
+      <self_define14 />
+      <self_define15 />
+      <self_define16 />
+      <free_item3 />
+      <free_item4 />
+      <free_item5 />
+      <free_item6 />
+      <free_item7 />
+      <free_item8 />
+      <free_item9 />
+      <free_item10 />
+      <unitgroup_type />
+      <unitgroup_code />
+      <puunit_code />
+      <saunit_code />
+      <stunit_code />
+      <caunit_code />
+      <unitgroup_name />
+      <puunit_name />
+      <saunit_name />
+      <stunit_name />
+      <caunit_name />
+      <puunit_ichangrate />
+      <saunit_ichangrate />
+      <stunit_ichangrate />
+      <caunit_ichangrate />
+      <check_frequency />
+      <frequency />
+      <check_day />
+      <lastcheck_date />
+      <wastage />
+      <solitude />
+      <enterprise />
+      <address />
+      <file />
+      <brand />
+      <checkout_no />
+      <licence />
+      <specialties />
+      <defwarehouse />
+      <salerate />
+      <advanceDate />
+      <currencyName />
+      <ProduceAddress />
+      <produceNation />
+      <RegisterNo />
+      <EnterNo />
+      <PackingType />
+      <EnglishName />
+      <PropertyCheck />
+      <PreparationType />
+      <Commodity />
+      <RecipeBatch />
+      <NotPatentName />
+      <cAssComunitCode />
+      <!-- <PlanPolicy/> -->
+      <ROPMethod />
+      <SubscribePoint />
+      <BatchRule />
+      <!-- <BatchIncrement/> -->
+      <AssureProvideDays />
+      <VagQuantity />
+      <TestStyle />
+      <DTMethod />
+      <DTRate />
+      <DTNum />
+      <DTUnit />
+      <DTStyle />
+      <QTMethod />
+      <iPlanPolicy />
+      <iROPMethod />
+      <iBatchRule />
+      <fBatchIncrement />
+      <iAssureProvideDays />
+      <iTestStyle />
+      <iDTMethod />
+      <fDTRate />
+      <fDTNum />
+      <cDTUnit />
+      <iDTStyle />
+      <iQTMethod />
+      <!-- 8.600 -->
+      <bPlanInv />
+      <bProxyForeign />
+      <bATOModel />
+      <bCheckItem />
+      <bPTOModel />
+      <bequipment />
+      <cProductUnit />
+      <fOrderUpLimit />
+      <cMassUnit />
+      <fRetailPrice />
+      <cInvDepCode />
+      <iAlterAdvance />
+      <fAlterBaseNum />
+      <cPlanMethod />
+      <bMPS />
+      <bROP />
+      <bRePlan />
+      <cSRPolicy />
+      <bBillUnite />
+      <iSupplyDay />
+      <fSupplyMulti />
+      <fMinSupply />
+      <bCutMantissa />
+      <cInvPersonCode />
+      <iInvTfId />
+      <cEngineerFigNo />
+      <bInTotalCost />
+      <iSupplyType />
+      <bConfigFree1 />
+      <bConfigFree2 />
+      <bConfigFree3 />
+      <bConfigFree4 />
+      <bConfigFree5 />
+      <bConfigFree6 />
+      <bConfigFree7 />
+      <bConfigFree8 />
+      <bConfigFree9 />
+      <bConfigFree10 />
+      <iDTLevel />
+      <cDTAQL />
+      <bOutInvDT />
+      <bPeriodDT />
+      <cDTPeriod />
+      <iBigMonth />
+      <iBigDay />
+      <iSmallMonth />
+      <iSmallDay />
+      <bBackInvDT />
+      <iEndDTStyle />
+      <bDTWarnInv />
+      <fBackTaxRate />
+      <cEnglishName />
+      <cCIQCode />
+      <cWGroupCode />
+      <cWUnit />
+      <fGrossW />
+      <cVGroupCode />
+      <cVUnit />
+      <fLength />
+      <fWidth />
+      <fHeight />
+      <cpurpersoncode />
+      <!-- 8.60sp1 -->
+      <iBigMonth />
+      <iBigDay />
+      <iSmallMonth />
+      <iSmallDay />
+      <!-- 8.610 -->
+      <cshopunit />
+      <bimportmedicine />
+      <bfirstbusimedicine />
+      <bforeexpland />
+      <cinvplancode />
+      <fconvertrate />
+      <dreplacedate />
+      <binvmodel />
+      <bkccutmantissa />
+      <cshopunit />
+      <bimportmedicine />
+      <bfirstbusimedicine />
+      <bforeexpland />
+      <cinvplancode />
+      <fconvertrate />
+      <dreplacedate />
+      <binvmodel />
+      <!-- 8.700 -->
+      <bkccutmantissa />
+      <iimptaxrate />
+      <iexptaxrate />
+      <bexpsale />
+      <idrawbatch />
+      <bcheckbsatp />
+      <cinvprojectcode />
+      <itestrule />
+      <crulecode />
+      <bcheckfree1 />
+      <bcheckfree2 />
+      <bcheckfree3 />
+      <bcheckfree4 />
+      <bcheckfree5 />
+      <bcheckfree6 />
+      <bcheckfree7 />
+      <bcheckfree8 />
+      <bcheckfree9 />
+      <bcheckfree10 />
+      <bbommain />
+      <bbomsub />
+      <bproductbill />
+      <icheckatp />
+      <iinvatpid />
+      <iplantfday />
+      <ioverlapday />
+      <fmaxsupply />
+      <bpiece />
+      <bsrvitem />
+      <bsrvfittings />
+      <fminsplit />
+      <bspecialorder />
+      <btracksalebill />
+      <!-- 8.710 -->
+      <fbuyexcess />
+      <isurenesstype />
+      <idatetype />
+      <idatesum />
+      <idynamicsurenesstype />
+      <ibestrowsum />
+      <ipercentumsum />
+      <!-- 8.90 -->
+      <bPUQuota />
+      <bInvROHS />
+      <fPrjMatLimit />
+      <bPrjMat />
+      <bInvAsset />
+      <bSrvProduct />
+      <iAcceptDelayDays />
+      <!-- 810.0 -->
+      <cInvMnemCode />
+      <iPlanCheckDay />
+      <iMaterialsCycle />
+      <idrawtype />
+      <bSCkeyProjections />
+      <!-- 810.1 -->
+      <iSupplyPeriodType />
+      <iTimeBucketId />
+      <iAvailabilityDate />
+    </header>
+    <body>
+      <entry>
+        <partid />
+        <invcode />
+        <free1 />
+        <free2 />
+        <free3 />
+        <free4 />
+        <free5 />
+        <free6 />
+        <free7 />
+        <free8 />
+        <free9 />
+        <free10 />
+        <safeqty />
+        <minqty />
+        <mulqty />
+        <fixqty />
+        <!-- 8.700 -->
+        <cbasengineerfigno />
+        <fbasmaxsupply />
+        <!-- 8.710 -->
+        <isurenesstype />
+        <idatetype />
+        <idatesum />
+        <idynamicsurenesstype />
+        <ibestrowsum />
+        <ipercentumsum />
+      </entry>
+    </body>
+  </inventory>
+</ufinterface><!--
+
+元素名称                           描述                                              数据类型     是否可空
+code                          存货编码                                          nvarchar(20)  否
+name                          存货名称                                          nvarchar(255)	否
+InvAddCode                    存货代码                                          nvarchar(255)
+specs                         规格型号                                          nvarchar(255)
+sort_code                     存货大类编码                                      nvarchar(12)
+main_supplier                 主要供货单位编码                                  nvarchar(20)
+main_measure                  主计量单位编码                                    nvarchar(35)
+switch_item                   替换件                                            nvarchar(20)
+inv_position                  货位编码                                          nvarchar(20)
+sale_flag                     是否内销                                          bit		否
+purchase_flag                 是否外购                                          bit		否
+selfmake_flag                 是否自制                                          bit		否
+prod_consu_flag               是否生产耗用                                      bit		否
+in_making_flag                是否在制                                          bit		否
+tax_serv_flag                 是否应税劳务                                      bit		否
+suit_flag                     是否成套件                                        bit		否
+tax_rate                      销项税率                                          float
+unit_weight                   净重                                              float
+unit_volume                   单位体积                                          float
+pro_sale_price                计划价/售价                                       float
+ref_cost                      参考成本                                          float
+ref_sale_price                参考售价                                          float
+bottom_sale_price             最低售价                                          float
+new_cost                      最新成本                                          float
+advance_period                固定提前期                                        float
+ecnomic_batch                 固定供应量                                        float
+safe_stock                    安全库存                                          float
+top_stock                     最高库存                                          float
+bottom_stock                  最低库存                                          float
+backlog                       积压标准                                          float
+ABC_type                      ABC分类                                           nvarchar(1)
+qlty_guarantee_flag           是否保质期管理                                    bit		否
+batch_flag                    是否批次管理                                      bit		否
+entrust_flag                  是否受托代销                                      bit		否
+backlog_flag                  是否呆滞积压                                      bit		否
+start_date                    启用日期                                          datetime
+end_date                      停用日期                                          datetime
+free_item1                    存货是否有自由项1                                 bit		否
+free_item2                    存货是否有自由项2                                 bit		否
+self_define1                  存货自定义项1                                     nvarchar(20)
+self_define2                  存货自定义项2                                     nvarchar(20)
+self_define3                  存货自定义项3                                     nvarchar(20)
+discount_flag                 是否折扣                                          bit
+top_source_price              最高进价                                          float
+quality                       质量要求                                          nvarchar(100)
+CreatePerson                  建档人                                            nvarchar(20)
+ModifyPerson                  变更人                                            nvarchar(20)
+ModifyDate                    变更日期                                          datetime
+subscribe_point               再订货点                                          float
+avgquantity                   日均耗量                                          float
+pricetype                     计价方式                                          nvarchar(20)
+outline                       出库超额上限                                      float
+inline                        入库超额上限                                      float
+overdate                      保质期                                            smallint
+warndays                      保质期预警天数                                    smallint
+expense_rate                  费用率                                            float
+btrack                        出库跟踪入库                                      bit		否
+bserial                       是否序列号管理                                    bit		否
+bbarcode                      条形码管理                                        bit		否
+barcode                       对应条形码                                        nvarchar(30)
+auth_class                    所属权限组                                        int
+self_define4                  存货自定义项4                                     nvarchar(60)
+self_define5                  存货自定义项5                                     nvarchar(60)
+self_define6                  存货自定义项6                                     nvarchar(60)
+self_define7                  存货自定义项7                                     nvarchar(120)
+self_define8                  存货自定义项8                                     nvarchar(120)
+self_define9                  存货自定义项9                                     nvarchar(120)
+self_define10                 存货自定义项10                                    nvarchar(120)
+self_define11                 存货自定义项11                                    int
+self_define12                 存货自定义项12                                    int
+self_define13                 存货自定义项13                                    float
+self_define14                 存货自定义项14                                    float
+self_define15                 存货自定义项15                                    datetime
+self_define16                 存货自定义项16                                    datetime
+free_item3                    存货是否有自由项3                                 bit		否
+free_item4                    存货是否有自由项4                                 bit		否
+free_item5                    存货是否有自由项5                                 bit		否
+free_item6                    存货是否有自由项6                                 bit		否
+free_item7                    存货是否有自由项7                                 bit		否
+free_item8                    存货是否有自由项8                                 bit		否
+free_item9                    存货是否有自由项9                                 bit		否
+free_item10                   存货是否有自由项10                                bit		否
+unitgroup_type                计量单位组类别                                    tinyint		否
+unitgroup_code                计量单位组编码                                    nvarchar(35)
+puunit_code                   采购默认计量单位编码                              nvarchar(35)
+saunit_code                   销售默认计量单位编码                              nvarchar(35)
+stunit_code                   库存默认计量单位编码                              nvarchar(35)
+caunit_code                   成本默认辅计量编码                                nvarchar(35)
+check_frequency               盘点周期单位                                      nvarchar(10)
+frequency                     盘点周期                                          smallint
+check_day                     盘点日                                            smallint
+lastcheck_date                上次盘点日期                                      datetime
+wastage                       合理损耗率                                        float
+solitude                      是否单独存放                                      bit		否
+enterprise                    生产企业                                          nvarchar(100)
+address                       产地/厂牌                                         nvarchar(255)
+file                          批准文号                                          nvarchar(40)
+brand                         注册商标                                          nvarchar(30)
+checkout_no                   合格证号                                          nvarchar(30)
+licence                       许可证号                                          nvarchar(30)
+specialties                   特殊药品标志                                      bit		否
+defwarehouse                  默认仓库编码                                      nvarchar(10)
+salerate                      销售加成率%                                       float
+advanceDate                   累计提前期                                        smallint
+currencyName                  通用名称                                          nvarchar(60)
+ProduceAddress                生产地点                                          nvarchar(255)
+produceNation                 生产国别                                          nvarchar(60)
+RegisterNo                    进口药品注册证号                                  nvarchar(60)
+EnterNo                       入关证号                                          nvarchar(60)
+PackingType                   包装规格                                          nvarchar(60)
+EnglishName                   英文名                                            nvarchar(100)
+PropertyCheck                 是否质检                                          bit		否
+PreparationType               剂型                                              nvarchar(30)
+Commodity                     注册商品批件                                      nvarchar(60)
+RecipeBatch                   是否处方药                                        tinyint		否
+NotPatentName                 国际非专利名                                      nvarchar(30)
+ROPMethod                     再订货点方法                                      smallint
+SubscribePoint                再订货点                                          float
+BatchRule                     ROP批量规则                                       smallint
+AssureProvideDays             保证供应天数                                      int
+VagQuantity                   日均耗量                                          float
+TestStyle                     检验方式                                          smallint
+DTMethod                      抽检规则                                          smallint
+DTRate                        抽检率%                                           float
+DTNum                         抽检量                                            float
+DTUnit                        检验计量单位编码                                  nvarchar(35)
+DTStyle                       检验严格度                                        smallint
+QTMethod                      质量检验方案自增量ID                              int
+bPlanInv                      是否计划品                                        bit		否
+bProxyForeign                 是否委外                                          bit		否
+bATOModel                     ATO                                               bit		否
+bCheckItem                    是否选项类                                        bit		否
+bPTOModel                     PTO                                               bit		否
+bequipment                    是否备件                                          bit		否
+cProductUnit                  生产计量单位编码                                  nvarchar(35)
+fOrderUpLimit                 订货超额上限                                      float
+cMassUnit                     保质期单位                                        smallint
+fRetailPrice                  零售价格                                          float
+cInvDepCode                   生产部门编码                                      nvarchar(12)
+iAlterAdvance                 变动提前期                                        int
+fAlterBaseNum                 变动基数                                          float
+cPlanMethod                   计划方法                                          nvarchar(1)
+bMPS                          是否MPS件                                         bit		否
+bROP                          是否ROP件                                         bit		否
+bRePlan                       是否重复计划                                      bit		否
+cSRPolicy                     供需政策                                          nvarchar(2)
+bBillUnite                    是否令单合并                                      bit		否
+iSupplyDay                    供应期间                                          int
+fSupplyMulti                  供应倍数                                          float
+fMinSupply                    最低供应量                                        float
+bCutMantissa                  是否切除尾数                                      bit		否
+cInvPersonCode                计划员编码                                        nvarchar(20)
+cEngineerFigNo                工程图号                                          nvarchar(60)
+bInTotalCost                  成本相关                                          bit		否
+iSupplyType                   供应类型                                          smallint	否
+bConfigFree1                  结构性自由项1                                     bit		否
+bConfigFree2                  结构性自由项2                                     bit		否
+bConfigFree3                  结构性自由项3                                     bit		否
+bConfigFree4                  结构性自由项4                                     bit		否
+bConfigFree5                  结构性自由项5                                     bit		否
+bConfigFree6                  结构性自由项6                                     bit		否
+bConfigFree7                  结构性自由项7                                     bit		否
+bConfigFree8                  结构性自由项8                                     bit		否
+bConfigFree9                  结构性自由项9                                     bit		否
+bConfigFree10                 结构性自由项10                                    bit		否
+iDTLevel                      检验水平                                          smallint
+cDTAQL                        AQL                                               nvarchar(20)
+bPeriodDT                     是否周期检验                                      bit		否
+cDTPeriod                     检验周期                                          nvarchar(30)
+bDTWarnInv                    保质期存货是否检验                                bit
+fBackTaxRate                  退税率%                                           float
+cCIQCode                      海关代码                                          nvarchar(30)
+cWGroupCode                   重量计量组编码                                    nvarchar(35)
+cWUnit                        重量单位编码                                      nvarchar(35)
+fGrossW                       毛重                                              float
+cVGroupCode                   体积计量组编码                                    nvarchar(35)
+cVUnit                        体积单位编码                                      nvarchar(35)
+fLength                       长(cm)                                            float
+fWidth                        宽(cm)                                            float
+fHeight                       高(cm)                                            float
+cpurpersoncode                采购员编码                                        nvarchar(20)
+cshopunit                     零售计量单位                                      nvarchar(35)
+bimportmedicine               是否进口药品                                      bit		否
+bfirstbusimedicine            是否首营药品                                      bit		否
+bforeexpland                  预测展开                                          bit		否
+cinvplancode                  计划品                                            nvarchar(20)
+fconvertrate                  转换因子                                          float		否
+dreplacedate                  替换日期                                          datetime
+binvmodel                     模型                                              bit		否
+iimptaxrate                   进项税率                                          float
+iexptaxrate                   出口税率                                          float
+bexpsale                      是否外销                                          bit		否
+idrawbatch                    领料批量                                          int
+bcheckbsatp                   检查售前ATP                                       bit		否
+cinvprojectcode               售前ATP方案编码                                   nvarchar(16)
+itestrule                     检验规则                                          smallint
+crulecode                     自定义抽检规则编码                                nvarchar(20)
+bcheckfree1                   核算自由项1                                       bit		否
+bcheckfree2                   核算自由项2                                       bit		否
+bcheckfree3                   核算自由项3                                       bit		否
+bcheckfree4                   核算自由项4                                       bit		否
+bcheckfree5                   核算自由项5                                       bit		否
+bcheckfree6                   核算自由项6                                       bit		否
+bcheckfree7                   核算自由项7                                       bit		否
+bcheckfree8                   核算自由项8                                       bit		否
+bcheckfree9                   核算自由项9                                       bit		否
+bcheckfree10                  核算自由项10                                      bit		否
+bbommain                      允许BOM母件                                       bit		否
+bbomsub                       允许BOM子件                                       bit		否
+bproductbill                  允许生产订单                                      bit		否
+icheckatp                     检查ATP                                           smallint	否
+iplantfday                    计划时栅天数                                      int
+ioverlapday                   重叠天数                                          int
+fmaxsupply                    最高供应量                                        float
+bpiece                        计件                                              bit		否
+bsrvitem                      服务项目                                          bit		否
+bsrvfittings                  服务配件                                          bit		否
+fminsplit                     最小分割量                                        float
+bPUQuota  		      		  参与配额											bit		否
+bInvROHS  		      		  ROHS物料											bit		否
+fPrjMatLimit 		          采购数量上限										float
+bPrjMat 		              是否工程物料										bit		否
+bInvAsset 		              资产												bit		否
+bSrvProduct 		          服务产品											bit		否
+iAcceptDelayDays 	          允许延后天数										smallint	否
+
+cInvMnemCode	Nvarchar(255)	助记码			否
+iPlanCheckDay	int		计划检验天数 	>=0	否
+iMaterialsCycle	int	 	用料周期	>=0	否	
+iDrawType	smallint	存货档案增加领料方式字段  	可空	枚举值
+领料方式：-1空、0直接领料、1申请领料	默认值0
+	
+bSCkeyProjections 投产推算关键子件  bit		否
+
+iSupplyPeriodType	供应期间类型	枚举：1天/2周/3月/4时格		必输
+说明：“供需政策”后、“供应期间”前。1天/2周/3月/4时格，默认为天，可改为“天/周/月/时格”之一。
+
+iTimeBucketId	时格id	非必输
+
+iAvailabilityDate	可用日期	必输
+说明：默认为“第一需求日”，可改为“第一需求日/期间开始日/期间结束日”之一。
+
+
+
+body
+元素名称                        描述                                              数据类型                  是否可空
+partid                        自增量                                           int		        否
+invcode                       存货编码                                         nvarchar(20)
+free1                         自由项1                                     nvarchar(20)		否
+free2                         自由项2                                     nvarchar(20)		否
+free3                         自由项3                                     nvarchar(20)		否
+free4                         自由项4                                     nvarchar(20)		否
+free5                         自由项5                                     nvarchar(20)		否
+free6                         自由项6                                     nvarchar(20)		否
+free7                         自由项7                                     nvarchar(20)		否
+free8                         自由项8                                     nvarchar(20)		否
+free9                         自由项9                                     nvarchar(20)		否
+free10                        自由项10                                    nvarchar(20)		否
+
+
+
+
+-->

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="gb2312"?><!-- 客户档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符--><!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 Add,edit,delete,Query codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+  --><ufinterface roottag="customer" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch=" " version="2.0">
+  <customer>
+    <code />
+    <name />
+    <abbrname />
+    <sort_code />
+    <domain_code />
+    <industry />
+    <address />
+    <postcode />
+    <tax_reg_code />
+    <bank_open />
+    <bank_acc_number />
+    <seed_date />
+    <legal_man />
+    <email />
+    <contact />
+    <phone />
+    <fax />
+    <bp />
+    <mobile />
+    <spec_operator />
+    <discount_rate />
+    <credit_rank />
+    <credit_amount />
+    <credit_deadline />
+    <pay_condition />
+    <devliver_site />
+    <deliver_mode />
+    <head_corp_code />
+    <deli_warehouse />
+    <super_dept />
+    <ar_rest />
+    <last_tr_date />
+    <last_tr_amount />
+    <last_rec_date />
+    <last_rec_amount />
+    <end_date />
+    <tr_frequency />
+    <self_define1 />
+    <self_define2 />
+    <self_define3 />
+    <pricegrade />
+    <CreatePerson />
+    <ModifyPerson />
+    <ModifyDate />
+    <auth_class />
+    <self_define4 />
+    <self_define5 />
+    <self_define6 />
+    <self_define7 />
+    <self_define8 />
+    <self_define9 />
+    <self_define10 />
+    <self_define11 />
+    <self_define12 />
+    <self_define13 />
+    <self_define14 />
+    <self_define15 />
+    <self_define16 />
+    <InvoiceCompany />
+    <Credit />
+    <CreditByHead />
+    <CreditDate />
+    <LicenceDate />
+    <LicenceSDate />
+    <LicenceEDate />
+    <LicenceADays />
+    <BusinessDate />
+    <BusinessSDate />
+    <BusinessEDate />
+    <BusinessADays />
+    <Proxy />
+    <ProxySDate />
+    <ProxyEDate />
+    <ProxyADays />
+    <Memo />
+    <bLimitSale />
+    <cCusCountryCode />
+    <cCusEnName />
+    <cCusEnAddr1 />
+    <cCusEnAddr2 />
+    <cCusEnAddr3 />
+    <cCusEnAddr4 />
+    <cCusPortCode />
+    <cPrimaryVen />
+    <fCommisionRate />
+    <fInsueRate />
+    <bHomeBranch />
+    <cBranchAddr />
+    <cBranchPhone />
+    <cBranchPerson />
+    <cCusTradeCCode />
+    <CustomerKCode />
+    <bCusState />
+    <ccusbankcode />
+    <cRelVendor />
+    <!-- 8.610 -->
+    <ccusexch_name />
+    <bshop />
+    <Crm_Contact_cMobilePhone /> 
+    <Crm_Contact_cOfficePhone /> 
+    <!-- 8.700 -->
+    <bcusdomestic />
+    <bcusoverseas />
+    <ccuscreditcompany />
+    <ccussaprotocol />
+    <ccusexprotocol />
+    <ccusotherprotocol />
+    <fcusdiscountrate />
+    <!-- 8.710 -->
+    <ccussscode />
+    <ccuscmprotocol />    
+    <!-- U890 -->
+    <dcuscreatedatetime/>
+    <!-- U810.0 -->
+    <cCusMnemCode />
+    <fAdvancePaymentRatio />
+    <bServiceAttribute />
+    <bOnGPinStore />
+    <bRequestSign />
+  </customer>
+</ufinterface><!--
+元素名称                           描述                                              数据类型              是否可空
+code                          客户编码                                          nvarchar(20)		否
+name                          客户名称                                          nvarchar(98)
+abbrname                      客户简称                                          nvarchar(60)		否
+sort_code                     客户分类编码                                      nvarchar(12)
+domain_code                   地区编码                                          nvarchar(12)
+industry                      所属行业                                          nvarchar(50)
+address                       地址                                              nvarchar(255)
+postcode                      邮政编码                                          nvarchar(6)
+tax_reg_code                  纳税人登记号                                      nvarchar(50)
+bank_open                     开户银行                                          nvarchar(100)
+bank_acc_number               银行账号                                          nvarchar(50)
+seed_date                     发展日期                                          datetime
+legal_man                     法人                                              nvarchar(100)
+email                         Email地址                                         nvarchar(100)
+contact                       联系人                                            nvarchar(50)
+phone                         电话                                              nvarchar(100)
+fax                           传真                                              nvarchar(100)
+bp                            呼机                                              nvarchar(20)
+mobile                        手机                                              nvarchar(20)
+spec_operator                 专营业务员编码                                    nvarchar(20)
+discount_rate                 扣率                                              float
+credit_rank                   信用等级                                          nvarchar(6)
+credit_amount                 信用额度                                          float
+credit_deadline               信用期限                                          int
+pay_condition                 付款条件编码                                      nvarchar(20)
+devliver_site                 发货地址                                          nvarchar(255)
+deliver_mode                  发运方式编码                                      nvarchar(10)
+head_corp_code                客户总公司编码                                    nvarchar(20)
+deli_warehouse                发货仓库编码                                      nvarchar(10)
+super_dept                    分管部门编码                                      nvarchar(12)
+ar_rest                       应收余额                                          float
+last_tr_date                  最后交易日期                                      datetime
+last_tr_amount                最后交易金额                                      float
+last_rec_date                 最后收款日期                                      datetime
+last_rec_amount               最后收款金额                                      float
+end_date                      停用日期                                          datetime
+tr_frequency                  使用频度                                          int
+self_define1                  客户自定义项1                                     nvarchar(20)
+self_define2                  客户自定义项2                                     nvarchar(20)
+self_define3                  客户自定义项3                                     nvarchar(20)
+pricegrade                    价格级别                                          smallint
+CreatePerson                  建档人                                            nvarchar(20)
+ModifyPerson                  变更人                                            nvarchar(20)
+ModifyDate                    变更日期                                          datetime
+auth_class                    所属权限组                                        int
+self_define4                  客户自定义项4                                     nvarchar(60)
+self_define5                  客户自定义项5                                     nvarchar(60)
+self_define6                  客户自定义项6                                     nvarchar(60)
+self_define7                  客户自定义项7                                     nvarchar(120)
+self_define8                  客户自定义项8                                     nvarchar(120)
+self_define9                  客户自定义项9                                     nvarchar(120)
+self_define10                 客户自定义项10                                    nvarchar(120)
+self_define11                 客户自定义项11                                    int
+self_define12                 客户自定义项12                                    int
+self_define13                 客户自定义项13                                    float
+self_define14                 客户自定义项14                                    float
+self_define15                 客户自定义项15                                    datetime
+self_define16                 客户自定义项16                                    datetime
+InvoiceCompany                开票单位                                          nvarchar(60)
+Credit                        是否控制信用额度                                  bit		否
+CreditDate                    是否控制信用期限                                  bit		否
+LicenceSDate                  营业执照生效日期                                  datetime
+LicenceEDate                  营业执照到期日期                                  datetime
+LicenceADays                  营业执照预警天数                                  int
+BusinessSDate                 生产/经营许可证生效日期                           datetime
+BusinessEDate                 生产/经营许可证到期日期                           datetime
+BusinessADays                 生产/经营许可证预警天数                           int
+ProxySDate                    法人委托书生效日期                                datetime
+ProxyEDate                    法人委托书到期日期                                datetime
+ProxyADays                    法人委托书预警天数                                int
+Memo                          备注                                              nvarchar(240)
+bLimitSale                    是否允限销控制                                    bit		否
+cCusCountryCode               国家编码                                          nvarchar(10)
+cCusEnName                    英文名称                                          nvarchar(100)
+cCusEnAddr1                   英文地址1                                         nvarchar(60)
+cCusEnAddr2                   英文地址2                                         nvarchar(60)
+cCusEnAddr3                   英文地址3                                         nvarchar(60)
+cCusEnAddr4                   英文地址4                                         nvarchar(60)
+cCusPortCode                  目的港编码                                        nvarchar(10)
+cPrimaryVen                   主要承运商编码                                    nvarchar(20)
+fCommisionRate                佣金比率(%)                                       float
+fInsueRate                    保险费率(%)                                       float
+bHomeBranch                   是否有分支机构                                    bit		否
+cBranchAddr                   分支机构地址                                      nvarchar(255)
+cBranchPhone                  分支机构电话                                      nvarchar(100)
+cBranchPerson                 分支机构联系人                                    nvarchar(50)
+cCusTradeCCode                行业编码                                          nvarchar(12)
+CustomerKCode                 客户级别编码                                      nvarchar(4)
+bCusState                     是否成交                                          bit		否
+ccusbankcode                  所属银行编码                                      nvarchar(50)
+cRelVendor                    对应供应商编码                                    nvarchar(20)
+ccusexch_name                 币种                                              nvarchar(50)
+
+bshop                         是否门店                                          smallint 	否
+枚举值：0 非零售     1门店    2赊销客户 
+“门店”选项，名称改为“零售”，类型修改为枚举值，可以选“非零售”、“门店”、“赊销客户”，默认非零售		
+
+bcusdomestic                  国内                                              bit		否
+bcusoverseas                  国外                                              bit		否
+ccuscreditcompany             信用单位                                          nvarchar(20)
+ccussaprotocol                销售默认收付款协议编码                            nvarchar(20)
+ccusexprotocol                出口默认收付款协议编码                            nvarchar(20)
+ccusotherprotocol             其他应收单收付款协议编码                          nvarchar(20)
+fcusdiscountrate              直营专柜结算扣率                                  float
+	
+cCusMnemCode		      助记码		Nvarchar(98)	否
+
+fAdvancePaymentRatio	      销售定金比例%	float		否
+控制要求：0-100	 手工录入，可以修改；用于销售订单，录入客户时，带入当前最新的定金比例。
+
+bServiceAttribute             服务属性		bit		是
+控制要求：0,1	售后服务中只可以参照出服务属性的客户记录。手工输入，默认为空，与客户档案项目无互斥关系。
+
+bOnGPinStore 		      门店赊销在门店收款	bit    是
+控制要求：0,1	默认为0。
+
+cusinvoicecorp 	      开票单位
+子节点：
+1.ccuscode 用户编码（必输项）
+2.cinvoicecompany 开票单位编码（必输项）
+3.bdefault 是否默认（必输项）
+
+字段名称：bRequestSign
+值：1需要签回，0不需要，默认值为0
+	
+-->

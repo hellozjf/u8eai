@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--代管挂账单 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="pu_vmiused" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <arrivedgoods>
+    <header>
+      <id>
+      </id>
+      <code>
+      </code>
+      <businesstype>
+      </businesstype>
+      <vouchtype>
+      </vouchtype>
+      <purchasetypecode>
+      </purchasetypecode>
+      <date>
+      </date>
+      <vendorcode>
+      </vendorcode>
+      <departmentcode>
+      </departmentcode>
+      <personcode>
+      </personcode>
+      <payconditioncode>
+      </payconditioncode>
+      <statperiod>
+      </statperiod>
+      <foreigncurrency>
+      </foreigncurrency>
+      <foreigncurrencyrate>
+      </foreigncurrencyrate>
+      <discounttaxtype>
+      </discounttaxtype>
+      <taxrate>
+      </taxrate>
+      <maker>
+      </maker>
+      <memo>
+      </memo>
+      <pufirst>
+      </pufirst>
+      <iafirst>
+      </iafirst>
+      <crdcode>
+      </crdcode>
+      <venpuomprotocol>
+      </venpuomprotocol>
+      <define1>
+      </define1>
+      <define2>
+      </define2>
+      <define3>
+      </define3>
+      <define4>
+      </define4>
+      <define5>
+      </define5>
+      <define6>
+      </define6>
+      <define7>
+      </define7>
+      <define8>
+      </define8>
+      <define9>
+      </define9>
+      <define10>
+      </define10>
+      <define11>
+      </define11>
+      <define12>
+      </define12>
+      <define13>
+      </define13>
+      <define14>
+      </define14>
+      <define15>
+      </define15>
+      <define16>
+      </define16>
+    </header>
+    <body>
+      <entry>
+        <mainid>
+        </mainid>
+        <warehousecode>
+        </warehousecode>
+        <inventorycode>
+        </inventorycode>
+        <confirmnumber>
+        </confirmnumber>
+        <usednumber>
+        </usednumber>
+        <wastenumber>
+        </wastenumber>
+        <confirmquantity>
+        </confirmquantity>
+        <usedquantity>
+        </usedquantity>
+        <wastequantity>
+        </wastequantity>
+        <originalprice>
+        </originalprice>
+        <originaltaxedprice>
+        </originaltaxedprice>
+        <originalmoney>
+        </originalmoney>
+        <originaltax>
+        </originaltax>
+        <originalsum>
+        </originalsum>
+        <price>
+        </price>
+        <money>
+        </money>
+        <tax>
+        </tax>
+        <sum>
+        </sum>
+        <free1>
+        </free1>
+        <free2>
+        </free2>
+        <taxrate>
+        </taxrate>
+        <imassdate />
+        <cmassunit />
+        <define22>
+        </define22>
+        <define23>
+        </define23>
+        <define24>
+        </define24>
+        <define25>
+        </define25>
+        <define26>
+        </define26>
+        <define27>
+        </define27>
+        <define28>
+        </define28>
+        <define29>
+        </define29>
+        <define30>
+        </define30>
+        <define31>
+        </define31>
+        <define32>
+        </define32>
+        <define33>
+        </define33>
+        <define34>
+        </define34>
+        <define35>
+        </define35>
+        <define36>
+        </define36>
+        <define37>
+        </define37>
+        <itemclasscode>
+        </itemclasscode>
+        <itemcode>
+        </itemcode>
+        <itemname>
+        </itemname>
+        <free3>
+        </free3>
+        <free4>
+        </free4>
+        <free5>
+        </free5>
+        <free6>
+        </free6>
+        <free7>
+        </free7>
+        <free8>
+        </free8>
+        <free9>
+        </free9>
+        <free10>
+        </free10>
+        <unitid>
+        </unitid>
+        <serial>
+        </serial>
+        <makedate>
+        </makedate>
+        <invaliddate>
+        </invaliddate>
+        <isotype />
+        <facost />
+        <faprice />
+      </entry>
+    </body>
+  </arrivedgoods>
+</ufinterface>
+<!--
+id	主表ID	[int] NOT NULL		
+code 	单据号	[varchar] (10) NOT NULL	非空	必须唯一
+businesstype  	业务类型	[varchar] (8) NULL	非空	必须取值于业务类型档案
+purchasetypecode 	采购类型编码	[varchar] (2) NULL	可空	非空时必须取值于采购类型档案
+date 	开票日期	[datetime] NOT NULL	非空	合法的公历日期
+vendorcode  	供应商编号	[varchar] (12) NULL	非空	必须取值与供应商档案
+delegateunit 	代垫单位编号	[varchar] (12) NULL	可空	非空时必须取值与供应商档案
+departmentcode	部门编号	[varchar] (12) NULL	可空	非空必须取值于部门档案
+personcode 	职员编号	[varchar] (8) NULL	可空	非空时必须取值于职员档案
+payconditioncode 	付款条件编码	[varchar] (3) NULL	可空	非空时必须取值于付款条件档案
+foreigncurrency  	外币名称	[varchar] (8) NULL	非空	缺省为本位币，必须取值于币种档案
+foreigncurrencyrate 	汇率	[float] NULL	非空	若币种为本币，则汇率=1
+	税率		可空	为空转换为0非空>=0
+	运输方式		可空	非空时必须取值于发运方式档案
+	仓库		可空	非空时必须取值于仓库档案
+memory 	备注	[varchar] (30) NULL	可空	
+				
+maker  	制单	[varchar] (20) NULL	非空	
+closer	关闭人	[varchar] (20) NULL	可空	
+rejecttag 	退货标志	[bit] NOT NULL	非空	
+isoriginal 	期初标志	[bit] NOT NULL	可空	
+define1	自定义字段1	[varchar] (20) NULL	可空	
+define2  	自定义字段2	[varchar] (20) NULL	可空	
+define3 	自定义字段3	[varchar] (20) NULL	可空	
+define4 	自定义字段4	[datetime] NULL	可空	
+define5 	自定义字段5	[smallint] NULL	可空	
+define6  	自定义字段6	[datetime] NULL	可空	
+define7 	自定义字段7	[float] NULL	可空	
+define8	自定义字段8	[varchar] (4) NULL	可空	
+define9	自定义字段9	[varchar] (8) NULL	可空	
+define10 	自定义字段10	[varchar] (60) NULL	可空	
+define11 	自定义字段5	[varchar] (120) NULL	可空	
+define12	自定义字段6	[varchar] (120) NULL	可空	
+define13  	自定义字段7	[varchar] (120) NULL	可空	
+define14 	自定义字段8	[varchar] (120) NULL	可空	
+define15  	自定义字段9	int	可空	
+define16	自定义字段10	float	可空	
+到货单子表
+数据字段名	说明	类型、长度	是否为空	合法性要求
+	
+mainid  	主表ID	[int] NOT NULL	非空	与主表ID相同
+warehousecode	仓库		可空	非空时必须取值于仓库档案
+inventorycode 	存货编码	[varchar] (20) NOT NULL	非空	取值于存货档案
+number 	到货数量（辅计量）	[float] NULL	可空	有多计量单位的存货必须输入件数，>0
+quantity 	到货数量（主计量）	[float] NULL	非空	>0
+unitquantity	和单位一致的数量	Decimal(20,6)		
+ischecked 	是否检验		非空	1或0
+originalprice  	无税单价（原币）	[float] NULL	可空	空时处理为0；非空时>=0
+originaltaxedprice	含税单价（原币）		可空	空时处理为0；非空时>=0
+originalmoney 	无税金额（原币）	[money] NULL	可空	空时处理为0；非空时>=0
+originaltax 	税额（原币）	[money] NULL	可空	空时处理为0；非空时>=0
+originalsum	价税合计（原币）	[money] NULL	可空	空时处理为0；非空时>=0
+price	无税单价（本币）	[float] NULL	可空	空时处理为0；非空时>=0
+taxedprice  	含税单价（本币）		可空	空时处理为0；非空时>=0
+money 	金额（本币）	[money] NULL	可空	空时处理为0；非空时>=0
+tax 	税额（本币）	[money] NULL	可空	空时处理为0；非空时>=0
+sum 	价税合计（本币）	[money] NULL	可空	空时处理为0；非空时>=0
+free1 	自由项1	[varchar] (20) NULL	可空	非空时必须取值于自由项档案
+free2	自由项2	[varchar] (20) NULL	可空	非空时必须取值于自由项档案
+taxrate 	税率	[smallint] NULL	可空	空时处理为0；非空时>=0
+define22	自定义项	[varchar] (60) NULL	可空	
+define23	自定义项	[varchar] (60) NULL	可空	
+define24	自定义项	[varchar] (60) NULL	可空
+define25 	自定义项	[varchar] (60) NULL	可空	
+define26] 	自定义项	[float] 0	可空	
+define27   自定义项	[float] 0	可空	
+define28 	自定义项	[varchar] (120) NULL	可空	
+define29  	自定义项	[varchar] (120) NULL	可空	
+define30 	自定义项	[varchar] (120) NULL	可空	
+define31	自定义项	[varchar] (120) NULL	可空	
+define32 	自定义项	[varchar] (120) NULL	可空	
+define33 	自定义项	[varchar] (120) NULL	可空	
+define34	自定义项	int	可空	
+define35	自定义项	int	可空	
+define36	自定义项	datetime	可空	
+define37  	自定义项	datetime	可空	
+itemclasscode	项目大类	[varchar] (2) NULL	可空	非空时必须取值于项目档案
+itemcode 	项目	[varchar] (20) NULL	可空	非空时必须取值于项目档案
+itemname 	项目名称	8.20b增加	可空	非空时必须取值于项目档案
+free3 	自由项3	[varchar] (20) NULL	可空	非空时必须取值于自由项档案
+free4 	自由项4	[varchar] (20) NULL	可空	非空时必须取值于自由项档案
+free5 	自由项5	[varchar] (20) NULL	可空	非空时必须取值于自由项档案
+free6  	自由项6	[varchar] (20) NULL	可空	非空时必须取值于自由项档案
+free7  	自由项7	[varchar] (20) NULL	可空	非空时必须取值于自由项档案
+free8  	自由项8	[varchar] (20) NULL	可空	非空时必须取值于自由项档案
+free9 	自由项9	[varchar] (20) NULL	可空	非空时必须取值于自由项档案
+free10 	自由项10	[varchar] (20) NULL	可空	非空时必须取值于自由项档案
+unitid 	单位id	Varchar(10)	可空	
+promisedquantity 	开票数量	Decimal(20,6)	可空	空时处理为0；非空时>=0且<到货数量
+receivedquantity 	实收数量	Decimal(20,6)	可空	空时处理为0；非空时>=0且<到货数量
+checkednumber 	已检数		可空	空时处理为0；非空时>=0且<到货数量
+validnumber 	合格数量	Decimal(20,6)	可空	空时处理为0；非空时>=0且“合格数量+不合格数量<实收数量
+invalidnumber 	不合格数量	Decimal(20,6)	可空	空时处理为0；非空时>=0且“合格数量+不合格数量<实收数量”
+validinnum 	合格品入库数量	Decimal(20,6)	可空	空时处理为0；非空时>=0且<合格数量
+fInValidInQuan	不合格品入库数量	Decimal(20,6)	可空	空时处理为0；非空时>=0且<合格数量
+rejectnum 	退货数量	Decimal(20,6)	可空	空时处理为0；非空时>=0且<到货量数－合格入库数量－不合格入库数量
+serial	批号		可空	
+makedate	生产日期		可空	非空时必须是合法的公历日期
+invaliddate 	失效日期		可空	非空时必须是合法的公历日期
+warehouse 	到货仓库		可空	非空时必须取值于仓库档案
+isotype         销售订单类型            不可空
+
+单据本身数据项间的合法性检验
+价税检查	容差X取自当前帐套设置。原币无税单价×数量＝原币无税金额（容差控制X元）原币含税单价×数量＝原币价税合计（容差控制X元）原币无税金额×税率＝原币税额（容差控制X元）原币无税金额＋原币税额＝原币价税合计
+本原币换算	（“×”“÷”取决于币种设置，“最大折算误差”取自币种设置）ABS(原币无税单价×或÷汇率－本币无税单价)<=最大折算误差ABS(原币含税单价×或÷汇率－本币含税单价)<=最大折算误差ABS(原币无税金额×或÷汇率－本币无税金额)<=最大折算误差ABS(原币税额×或÷汇率－本币税额)<=最大折算误差ABS(原币价税合计×或÷汇率－本币价税合计)<=最大折算误差
+多计量存货	数量÷换算率＝件数
+
+-->

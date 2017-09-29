@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 岗位档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="team" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <team id="">
+    <cCode />
+    <vName />
+    <cDepCode />
+    <cLeader />
+    <bMOTeam />
+    <wccode />
+    <bPRTeam />
+    <dEstablisheDate />
+    <dWithdrawalDate />
+    <cTeamDefine1 />
+    <cTeamDefine2 />
+    <cTeamDefine3 />
+    <cTeamDefine4 />
+    <cTeamDefine5 />
+    <cTeamDefine6 />
+    <cTeamDefine7 />
+    <cTeamDefine8 />
+    <cTeamDefine9 />
+    <cTeamDefine10 />
+    <cTeamDefine11 />
+    <cTeamDefine12 />
+    <cTeamDefine13 />
+    <cTeamDefine14 />
+    <cTeamDefine15 />
+    <cTeamDefine16 />
+  </team>
+</ufinterface>
+<!--
+元素名称	描述	数据类型	是否非空	有效值范围	备注
+cCode	班组编码	nvarchar(50)	
+vName	班组名称	nvarchar(50)	可空
+cDepCode	所属部门	nvarchar(50)	可空
+cLeader	组长	nvarchar(50)	可空
+bMOTeam	生产班组	bit	可空
+wccode	工作中心	nvarchar(30)	可空
+bPRTeam	计件班组	bit	可空
+dEstablisheDate	成立日期	nvarchar(10)	可空
+dWithdrawalDate	撤销日期	nvarchar(10)  可空
+cTeamDefine1	班组自定义项1	nvarchar(20)	可空
+cTeamDefine2	班组自定义项2	nvarchar(20)	可空
+cTeamDefine3	班组自定义项3	nvarchar(20)	可空
+cTeamDefine4	班组自定义项4	nvarchar(60)	可空
+cTeamDefine5	班组自定义项5	nvarchar(60)	可空
+cTeamDefine6	班组自定义项6	nvarchar(60)	可空
+cTeamDefine7	班组自定义项7	nvarchar(120)	可空
+cTeamDefine8	班组自定义项8	nvarchar(120)	可空
+cTeamDefine9	班组自定义项9	nvarchar(120)	可空
+cTeamDefine10	班组自定义项10	nvarchar(120)	可空
+cTeamDefine11	班组自定义项11	int	可空
+cTeamDefine12	班组自定义项12	int	可空
+cTeamDefine13	班组自定义项13	float	可空
+cTeamDefine14	班组自定义项14	float	可空
+cTeamDefine15	班组自定义项15	datetime	可空
+cTeamDefine16	班组自定义项16	datetime	可空	
+-->

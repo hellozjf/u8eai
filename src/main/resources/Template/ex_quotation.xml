@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 银行档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="ex_quotation" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <ex_quotation>
+    <header>
+      <cal />
+      <chinesesummoney />
+      <comvencode />
+      <code />
+      <sportcode />
+      <aportcode />
+      <tportcode />
+      <bustype />
+      <containersize />
+      <cuscode />
+      <cusabbname />
+      <cusaddress />
+      <cusenaddr1 />
+      <cusenaddr2 />
+      <cusenaddr3 />
+      <cusenaddr4 />
+      <cusoaddress />
+      <cusperson />
+      <define1 />
+      <define2 />
+      <define3 />
+      <define4 />
+      <define5 />
+      <define6 />
+      <define7 />
+      <define8 />
+      <define9 />
+      <define10 />
+      <define11 />
+      <define12 />
+      <define13 />
+      <define14 />
+      <define15 />
+      <define16 />
+      <depcode />
+      <engaddress1 />
+      <engaddress2 />
+      <engaddress3 />
+      <engaddress4 />
+      <englishsummoney />
+      <exch_name />
+      <exch_code />
+      <incotermcode />
+      <incotermremark />
+      <invgeneraldesc />
+      <memos />
+      <outaftercredit />
+      <paycode />
+      <personcode />
+      <receiveaddress />
+      <receivecompany />
+      <receiveperson />
+      <sccode />
+      <shipvencode />
+      <sscode />
+      <stcode />
+      <svencode />
+      <tmcode />
+      <transport />
+      <unitenglish />
+      <unitname>
+      </unitname>
+      <unittel>
+      </unittel>
+      <date />
+      <invaliddate />
+      <lastedshippingdate />
+      <validdate />
+      <containerqty>
+      </containerqty>
+      <exchrate />
+      <fobsummoney />
+      <generalcommoney />
+      <generalcomrate />
+      <generalcomremark />
+      <generaloverflowitem />
+      <generaloverflowrange />
+      <generaltaxrate />
+      <natfobsummoney>
+      </natfobsummoney>
+      <natgeneralcommoney>
+      </natgeneralcommoney>
+      <natsummoney>
+      </natsummoney>
+      <statsummoney />
+      <summoney>
+      </summoney>
+      <dec>
+      </dec>
+      <ffreightsum />
+      <fnatfreightsum />
+      <bfreighttofare />
+      <finsurancesum />
+      <fnatinsurancesum />
+      <binsurancetofare />
+      <cinsurancevencode />
+      <bcommisiontype />
+      <bcommisiontofare />
+      <ibatchshippingid />
+      <cbatchshipping />
+      <ivtid />
+    </header>
+    <body>
+      <entry>
+        <pricecontailtax />
+        <comcriterion />
+        <comrule />
+        <comunitcode />
+        <comunitname />
+        <configstatus />
+        <cusinvcode />
+        <cusinvname />
+        <define22 />
+        <define23 />
+        <define24 />
+        <define25 />
+        <define26 />
+        <define27 />
+        <define28 />
+        <define29 />
+        <define30 />
+        <define31 />
+        <define32 />
+        <define33 />
+        <define34 />
+        <define35 />
+        <define36 />
+        <define37 />
+        <englishname />
+        <enplural />
+        <ensingular />
+        <free1 />
+        <free2 />
+        <free3 />
+        <free4 />
+        <free5 />
+        <free6 />
+        <free7 />
+        <free8 />
+        <free9 />
+        <free10 />
+        <invcode />
+        <item_class />
+        <item_cname />
+        <itemcode />
+        <itemname />
+        <materialsize />
+        <memo />
+        <packinfo />
+        <packsize />
+        <sacomunitcode />
+        <vcomunitcode />
+        <volumes />
+        <wcomunitcode />
+        <dk />
+        <dk2 />
+        <lineclosedate />
+        <shippingdate />
+        <changrate />
+        <comcoefficient />
+        <commoney />
+        <comrate />
+        <discount />
+        <fobmoney />
+        <freight />
+        <gweight />
+        <gweights />
+        <insurance />
+        <money />
+        <natcommoney />
+        <natdiscount />
+        <natfobmoney />
+        <natfreight />
+        <natinsurance />
+        <natmoney />
+        <natprice />
+        <nattax />
+        <nattaxmoney />
+        <nattaxprice />
+        <num />
+        <nweight />
+        <nweights />
+        <overflowrange />
+        <packqty />
+        <ppartqty />
+        <price />
+        <quantity />
+        <quotedprice />
+        <tax />
+        <taxmoney />
+        <taxprice />
+        <taxrate />
+        <volume />
+        <grouptype />
+        <quotationrowno />
+        <kl />
+        <kl2 />
+        <fcost />
+        <fgrossrate />
+        <cvencode />
+        <centerprise />
+        <flength />
+        <fwidth />
+        <fheight />
+        <citem_class />
+        <citem_cname />
+        <citemcode />
+        <citemname />
+              <iciqbookid />
+      <cciqbookcode />
+      <cciqcode />
+      <fciqchangrate />
+      </entry>
+    </body>
+  </ex_quotation>
+</ufinterface>

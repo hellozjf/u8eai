@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 商机 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+  
+  -->
+<ufinterface roottag="cs_opportunity" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <cs_opportunity>
+    <header>
+      <coppcode />
+      <coppname />
+      <coppstate />
+      <cexchname />
+      <fexchrate />
+      <csalmodename /> 
+      <csalphasename />
+      <coppgradename />
+      <coppsourcename />
+      <coppprincipalname />
+      <dprestartdate />
+      <dpreenddate />
+      <ccuscode />
+	  <cdepname />
+      <fsucceedrate />
+      <mintendsaleroom />
+      <mintendnatsaleroom />
+      <ccontactname />
+      <coppmemo />
+      <cdefine1 />
+      <cdefine2 />
+      <cdefine3 />
+      <cdefine4 />
+      <cdefine5 />
+      <cdefine6 />
+      <cdefine7 />
+      <cdefine8 />
+      <cdefine9 />
+      <cdefine10 />
+      <cdefine11 />
+      <cdefine12 />
+      <cdefine13 />
+      <cdefine14 />
+      <cdefine15 />
+      <cdefine16 />
+      <ccreator />
+      <dcreatdate />
+    </header>
+    <body>
+      <entry>
+        <cinvcode />
+        <coppunitcode />
+        <foppinvquan />
+        <ioppnum />
+        <ioppchangrate />
+        <foppinvprice />
+        <minvintendsaleroom />
+        <foppinvnatprice />
+        <minvintendnatsaleroom />
+        <cfree1 />
+        <cfree2 />
+        <cfree3 />
+        <cfree4 />
+        <cfree5 />
+        <cfree6 />
+        <cfree7 />
+        <cfree8 />
+        <cfree9 />
+        <cfree10 /> 
+        <cdefine22 />
+        <cdefine23 />
+        <cdefine24 />
+        <cdefine25 />
+        <cdefine26 />
+        <cdefine27 />
+        <cdefine28 />
+        <cdefine29 />
+        <cdefine30 />
+        <cdefine31 />
+        <cdefine32 />
+        <cdefine33 />
+        <cdefine34 />
+        <cdefine35 />
+        <cdefine36 />
+        <cdefine37 />
+      </entry>
+    </body>
+  </cs_opportunity>
+</ufinterface>
+
+<!-- 表头
+COPPCODE	商机编码	varchar (20) 	非空	
+COPPSTATE	商机状态编码	varchar (20) 	非空	55 失败,57 关闭,54 执行,66 新建,55 成功
+CEXCHNAME	币种	varchar (20) 	非空	
+CSALPHASENAME	销售阶段 varchar (20) 	非空
+BCOPPSOURCE	商机来源代码	varchar (20) 	非空	
+CPPPGRADE	商机重要程度代码	varchar (20) 	非空		
+COPPGRADENAME	商机重要程度 varchar (20) 	非空	
+COPPSOURCENAME	商机来源 varchar (20) 	非空	
+CCUSCODE	客户编码	varchar (20) 	非空	
+CCUSABBNAME	客户简称	varchar (20) 	非空
+SALESPHASEID	销售阶段编码	varchar (20) 	非空	
+SALESMODEID	销售模式编码	varchar (20) 	非空	
+CSALMODENAME	销售模式	varchar (20) 	非空	
+COPPPRINCIPALNAME	负责人	varchar (20) 	非空	
+CDCNAME	所属地区	varchar (20) 	可空	
+CCREATOR	创建人	varchar (20) 	非空	
+CTRADECNAME	所属行业	varchar (20) 	可空	
+DPRESTARTDATE	预计开始日期	varchar (20) 	非空	
+DPREENDDATE	预计成交日期	varchar (20) 	非空	
+DCREATDATE	创建日期	varchar (20) 	非空	
+cdefine1 	自定义字段1	varchar (20) 	可空	
+cdefine2 	自定义字段2	varchar (20) 	可空	
+cdefine3 	自定义字段3	varchar (20) 	可空	
+cdefine4 	自定义字段4	datetime可空	
+cdefine5 	自定义字段5	smallint可空	
+cdefine6 	自定义字段6	datetime 可空	
+cdefine7 	自定义字段7	float 可空	
+cdefine8 	自定义字段8	varchar (4)可空	
+cdefine9 	自定义字段9	varchar (8) 可空	
+cdefine10 	自定义字段10	varchar (60) 可空	
+cdefine11 	自定义字段11	varchar (120) 可空	
+cdefine12 	自定义字段12	varchar (120) 可空	
+cdefine13 	自定义字段13	varchar (120) 	可空	
+cdefine14 	自定义字段14	varchar (120) 	可空	
+cdefine15 	自定义字段15	int	可空	
+cdefine16 	自定义字段16	float	可空	
+CDEPCODE	负责部门编码	varchar (20) 	可空	
+COPPSTATENAME	商机状态	varchar (20) 	非空	
+CDEPNAME	负责部门	varchar (20) 	可空	
+FSUCCEEDRATE	成功概率(%)	varchar (20) 	非空	
+MINTENDSALEROOM	原币预计销售额	varchar (20) 	非空	
+
+FEXCHRATE	汇率	varchar (20) 	非空	
+MINTENDNATSALEROOM	本币预计销售额	varchar (20) 	非空	
+COPPMEMO	备注	varchar (20) 	可空	
+COPPNAME	商机主题	varchar (20) 	非空	
+COPPPRINCIPAL	负责人编码	varchar (20) 	非空	
+CCONTACTNAME	联系人名称	varchar (20) 	可空	
+表体
+CINVCODE	存货编号 varchar (40) 	非空	必须取值于存货档案
+CINVNAME	存货名称	varchar (40) 	非空	必须取值于存货档案
+CINVSTD	规格型号	varchar (40) 	非空	必须取值于存货档案
+CCOMUNITNAME	主计量单位 nvarchar(40) 可空
+FOPPINVQUAN	数量	nvarchar(40) 可空
+IOPPCHANGRATE	换算率 nvarchar(40) 可空
+COPPUNITCODE	销售单位编码 nvarchar(40) 可空
+COPPUNITNAME	销售单位 nvarchar(40) 可空
+IOPPNUM	件数				nvarchar(40) 可空
+FOPPINVPRICE	原币单价	nvarchar(40) 可空
+MINVINTENDSALEROOM	原币预计销售金额 nvarchar(40) 可空
+FOPPINVNATPRICE	本币单价	nvarchar(40) 可空
+MINVINTENDNATSALEROOM	本币预计销售金额	nvarchar(40) 可空
+CFREE1	自由项1			nvarchar(40) 可空
+CFREE2	自由项2
+CFREE3	自由项3
+CFREE4	自由项4
+CFREE5	自由项5
+CFREE6	自由项6
+CFREE7	自由项7
+CFREE8	自由项8
+CFREE9	自由项9
+CFREE10	自由项10
+CINVDEFINE1	存货自定义项1		nvarchar(40) 可空
+CINVDEFINE2	存货自定义项2
+CINVDEFINE3	存货自定义项3
+CINVDEFINE4	存货自定义项4
+CINVDEFINE5	存货自定义项5
+CINVDEFINE6	存货自定义项6
+CINVDEFINE7	存货自定义项7
+CINVDEFINE8	存货自定义项8
+CINVDEFINE9	存货自定义项9
+CINVDEFINE10	存货自定义项10
+CINVDEFINE11	存货自定义项11
+CINVDEFINE12	存货自定义项12
+CINVDEFINE13	存货自定义项13
+CINVDEFINE14	存货自定义项14
+CINVDEFINE15	存货自定义项15
+CINVDEFINE16	存货自定义项16
+cdefine22 	自定义字段	[varchar] (60) NULL	可空	
+cdefine23 	自定义字段	[varchar] (60) NULL	可空	
+cdefine24 	自定义字段	[varchar] (60) NULL	可空	
+cdefine25 	自定义字段	[varchar] (60) NULL	可空	
+cdefine26 	自定义字段	[float] NULL	可空	
+cdefine27 	自定义字段	[float] NULL	可空	
+cdefine28	自定义字段	Varchar(120)	可空	
+cdefine29	自定义字段	Varchar(120)	可空	
+cdefine30	自定义字段	Varchar(120)	可空	
+cdefine31	自定义字段	Varchar(120)	可空	
+cdefine32	自定义字段	Varchar(120)	可空	
+cdefine33	自定义字段	Varchar(120)	可空	
+cdefine34	自定义字段	Int	可空	
+cdefine35	自定义字段	Int	可空	
+cdefine36	自定义字段	Datetime	可空	
+cdefine37	自定义字段	Datetime	可空	
+
+-->

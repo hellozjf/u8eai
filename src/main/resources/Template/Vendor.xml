@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 供应商档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="vendor" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <vendor id="">
+    <code />
+    <name />
+    <abbrname />
+    <sort_code />
+    <domain_code />
+    <industry />
+    <address />
+    <postcode />
+    <tax_reg_code />
+    <bank_open />
+    <bank_acc_number />
+    <seed_date />
+    <legal_man />
+    <phone />
+    <fax />
+    <email />
+    <contact />
+    <bp />
+    <mobile />
+    <spec_operator />
+    <discount_rate />
+    <credit_rank />
+    <credit_amount />
+    <credit_deadline />
+    <pay_condition />
+    <receive_site />
+    <receive_mode />
+    <head_corp_code />
+    <rec_warehouse />
+    <super_dept />
+    <ap_rest />
+    <last_tr_date />
+    <last_tr_money />
+    <last_pay_date />
+    <last_pay_amount />
+    <end_date />
+    <tr_frequency />
+    <tax_in_price_flag />
+    <CreatePerson />
+    <ModifyPerson />
+    <ModifyDate />
+    <auth_class />
+    <barcode />
+    <self_define1 />
+    <self_define2 />
+    <self_define3 />
+    <self_define4 />
+    <self_define5 />
+    <self_define6 />
+    <self_define7 />
+    <self_define8 />
+    <self_define9 />
+    <self_define10 />
+    <self_define11 />
+    <self_define12 />
+    <self_define13 />
+    <self_define14 />
+    <self_define15 />
+    <self_define16 />
+    <RegistFund />
+    <EmployeeNum />
+    <GradeABC />
+    <Memo />
+    <LicenceDate />
+    <LicenceSDate />
+    <LicenceEDate />
+    <LicenceADays />
+    <BusinessDate />
+    <BusinessSDate />
+    <BusinessEDate />
+    <BusinessADays />
+    <ProxyDate />
+    <ProxySDate />
+    <ProxyEDate />
+    <ProxyADays />
+    <PassGMP />
+    <!-- Version 8.600 -->
+    <bvencargo />
+    <bproxyforeign />
+    <bvenservice />
+    <cVenTradeCCode />
+    <cvenbankcode />
+    <cRelCustomer />
+    <!-- 8.610 -->
+    <cvenexch_name />
+    <ivengsptype />
+    <ivengspauth />
+    <cvengspauthno />
+    <cvenbusinessno />
+    <cvenlicenceno />
+    <!-- 8.700 -->
+    <bvenoverseas />
+    <bvenaccperiodmng />
+    <cvenpuomprotocol />
+    <cvenotherprotocol />
+    <cvencountrycode />
+    <cvenenname />
+    <cvenenaddr1 />
+    <cvenenaddr2 />
+    <cvenenaddr3 />
+    <cvenenaddr4 />
+    <cvenportcode />
+    <cvenprimaryven />
+    <fvencommisionrate />
+    <fveninsuerate />
+    <bvenhomebranch />
+    <cvenbranchaddr />
+    <cvenbranchphone />
+    <cvenbranchperson />
+    <!-- 8.710 -->
+    <cvensscode />
+    <comwhcode />
+  </vendor>
+</ufinterface>
+<!--
+元素名称                            描述                                              数据类型             是否可空
+code                          供应商编码                                        nvarchar(20)		否
+name                          供应商名称                                        nvarchar(98)
+abbrname                      供应商简称                                        nvarchar(60)		否
+sort_code                     供应商分类编码                                    nvarchar(12)
+domain_code                   地区编码                                          nvarchar(12)
+industry                      所属行业                                          nvarchar(50)
+address                       地址                                              nvarchar(255)
+postcode                      邮政编码                                          nvarchar(6)
+tax_reg_code                  纳税人登记号                                      nvarchar(50)
+bank_open                     开户银行                                          nvarchar(100)
+bank_acc_number               银行账号                                          nvarchar(50)
+seed_date                     发展日期                                          datetime
+legal_man                     法人                                              nvarchar(100)
+phone                         电话                                              nvarchar(100)
+fax                           传真                                              nvarchar(100)
+email                         Email地址                                         nvarchar(100)
+contact                       联系人                                            nvarchar(50)
+bp                            呼机                                              nvarchar(20)
+mobile                        手机                                              nvarchar(20)
+spec_operator                 专营业务员编码                                    nvarchar(20)
+discount_rate                 扣率                                              float
+credit_rank                   信用等级                                          nvarchar(6)
+credit_amount                 信用额度                                          float
+credit_deadline               信用期限                                          int
+pay_condition                 付款条件编码                                      nvarchar(20)
+receive_site                  到货地址                                          nvarchar(255)
+receive_mode                  到货方式编码                                      nvarchar(10)
+head_corp_code                供应商总公司编码                                  nvarchar(20)
+rec_warehouse                 到货仓库编码                                      nvarchar(10)
+super_dept                    分管部门编码                                      nvarchar(12)
+ap_rest                       应付余额                                          float
+last_tr_date                  最后交易日期                                      datetime
+last_tr_money                 最后交易金额                                      float
+last_pay_date                 最后付款日期                                      datetime
+last_pay_amount               最后付款金额                                      float
+end_date                      停用日期                                          datetime
+tr_frequency                  使用频度                                          int
+tax_in_price_flag             单价是否含税                                      bit		否
+CreatePerson                  建档人                                            nvarchar(20)
+ModifyPerson                  变更人                                            nvarchar(20)
+ModifyDate                    变更日期                                          datetime
+auth_class                    所属权限组                                        int
+barcode                       对应条形码                                        nvarchar(30)
+self_define1                  供应商自定义项1                                   nvarchar(20)
+self_define2                  供应商自定义项2                                   nvarchar(20)
+self_define3                  供应商自定义项3                                   nvarchar(20)
+self_define4                  供应商自定义项4                                   nvarchar(60)
+self_define5                  供应商自定义项5                                   nvarchar(60)
+self_define6                  供应商自定义项6                                   nvarchar(60)
+self_define7                  供应商自定义项7                                   nvarchar(120)
+self_define8                  供应商自定义项8                                   nvarchar(120)
+self_define9                  供应商自定义项9                                   nvarchar(120)
+self_define10                 供应商自定义项10                                  nvarchar(120)
+self_define11                 供应商自定义项11                                  int
+self_define12                 供应商自定义项12                                  int
+self_define13                 供应商自定义项13                                  float
+self_define14                 供应商自定义项14                                  float
+self_define15                 供应商自定义项15                                  datetime
+self_define16                 供应商自定义项16                                  datetime
+RegistFund                    注册资金                                          float
+EmployeeNum                   员工人数                                          int
+GradeABC                      ABC等级                                           smallint
+Memo                          备注                                              nvarchar(240)
+LicenceSDate                  营业执照生效日期                                  datetime
+LicenceEDate                  营业执照到期日期                                  datetime
+LicenceADays                  营业执照预警天数                                  int
+BusinessSDate                 生产/经营许可证生效日期                           datetime
+BusinessEDate                 生产/经营许可证到期日期                           datetime
+BusinessADays                 生产/经营许可证预警天数                           int
+ProxySDate                    法人委托书生效日期                                datetime
+ProxyEDate                    法人委托书到期日期                                datetime
+ProxyADays                    法人委托书预警天数                                int
+bvencargo                     是否货物                                          bit		否
+bproxyforeign                 是否委外                                          bit		否
+bvenservice                   是否服务                                          bit		否
+cVenTradeCCode                行业编码                                          nvarchar(12)
+cvenbankcode                  所属银行编码                                      nvarchar(5)
+cRelCustomer                  对应客户编码                                      nvarchar(20)
+cvenexch_name                 币种                                              nvarchar(50)
+ivengsptype                   企业类型                                          smallint		否
+ivengspauth                   GMP/GSP认证情况                                   smallint
+cvengspauthno                 GMP/GSP认证证书号                                 nvarchar(40)
+cvenbusinessno                生产/经营许可证号                                 nvarchar(20)
+cvenlicenceno                 营业执照注册号                                    nvarchar(20)
+bvenoverseas                  是否国外                                          bit		否
+bvenaccperiodmng              账期管理                                          bit		否
+cvenpuomprotocol              采购/委外收付款协议编码                           nvarchar(20)
+cvenotherprotocol             其他应付单收付款协议编码                          nvarchar(20)
+cvencountrycode               国家编码                                          nvarchar(10)
+cvenenname                    英文名称                                          nvarchar(100)
+cvenenaddr1                   英文地址1                                         nvarchar(60)
+cvenenaddr2                   英文地址2                                         nvarchar(60)
+cvenenaddr3                   英文地址3                                         nvarchar(60)
+cvenenaddr4                   英文地址4                                         nvarchar(60)
+cvenportcode                  起运港编码                                        nvarchar(10)
+cvenprimaryven                主要承运商编码                                    nvarchar(20)
+fvencommisionrate             佣金比率(%)                                       float
+fveninsuerate                 保险费率(%)                                       float
+bvenhomebranch                是否有分支机构                                    bit		否
+cvenbranchaddr                分支机构地址                                      nvarchar(200)
+cvenbranchphone               分支机构电话                                      nvarchar(100)
+cvenbranchperson              分支机构联系人                                    nvarchar(50)
+
+	
+
+-->

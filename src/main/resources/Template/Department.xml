@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 部门 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换  exportneedexch导出时是否要根据对照表替换
+  -->
+<ufinterface roottag="department" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch=" " version="2.0">
+  <department id="">
+    <code />
+    <endflag />
+    <name />
+    <rank />
+    <manager />
+    <prop />
+    <phone />
+    <address />
+    <remark />
+    <creditline />
+    <creditgrade />
+    <creditdate />
+    <!-- 8.600 -->
+    <ddepbegindate />
+    <ddependdate />
+    <vauthorizedoc />
+    <vauthorizeunit />
+    <cdepfax />
+    <cdeppostcode />
+    <cdepemail />
+    <cdeptype />
+  </department>
+</ufinterface>
+<!--
+元素名称                           描述                                              数据类型
+code                          部门编码                                          nvarchar(12)		否
+endflag                       是否末级                                          bit		否
+name                          部门名称                                          nvarchar(255)		否
+rank                          编码级次                                          tinyint		否
+manager                       负责人                                            nvarchar(20)
+prop                          部门属性                                          nvarchar(10)
+phone                         电话                                              nvarchar(100)
+address                       地址                                              nvarchar(255)
+remark                        备注                                              nvarchar(20)
+creditline                    信用额度                                          float
+creditgrade                   信用等级                                          nvarchar(20)
+creditdate                    信用天数                                          int
+ddepbegindate                 成立日期                                          datetime
+ddependdate                   撤销日期                                          datetime
+vauthorizedoc                 批准文号                                          nvarchar(50)
+vauthorizeunit                批准单位                                          nvarchar(100)
+cdepfax                       传真                                              nvarchar(20)
+cdeppostcode                  邮政编码                                          nvarchar(6)
+cdepemail                     电子邮件                                          nvarchar(100)
+cdeptype                      部门类型                                          nvarchar(20)
+-->

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 活动 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 Add,edit,delete,Query codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+  -->
+<ufinterface roottag="vendorcontact" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch=" " version="2.0">
+  <vendorcontact>
+    <code/>
+    <name/>
+    <of_vendor/>
+    <title/>
+    <sex/>
+    <birthday/>
+    <native/>
+    <position/>
+    <direct_leader/>
+    <mobile/>
+    <office_phone/>
+    <family_phone/>
+    <bp/>
+    <email/>
+    <web/>
+    <work_address/>
+    <postcode/>
+    <marriage/>
+    <family_member/>
+    <family_address/>
+    <favorite/>
+    <be_main_linker/>
+    <charge_person/>
+    <memo/>
+    <founder/>
+    <fondertime/>
+    <change_person/>
+    <change_time/>
+    <self_define1/>
+    <self_define2/>
+    <self_define3/>
+    <self_define4/>
+    <self_define5/>
+    <self_define6/>
+    <self_define7/>
+    <self_define8/>
+    <self_define9/>
+    <self_define10/>
+    <self_define11/>
+    <self_define12/>
+    <self_define13/>
+    <self_define14/>
+    <self_define15/>
+    <self_define16/>
+  </vendorcontact>
+</ufinterface>
+
+
+
+<!-- 必填:
+code 联系人编码 
+name 联系人名称
+of_vendor  所属供应商
+sex  性别 
+marriage 婚姻状况-->
+
+<!--
+title	         称呼
+birthday	 生日
+native	         籍贯
+position         职务        	
+direct_leader    直接上级           	
+mobile           移动电话    	
+office_phone     办公电话
+family_phone     家庭电话          	                
+bp	         传呼
+email            电子邮件
+web	         个人网址
+work_address     工作地址
+postcode	 邮编
+family_member	 家庭主要成员
+family_address	 家庭地址
+favorite	 个人爱好
+be_main_linker	 是否主要联系人
+charge_person	 负责人
+memo	         备注
+founder	         建档人
+fondertime	 建档时间       
+change_person	 变更人
+change_time	 变更时间
+self_define1	 自定义项1
+self_define2     自定义项2
+self_define3     自定义项3
+self_define4     自定义项4
+self_define5     自定义项5
+self_define6     自定义项6
+self_define7     自定义项7
+self_define8     自定义项8
+self_define9     自定义项9
+self_define10    自定义项10
+self_define11    自定义项11
+self_define12    自定义项12
+self_define13    自定义项13
+self_define14    自定义项14
+self_define15    自定义项15
+self_define16    自定义项16
+-->

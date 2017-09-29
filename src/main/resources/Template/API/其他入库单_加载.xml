@@ -1,0 +1,15 @@
+<ufinterface sender="001" receiver="u8" roottag="u8api" proc="load" dynamicdate="2010-12-25">
+  <u8apiservice>
+    <apiurl value="U8API/otherin/Load"/>
+    <apiParams>
+      <param name="sVouchType" value="08" datatype="String"/>
+      <param name="sWhere" value="ccode=N'0000000009'" datatype="string"/>
+      <param name="sBodyWhere_Order" value="cinvcode" datatype="string"/>
+      <param name="bGetBlank" value="false" datatype="bool"/>
+      <param name="domPos" value="" datatype="IXMLDOMDocument2"/>
+    </apiParams>
+    <returnParams>
+      <param name="errMsg"/>
+    </returnParams>
+  </u8apiservice>
+</ufinterface>

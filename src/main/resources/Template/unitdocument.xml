@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--交易单位 大小写必须和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="unitdocument" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <unitdocument cunitid="" cunitname="" cunitsname="" cclass="" ccusid="" csupid="" caddress="" cpostcode="" ctelephone="" ctelefax="" cbp="" cmobiletele="" cemail="" clinkman="" cremark="" cbankcode="" cdepid="" cpersonid="" />
+</ufinterface>
+<!--必需字段：账号、所属单位编码、是否默认账户、所属银行编码、开户行
+
+
+    一次性导入导出的数据量不能超过10000条记录-->
+<!--
+
+
+cunitid 	Varchar	30	非空 单位编码
+
+
+cunitname	Varchar	98	可空 单位名称
+
+
+cunitsname	Varchar	60	非空 单位简称
+
+
+cclass		Varchar	2	非空 所属分类编码
+
+
+ccusid		Varchar	20	可空 对应客户编码
+
+
+csupid		Varchar	20	可空 对应供应商编码
+
+
+caddress	Varchar	200	可空 地址
+
+
+cpostcode	Varchar	6	可空 邮政编码
+
+
+ctelephone	Varchar	100	可空 电话
+
+
+ctelefax	Varchar	20	可空 传真
+
+
+cbp		Varchar	20	可空 传呼
+
+
+cmobiletele	Varchar	20	可空 手机
+
+
+cemail		Varchar	30	可空 电子邮件
+
+
+clinkman	Varchar	10	可空 联系人
+
+
+cremark		Varchar	120	可空 备注
+
+
+cbankcode	Varchar	15	可空 对应银行科目编码
+
+
+cdepid		Varchar	30	可空 对应部门编码
+
+
+cpersonid	Varchar	30	可空 对应个人编码
+
+
+-->

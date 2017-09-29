@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--工艺路线 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+  -->
+<ufinterface roottag="Routing" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <Routing>
+    <Version>
+      <PRoutingId />
+      <RountingType />
+      <Version />
+      <VersionDesc />
+      <VersionEffDate />
+      <VersionEndDate />
+      <IdentCode />
+      <IdentDesc />
+      <Define1 />
+      <Define2 />
+      <Define3 />
+      <Define4 />
+      <Define5 />
+      <Define6 />
+      <Define7 />
+      <Define8 />
+      <Define9 />
+      <Define10 />
+      <Define11 />
+      <Define12 />
+      <Define13 />
+      <Define14 />
+      <Define15 />
+      <Define16 />
+      <Status />
+    </Version>
+    <Part>
+      <PRoutingId />
+      <PartId />
+      <InvCode />
+      <Free1 />
+      <Free2 />
+      <Free3 />
+      <Free4 />
+      <Free5 />
+      <Free6 />
+      <Free7 />
+      <Free8 />
+      <Free9 />
+      <Free10 />
+    </Part>
+    <RoutingDetail>
+      <PRoutingDId />
+      <PRoutingId />
+      <OpSeq />
+      <OperationCode />
+      <Description />
+      <WcCode />
+      <EffBegDate />
+      <EffEndDate />
+      <SubFlag />
+      <SVendorCode />
+      <RltOptionFlag />
+      <LtPercent />
+      <Remark />
+      <PRoutinginspId />
+      <Define22 />
+      <Define23 />
+      <Define24 />
+      <Define25 />
+      <Define26 />
+      <Define27 />
+      <Define28 />
+      <Define29 />
+      <Define30 />
+      <Define31 />
+      <Define32 />
+      <Define33 />
+      <Define34 />
+      <Define35 />
+      <Define36 />
+      <Define37 />
+      <ReportFlag />
+      <BFFlag />
+      <FeeFlag />
+      <PlanSubFlag />
+      <DeliveryDays />
+      <AuxUnitCode />
+      <ChangeRate />
+    </RoutingDetail>
+    <RoutingInsp>
+      <PRoutinginspId />
+      <QtMethod />
+      <DtMethod />
+      <DtRate />
+      <DtNum />
+      <DtStyle />
+      <DtUnit />
+      <QtLevel />
+      <QcProjectCode />
+      <AqlVal />
+      <CruleCode />
+      <ItestRule />
+      <OpTransType />
+    </RoutingInsp>
+    <RoutingRes>
+      <PRoutingResId />
+      <PRoutingDId />
+      <ResSeq />
+      <ResCode />
+      <BaseType />
+      <BaseQtyN />
+      <BaseQtyD />
+      <PlanFlag />
+      <ResActivity />
+      <ResQty />
+      <EffRate />
+      <FeeType />
+    </RoutingRes>/&gt;
+	</Routing>
+</ufinterface>
+<!-- 
+PRoutingId	int		料品工艺路线资料Id	非空
+RountingType  	tinyint  	类型(1-主要/2-替代)  	非空
+Version  	int  		版本号  		类型为主要时非空，否则为空
+VersionDesc  	varchar(60)  	版本说明  		类型为主要时非空，否则为空
+VersionEffDate  datetime  	版本生效日期  		类型为主要时非空，否则为空
+IdentCode  	varchar(20)  	替代标识  		类型为替代时非空，否则为空
+IdentDesc  	varchar(60)  	替代说明  		类型为替代时非空，否则为空
+Define1  	varchar(20)   	表头自定义项1		可空
+Define2  	varchar(20)  	表头自定义项2		可空
+Define3  	varchar(20)  	表头自定义项3		可空
+Define4  	datetime  	表头自定义项4		可空
+Define5  	int  		表头自定义项5		可空
+Define6  	datetime  	表头自定义项6		可空
+Define7  	real  		表头自定义项7		可空
+Define8  	varchar(4)  	表头自定义项8		可空
+Define9  	varchar(8)  	表头自定义项9		可空
+Define10  	varchar(60)  	表头自定义项10		可空
+Define11  	varchar(120)  	表头自定义项11		可空
+Define12  	varchar(120)  	表头自定义项12		可空
+Define13  	varchar(120)  	表头自定义项13		可空
+Define14  	varchar(120)  	表头自定义项14		可空
+Define15  	int  		表头自定义项15		可空
+Define16  	real  		表头自定义项16		可空
+InvCode  	varchar(20)  	存货编码  		可空
+Free1  		varchar(20)  	自由项1  		可空
+Free2  		varchar(20)  	自由项2  		可空
+Free3  		varchar(20)  	自由项3  		可空
+Free4  		varchar(20)  	自由项4  		可空
+Free5  		varchar(20)  	自由项5  		可空
+Free6  		varchar(20)  	自由项6  		可空
+Free7  		varchar(20)  	自由项7  		可空
+Free8  		varchar(20)  	自由项8  		可空
+Free9  		varchar(20)  	自由项9  		可空
+Free10 		varchar(20)  	自由项10  		可空
+PRoutingDId  	int   		明细资料Id		非空
+PRoutingId  	int  		料品工艺路线表头ID  	非空
+OpSeq  		char(4)  	工序序号  		可空
+OperationId  	int  		标准工序Id  		可空
+Description  	varchar(60) 	标准工序说明  		可空
+WcId  		int  		工作中心代号  		可空
+EffBegDate  	datetime  	生效日期  		可空
+EffEndDate  	datetime  	失效日期  		可空
+SubFlag  	bit  		是/否委外工序(1/0)  	可空
+SVendorcode  	varchar(20)  	委外商代号  		可空
+RltOptionFlag  	bit  		是否选项相关  		可空
+LtPercent  	int  		制造提前百分比  	可空	
+Remark  	varchar(255)  	备注  			可空
+PRoutinginspId  int  		料品工艺路线检验资料Id  非空
+Define22  	varchar(60) 	表体自定义项1 		可空
+Define23  	varchar(60) 	表体自定义项2 		可空
+Define24  	varchar(60)  	表体自定义项3		可空
+Define25  	varchar(60)  	表体自定义项4		可空
+Define26  	real  		表体自定义项5		可空
+Define27  	real  		表体自定义项6		可空
+Define28  	varchar(120)  	表体自定义项7		可空
+Define29  	varchar(120)  	表体自定义项8		可空
+Define30  	varchar(120)  	表体自定义项9		可空
+Define31  	varchar(120)  	表体自定义项10		可空
+Define32  	varchar(120)  	表体自定义项11		可空
+Define33  	varchar(120)  	表体自定义项12		可空
+Define34  	int  		表体自定义项13		可空
+Define35  	int  		表体自定义项14		可空
+Define36  	datetime  	表体自定义项15		可空
+Define37  	datetime  	表体自定义项16		可空
+PRoutinginspId  int 		检验资料Id		非空
+QtMethod  	int  		检验方式  		可空
+DtMethod  	smallint  	抽检方案  		可空
+DtRate  	Udt_Rate100  	抽检率%  		可空
+DtNum  		Udt_QTY  	抽检数量  		可空
+DtStyle  	smallint  	抽检方式  		可空
+DtUnit  	varchar(10)  	检验计量单位  		可空
+QtLevel  	smallint  	检验水平  		可空
+QcProjectId  	int  		质量检验方案  		可空
+AqlVal  	int  		AQL值  			可空
+PRoutingResId  	int		资源资料Id 		非空
+PRoutingDId  	int  		料品工艺路线明细ID  	非空	
+ResSeq  	int  		序号  			非空
+ResCode  	varchar(6)	资源代号  		可空
+BaseType  	tinyint  	基准类型  		可空
+BaseQtyN  	Udt_QTY  	基本用量-分子  		可空
+BaseQtyD  	Udt_QTY  	基本用量分母  		可空
+PlanFlag  	tinyint  	计划否:是/否/前一个/下一个  可空
+ResActivity  	varchar(60)  	资源活动  		可空
+-->

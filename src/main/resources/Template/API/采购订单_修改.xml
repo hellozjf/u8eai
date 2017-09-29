@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="gb2312"?>
+<ufinterface roottag="u8api" receiver="u8" sender="001" proc="modify">
+<u8apiservice>
+<context>
+<param name = "VoucherType" value = "1" datatype = "int"/>
+<param name = "bPositive" value = "true" datatype = "bool"/>
+<param name = "sBillType" value = "" datatype = "string"/>
+<param name = "sBusType" value = "普通采购" datatype = "string"/>
+</context>
+<apiurl value = "U8API/PurchaseOrder/VoucherSave"/>
+<apiParams>
+<param name = "VoucherState" value = "1" datatype = "int"/>
+<param name = "curId" value = "75" datatype = "string"/>
+<param name = "CurDom" datatype = "IXMLDOMDocument2"/>
+<param name = "UserMode" value = "0" datatype = "int"/>
+</apiParams>
+<bo>
+<head type="bo">
+<field name="ivtid" value="8173" row="0"/>
+<field name="ufts" value="                     6706.9033" row="0"/>
+<field name="poid" value="75" row="0"/>
+<field name="cbustype" value="普通采购" row="0"/>
+<field name="cpoid" value="0000000077" row="0"/>
+<field name="dpodate" value="2008-03-28T00:00:00" row="0"/>
+<field name="cvencode" value="01004" row="0"/>
+<field name="nflat" value="1" row="0"/>
+<field name="itaxrate" value="17" row="0"/>
+<field name="icost" value="0" row="0"/>
+<field name="ibargain" value="0" row="0"/>
+<field name="cstate" value="0" row="0"/>
+<field name="idiscounttaxtype" value="0" row="0"/>
+<field name="cmaketime" value="2008-03-28T15:57:39.200000000" row="0"/>
+<field name="cvenabbname" value="广州" row="0"/>
+<field name="cexch_name" value="人民币" row="0"/>
+<field name="cmaker" value="demo" row="0"/>
+</head>
+<body type = "bo">
+<field name="id" value="165" row="0"/>
+<field name="poid" value="75" row="0"/>
+<field name="cinvcode" value="010102" row="0"/>
+<field name="cinvname" value="螺丝钉" row="0"/>
+<field name="iquantity" value="20" row="0"/>
+<field name="darrivedate" value="2008-03-28T00:00:00" row="0"/>
+<field name="cinvm_unit" value="公斤" row="0"/>
+<field name="igrouptype" value="0" row="0"/>
+<field name="iinvexchrate" value="0" row="0"/>
+<field name="ipertaxrate" value="17.000000" row="0"/>
+<field name="btaxcost" value="0" row="0"/>
+<field name="bgsp" value="0" row="0"/>
+<field name="sotype" value="0" row="0"/>
+<field name="iinvmpcost" value="15.000000" row="0"/>
+<field name="editprop" value="M" row="0"/>
+<field name="id" value="" row="1"/>
+<field name="poid" value="75" row="1"/>
+<field name="cinvcode" value="010101" row="1"/>
+<field name="cinvname" value="金属板" row="1"/>
+<field name="inum" value="10" row="1"/>
+<field name="iquantity" value="10" row="1"/>
+<field name="darrivedate" value="2008-10-25T00:00:00" row="1"/>
+<field name="cinvm_unit" value="平方米" row="1"/>
+<field name="igrouptype" value="1" row="1"/>
+<field name="iinvexchrate" value="1" row="1"/>
+<field name="ipertaxrate" value="17.000000" row="1"/>
+<field name="btaxcost" value="0" row="1"/>
+<field name="bgsp" value="0" row="1"/>
+<field name="sotype" value="0" row="1"/>
+<field name="iinvmpcost" value="15.000000" row="1"/>
+<field name="editprop" value="A" row="1"/>
+</body>
+</bo>
+<returnParams>
+<param name = "curID"/>
+<param name = "CurDom"/>
+</returnParams>
+</u8apiservice>
+</ufinterface>
+

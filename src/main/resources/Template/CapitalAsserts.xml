@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexcanged:导入时编码是否转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="capitalasserts" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+	<capitalasserts>
+		<header>
+			<assetno/>
+			<assetname/>
+			<typeno/>
+			<originalvalue/>
+			<startusedate/>
+			<currency/>
+			<foreigncurrencynumber/>
+			<exchangerate/>
+			<worktotal/>
+			<workunit/>
+			<accwork/>
+			<accdepr/>
+			<usedmonths/>
+			<accountaddmannerno/>
+			<status/>
+			<depreciationmanner/>
+			<life/>
+			<netleftvalue/>
+			<netleftvaluerate/>
+			<style/>
+			<buildingarea/>
+			<buildingquantity/>
+			<machinequantity/>
+			<machinewatt/>
+			<reservesite/>
+			<decvalue/>
+			<sgroupnum/>
+                        <skeeper/>
+		</header>
+		<body>
+			<entry>
+				<assetno/>
+				<deptno/>
+				<deptscale/>
+				<depreciationitemno/>
+				<depreciationitemname/>
+				<relativeprojectno/>
+				<relativeprojectname/>
+				<relativecItemclsId/>
+			</entry>
+		</body>
+	</capitalasserts>
+</ufinterface>
+<!--
+说明:本模版用于固定资产卡片的导入导出和删除,
+当用于卡片删除时,仅填写主表部分的资产编号节点[assertno]即可.
+
+主表：
+assertno		VarChar	27	非空	资产编号	
+assertname		VarChar	50	非空	固定资产名称	
+typeno			varChar	10	非空	类别编码	当前账套中已存在的最末级类别编号
+originalvalue		Float		非空	原值	
+startusedate		DateTime	非空	开始使用日期	小于等于“登录期间 - 1”
+currency		varChar	8	非空	币种名称	当前账套中已存在的币种名称
+foreigncurrency		Float		可空 	外币原值	币种为本币时此处为0	
+exchangerate		Float		可空	汇率		币种为本币时此处为1
+worktotal		Float		可空	工作总量	大于等于0
+workunit		varChar10	可空	工作量单位	
+accwork			Float		可空	累计工作量	大于等于0并且小于等于工作总量
+accdepr			Float		可空	累计折旧	大于等于0并且小于等于(原值-净值)
+usedmonths		Int		可空	已使用月份	小于等于“登录期间-开始使用期间-1”
+accountaddmannerno	varChar	10	非空	增加方式编号	当前账套中已存在的最末级编号
+status			varChar	10	非空	使用状况编号	当前账套中已存在的最末级编号
+depreciationmanner	varChar	10	非空	折旧方法编号	当前账套中已存在的编号
+life			Int		可空	可使用月份(即使用年限)	大于等于0并且小于等于999*12
+netleftvalue		Float		可空	净残值		小于等于“净值”并且等于“原值*净残值率”
+netleftvaluerate	Float		可空	净残值率	小于1并且等于“原值/净残值”
+style			varChar	50	可空	规格型号	
+buildingarea		Float		可空	建筑面积	
+buildingquantity	Int		可空	间(座)数	
+machinequantity		Int		可空	电机数量	
+machinewatt		Float		可空	电机功率	
+reservesite		varChar	50	可空	存放地点
+decvalue		Float		可空	期初减值准备	大于等于0
+sgroupnum	`	varChar	18	可空	资产组编码	当前账套中已存在的资产组编号
+
+
+子表：
+assertno		VarChar	27	非空	资产编号	
+deptno			VarChar	12	非空	部门编号		部门档案的最末级编号
+deptscale		Float		可空	使用比例		大于0并且小于等于1
+depreciationitemno	varChar	15	可空	对应折旧科目编码	已存在的科目编号
+depreciationitemname	varChar	50	可空	对应折旧科目名称	已存在的科目名称
+relativeprojectno	varChar	20	可空	对应项目编码		已存在的项目编码
+relativeprojectname	varChar	50	可空	对应项目名称		已存在的项目名称
+relativecItemclsId      VarChar2	可空 	项目大类
+-->

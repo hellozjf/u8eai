@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ufinterface roottag="ex_archive_trademode" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <common>
+    <tmcode />
+    <tmname />
+    <bustype />
+    <stcode />
+    <stname />
+    <processmode />
+    <ptcode />
+    <ptname />
+    <imbustype />
+    <cimbustype />
+    <remark />
+    <default />
+  </common>
+</ufinterface>
+
+
+<!--
+元素名称 = bustype	描述 = 业务类型	数据类型 = 1	是否非空 = 0
+元素名称 = stcode	描述 = 销售类型编号	数据类型 = 1	是否非空 = 1
+元素名称 = stname	描述 = 销售类型	数据类型 = 1	是否非空 = 0
+元素名称 = tmcode	描述 = 贸易方式代码	数据类型 = 1	是否非空 = 0
+元素名称 = tmname	描述 = 贸易方式	数据类型 = 1	是否非空 = 1
+
+-->

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ufinterface>
+  <ATPRules>
+    <ATPRule>
+      <ATPCode />
+      <Description />
+      <OverDemandDays />
+      <OverSupplyDays />
+      <InfiniteSupplyDays />
+      <DemandFlag />
+      <SupplyFlag />
+    </ATPRule>
+  </ATPRules>
+</ufinterface>
+<!--ATPCode ATP规则代号Description 规则说明OverDemandDays 逾期需求天数OverSupplyDays 逾期供应天数InfiniteSupplyDays 无限供应天数DemandFlag 需求来源SupplyFlag 供应来源-->

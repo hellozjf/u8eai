@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 职位级别档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="joblevel" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <persontype id="">
+    <code />
+    <name />
+    <simplename />
+    <simplespell />
+    <levels />
+    <pcodeid />
+    <sysflag />
+    <childflag />
+    <hideflag />
+    <memo />
+  </persontype>
+</ufinterface>
+<!--
+元素名称	描述	数据类型	是否非空	有效值范围	备注
+code	代码	varchar(30)	Yes		
+name	代码名称	varchar(60)	Yes		
+simplename	简称	varchar(60)	No		
+simplespell	简拼	varchar(60 )	No		
+levels	代码级别	int	No		
+pcodeid	上级代码	varchar(30)	No		
+sysflag	系统/自定义标志	bit	No		
+childflag	是否有下级代码	bit	No		
+hideflag	显示/隐藏	bit	No		
+memo	备注	varchar(100)	No		
+-->

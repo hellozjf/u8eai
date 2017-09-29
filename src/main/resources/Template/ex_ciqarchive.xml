@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 银行档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="ex_ciqarchive" billtype="" docid="" receiver="" sender="" proc="ADD" codeexchanged="N" exportneedexch="Y" version="2.0">
+  <ex_ciqarchive>
+    <guid />
+    <id />
+    <cciqcode />
+    <cciqname />    
+    <cciqenglishname />    
+    <ccomunitcode />
+    <fimtaxrate />
+    <fextaxrate />
+    <fexrettaxrate />
+    <cnote />    
+  </ex_ciqarchive>
+</ufinterface>
+<!--
+
+
+<guid          display="港口代码" iswhere="N" type="text" description="港口代码">guid</guid>   
+	<id            display="ID" iswhere="N" type="text" description="ID">id</id>   
+	<cciqcode      display="海关编码" iswhere="Y" type="text" description="海关编码">cciqcode</cciqcode>   
+	<cciqname      display="海关名称" iswhere="Y" type="text" description="海关名称">cciqname</cciqname>   
+	<cciqenglishname      display="海关英文名称" iswhere="Y" type="text" description="海关英文名称">cciqenglishname</cciqenglishname>   
+	<ccomunitcode  display="计量单位编码" iswhere="N" type="text" description="计量单位编码">ccomunitcode</ccomunitcode>   
+	<fimtaxrate    display="进口关税税率" iswhere="N" type="text" description="进口关税税率">fimtaxrate</fimtaxrate>   
+	<fextaxrate    display="出口税率" iswhere="N" type="text" description="出口税率">fextaxrate</fextaxrate>   
+	<fexrettaxrate display="出口退税税率" iswhere="N" type="text" description="出口退税税率">fexrettaxrate</fexrettaxrate>   
+	<cnote         display="备注" iswhere="N" type="text" description="备注">cnote</cnote>   
+
+
+-->

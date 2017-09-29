@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--时格 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="TimeBucket" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <TimeBucket>
+    <Header>
+      <TbId />
+      <TbCode />
+      <Description />
+    </Header>
+    <Body>
+      <TbDId />
+      <TbId />
+      <SortSeq />
+      <TbType />
+      <Days />
+      <StartLoc />
+    </Body>
+  </TimeBucket>
+</ufinterface>
+<!-- 
+
+
+TbId 		int		时格Id		非空
+
+
+TbCode  	char(4)  	时格代号  	可空
+
+
+Description  	varchar(60)  	说明  		可空
+
+
+TbDId	  	int 		明细Id  	非空
+
+
+TbId  		int  		表头Id  	非空
+
+
+SortSeq  	int  		行号  		非空
+
+
+TbType  	int  		类别  		可空
+
+
+Days  		smallint  	日数  		可空
+
+
+StartLoc  	smallint  	起始位置 	可空
+
+
+-->

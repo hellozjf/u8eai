@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 付款条件 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="paycondition" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <paycondition>
+    <code />
+    <name />
+    <creditdays />
+    <discountdays1 />
+    <discountrate1 />
+    <discountdays2 />
+    <discountrate2 />
+    <discountdays3 />
+    <discountrate3 />
+    <discountdays4 />
+    <discountrate4 />
+    <maxdiscountdays />
+  </paycondition>
+</ufinterface>
+<!--
+
+
+code	        varchar       3       付款条件编码	不分级	主表关联项
+
+
+name	        varchar       60      付款条件名称	格式如 2/10，1/30，N/45	
+
+
+creditday	smallint      2       信用天数		
+
+
+discountdays1	smallint      2       优惠天数1		
+
+
+discountrate1	numeric       5       优惠率1		
+
+
+discountdays2	smallint      2       优惠天数2		
+
+
+discountdays2	numeric       5       优惠率2		
+
+
+discountdays3	smallint      2       优惠天数3		
+
+
+discountdays3	numeric       5       优惠率3		
+
+
+discountdays4	smallint      2       优惠天数4		
+
+
+discountdays4	numeric       5       优惠率4		
+
+
+maxdiscountdays smallint      2       最多优惠天数							
+
+
+-->

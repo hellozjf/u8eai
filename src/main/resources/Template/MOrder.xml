@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--生产订单 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="MOrder" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <MOrder>
+    <Order>
+      <MoId />
+      <MoCode />
+      <Define1 />
+      <Define2 />
+      <Define3 />
+      <Define4 />
+      <Define5 />
+      <Define6 />
+      <Define7 />
+      <Define8 />
+      <Define9 />
+      <Define10 />
+      <Define11 />
+      <Define12 />
+      <Define13 />
+      <Define14 />
+      <Define15 />
+      <Define16 />
+    </Order>
+    <OrderDetail>
+      <MoDId />
+      <MoId />
+      <SortSeq />
+      <MoClass />
+      <MoTypeCode />
+      <Qty />
+      <MrpQty />
+      <AuxUnitCode />
+      <AuxQty />
+      <ChangeRate />
+      <MoLotCode />
+      <WhCode />
+      <MDeptCode />
+      <SoType />
+      <SoCode />
+      <SoSeq />
+      <DeclaredQty />
+      <QualifiedInQty />
+      <Status />
+      <OrgStatus />
+      <InvCode />
+      <Free1 />
+      <Free2 />
+      <Free3 />
+      <Free4 />
+      <Free5 />
+      <Free6 />
+      <Free7 />
+      <Free8 />
+      <Free9 />
+      <Free10 />
+      <RelsDate />
+      <RelsUser />
+      <CloseDate />
+      <OrgClsDate />
+      <Define22 />
+      <Define23 />
+      <Define24 />
+      <Define25 />
+      <Define26 />
+      <Define27 />
+      <Define28 />
+      <Define29 />
+      <Define30 />
+      <Define31 />
+      <Define32 />
+      <Define33 />
+      <Define34 />
+      <Define35 />
+      <Define36 />
+      <Define37 />
+      <LeadTime />
+      <OrdFlag />
+    </OrderDetail>
+    <MOrderDetail>
+      <MoDId />
+      <StartDate />
+      <DueDate />
+    </MOrderDetail>
+    <Allocate>
+      <AllocateId />
+      <MoDId />
+      <SortSeq />
+      <OpSeq />
+      <FVFlag />
+      <BaseQtyN />
+      <BaseQtyD />
+      <ParentScrap />
+      <CompScrap />
+      <Qty />
+      <IssQty />
+      <DeclaredQty />
+      <StartDemDate />
+      <EndDemDate />
+      <WhCode />
+      <LotNo />
+      <WIPType />
+      <ByproductFlag />
+      <Offset />
+      <InvCode />
+      <Free1 />
+      <Free2 />
+      <Free3 />
+      <Free4 />
+      <Free5 />
+      <Free6 />
+      <Free7 />
+      <Free8 />
+      <Free9 />
+      <Free10 />
+    </Allocate>
+  </MOrder>
+</ufinterface>
+<!-- 
+
+
+MoId		int  		生产订单表头Id		非空
+
+
+MoCode  	varchar(20)  	生产订单号码  		非空
+
+
+Define1  	varchar(20)   	表头自定义项1		可空
+
+
+Define2  	varchar(20)  	表头自定义项2		可空
+
+
+Define3  	varchar(20)  	表头自定义项3		可空
+
+
+Define4  	datetime  	表头自定义项4		可空
+
+
+Define5  	int  		表头自定义项5		可空
+
+
+Define6  	datetime  	表头自定义项6		可空
+
+
+Define7  	real  		表头自定义项7		可空
+
+
+Define8  	varchar(4)  	表头自定义项8		可空
+
+
+Define9  	varchar(8)  	表头自定义项9		可空
+
+
+Define10  	varchar(60)  	表头自定义项10		可空
+
+
+Define11  	varchar(120)  	表头自定义项11		可空
+
+
+Define12  	varchar(120)  	表头自定义项12		可空
+
+
+Define13  	varchar(120)  	表头自定义项13		可空
+
+
+Define14  	varchar(120)  	表头自定义项14		可空
+
+
+Define15  	int  		表头自定义项15		可空
+
+
+Define16  	real  		表头自定义项16		可空
+
+
+MoDId  		int 		生产订单明细ID		非空	
+
+
+MoId  		int  		生产订单表头ID  	非空
+
+
+SortSeq  	int  		行号  			非空
+
+
+MoClass  	tinyint  	标准/非标准生产订单  	可空
+
+
+MoTypeId  	int  		生产订单类别  		可空
+
+
+Qty  		Udt_QTY  	生产订单数量  		可空
+
+
+MrpQty  	Udt_QTY  	Mrp净算量  		可空
+
+
+AuxUnitCode  	varchar(10)  	辅助计量单位  		可空
+
+
+AuxQty  	Udt_QTY  	辅助数量  		可空
+
+
+ChangeRate  	Udt_Rate100  	换算率  		可空
+
+
+MoLotCode  	varchar(20)  	生产批号  		可空
+
+
+WhCode  	varchar(10)  	仓库代号  		可空
+
+
+MDeptCode  	varchar(12)  	生产部门  		可空
+
+
+SoType  	tinyint  	销售订单/预测订单  	可空
+
+
+SoCode  	varchar(20)  	订单号码  		可空
+
+
+SoSeq  		int  		订单序号  		可空
+
+
+DeclaredQty  	Udt_QTY  	报检数量  		可空
+
+
+QualifiedInQty 	Udt_QTY 	入库数量  		可空
+
+
+Status  	tinyint  	状态（NA-开立/FM-锁定/OP-审核/CL-关闭）  可空
+
+
+OrgStatus  	tinyint  	原始状态  	可空
+
+
+InvCode  	varchar(20)  	存货编码  		可空
+
+
+Free1  		varchar(20)  	自由项1  		可空
+
+
+Free2  		varchar(20)  	自由项2  		可空
+
+
+Free3  		varchar(20)  	自由项3  		可空
+
+
+Free4  		varchar(20)  	自由项4  		可空
+
+
+Free5  		varchar(20)  	自由项5  		可空
+
+
+Free6  		varchar(20)  	自由项6  		可空
+
+
+Free7  		varchar(20)  	自由项7  		可空
+
+
+Free8  		varchar(20)  	自由项8  		可空
+
+
+Free9  		varchar(20)  	自由项9  		可空
+
+
+Free10 		varchar(20)  	自由项10  		可空
+
+
+RelsDate  	datetime  	审核日期  		可空
+
+
+RelsUser  	varchar(20)  	审核人  		可空
+
+
+CloseDate 	datetime  	结案日期  		可空
+
+
+OrgClsDate 	datetime  	原始结案日期  		可空
+
+
+Define22  	varchar(60) 	表体自定义项1 		可空
+
+
+Define23  	varchar(60) 	表体自定义项2 		可空
+
+
+Define24  	varchar(60)  	表体自定义项3		可空
+
+
+Define25  	varchar(60)  	表体自定义项4		可空
+
+
+Define26  	real  		表体自定义项5		可空
+
+
+Define27  	real  		表体自定义项6		可空
+
+
+Define28  	varchar(120)  	表体自定义项7		可空
+
+
+Define29  	varchar(120)  	表体自定义项8		可空
+
+
+Define30  	varchar(120)  	表体自定义项9		可空
+
+
+Define31  	varchar(120)  	表体自定义项10		可空
+
+
+Define32  	varchar(120)  	表体自定义项11		可空
+
+
+Define33  	varchar(120)  	表体自定义项12		可空
+
+
+Define34  	int  		表体自定义项13		可空
+
+
+Define35  	int  		表体自定义项14		可空
+
+
+Define36  	datetime  	表体自定义项15		可空
+
+
+Define37  	datetime  	表体自定义项16		可空
+
+
+AllocateId  	int 		子件资料Id		非空
+
+
+MoDId  		int  		生产订单明细ID  	非空
+
+
+SortSeq  	int  		序号  			非空
+
+
+OpSeq  		char(4)  	工序行号  		可空
+
+
+FVFlag  	tinyint  	固定/变动批量(0/1)  	可空
+
+
+BaseQtyN  	Udt_QTY  	基本用量－分子  	可空
+
+
+BaseQtyD  	Udt_QTY  	基本用量－分母  	可空
+
+
+ParentScrap  	Udt_Rate  	母件损耗率  		可空
+
+
+CompScrap  	Udt_Rate  	子件损耗率  		可空
+
+
+Qty  		Udt_QTY  	数量  			可空
+
+
+IssQty  	Udt_QTY  	已领量  		可空
+
+
+DeclaredQty  	Udt_QTY  	报检数量  		可空
+
+
+StartDemDate  	datetime  	开始需求日期  		可空
+
+
+EndDemDate  	datetime  	结束需求日  		可空
+
+
+WhCode  	varchar(10)  	仓库代号  		可空
+
+
+LotNo  		varchar(20)  	批号  			可空
+
+
+WIPType  	tinyint  	WIP属性(1入库/2工序/3领料)  可空
+
+
+ByproductFlag  	bit  		是否联副产品  		非空
+
+
+QcFlag  	bit  		检验否  		非空
+
+
+Offset  	smallint  	偏置期  		可空
+
+
+InvCode  	varchar(20)  	存货编码  		可空	
+
+
+Free1  		varchar(20)  	自由项1  		可空
+
+
+Free2  		varchar(20)  	自由项2  		可空
+
+
+Free3  		varchar(20)  	自由项3  		可空
+
+
+Free4  		varchar(20)  	自由项4  		可空
+
+
+Free5  		varchar(20)  	自由项5  		可空
+
+
+Free6  		varchar(20)  	自由项6  		可空
+
+
+Free7  		varchar(20)  	自由项7  		可空
+
+
+Free8  		varchar(20)  	自由项8  		可空
+
+
+Free9  		varchar(20)  	自由项9  		可空
+
+
+Free10 		varchar(20)  	自由项10  		可空
+
+
+-->

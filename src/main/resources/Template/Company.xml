@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 集团企业目录 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="company" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <common>
+    <code>
+    </code>
+    <name>
+    </name>
+    <cComName>
+    </cComName>
+    <bSeal>
+    </bSeal>
+    <bGetData>
+    </bGetData>
+    <cComMemo>
+    </cComMemo>
+  </common>
+</ufinterface>
+<!--
+元素名称	描述	数据类型	是否非空	有效值范围	备注
+code	企业编码	varchar(4)	Yes		
+name	企业简称	varchar(20)	Yes		与部门档案部门名称对应
+cComName	企业全称	varchar(40)	Yes		
+bSeal	是否封存	bit	Yes		
+bGetData	是否停止数据抽取	bit	Yes		
+cComMemo	备注	varchar(240)	No		
+-->

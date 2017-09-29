@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--凭证 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexcanged:导入时编码是否转换  exportneedexch导出时是否要根据对照表替换 renewproofno重新编号 -->
+<ufinterface roottag="voucher" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" renewproofno="" version="2.0">
+  <voucher id="">
+    <voucher_head>
+      <company />
+      <voucher_type />
+      <fiscal_year />
+      <accounting_period />
+      <voucher_id />
+      <attachment_number />
+      <date />
+      <enter />
+      <cashier />
+      <signature />
+      <checker />
+      <posting_date />
+      <posting_person />
+      <voucher_making_system />
+      <memo1 />
+      <memo2 />
+      <reserve1 />
+      <reserve2 />
+      <revokeflag />
+    </voucher_head>
+    <voucher_body>
+      <entry>
+        <entry_id />
+        <account_code />
+        <abstract />
+        <settlement />
+        <document_id />
+        <document_date />
+        <currency />
+        <unit_price />
+        <exchange_rate1 />
+        <exchange_rate2 />
+        <debit_quantity />
+        <primary_debit_amount />
+        <secondary_debit_amount />
+        <natural_debit_currency />
+        <credit_quantity />
+        <primary_credit_amount />
+        <secondary_credit_amount />
+        <natural_credit_currency />
+        <bill_type />
+        <bill_id />
+        <bill_date />
+        <auxiliary_accounting>
+          <item name="dept_id" />
+          <item name="personnel_id" />
+          <item name="cust_id" />
+          <item name="supplier_id" />
+          <item name="item_class" />
+          <item name="item_id" />
+          <item name="operator" />
+          <item name="self_define1">
+          </item>
+          <item name="self_define2">
+          </item>
+          <item name="self_define3">
+          </item>
+          <item name="self_define4">
+          </item>
+          <item name="self_define5">
+          </item>
+          <item name="self_define6">
+          </item>
+          <item name="self_define7">
+          </item>
+          <item name="self_define8">
+          </item>
+          <item name="self_define9">
+          </item>
+          <item name="self_define10">
+          </item>
+          <item name="self_define11">
+          </item>
+          <item name="self_define12">
+          </item>
+          <item name="self_define13">
+          </item>
+          <item name="self_define14">
+          </item>
+          <item name="self_define15">
+          </item>
+          <item name="self_define16">
+          </item>
+        </auxiliary_accounting>
+        <detail>
+          <cash_flow_statement>
+            <cash_flow cash_item="" natural_debit_currency="" natural_credit_currency="" />
+          </cash_flow_statement>
+          <code_remark_statement>
+            <code_remark i_id="1">
+              <item name="">
+              </item>  
+
+
+      					...
+
+
+       				</code_remark>
+            <code_remark i_id="2">
+              <item name="">
+              </item>       				       					...
+
+
+       				</code_remark>
+
+
+				...
+
+
+    			</code_remark_statement>
+        </detail>
+      </entry>
+    </voucher_body>
+  </voucher>
+</ufinterface>
+<!-- 现将各数据项说明如下 
+
+
+ voucher_head 凭证头：
+
+
+   	company 				公司的名称或编号,U8用户不用填写，给NC用户使用
+
+
+	voucher_type 		nvarchar(2)	凭证类别    	*不能为空
+
+
+	fiscal_year  				凭证所属的会计年度 *不能为空
+
+
+	accounting_period 	tinyint		所属的会计期间    *不能为空
+
+
+	voucher_id 		smallint	凭证号   	*当节点ufinterface属性renewproofno="false"或renewproofno=""时,不能为空;renewproofno="true"时,可以为空
+
+
+	attachment_number 	smallint	所附单据的数量  
+
+
+	date 			datetime	制单日期  	*不能为空
+
+
+	enter 			nvarchar(20)	制单人名称  	
+
+
+  	cashier 		nvarchar(20)	出纳名称   	
+
+
+  	signature 		bit		是否已签字  	
+
+
+  	checker 		nvarchar(20)	审核人名称   	
+
+
+	posting_date 		datetime	记账日期   	
+
+
+  	posting_person 		nvarchar(20)	记账人名称   	
+
+
+	voucher_making_system 	nvarchar(10)	制单系统标示,导入时必须填GL,即总帐系统单据  	
+
+
+   	memo1 			nvarchar (10)	备注1   	
+
+
+   	memo2 			nvarchar (10)	备注2   	
+
+
+   	reserve1		nvarchar (20)	保留(外部凭证业务类型) 
+
+
+   	reserve2		nvarchar (50)	保留(外部凭证业务号)   
+
+
+        revokeflag				作废凭证此字段填1，正常凭证不填，有错凭证填2
+
+
+ voucher_body 凭证体：
+
+
+ 	entry_id 		smallint	分录号  	
+
+
+ 	account_code 		nvarchar(15)	科目编码   	
+
+
+ 	abstract 		nvarchar(60)	摘要   		
+
+
+  	settlement 		nvarchar (3)	结算方式,在科目是银行或往来时，可以填写此项	
+
+
+ 	document_id 		nvarchar (30)	票据号，在科目是银行或往来时，可以填写此项     	
+
+
+ 	document_date 		datetime	票据日期，在科目是银行或往来时，可以填写此项  	
+
+
+ 	currency 		nvarchar (8)	币种   		
+
+
+ 	unit_price 				单价,在科目有数量核算时，填写此项 
+
+
+ 	exchange_rate1 		float		汇率1 主辅币核算时使用 折辅汇率 原币*汇率1=辅币  NC用户使用
+
+
+ 	exchange_rate2 		float		汇率2 折主汇率 折本汇率 本币*汇率2=主币，U8用户使用
+
+
+ 	debit_quantity 		float		借方数量,在科目有数量核算时，填写此项 	
+
+
+ 	primary_debit_amount 	money		原币借方发生额  
+
+
+ 	secondary_debit_amount 	money		辅币借方发生额 	
+
+
+ 	natural_debit_currency 	money		本币借方发生额 	*与本币贷方发生额不能同时为空
+
+
+ 	credit_quantity 	float		贷方数量,在科目有数量核算时，填写此项
+
+
+ 	primary_credit_amount 	money		原币贷方发生额 	
+
+
+ 	secondary_credit_amount money		辅币贷方发生额 	
+
+
+ 	natural_credit_currency money		本币贷方发生额   *与本币借方发生额不能同时为空	
+
+
+ 	bill_type		nvarchar (20)	原始单据类型，导入凭证时填空 	
+
+
+  	bill_id 		nvarchar (30)	原始单据编号，导入凭证时填空  	
+
+
+  	bill_date 		datetime	原始单据日期，导入凭证时填空 	
+
+
+ 	auxiliary_accounting 	辅助核算 	
+
+
+            	dept_id 	nvarchar (12)	部门		*科目有部门核算时不能为空
+
+
+            	cperson_id 	nvarchar (8) 	人员		*科目有个人核算时不能为空
+
+
+            	ccus_id 	nvarchar (20)	客户		*科目有客户核算时不能为空  	
+
+
+            	csup_id 	nvarchar (12)	供应商		*科目有供应商核算时不能为空   	
+
+
+	    	item_class 	nvarchar(2) 	项目大类	*科目有项目核算时不能为空 	
+
+
+            	citem_id 	nvarchar (20)	项目档案	*科目有项目核算时不能为空                     
+
+
+	    	operator  	nvarchar (20)	业务员		 
+
+
+		define1 	nvarchar 20	自定义字段1
+
+
+		define2 	nvarchar 20	自定义字段2
+
+
+		define3 	nvarchar 20	自定义字段3
+
+
+		define4 	datetime	自定义字段4
+
+
+		define5 	smallint	自定义字段5
+
+
+		define6 	datetime	自定义字段6
+
+
+		define7 	float		自定义字段7
+
+
+		define8 	nvarchar 4	自定义字段8
+
+
+		define9 	nvarchar 8	自定义字段9
+
+
+		define10 	nvarchar 60	自定义字段10
+
+
+		define11 	nvarchar 120	自定义字段11
+
+
+		define12 	nvarchar 120	自定义字段12
+
+
+		define13 	nvarchar 120	自定义字段13
+
+
+		define14 	nvarchar 120	自定义字段14
+
+
+		define15 	int		自定义字段15
+
+
+		define16 	float		自定义字段16	
+
+
+        detail 明细
+
+
+            	cash_flow_statement 		现金流量表
+
+
+            	cash_flow 			现金流量   三个属性:
+
+
+			cash_item  		现金流量项目
+
+
+			natural_debit_currency 	借方金额
+
+
+			natural_credit_currency 贷方金额
+
+
+		code_remark_statement		科目备查簿
+
+
+			code_remark i_id="1"	备查第一条记录
+
+
+				item name="" 	项目名称及其值，同一记录有多个item
+
+
+-->

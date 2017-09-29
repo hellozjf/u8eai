@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--仓库存货对照表,所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="whinvcontrapose" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <whinvcontrapose>
+    <cwhcode />
+    <cinvcode />
+    <itopsum />
+    <ilowsum />
+    <isafenum />
+    <iwastage />
+    <ifrequency />
+    <cfrequency />
+    <idays />
+    <dlastdate />
+    <cwhpersoncode />
+	<proxyvenwhall />
+  </whinvcontrapose>
+  <i_id />
+</ufinterface>
+<!--
+
+
+CWhCode	仓库编码 	varchar	10 	False 
+
+
+cInvCode	存货编码 	varchar	20 	False 
+
+
+iTopSum	最高库存 	float	8 	True 
+
+
+iLowSum	最低库存 	float	8 	True 
+
+
+iSafeNum	安全库存量 	float	8 	True 
+
+
+iWastage	合理损耗率 	float	8 	True 
+
+
+iFrequency	盘点周期 	smallint	2 	True 
+
+
+cFrequency	盘点周期单位 	varchar	10 	True 
+
+
+iDays	盘点日 	smallint	2 	True 
+
+
+dLastDate	上次盘点日期 	datetime	8 	True 
+
+
+pubufts	时间戳 	timestamp	8 	True 
+
+
+cWhPersonCode	库管员 	varchar	20 	True 
+
+
+proxyvenwhall	代管仓	False 
+
+
+-->

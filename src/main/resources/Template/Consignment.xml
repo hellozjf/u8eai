@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--发货单 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换-->
+<ufinterface roottag="consignment" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <consignment>
+    <header>
+      <id />
+      <outid />
+      <code />
+      <vouchertype />
+      <saletype />
+      <date />
+      <deptcode />
+      <personcode />
+      <custcode />
+      <paycondition_code />
+      <shippingchoice />
+      <address />
+      <currency_name />
+      <currency_rate />
+      <taxrate />
+      <beginflag />
+      <returnflag />
+      <remark />
+      <define1 />
+      <define2 />
+      <define3 />
+      <define4 />
+      <define5 />
+      <define6 />
+      <define7 />
+      <define8 />
+      <define9 />
+      <define10 />
+      <define11 />
+      <define12 />
+      <define13 />
+      <define14 />
+      <define15 />
+      <define16 />
+      <maker />
+      <sale_cons_flag />
+      <retail_custname />
+      <operation_type />
+      <cverifier />
+      <cdeliverunit />
+      <cdeliveradd />
+      <ccontactname />
+      <cofficephone />
+      <cmobilephone />
+      <caddcode />
+      <cgatheringplan />
+      <dcreditstart />
+      <icreditdays />
+      <dgatheringdate />
+      <bcredit />
+    </header>
+    <body>
+      <entry>
+        <headid />
+        <warehouse_code />
+        <inventory_code />
+        <quantity />
+        <num />
+        <itb />
+        <ccomunitcode />
+        <cinvm_unit />
+        <iinvexchrate />
+        <cinva_unit />
+        <assistantunit />
+        <quotedprice />
+        <price />
+        <taxprice />
+        <money />
+        <tax />
+        <sum />
+        <discount />
+        <natprice />
+        <natmoney />
+        <nattax />
+        <natsum />
+        <natdiscount />
+        <batch />
+        <remark />
+        <backflag />
+        <overdate />
+        <backquantity />
+        <backnum />
+        <discount1 />
+        <discount2 />
+        <inventory_printname />
+        <taxrate />
+        <item_class />
+        <item_classname />
+        <item_code />
+        <item_name />
+        <retail_price />
+        <retail_money />
+        <vendor_name />
+        <unitrate />
+        <unit_code />
+        <free1 />
+        <free2 />
+        <free3 />
+        <free4 />
+        <free5 />
+        <free6 />
+        <free7 />
+        <free8 />
+        <free9 />
+        <free10 />
+        <define22 />
+        <define23 />
+        <define24 />
+        <define25 />
+        <define26 />
+        <define27 />
+        <define28 />
+        <define29 />
+        <define30 />
+        <define31 />
+        <define32 />
+        <define33 />
+        <define34 />
+        <define35 />
+        <define36 />
+        <define37 />
+		    <batchproperty1></batchproperty1>
+		    <batchproperty2></batchproperty2>
+		    <batchproperty3></batchproperty3>
+		    <batchproperty4></batchproperty4>
+		    <batchproperty5></batchproperty5>
+		    <batchproperty6></batchproperty6>
+		    <batchproperty7></batchproperty7>
+		    <batchproperty8></batchproperty8>
+		    <batchproperty9></batchproperty9>
+		    <batchproperty10></batchproperty10>
+        <ccorcode />
+        <icorid />
+        <ccusinvcode />
+        <ccusinvname />
+        <ippartseqid />
+        <ippartqty />
+        <ippartid />
+        <bqaneedcheck />
+        <bqaurgency />
+        <cmassunit />
+        <imassdate />
+        <dmdate />
+        <cordercode />
+        <iorderrowno />
+        <cvmivencode />
+			  <irowno></irowno>
+			  <ExpirationDate></ExpirationDate>
+			  <ExpiratDateCalcu></ExpiratDateCalcu>
+			  <ExpirationItem></ExpirationItem>
+			  <ReasonCode></ReasonCode>
+      </entry>
+    </body>
+  </consignment>
+</ufinterface>
+<!--
+表头信息：
+id 		主表ID		int 
+outid 导入GUID uniqueidentifier
+code		单据号		varchar (10)  	非空	 必须唯一
+vouchertype	单据类型：	varchar (2) 	非空	05 发货单06 委托代销发货单00 委托代销调整单
+saletype	销售类型编码	varchar (2) 	非空	必须取值于销售类型档案
+warehouse	仓库				可空	非空时必须取值于仓库档案
+date		单据日期	datetime 	非空	合法的公历日期
+deptcode 	部门编号	varchar (12) 	非空	必须取值于部门档案
+personcode 	职员编号	varchar (8) 	可空	非空时必须取值于职员档案
+custcode 	客户编码	varchar (20) 	非空	必须取值于客户档案
+paycondition_code 付款条件编码	varchar (3) 	可空	非空时必须取值于付款条件档案
+shippingchoice 	发运方式编码	varchar (2) 	可空	非空时必须取值于发运方式档案
+address 	发往地址	varchar (40) 	可空	
+currency_name 	外币名称	varchar (8)	非空	缺省为本位币，必须取值于币种档案
+currency_rate 	汇率		float 		非空	若币种为本币，则汇率=1
+taxrate 	税率		float 		可空	为空时处理为0；非空时>=0
+beginflag 	期初标志	bit 		非空	（1：期初，0和NULL：非期初）
+returnflag 	退货标志	bit 		非空	（1退货，0-发货）
+balanceall	全部结算完毕标志bit 		非空	（1-完毕 0-未完毕）
+remark		备注		varchar (60) 	可空		
+discount_flag 	整单打折标志	bit 		可空	 1 是 0否
+define1 	自定义字段1	varchar (20) 	可空	
+define2 	自定义字段2	varchar (20) 	可空	
+define3 	自定义字段3	varchar (20) 	可空	
+define4 	自定义字段4	datetime 	可空	
+define5 	自定义字段5	smallint 	可空	
+define6 	自定义字段6	datetime 	可空	
+define7 	自定义字段7	float 		可空	
+define8 	自定义字段8	varchar (4) 	可空	
+define9 	自定义字段9	varchar (8) 	可空	
+define10 	自定义字段10	varchar (60) 	可空	
+define11 	自定义字段11	varchar (120) 	可空	
+define12 	自定义字段12	varchar (120) 	可空	
+define13 	自定义字段13	varchar (120) 	可空	
+define14 	自定义字段14	varchar (120) 	可空	
+define15 	自定义字段15	int		可空	
+define16 	自定义字段16	Float		可空	
+verifier 	审核人		varchar (20) 	可空	
+maker		制单人		varchar (20) 	非空	
+sale_cons_flag	1：先开票；0：先发货	smallint 	非空	1：先开票；0：先发货
+retail_custname 散户开票的客户名称	varchar (120) 	可空	
+operation_type	业务类型（普通/委托代销/分期收款）Varchar (8) 	非空	普通销售委托代销分期收款
+accounter	记账人		Varchar (20) 	可空	
+credit_name	信用审批人	Varchar(10)	可空
+表体信息：					
+headID		主表ID号	int 		非空	必须与主表ID相同
+warehouse_code 	仓库编号	varchar (10) 	非空	必须取值于仓库档案
+inventory_code 	存货编码	varchar (20)  	非空	取值于存货档案
+quantity 	主计量数量	float 		可空	任意数值
+unitquantity	和单位一致的数量Decimal(20,6)	可空	
+num 		件数		float 		可空	任意数值
+quotedprice 	报价		float 		可空	空时处理为0；非空>=0引入时检查帐套参数"报价是否含税"，如报价含税，则取含税报价，如含税报价为空，则根据无税报价×表体行税率计算含税报价并写入订单的报价。如报价不含税，则取无税报价，如无税报价为空，则根据含税报价÷表体行税率计算无税报价并写入订单的报价。
+price 		单价（原币，无税）float 	可空	空时处理为0；非空时>=0
+tax 		含税单价（原币）float 		可空	空时处理为0；非空时>=0
+money 		金额（原币，无税）money 	可空	任意数值
+tax 		税额（原币）	money 		可空	任意数值
+sum 		价税合计（原币）money 		可空	任意数值
+discount 	折扣额（原币）	money 		可空	任意数值
+natprice 	单价（本币，无税）float 	可空	非空时>=0
+natmoney 	金额（本币，无税）money 	可空	任意数值
+nattax 		税额（本币）	money 		可空	任意数值
+natsum 		价税合计（本币）money 		可空	任意数值
+natdiscount 	折扣额（本币）	money 		可空	任意数值
+Batch 		批号		varchar (20) 	可空	非空时，必须是批次表中的批号
+remark 		备注		varchar (20) 	可空	
+backflag 	1：退补发票	tinyint 	可空	非空时为1和0
+overdate 	失效日期	datetime 	可空	非空时必须是合法的公历日期
+backquantity 	退补数量	real 		可空	
+backnum 	退补件数	real 		可空	
+discount1 	扣率1		float 		可空	空时处理为100；非空时>=0
+discount2 	扣率2		float 		可空	空时处理为100；非空时>=0
+inventory_printname 	打印用存货名称	varchar (60) 	可空	
+taxrate 	税率		float 		可空	空时处理为0；非空>=0
+item_class	项目大类	varchar (2) 	可空	必须取值于项目档案
+item_classname	项目大类名称	Varchar(20) 	可空	必须取值于项目档案
+itemcode	项目		varchar (20) 	可空	必须取值于项目档案
+citemname	项目名称	Varchar(60) 	可空	必须取值于项目档案
+retail_price	零售单价	Float 		可空	
+retail		零售金额	Float 		可空	
+vendorname	供应商名称	Varchar(30)	可空	
+unitrate	换算率		Float 		可空	
+returnquantity  退货数量	float  		可空	空时处理为0；非空>=0且<数量
+unit_code 	单位id		Varchar(10)	可空	
+free1 		自由项1		varchar (20) 	可空	非空时必须取值于自由项档案
+free2 		自由项2		varchar (20) 	可空	非空时必须取值于自由项档案
+free3 		自由项3		varchar (20) 	可空	必须取值于自由项档案
+free4 		自由项4		varchar (20) 	可空	必须取值于自由项档案
+free5 		自由项5		varchar (20) 	可空	必须取值于自由项档案
+free6		自由项6		varchar (20) 	可空	必须取值于自由项档案
+free7 		自由项7		varchar (20) 	可空	必须取值于自由项档案
+free8 		自由项8		varchar (20) 	可空	必须取值于自由项档案
+free9 		自由项9		varchar (20) 	可空	必须取值于自由项档案
+free10 		自由项10	varchar (20) 	可空	必须取值于自由项档案
+define22 	单据体自定义项	varchar (60) 	可空	
+define23 	单据体自定义项	varchar (60) 	可空	
+define24 	单据体自定义项	varchar (60) 	可空	
+define25 	单据体自定义项	varchar (60) 	可空	
+define26 	单据体自定义项	float 		可空	
+define27 	单据体自定义项	float 		可空	
+define28	单据体自定义项	varchar (120) 	可空	
+define29	单据体自定义项	varchar (120) 	可空	
+define30	单据体自定义项	varchar (120) 	可空	
+define31	单据体自定义项	varchar (120) 	可空	
+define32	单据体自定义项	varchar (120) 	可空	
+define33	单据体自定义项	varchar (120) 	可空	
+define34	单据体自定义项	Int		可空	
+define35	单据体自定义项	Int		可空	
+define36	单据体自定义项	Datetime	可空	
+define37	单据体自定义项	Datetime	可空	
+batchproperty1 批次属性1  Decimal(38,8) 可空
+batchproperty2 批次属性2  Decimal(38,8) 可空
+batchproperty3 批次属性3  Decimal(38,8) 可空
+batchproperty4 批次属性4  Decimal(38,8) 可空
+batchproperty5 批次属性5  Decimal(38,8) 可空
+batchproperty6 批次属性6  nvarchar(240) 可空
+batchproperty7 批次属性7  nvarchar(240) 可空
+batchproperty8 批次属性8  nvarchar(240) 可空
+batchproperty9 批次属性9  nvarchar(240) 可空
+batchproperty10 批次属性10  Datetime 可空
+ccorcode	导入时不填值
+icorid		原发货单id	varchar(10)	可空
+cCusInvCode 	客户的存货编码	varchar(40)	可空	
+cCusInvName 	客户的存货名称	varchar(100)	可空	
+iPPartSeqID	选配序号	int	可空	
+iPPartQty	母件数量	数值	可空	
+iPPartID	母件编号	int	可空	∈物料表（存货＋结构性自由项）
+bQANeedCheck 	是否检验	bit	非空	1、0
+bQAUrgency	是否急料	bit	非空	1、0
+cMassUnit 	保质期单位	smallint	可空	保质期存货非空, ,必须是年/月/日三者之一;非保质期存货为空.
+iMassDate 	保质期	int	可空	保质期存货非空;非保质期存货为空. 1：年2：月3：日
+dmdate 生产日期 Datetime 可空
+cordercode 订单号 nvarchar(30) 可空
+iorderrowno 订单行号 int 可空
+cvmivencode 供应商编码 nvarchar(20) 可空
+irowno 行号 int 可空
+ExpirationDate 有效期至 nvarchar(20) 可空
+ExpiratDateCalcu 有效期推算方式 smallint 可空
+ExpirationItem 有效期 Datetime 可空
+ReasonCode 退货原因编码 nvarchar(20) 可空
+-->

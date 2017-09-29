@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 汇率 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="currencyrate" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch=" " version="2.0">
+  <currencyrate id="">
+    <id />
+    <name />
+    <period />
+    <type />
+    <date />
+    <rate />
+  </currencyrate>
+</ufinterface>
+<!--
+
+
+id	自动编号	输入汇率时的唯一标识   int(4)	
+
+
+name	币种   varchar(8)
+
+
+period	会计期间	  tinyint(1)
+
+
+type	汇率类型	1_浮动汇率,2_固定汇率,3_调整汇率	tinyint(1)
+
+
+date	日期	当itype=1, 为自然日期, 否则, 为iperiod   varchar(10)
+
+
+rate	汇率	只保存有汇率值的记录   float(8)
+
+
+-->

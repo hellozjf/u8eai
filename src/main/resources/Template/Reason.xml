@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 原因码 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="reason" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <common>
+    <code />
+    <name />
+    <Reasontype />
+    <ReasonMemo />
+  </common>
+</ufinterface>
+<!--
+
+
+Code	VARCHAR	10	非空	编码
+
+
+Name	VARCHAR	30	非空	名称
+
+
+Reasontype	smallint	非空	所属类型 (1不良品原因2让步放行原因3采购退货原因4销售退货原因5变更原因6拖欠原因)	
+
+
+ReasonMemo	VARCHAR	240	可空	说明	
+
+
+-->

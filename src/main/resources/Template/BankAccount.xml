@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--银行对账单roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexcanged:导入时编码是否转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="bankaccount" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <bankaccount>
+    <date />
+    <subjectcode />
+    <balancetype />
+    <balanceno />
+    <debitorcredit />
+    <money />
+    <balance />
+    <flag />
+    <beginflag />
+    <bdelete />
+  </bankaccount>
+</ufinterface>
+<!--
+
+
+date   		datetime  	银行对账单日期	不能为空
+
+
+subjectcode	varchar15	科目编码
+
+
+balancetype	varchar2	结算方式	应为末级结算方式，可为空，
+
+
+balanceno	varchar30	结算号		可为空
+
+
+debitorcredit	bit		方向            填写“借”或“贷”	
+
+
+money		decimal		金额		不能为空
+
+
+balance		decimal		余额		可为空，导入时，系统自动计算
+
+
+flag		int		对帐标志(Null_未达,<1-12> =自动对帐期间 <13-24> -12=手工对帐期间)	为空时，系统默认为未达账。不为空时，则应为1-24，不能为其它数字，其它数字时，系统默认为未达账。
+
+
+beginflag	int		期初标志，外部系统导入不传递此参数，不添值。
+
+
+bdelete		bit		是否核销	导入时，全部默认为否。			
+
+
+-->

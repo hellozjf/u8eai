@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 人员工资roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="salaryperson" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <salaryperson>
+    <personno />
+    <personname />
+    <departmentno />
+    <salarygradeno />
+    <persongradeno />
+    <isforeign />
+    <taxtoken />
+    <salarygradename />
+    <entry name="m1" />
+    <!-- ..............
+
+
+  -->
+    <entry name="m100" />
+  </salaryperson>
+</ufinterface>
+<!-- 
+
+
+personno	Varchar	10	非空	人员编号	
+
+
+personname	Varchar	40	非空	人员姓名	
+
+
+departmentno	Varchar	40	非空	部门编号	必须取值于部门档案
+
+
+salarygradeno	Varchar	3	非空	工资类别号	必须取值于(001-999)之间
+
+
+persongradeno	Int	4	可空	人员类别编号ID	类别必须在工资系统已经定义。如为空则默认为“无类别”。
+
+
+isforeign	Bit	1	可空	是否外方 1外方 0中方	
+
+
+taxtocken	Tinyint	1	可空	计税标志(0:不扣税，1：个人缴税，2：单位代缴)	
+
+
+salarygradename varchar         可空	工资类别名称
+
+
+M1	Varchar	100	可空	附加信息	名称必须在工资系统已经定义
+
+
+M2	Varchar	100	可空	附加信息	
+
+
+……….					
+
+
+M100	Varchar	100	可空	附加信息	同上
+
+
+
+
+
+  -->

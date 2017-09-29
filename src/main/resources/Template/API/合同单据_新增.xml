@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="gb2312"?>
+<ufinterface roottag="u8api" receiver="u8" sender="001" proc="add">
+<u8apiservice>
+<apiurl value = "U8API/CM/SaveVouch"/>
+<apiParams>
+
+<param name = "oHeadGY" datatype = "bo" discription="合同概要DOM">
+<head type="bo" discription="表头只能有一行">
+<field name="strContractID" value="0000000001" row="0"/>
+<field name="strContractName" value="合同1" row="0"/>
+<field name="cTypeName" value="和同类型1" row="0"/>
+<field name="strBisectionUnitName" value="001" row="0"/>
+<field name="strCurrency" value="RMB" row="0"/>
+<field name="strContractType" value="001" row="0"/>
+<field name="strContractKind" value="其他合同" row="0"/>
+<field name="cBusType" value="" row="0"/>
+<field name="dblExchange" value="1" row="0"/>
+<field name="intPre" value="0" row="0"/>
+<field name="strWay" value="收" row="0"/>
+<field name="strSource" value="C" row="0"/>
+</head>
+</param>
+
+<param name = "oHeadSetUp" datatype = "bo" discription="合同设置DOM">
+<head type="bo" discription="表头只能有一行">
+<field name="strContractID" value="0000000001" row="0"/>
+<field name="strSource" value="0" row="0"/>
+</head>
+</param>
+
+<param name = "oBodyBD" datatype = "bo" discription="合同标的DOM">
+<body type="bo" discription="表体可以有多行，通过行号（row）区分">
+<field name="id" value="1" row="0"/>
+<field name="strCode" value="001" row="0"/>
+<field name="strName" value="标的" row="0"/>
+<field name="strCorrSource" value="项目" row="0"/>
+<field name="dblQuantity" value="1" row="0"/>
+<field name="dblPrice" value="1" row="0"/>
+<field name="dblPriceRMB" value="1" row="0"/>
+<field name="dblUntaxSum" value="1" row="0"/>
+<field name="dblUntaxSumRMB" value="1" row="0"/>
+<field name="dblSum" value="1" row="0"/>
+<field name="dblSumRMB" value="1" row="0"/>
+<field name="strInvoiceID" value="001" row="0"/>
+<field name="strXMDL" value="项目大类" row="0"/>
+<field name="intEnd" value="1" row="0"/>
+</body>
+</param>
+
+<param name = "oBodySF" datatype = "bo" discription="合同收付款计划DOM">
+<body type="bo" discription="表体可以有多行，通过行号（row）区分">
+<field name="id" value="1" row="0"/>
+<field name="dtPayDate" value="2010-08-19" row="0"/>
+<field name="dblPayCurrency" value="100" row="0"/>
+<field name="dblPayRatio" value="100" row="0"/>
+</body>
+</param>
+
+<param name = "oBodyTK" datatype = "bo" discription="合同条款DOM">
+<body type="bo" discription="表体可以有多行，通过行号（row）区分">
+<field name="id" value="1" row="0"/>
+</body>
+</param>
+
+<param name = "oBodyDSJ" datatype = "bo" discription="合同大事记DOM">
+<body type="bo" discription="表体可以有多行，通过行号（row）区分">
+<field name="id" value="1" row="0"/>
+</body>
+</param>
+
+<param name = "sRetMsg" datatype = "string" discription="如果新增成功返回新增合同编号，否则返回错误信息串。"/>
+<param name = "IsAdd" value = "true" datatype = "bool" discription="表示是否新增单据；默认为[TRUE]即新增单据; 为[FALSE]则为修改单据。"/>
+<param name = "bEAI" value = "true" datatype = "bool" discription="表示是否外部调用；默认为[FALSE]; TurCRM等外部调用方请置本参数为[TRUE]。"/>
+
+</apiParams>
+
+</u8apiservice>
+</ufinterface>
+

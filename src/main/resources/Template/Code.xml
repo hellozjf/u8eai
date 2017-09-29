@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 会计科目 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="code" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <code id="">
+    <id />
+    <type />
+    <type_ename />
+    <analysis_type />
+    <analysis_type_ename />
+    <code />
+    <name />
+    <ename />
+    <grade />
+    <prop />
+    <acclist_style />
+    <acclist_style_ename />
+    <ac_assist />
+    <fc_name />
+    <measure_unit />
+    <person_acc />
+    <cust_acc />
+    <supplier_acc />
+    <dept_acc />
+    <item_acc />
+    <item_category />
+    <date_acc />
+    <bank_acc />
+    <sum_flag />
+    <end_item_flag />
+    <exchange_flag />
+    <cash_acc_flag />
+    <bank_acc_flag />
+    <bacc_enable_flag />
+    <bacc_balance_way />
+    <bacc_begin />
+    <bacc_end />
+    <period_pl />
+    <acc_seal_flag />
+    <ctrled_acc />
+    <other_use_flag />
+    <self_define1 />
+    <self_define2 />
+    <self_define3 />
+    <self_define4 />
+    <self_define5 />
+    <self_define6 />
+    <self_define7 />
+    <self_define8 />
+    <self_define9 />
+    <self_define10 />
+    <self_define11 />
+    <self_define12 />
+    <self_define13 />
+    <self_define14 />
+    <self_define15 />
+    <self_define16 />
+    <itemtype />
+    <proj_balance />
+    <cashitem />
+  </code>
+</ufinterface>
+<!--
+
+
+id	int(自动增量)(UniqueID)	4	int(自动增量)(用于编辑时的唯一标识)
+
+
+type    	Varchar	14		科目类型(根据企业类型定义科目分类)
+
+
+type_ename	Varchar	50		科目类型英文名称
+
+
+analysis_type	Varchar	14		财务分析类型
+
+
+analysis_type_ename	Varchar	50	财务分析类型英文名称
+
+
+code	Varchar	15		        科目编码(按科目编码原则进行编码,<主表关联项>)
+
+
+name	Varchar	40		        科目名称
+
+
+ename	Varchar	100		科目英文名称
+
+
+grade	Tinyint	1		科目级次(必须与科目编码相匹配)
+
+
+prop	Bit	1	        	科目性质(False：来源True:占用)
+
+
+acclist_style	Varchar	10		帐页格式(金额式,数量金额式,外币金额式,数量外币式)
+
+
+acclist_style_ename	Varchar	50	帐页格式英文名称
+
+
+ac_assist	Varchar	6		科目助记码
+
+
+fc_name	        Varchar	8		外币名称(与外币主表关联)
+
+
+measure_unit	Varchar	6		计量单位
+
+
+person_acc	Bit	1		个人往来核算(不能与其他辅助核算同时设置)
+
+
+cust_acc	Bit	1		客户往来核算(可与部门,项目核算同时设置)
+
+
+supplier_acc	Bit	1		供应商往来核算(可与部门,项目核算同时设置)
+
+
+dept_acc	Bit	1		部门核算(可与客户,供应商,项目核算同时设置)
+
+
+item_acc	Bit	1		项目核算(可与客户,供应商,部门核算同时设置)
+
+
+item_category	Varchar	2		项目大类(与项目大类主表_item关联,当bitem=True)
+
+
+date_acc	Bit	1		日记帐
+
+
+bank_acc	Bit	1		银行帐
+
+
+sum_flag	Varchar	15		是否汇总打印(打印凭证)(Null_不汇总,其它为本级或上级汇总科目)
+
+
+end_item_flag	Bit	1		是否末级科目
+
+
+exchange_flag	Bit	1		是否参与汇兑损益计算
+
+
+cash_acc_flag	Bit	1		是否出纳(现金)科目(可指定上级科目,自动对下级科目设置此属性)
+
+
+bank_acc_flag	Bit	1		是否出纳(银行)科目(可指定上级科目,自动对下级科目设置此属性)
+
+
+bacc_enable_flag	Bit	1	银行帐科目是否启用
+
+
+bacc_balance_way Bit	1		True	银行帐科目对帐方向 True:借方, False:贷方
+
+
+bacc_begin	DateTime	8	银行帐科目启用时间
+
+
+bacc_end	DateTime	8	银行帐科目对帐截止日期
+
+
+period_pl	Tinyint	1		期间损益:1_本年利润,销售成本:2_库存商品/3_销售收入/4_销售成本,汇兑损益:5_入帐科目
+
+
+acc_seal_flag	Bit	1		科目是否封存(已封存科目不能制单)
+
+
+ctrled_acc	Varchar	10		受控科目(科目受其他系统的控制,系统ID名,受控科目是否可制单由帐套参数决定)
+
+
+other_use_flag	Int	4		其它系统是否使用(由其它系统填写,0_未使用,非0_已使用)
+
+
+self_define1	Bit	1		自定义字段1
+
+
+self_define2	Bit	1		自定义字段2
+
+
+self_define3	Bit	1		自定义字段3
+
+
+self_define4	Bit	1		自定义字段4
+
+
+self_define5	Bit	1		自定义字段5
+
+
+self_define6	Bit	1		自定义字段6
+
+
+self_define7	Bit	1		自定义字段7
+
+
+self_define8	Bit	1		自定义字段8
+
+
+self_define9	Bit	1		自定义字段9
+
+
+self_define10	Bit	1		自定义字段10
+
+
+itemtype		在建工程项目科目类型	0_非在建工程项目科目 1_其他科目 2_费用科目 >2_开支科目	
+
+
+proj_balance		是否工程结算科目		GL_XMZCDetail
+
+
+cashitem	是否常用现金流量科目	True_自动单出子窗体	
+
+
+
+
+
+-->

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 本单位开户银行及帐号 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="bank" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <bank>
+    <code />
+    <name />
+    <account />
+    <flag />
+    <!-- 8.600 -->
+    <cbankcode />
+    <caccname />
+    <copenaccaddr />
+    <cprovincename />
+    <ccountyname />
+    <ccurrencyname />
+    <dopenaccdate />
+    <ccustomerno />
+    <corgno />
+    <cunionbankno />
+    <isignflag />
+    <!-- 8.700 -->
+    <bpwdmng />
+  </bank>
+</ufinterface>
+<!-- 
+元素名称                          描述                                              数据类型              是否可空
+code                          编码                                              nvarchar(3)		否
+name                          开户银行                                          nvarchar(100)		否
+account                       银行账号                                          nvarchar(50)		否
+flag                          是否暂封                                          bit		        否
+cbankcode                     所属银行编码                                      nvarchar(5)
+caccname                      账户名称                                          nvarchar(100)
+copenaccaddr                  开户银行地址                                      nvarchar(255)
+cprovincename                 省/自治区                                         nvarchar(255)
+ccountyname                   市/县                                             nvarchar(255)
+ccurrencyname                 币种                                              nvarchar(20)
+dopenaccdate                  开户日期                                          datetime
+ccustomerno                   客户编号                                          nvarchar(16)
+corgno                        机构号                                            nvarchar(5)
+cunionbankno                  联行号                                            nvarchar(5)
+isignflag                     签约标志                                          smallint		否
+bpwdmng                       进行密码管理                                      bit		        否
+
+-->

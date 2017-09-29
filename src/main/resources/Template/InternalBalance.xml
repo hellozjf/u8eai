@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--资金内部结算单 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="internalbalance" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <internalbalance>
+    <vchstyle />
+    <transactioncode />
+    <date />
+    <receiveaccountcode />
+    <payaccountcode />
+    <sum />
+    <transactoinmoney />
+    <preparemoney />
+    <currencyname />
+    <currencyrate />
+    <money />
+    <maker />
+    <settlecode />
+    <digest />
+  </internalbalance>
+</ufinterface>
+<!--
+
+
+3．7  资金内部结算单
+
+
+字段名称	字段类型	字段长度	可否为空	说明	合法性要求
+
+
+transactioncode	nchar	10	可空	业务编号	2	若业务编号为空，取当前内部结算单中最大业务编号加12	业务编号要唯一
+
+
+date	datetime	10	非空	日期	
+
+
+receiveaccountcode	char	50	非空	收款账户编号	收款账户编号要存在，并为内部活期账户
+
+
+payaccountcode	char	50	非空	付款账户编号	付款账户编号要存在，并为内部活期账户
+
+
+receivecompanyname	char	80	可空	收款单位名称	收款单位名称与收款账户编号相对应
+
+
+paycompanyname	char	80	可空	付款单位名称	付款单位名称与付款账户编号相对应
+
+
+receiveaccountname	char	80	可空	收款账户名称	收款账户名称与收款账户编号相对应
+
+
+payaccountname	char	80	可空	付款账户名称	付款账户名称与付款账户编号相对应
+
+
+sum	money	22	非空	金额	
+
+
+transactoinmoney	money	22	可空	交易金额	
+
+
+preparemoney	money	22	可空	预付金额	
+
+
+capitalmoney	nvarchar	100	可空	大写金额	若大写金额为空，依据金额自动显示
+
+
+money	money	20	可空	本位币金额	若本位币金额为空，依据金额、汇率自动显示
+
+
+currencyname	nvarchar	8	非空	币别	2	收款账户、付款账户、内部结算单的币别要相同2	为本位币币名或在系统控制台的【基础设置】模块中已定义的外币币名
+
+
+currencyrate	float	13	非空	汇率	
+
+
+balancemanner	varchar	3	可空	结算方式	在系统控制台的【基础设置】模块中已存在的结算方式名称
+
+
+correspondvchcode	nchar	10	可空	本笔业务对应的业务id
+
+
+ratecode	nvarchar	50	可空	利率编码
+
+
+cadcode	nvarchar	50	可空	结息日编码
+
+
+fixmonthnum	smallint	可空	定期存款月数目
+
+
+fromdate	datetime	可空	起始日期
+
+
+todate	datetime	可空	截至日期
+
+
+returndate	datetime	可空	还款日期
+
+
+cacltype	tinyint	可空	计息方式
+
+
+maker	nvarchar	20	可空	制单	若制单为空，取当前操作员的名称
+
+
+checker	nvarchar	20	可空	审核人
+
+
+booker	nvarchar	20	可空	记账人
+
+
+subject	nvarchar	20	对方科目
+
+
+settlecode nvarchar 20 结算方式
+
+
+digest	nvarchar	255	可空	摘要	
+
+
+define1	nvarchar	255	可空	对方名称
+
+
+define2	nvarchar	255	可空	对方对方账号
+
+
+define3	nvarchar	255	可空	对方开户银行
+
+
+define4-16	nvarchar	255	可空	用户定义
+
+
+define17-20	ntext		可空	用户定义
+
+
+define21-26	numeric		可空	用户定义
+
+
+define27-30	datetime	可空	用户定义
+
+
+-->

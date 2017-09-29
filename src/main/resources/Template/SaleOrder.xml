@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--销售订单 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+  -->
+<ufinterface roottag="saleorder" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <saleorder>
+    <header>
+      <id />
+      <outid />
+      <typecode />
+      <date />
+      <code />
+      <custcode />
+      <deptcode />
+      <personcode />
+      <sendcode />
+      <sendaddress />
+      <paycondition_code />
+      <currency />
+      <currencyrate />
+      <taxrate />
+      <earnest />
+      <memo />
+      <maker />
+      <businesstype />
+      <disflag />
+      <define1 />
+      <define2 />
+      <define3 />
+      <define4 />
+      <define5 />
+      <define6 />
+      <define7 />
+      <define8 />
+      <define9 />
+      <define10 />
+      <define11 />
+      <define12 />
+      <define13 />
+      <define14 />
+      <define15 />
+      <define16 />
+      <cusname />
+      <caddcode />
+      <cgatheringplan />
+      <dpredatebt />
+      <dpremodatebt />
+      <bmustbook />
+      <fbookratio />
+      <fbooksum />
+      <fbooknatsum />	
+		  <retaildates></retaildates>
+    </header>
+    <body>
+      <entry>
+        <id />
+        <body_outid />
+        <inventorycode />
+        <preparedate />
+        <quantity />
+        <num />
+        <quotedprice />
+        <unitprice />
+        <taxunitprice />
+        <money />
+        <tax />
+        <sum />
+        <assistantunit />
+        <discount />
+        <natunitprice />
+        <natmoney />
+        <nattax />
+        <natsum />
+        <natdiscount />
+        <memo />
+        <cfree1 />
+        <cfree2 />
+        <mid />
+        <discountrate />
+        <discountrate2 />
+        <taxrate />
+        <define22 />
+        <define23 />
+        <define24 />
+        <define25 />
+        <define26 />
+        <define27 />
+        <itemcode />
+        <item_class />
+        <itemname />
+        <itemclass_name />
+        <free3 />
+        <free4 />
+        <free5 />
+        <free6 />
+        <free7 />
+        <free8 />
+        <free9 />
+        <free10 />
+        <unitrate />
+        <unitcode />
+        <dreleasedate />
+        <dpredate />
+        <dpremodate />
+		    <demandtype></demandtype> 
+		    <demandcode></demandcode> 
+		    <demandmemo></demandmemo> 
+		    <retailxsquantity></retailxsquantity>
+		    <retailxsmoney></retailxsmoney>
+		    <retailkcquantity></retailkcquantity>
+		    <retailyhmoney></retailyhmoney>
+	<ccusinvcode></ccusinvcode>
+	<ccusinvname></ccusinvname>
+      </entry>
+    </body>
+  </saleorder>
+</ufinterface>
+<!-- 
+
+saletype 	销售类型编码	[varchar] (2) NOT NULL	非空	必须取值于销售类型档案
+date 	日期	[datetime] NOT NULL	非空	合法的公历日期
+code 	订单号	[varchar] (10) NOT NULL	非空	 必须唯一
+custcode 	客户编号	[varchar] (20) NULL	非空	必须取值于客户档案
+deptcode 	部门编号	[varchar] (12) NOT NULL	非空	必须取值于部门档案
+personcode 	职员编号	[varchar] (8) NULL	可空	非空时必须取值于职员档案
+sendcode 	发运方式编码	[varchar] (2) NULL	可空	非空时必须取值于发运方式档案
+sendaddress 	发货地址	[varchar] (40) NULL	可空	 
+paycondition_code 	付款条件编码	[varchar] (3) NULL	可空	非空时必须取值于付款条件档案
+currency 	外币名称	[varchar] (8) NOT NULL	非空	缺省为本位币，必须取值于币种档案
+currencyrate 	汇率	[float] NULL	非空	若币种为本币，则汇率=1
+taxrate 	税率	[float] NULL	可空	空时处理为0；非空时>=0
+eretaildates>retaildates</retaildates>
+arnest 	定金	[money] NULL	可空	空时处理为0；非空时>=0
+memo 	备注	[varchar] (60) NULL	可空	 
+maker 	制单人	[varchar] (20) NULL	非空	 
+verifier 	审核人	[varchar] (20) NULL	可空	 
+closer 	关闭人	[varchar] (20) NULL	可空	 
+disflag 	整单打折标志	[bit] NULL	可空	
+define1 	自定义字段1	[varchar] (20) NULL	可空	
+define2 	自定义字段2	[varchar] (20) NULL	可空	
+define3 	自定义字段3	[varchar] (20) NULL	可空	
+define4 	自定义字段4	[datetime] NULL	可空	
+define5 	自定义字段5	[smallint] NULL	可空	
+define6 	自定义字段6	[datetime] NULL	可空	
+define7 	自定义字段7	[float] NULL	可空	
+define8 	自定义字段8	[varchar] (4) NULL	可空	
+define9 	自定义字段9	[varchar] (8) NULL	可空	
+define10] 	自定义字段10	[varchar] (60) NULL	可空	
+cusname 	客户名称	[varchar] (120) NULL	可空	
+bmustbook       必有定金        [bit](1) NULL  可空
+fbookratio      定金比例        [float](8) NULL 可空
+fbooksum        定金原币金额    [money](8) NULL 可空
+fbooknatsum     定金本币金额    [money](8) NULL 可空
+ordertoplan     销售订单是否生成采购计划   bit(1)
+retaildates 门店销售日期范围 nvarchar(120)
+  
+id 	AutoID	[int] 导入单据不必填写		
+outid 导入GUID uniqueidentifier
+
+inventorycode 	存货编号	[varchar] (20) NOT NULL	非空	取值于存货档案
+preparedate 	预发日期	[datetime] NULL	可空	非空时必须是合法的公历日期
+quantity 	主计量数量	[float] NULL	非空	>0
+unitquantity	和单位一致的数量	Decimal(20,6)		
+num 	件数	[float] NULL	可空	有多计量单位的存货必须输入件数，>0
+
+body_outid 子表GUID uniqueidentifier
+
+quotedprice 	报价	[float] NULL	可空	空时处理为0；非空>=0U8根据账套参数往数据库中算出相应的单价。
+taxquotedprice 报价	[float] NULL	可空	空时处理为0；非空>=0U8根据账套参数往数据库中算出相应的单价
+unitprice] 	单价（原币，无税）	[float] NULL	可空	空时处理为0；非空时>=0
+taxunitprice 	含税单价（原币）	[float] NULL	可空	空时处理为0；非空时>=0
+money 	金额（原币，无税）	[money] NULL	可空	空时处理为0；非空时>=0
+tax 	税额（原币）	[money] NULL	可空	空时处理为0；非空时>=0
+sum 	价税合计（原币）	[money] NULL	可空	空时处理为0；非空时>=0
+discount 	折扣额（原币）	[money] NULL	可空	空时处理为0；非空时>=0
+natunitprice] 	单价（本币，无税）	[float] NULL	可空	空时处理为0；非空时>=0
+natmoney] 	金额（本币，无税）	[money] NULL	可空	空时处理为0；非空时>=0
+nattax 	税额（本币）	[money] NULL	可空	空时处理为0；非空时>=0
+natsum 	价税合计（本币）	[money] NULL	可空	空时处理为0；非空时>=0
+natdiscount] 	折扣额（本币）	[money] NULL	可空	空时处理为0；非空时>=0
+memo 	备注	[varchar] (20) NULL	可空	
+free1 	自由项1	[varchar] (20) NULL	可空	必须取值于自由项档案
+free2 	自由项2	[varchar] (20) NULL	可空	必须取值于自由项档案
+mid 销售订单子表id 导入单据时不填
+discountrate 	扣率1	[float] NULL	可空	空时处理为100；非空时>=0
+discountrate2 	扣率2	[float] NULL	可空	空时处理为100；非空时>=0
+taxrate 	税率	[float] NULL	可空	空时处理为0；非空时>=0
+define22 	自定义字段	[varchar] (60) NULL	可空	
+define23 	自定义字段	[varchar] (60) NULL	可空	
+define24 	自定义字段	[varchar] (60) NULL	可空	
+define25 	自定义字段	[varchar] (60) NULL	可空	
+define26 	自定义字段	[float] NULL	可空	
+define27 	自定义字段	[float] NULL	可空	
+itemcode	项目	[varchar] (20) NULL	可空	必须取值于项目档案
+item_class	项目大类	[varchar] (2) NULL	可空	必须取值于项目档案
+itemname	项目名称	Varchar(60) Null	可空	必须取值于项目档案
+itemclass_name	项目大类名称	Varchar(20) Null	可空	必须取值于项目档案
+free3 	自由项3	[varchar] (20) NULL	可空	必须取值于自由项档案
+free4 	自由项4	[varchar] (20) NULL	可空	必须取值于自由项档案
+free5 	自由项5	[varchar] (20) NULL	可空	必须取值于自由项档案
+free6 	自由项6	[varchar] (20) NULL	可空	必须取值于自由项档案
+free7 	自由项7	[varchar] (20) NULL	可空	必须取值于自由项档案
+free8 	自由项8	[varchar] (20) NULL	可空	必须取值于自由项档案
+free9 	自由项9	[varchar] (20) NULL	可空	必须取值于自由项档案
+free10 	自由项10	[varchar] (20) NULL	可空	必须取值于自由项档案
+define28	表体自定义项	Varchar(120)	可空	
+define29	表体自定义项	Varchar(120)	可空	
+define30	表体自定义项	Varchar(120)	可空	
+define31	表体自定义项	Varchar(120)	可空	
+define32	表体自定义项	Varchar(120)	可空	
+define33	表体自定义项	Varchar(120)	可空	
+define34	表体自定义项	Int	可空	
+define35	表体自定义项	Int	可空	
+define36	自定义项11	Datetime	可空	
+define37	自定义项11	Datetime	可空	
+unitrate	换算率	Float NULL	可空	
+unitcode	单位编码	Varchar(10)	可空	
+demandtype 需求跟踪方式 smallint
+demandcode 需求分类代号 nvarchar(40)
+demandmemo 需求分类说明 nvarchar(300)
+retailxsquantity 门店销售数量 nvarchar(120)
+retailxsmoney 门店销售金额 nvarchar(120)
+retailkcquantity 门店库存数量 nvarchar(120)
+retailyhmoney 门店要货金额  nvarchar(120)
+ccusinvcode 客户存货编码  nvarchar(60)
+ccusinvname 客户存货名称  nvarchar(100)
+-->

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--供应商存货价格表 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换-->
+<ufinterface roottag="vm_veninvprice" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <Vm_VenInvPrice>
+    <header>
+      <mainid />
+      <vendorcode />
+      <inventorycode />
+      <isupplytype />
+      <enabledate />
+      <disabledate />
+      <exchagename />
+      <promotion />
+      <memo />
+      <btaxcost />
+    </header>
+    <body>
+      <entry>
+        <mainid />
+        <itemid />
+        <lowlimit />
+        <upperlimit />
+        <unitprice />
+        <taxrate />
+        <taxunitprice />
+      </entry>
+    </body>
+  </Vm_VenInvPrice>
+</ufinterface>
+<!--
+
+
+mainid		主表id		bigint 	非空	必须唯一
+
+
+vendorcode	供应商编码	varchar(20)	非空
+
+
+inventorycode	存货编码	varchar(20)	非空
+
+
+enabledate	有效日期	datetime	非空
+
+
+disabledate	失效日期	datetime	可空
+
+
+exchagename	币名		char(8)		可空
+
+
+promotion	是否促销价	bit		非空
+
+
+memo		备注		varchar(240)	可空
+
+
+btaxcost        单价标准        bit             非空
+
+
+
+
+
+itemid		项目id		int		非空
+
+
+lowlimit	下线数量	float		非空
+
+
+upperlimit	上线数量	float		可空
+
+
+unitprice	单价		float		非空
+
+
+taxrate		税率		float		非空
+
+
+taxunitprice	含税单价	float 		非空
+
+
+
+
+
+-->

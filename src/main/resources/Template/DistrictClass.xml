@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 地区分类体系 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换   exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="districtclass" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <districtclass>
+    <code />
+    <name />
+    <sort />
+    <endflag />
+  </districtclass>
+</ufinterface>
+<!--
+
+元素名称	描述	数据类型	是否非空	有效值范围	备注
+code	地区编码	varchar(12)	Yes		
+name	地区名称	varchar(20)	Yes		
+sort	编码级次	tinyint	No		
+endflag	是否末级	 bit	No		
+
+-->

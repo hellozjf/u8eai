@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 交易单位账户 大小写必须和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="unitaccount" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <unitaccount caccountnumber="" cpayunitid="" bisdefault="" cbankid="" cbankname="" cprinvince="" ccity="" caccname="" ccbbdepid="" cbranchid="" />
+</ufinterface>
+<!--必需字段：账号、所属单位编码、是否默认账户、所属银行编码、开户行
+
+
+    一次性导入导出的数据量不能超过10000条记录-->
+<!--
+
+
+caccountnumber	Varchar	50	非空 账号
+
+
+cpayunitid	Varchar	30	非空 所属单位编码
+
+
+bisdefault	bit	1	非空 是否默认账户
+
+
+cbankid		Varchar	5	非空 所属银行编码
+
+
+cbankname	Varchar	100	非空 开户行
+
+
+cprinvince	Varchar	20	可空 开户行所在省
+
+
+ccity		Varchar	20	可空 开户行所在市
+
+
+caccname	Varchar	60	可空 账户名称
+
+
+ccbbdepid	Varchar	60	可空 联行号
+
+
+cbranchid	Varchar	60	可空 分支号
+
+
+-->

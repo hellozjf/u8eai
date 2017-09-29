@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--供应商存货对照表,所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="venandinv" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <venandinv>
+    <cvencode />
+    <cinvcode />
+    <cquanlity />
+    <fquota />
+    <fadvdate />
+    <cdepcode />
+    <cpersoncode />
+    <cveninvcode />
+    <iteststyle />
+    <idtmethod />
+    <fdtrate />
+    <fdtnum />
+    <cdtunit />
+    <idtstyle />
+    <iqtmethod />
+    <isuppproperty />
+    <fmaxsuppnum />
+    <fminsuppnum />
+    <cveninvname />
+    <idtlevel />
+    <cdtaql />
+    <!-- 8.610 -->
+    <fsupplybatch />
+    <ftotalquota />
+    <ffinishrateup />
+    <!-- 8.700 -->
+    <ftopcost />
+    <crulecode />
+  </venandinv>
+</ufinterface>
+<!--
+元素名称                            描述                                              数据类型           是否可空
+cvencode                      供应商编码                                        nvarchar(20)		否
+cinvcode                      存货编码                                          nvarchar(20)		否
+cquanlity                     供货品质                                          nvarchar(255)
+fquota                        配额(%)                                           float
+fadvdate                      提前期                                            int
+cdepcode                      采购部门                                          nvarchar(12)
+cpersoncode                   采购员                                            nvarchar(20)
+cveninvcode                   供应商存货编码                                    nvarchar(40)
+iteststyle                    检验方式                                          smallint
+idtmethod                     抽检规则                                          smallint
+fdtrate                       抽检率%                                           float
+fdtnum                        抽检量                                            float
+cdtunit                       检验计量单位                                      nvarchar(35)
+idtstyle                      检验严格度                                        smallint
+iqtmethod                     质量检验方案自增量ID                              int
+fmaxsuppnum                   单次最大供货量                                    float
+fminsuppnum                   单次最小供货量                                    float
+cveninvname                   供应商存货名称                                    nvarchar(100)
+idtlevel                      检验水平                                          smallint
+cdtaql                        AQL                                               nvarchar(20)
+fsupplybatch                  供应批量                                          float
+ftotalquota                   累计配额总量                                      float
+ffinishrateup                 实际完成率上限(%)                                 float
+ftopcost                      最高进价                                          float
+crulecode                     自定义抽检规则编码                                nvarchar(20)
+-->

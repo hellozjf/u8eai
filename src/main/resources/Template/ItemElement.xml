@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--项目要素档案 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="pm_itemelement" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <itemelement>
+    <code />
+    <name />
+    <ielementtype />
+    <ielementpro />
+    <isource />
+    <cvalue />
+    <cunit />
+    <ielementdetail />
+    <cinvccode />
+    <celeccode />
+  </itemelement>
+</ufinterface>
+<!--必需字段要素编码、要素名称、要素属性、要素类型、要素来源、所属分类
+    一次性导入导出的数据量不能超过10000条记录-->
+<!--
+code		Varchar	60	非空 要素代码
+name		Varchar	120	非空 要素名称
+iElementType	tinyint	1	非空 要素类型   1-其他类型     2-成本类型
+iElementPro	tinyint	1	非空 要素属性   1-公共要素     2-专属要素
+iSource	        tinyint	1	非空 要素来源   0- 空 1-科目 2-单据 3-工资系统 4-固定资产系统 5-存货系统
+cValue	        varchar	5600	可空 要素取数公式
+cUnit	        varchar	60	可空 要素单位
+iElementDetail	tinyint	1	可空 对应明细标志 0-无 2-存货 3-设备
+cInvCCode	varchar	12	可空 存货分类编码
+cEleCCode	varchar	45	非空 要素分类编码
+-->

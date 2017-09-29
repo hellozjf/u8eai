@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--调拨申请单 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="apptransvouch" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <storeinout>
+    <header>
+      <tvcode />
+      <csource />
+      <dtvdate />
+      <idepcode />
+      <odepcode />
+      <irdcode />
+      <ordcode />
+      <iwhcode />
+      <owhcode />
+      <cpersoncode />
+      <id />
+      <vtid />
+      <memory />
+      <auditperson />
+      <auditdate />
+      <maker />
+      <closer />
+      <define1 />
+      <define2 />
+      <define3 />
+      <define4 />
+      <define5 />
+      <define6 />
+      <define7 />
+      <define8 />
+      <define9 />
+      <define10 />
+      <define11 />
+      <define12 />
+      <define13 />
+      <define14 />
+      <define15 />
+      <define16 />
+    </header>
+    <body>
+      <entry>
+        <id />
+        <ctvcode />
+        <barcode />
+        <inventorycode />
+        <free1 />
+        <free2 />
+        <free3 />
+        <free4 />
+        <free5 />
+        <free6 />
+        <free7 />
+        <free8 />
+        <free9 />
+        <free10 />
+        <quantity />
+        <cmassunit />
+        <cmassunitname />
+        <assitantunit />
+        <assitantunitname />
+        <irate />
+        <number />
+        <chkquantity />
+        <chknum />
+        <sumquantity />
+        <sumnum />
+        <unitcost />
+        <cost />
+        <plancost />
+        <price />
+        <salecost />
+        <saleprice />
+        <define22 />
+        <define23 />
+        <define24 />
+        <define25 />
+        <define26 />
+        <define27 />
+        <define28 />
+        <define29 />
+        <define30 />
+        <define31 />
+        <define32 />
+        <define33 />
+        <define34 />
+        <define35 />
+        <define36 />
+        <define37 />
+        <subconsignmentid />
+        <bvencode />
+        <invouchcode />
+        <massDate />
+        <massunit />
+        <serial />
+        <makedate />
+        <validdate />
+        <itemclasscode />
+        <itemclassname />
+        <itemcode />
+        <itemname />
+        <appdate />
+        <bcloser />
+        <sodid />
+        <saletype />
+      </entry>
+    </body>
+  </storeinout>
+</ufinterface>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="ForecastVSes" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <ForecastVSes>
+    <ForecastVS>
+      <Version />
+      <Description />
+      <MpsFlag />
+    </ForecastVS>
+  </ForecastVSes>
+</ufinterface>
+<!-- 
+
+
+Version		int 		版本代号	非空
+
+
+Description	varchar(60)  	版本说明  	可空
+
+
+MpsFlag	tinyint  	版本类别  		非空
+
+
+-->

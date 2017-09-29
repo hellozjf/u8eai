@@ -1,0 +1,54 @@
+﻿<ufinterface sender="001" receiver="u8" roottag="u8api" proc="add" dynamicdate="2010-12-25">
+  <u8apiservice>
+    <apiurl value="U8API/otherin/Add"></apiurl>
+    <apiParams>
+      <param name="sVouchType" value="08" datatype="String"/>
+      <param name="VouchId" value="201102160001" datatype="string"/>
+      <param name="domPosition" datatype="object"/>
+      <param name="cnnFrom" datatype="ADODB.Connection"/>
+      <param name="domMsg" datatype="IXMLDOMDocument2"/>
+      <param name="bCheck" value="true" datatype="bool"/>
+      <param name="bBeforCheckStock" value="true" datatype="bool"/>
+      <param name="bIsRedVouch" value="false" datatype="bool"/>
+      <param name="sAddedState" value="" datatype="string"/>
+      <param name="bReMote" value="false" datatype="bool"/>
+    </apiParams>
+    <bo>
+      <head type="bo">
+        <field name="id" value="" row="0"/>
+        <field name="ccode" value="0000000010" row="0"/>
+        <field name="ddate" value="2010-12-25 03:05:00" row="0"/>
+        <field name="cwhname" value="XS-普通仓" row="0"/>
+        <field name="cmaker" value="administrator" row="0"/>
+        <field name="dnmaketime" value="2011-02-16 06:06:25" row="0"/>
+        <field name="cbustype" value="其他入库" row="0"/>
+        <field name="cvouchtype" value="08" row="0"/>
+        <field name="chandler" value="administrator" row="0"/>
+        <field name="dveridate" value="2011-02-16 06:06:25" row="0"/>
+        <field name="cwhcode" value="001" row="0"/>
+        <field name="csource" value="库存" row="0"/>
+      </head>
+      <body type="bo">
+        <field name="autoid" value="" row="0"/>
+        <field name="cinvcode" value="1" row="0"/>
+        <field name="cinvname" value="普通" row="0"/>
+        <field name="iquantity" value="100" row="0"/>
+        <field name="editprop" value="A" row="0"/>
+        <field name="autoid" value="" row="1"/>
+        <field name="cinvcode" value="01" row="1"/>
+        <field name="cinvname" value="Inv01" row="1"/>
+        <field name="iquantity" value="300" row="1"/>
+        <field name="editprop" value="A" row="1"/>
+        <field name="autoid" value="" row="2"/>
+        <field name="cinvcode" value="1" row="2"/>
+        <field name="cinvname" value="普通" row="2"/>
+        <field name="iquantity" value="200" row="2"/>
+        <field name="editprop" value="A" row="2"/>
+      </body>
+    </bo>
+    <returnParams>
+      <param name="VouchId"/>
+      <param name="errMsg"/>
+    </returnParams>
+  </u8apiservice>
+</ufinterface>

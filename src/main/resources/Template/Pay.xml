@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--收付款单roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="pay" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <pay>
+    <header>
+      <vouchtype>
+      </vouchtype>
+      <vouchcode>
+      </vouchcode>
+      <vouchdate>
+      </vouchdate>
+      <period>
+      </period>
+      <customercode>
+      </customercode>
+      <departmentcode>
+      </departmentcode>
+      <personcode>
+      </personcode>
+      <itemclasscode>
+      </itemclasscode>
+      <itemcode>
+      </itemcode>
+      <itemname>
+      </itemname>
+      <orderid>
+      </orderid>
+      <balancecode>
+      </balancecode>
+      <notecode>
+      </notecode>
+      <digest>
+      </digest>
+      <oppositebankcode>
+      </oppositebankcode>
+      <foreigncurrency>
+      </foreigncurrency>
+      <currencyrate>
+      </currencyrate>
+      <amount>
+      </amount>
+      <originalamount>
+      </originalamount>
+      <operator>
+      </operator>
+      <balanceitemcode>
+      </balanceitemcode>
+      <flag>
+      </flag>
+      <sitemcode>
+      </sitemcode>
+      <citemname>
+      </citemname>
+      <oppositebankname>
+      </oppositebankname>
+      <bankname>
+      </bankname>
+      <bankaccount>
+      </bankaccount>
+      <define1>
+      </define1>
+      <define2>
+      </define2>
+      <define3>
+      </define3>
+      <define4>
+      </define4>
+      <define5>
+      </define5>
+      <define6>
+      </define6>
+      <define7>
+      </define7>
+      <define8>
+      </define8>
+      <define9>
+      </define9>
+      <define10>
+      </define10>
+      <define11>
+      </define11>
+      <define12>
+      </define12>
+      <define13>
+      </define13>
+      <define14>
+      </define14>
+      <define15>
+      </define15>
+      <define16>
+      </define16>
+      <ccontracttype>
+      </ccontracttype>
+      <ccontractid>
+      </ccontractid>
+      <iamount_s>
+      </iamount_s>
+      <startflag>
+      </startflag>
+    </header>
+    <body>
+      <entry>
+        <mainid>
+        </mainid>
+        <type>
+        </type>
+        <customercode>
+        </customercode>
+        <originalamount>
+        </originalamount>
+        <amount>
+        </amount>
+        <itemcode>
+        </itemcode>
+        <projectclass>
+        </projectclass>
+        <project>
+        </project>
+        <departmentcode>
+        </departmentcode>
+        <personcode>
+        </personcode>
+        <orderid>
+        </orderid>
+        <itemname>
+        </itemname>
+        <ccontype>
+        </ccontype>
+        <cconid>
+        </cconid>
+        <iamt_s>
+        </iamt_s>
+        <iramt_s>
+        </iramt_s>
+      </entry>
+    </body>
+  </pay>
+</ufinterface>
+<!--
+
+
+HEAD:
+
+
+vouchtype	varchar	2	非空	单据类型("48":收款单，"49":付款单)
+
+
+vouchcode	varchar	30	非空	单据编号	单据类型+应收/付标志不允许重复。
+
+
+vouchdate	datetime8	非空	单据日期	
+
+
+period		tinyint	1	非空	期间	期间为0的单据不导入
+
+
+customercode	varchar	20	非空	客商编码	Cflag="AR"时必须是Customer.cCusCode表中已经存在的记录，Cflag="AP"时必须是Vendor.cCVenCode表中已经存在的记录
+
+
+departmentcode	varchar	12	可空	部门编码	必须是Department.cDepCode表中已经存在的记录
+
+
+personcode	varchar	8	可空	职员编码	必须是Person.cPersonCode表中已经存在的记录
+
+
+itemclasscode	varchar	2	可空	项目大类编号	必须是Fitem.citem_class表中已经存在的记录
+
+
+itemcode	varchar	20	可空	项目编号	根据项目大类编码检查其相应的项目编码
+
+
+itemname	varchar 60	可空	项目名称
+
+
+orderid		varchar 30    	可空	订单号
+
+
+balancecode	varchar	3	可空	结算方式	必须是SettleStyle.cSSCode表中已经存在的记录
+
+
+notecode	varchar	30	可空	应收应付票据编号	
+
+
+digest		varchar	60	可空	摘要	
+
+
+oppositebankcode	varchar	50	可空	银行帐号	
+
+
+foreigncurrency	varchar	8	非空	币种	必须是Foreigncurrency. cexch_name已经存在的记录
+
+
+currencyrate	float	8	可空	汇率	
+
+
+amount		money	8	可空	本币金额	
+
+
+originalamount	money	8	可空	原币金额	
+
+
+leftamount	money	8	可空	本币余额	将本币金额写入该字段
+
+
+originalleftamount	money	8	可空	原币余额	将原币金额写入该字段
+
+
+operator	varchar	20	非空	录入人	必须是UA_User表中已经存在的记录
+
+
+cancelman	varchar	20	可空	核销人	清空该字段
+
+
+prepay 		bit	1	可空	预收预付标志 	置为0
+
+
+balanceitemcode varchar	15	可空	科目编码(结算科目)	必须是Code.cCode表中的记录,且不能是应收/付受控科目，当SettleStyle.cSSCode对应记录上有支票管理标记时，该科目必须是银行科目
+
+
+ispayforother 	bit	1	可空	代付标志	
+
+
+sourceflag 	varchar	1	可空	结算单来源 (""或NULL:出纳录入,"A":应收应付录入,"C"表示票据编号为支票号)	A
+
+
+flag 		varchar	2	非空	应收应付标志 ("AR":应收,"AP":应付,空:其他)	应收系统的收付款写为"AR"，应付系统的收付款单写为"AP" 
+
+
+sendflag 	bit	1	可空	发送标志	0
+
+
+receiveflag 	bit	1	可空	接收标志	0
+
+
+itemcode 	varchar	20	可空	结算项目	
+
+
+oppositebankname 	Varchar	100	可空	对方单位银行名称	
+
+
+bankname 	Varchar	100	可空	本单位银行名称	
+
+
+bankaccount 	Varchar	50	可空	本单位银行账号	
+
+
+isfrombank 	Bit	1	可空	从网上银行导入标志	0
+
+
+istobank 	Bit	1	可空	已导出到网上银行标志	0
+
+
+VT_ID		Int	4	非空	单据摸版号(历史单据、外部单据用缺省模板)	
+
+
+define1		Varchar	20	可空	自定义项1	
+
+
+define2		Varchar	20	可空	自定义项2	
+
+
+define3		Varchar	20	可空	自定义项3	
+
+
+define4		Datetime	8	可空	自定义项4	 
+
+
+define5		Int	4	可空	自定义项5	
+
+
+define6		Datetime	8	可空	自定义项6	
+
+
+define7		Float	8	可空	自定义项7	
+
+
+define8		Varchar	4	可空	自定义项8	
+
+
+define9		Varchar	8	可空	自定义项9	
+
+
+define10	Varchar	60	可空	自定义项10	
+
+
+define11	Varchar	120	可空	自定义项11	
+
+
+define12	Varchar	120	可空	自定义项12	
+
+
+define13	Varchar	120	可空	自定义项13	
+
+
+define14	Varchar	120	可空	自定义项14	
+
+
+define15	Int	4	可空	自定义项15	
+
+
+define16	Float	8	可空	自定义项16	
+
+
+ccontracttype   varchar 10      可空    合同类型
+
+
+ccontractid     varchar 64      可空    合同类型 
+
+
+iamount_s       Float	8	可空	数量
+
+
+startflag       Bit     1       可空    期初标志
+
+
+BODY:
+
+
+mainid 		Int	4	非空	主子表关联	是Ap_CloseBill.Auto_ID表中已经存在的记录
+
+
+type 		Tinyint	1	非空	款项类型(0-应收/付款;1-预收/付款;2-其他费用)	
+
+
+customercode 	Varchar	20	非空	客户编码	Cflag="AR"时必须是Customer. CcusCode表中已经存在的记录，Cflag="AP"时必须Vendor.cCVenCode表中已经存在的记录
+
+
+originalamount 	Money		可空	原币金额	
+
+
+amount 		Money		可空	本币金额	
+
+
+originalleftamount 	Money		可空	原币余额	将原币金额写入该字段
+
+
+leftamount 	Money		可空	本币余额	将本币金额写入该字段
+
+
+itemcode 	Varchar	15	可空	科目	必须是Code.cCode表中已经存在的记录，款项类型为0或1且cflag="AR"时必须是应收受控科目，款项类型为0或1且cflag="AP"时必须是应付受控科目，款项类型为2时不能是应收/付受控科目
+
+
+projectclass 	Varchar	2	可空	项目大类编号	必须是Fitem.citem_class表中已经存在的记录
+
+
+project 	Varchar	20	可空	项目编号	
+
+
+departmentcode 	Varchar	12	可空	部门编码	必须是Department.cDepCode表中已经存在的记录
+
+
+personcode 	Varchar	8	可空	职员编码	必须是Person.cPersonCode表中已经存在的记录
+
+
+orderid		varchar30	可空	订单号	
+
+
+itemname	varchar60	可空	项目名称
+
+
+ccontype        varchar 10      可空    合同类型
+
+
+cconid          varchar 64      可空    合同类型 
+
+
+iamt_s          Float	8	可空	数量
+
+
+iramt_s         Float	8	可空	剩余数量
+
+
+-->

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--产品结构 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换-->
+<ufinterface roottag="productstructure" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <productstructure>
+    <header>
+      <parentitemcode>
+      </parentitemcode>
+      <departmentcode>
+      </departmentcode>
+      <free1>
+      </free1>
+      <free2>
+      </free2>
+      <free3>
+      </free3>
+      <free4>
+      </free4>
+      <free5>
+      </free5>
+      <free6>
+      </free6>
+      <free7>
+      </free7>
+      <free8>
+      </free8>
+      <free9>
+      </free9>
+      <free10>
+      </free10>
+      <isexpandable>
+      </isexpandable>
+      <finishedrate>
+      </finishedrate>
+      <checker>
+      </checker>
+      <iAutoId>
+      </iAutoId>
+      <memo>
+      </memo>
+    </header>
+    <body>
+      <entry>
+        <AutoID>
+        </AutoID>
+        <parentitemcode>
+        </parentitemcode>
+        <itemcode>
+        </itemcode>
+        <itemtype>
+        </itemtype>
+        <warehousecode>
+        </warehousecode>
+        <quantity>
+        </quantity>
+        <procedurename>
+        </procedurename>
+        <departmentcode>
+        </departmentcode>
+        <personcode>
+        </personcode>
+        <wasterate>
+        </wasterate>
+        <free1>
+        </free1>
+        <free2>
+        </free2>
+        <free3>
+        </free3>
+        <free4>
+        </free4>
+        <free5>
+        </free5>
+        <free6>
+        </free6>
+        <free7>
+        </free7>
+        <free8>
+        </free8>
+        <free9>
+        </free9>
+        <free10>
+        </free10>
+        <iPId>
+        </iPId>
+        <ChildGUID>
+        </ChildGUID>
+        <iProdChangRate>
+        </iProdChangRate>
+        <cinsertfirst>
+        </cinsertfirst>
+        <cinsertsecond>
+        </cinsertsecond>
+        <cinsertthird>
+        </cinsertthird>
+      </entry>
+    </body>
+  </productstructure>
+</ufinterface>
+<!--
+
+
+产品结构父项：
+
+
+parentitemcode	Varchar	20	非空	产品结构父项编码	父项编码+10个自由项内容不重复即可，且必须是Inventory表中的编码
+
+
+departmentcode	Varchar	12	可空	产品结构父项生产部门编码	必须是Department表中的编码，且有末级标志
+
+
+free1		varchar	20	可空	自由项1	必须是UserDefine表中对应自由项1的记录
+
+
+free2		varchar	20	可空	自由项2	必须是UserDefine表中对应自由项2的记录
+
+
+free3		varchar	20	可空	自由项3	必须是UserDefine表中对应自由项3的记录
+
+
+free4		varchar	20	可空	自由项4	必须是UserDefine表中对应自由项4的记录
+
+
+free5		varchar	20	可空	自由项5	必须是UserDefine表中对应自由项5的记录
+
+
+free6		varchar	20	可空	自由项6	必须是UserDefine表中对应自由项6的记录
+
+
+free7		varchar	20	可空	自由项7	必须是UserDefine表中对应自由项7的记录
+
+
+free8		varchar	20	可空	自由项8	必须是UserDefine表中对应自由项8的记录
+
+
+free9		varchar	20	可空	自由项9	必须是UserDefine表中对应自由项9的记录
+
+
+free10		varchar	20	可空	自由项10	必须是UserDefine表中对应自由项10的记录
+
+
+isexpandable	bit		可空	是否展开 1可展开0 不	
+
+
+finishedrate	float		可空	成品率	
+
+
+checker		varchar	20	可空	审核人	必须是UA_User表中的编码
+
+
+cMemo		Varchar	240	可空  	备注	
+
+
+产品结构子项：
+
+
+parentitemcode	varchar	20	非空	父项编码	必须是ProductStructure表中的编码
+
+
+itemcode	varchar	20	非空	子项编码	必须是Inventory表中的编码，且子项编码+自由项不允许重复
+
+
+itemtype	varchar	1	可空	子项类型	
+
+
+warehousecode	varchar	10	非空	仓库编码	必须是WareHouse表中的编码
+
+
+quantity	float		非空	定额数量	
+
+
+procedurename	varchar	50	可空	工序名称	必须是CA_PreDf表中的编码
+
+
+departmentcode	varchar	12	可空	部门编码	必须是Department表中的编码，且有末级标志
+
+
+personcode	varchar	10	可空	库管员	必须是Person表中编码
+
+
+wasterate	float		可空	损耗率	
+
+
+free1		varchar	20	可空	自由项1	必须是UserDefine表中对应自由项1的记录
+
+
+free2		varchar	20	可空	自由项2	必须是UserDefine表中对应自由项2的记录
+
+
+free3		varchar	20	可空	自由项3	必须是UserDefine表中对应自由项3的记录
+
+
+free4		varchar	20	可空	自由项4	必须是UserDefine表中对应自由项4的记录
+
+
+free5		varchar	20	可空	自由项5	必须是UserDefine表中对应自由项5的记录
+
+
+free6		varchar	20	可空	自由项6	必须是UserDefine表中对应自由项6的记录
+
+
+free7		varchar	20	可空	自由项7	必须是UserDefine表中对应自由项7的记录
+
+
+free8		varchar	20	可空	自由项8	必须是UserDefine表中对应自由项8的记录
+
+
+free9		varchar	20	可空	自由项9	必须是UserDefine表中对应自由项9的记录
+
+
+free10		varchar	20	可空	自由项10必须是UserDefine表中对应自由项10的记录
+
+
+cInsertFirst	Varchar	100	可空	插位1	
+
+
+cInsertSecond	Varchar	100	可空	插位2	
+
+
+cInsertThird	Varchar	100	可空	插位3	
+
+
+
+
+
+-->

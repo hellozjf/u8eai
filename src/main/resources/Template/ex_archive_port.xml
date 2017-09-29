@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 银行档案 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换 exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="ex_archive_port" billtype="" docid="" receiver="" sender="" proc="ADD" codeexchanged="N" exportneedexch="Y" version="2.0">
+  <ex_archive_port>
+    <pcode />
+    <pname />
+    <pename />
+    <nationid />
+    <nationname />
+    <dccode />
+    <dcname />
+    <pattr />
+    <remark />
+  </ex_archive_port>
+</ufinterface>
+<!--
+
+
+Code	NVARCHAR(15)	贸易术语代码
+
+
+remark	NVARCHAR(120)	贸易术语说明
+
+
+memo	NVARCHAR(120)	贸易术语备注
+
+
+used	smallint	是否启用
+
+
+default	smallint	是否默认
+
+
+-->

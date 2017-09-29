@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 预算版本信息表 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+  -->
+<ufinterface roottag="pm_budgetver" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="">
+  <budgetver>
+    <iverid />
+    <cvername />
+    <bcontrol />
+    <ibudmode />
+    <ibudperiod />
+    <ibudanalyze />
+    <ibudedtmode />
+    <ibudweekbeg />
+  </budgetver>
+</ufinterface>
+<!--必需字段 预算版本ID、预算版本名称、预算方式、预算周期、分解方式、分摊模式
+    一次性导入导出的数据量不能超过10000条记录-->
+<!--
+iVerId		int	4	非空 预算版本ID
+cvername	Varchar	20	非空 预算版本名称
+bcontrol	Varchar	120	可空 预算控制版本标志
+iBudMode        int             非空 预算方式：0-总预算模式 1-周期预算模式
+iBudPeriod      int 		非空 预算周期：0-月 1-旬 2-周
+iBudWeekBeg     int		可空 周开始时间
+iBudAnalyze     int 		非空 分解方式：0-总预算分解 1-周期预算分解
+iBudEdtMode     int 		非空 分摊模式：0-手工录入 1-权数分摊
+-->

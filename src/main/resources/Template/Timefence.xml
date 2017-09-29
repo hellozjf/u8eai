@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--时栅 roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否转换  exportneedexch导出时是否要根据对照表替换
+
+
+  -->
+<ufinterface roottag="TimeFence" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <TimeFence>
+    <Header>
+      <TfId />
+      <TfCode />
+      <Description />
+    </Header>
+    <Body>
+      <TfId />
+      <TfDId />
+      <SortSeq />
+      <DemOrgType />
+      <Days />
+    </Body>
+  </TimeFence>
+</ufinterface>
+<!-- 
+
+
+TfId 		int		时栅Id		非空
+
+
+TfCode  	char(4)  	时栅代号  	非空
+
+
+Description  	varchar(60)  	说明  		可空
+
+
+TfDId	  	int 		明细Id  	非空
+
+
+TfId  		int  		表头Id  	非空
+
+
+SortSeq  	int  		行号  		非空
+
+
+DemOrgType  	tinyint		需求来源	可空
+
+
+Days  		smallint  	日数  		可空
+
+
+
+
+
+-->
