@@ -1,55 +1,104 @@
 package com.hellozjf.test.u8eai.service;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import org.dom4j.Attribute;
-import org.dom4j.Document;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
+import com.hellozjf.test.u8eai.domain.jaxb.ReceiveSendType.Ufinterface;
+import com.hellozjf.test.u8eai.domain.jaxb.ReceiveSendType.Ufinterface.Receivesendtype;
+import com.hellozjf.test.u8eai.tools.EAITool;
+import com.hellozjf.test.u8eai.tools.JAXBUtil;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;
 
-import com.hellozjf.test.u8eai.domain.ReceiveSendType;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class ReceiveSendTypeService {
 
-    public void addReceiveSendType(ReceiveSendType receiveSendType) {
+    public Log log = LogFactory.getLog(this.getClass());
 
+    public boolean addReceiveSendType(Receivesendtype receiveSendType) {
+        boolean ret = false;
+        try {
+            Ufinterface ufinterface = new Ufinterface();
+            ufinterface.setRoottag("receivesendtype");
+            ufinterface.setSender("001");
+            ufinterface.setReceiver("u8");
+            ufinterface.setProc("add");
+            ufinterface.setCodeexchanged("N");
+            ufinterface.setExportneedexch("N");
+            ufinterface.setVersion("2.0");
+            ufinterface.getReceivesendtype().add(receiveSendType);
+            String result = EAITool.sendXML("http://192.168.3.165/u8eai/import.asp", JAXBUtil.toXML(ufinterface));
+            log.debug(result);
+            ret = true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ret;
     }
 
-    public List<ReceiveSendType> listReceiveSendType() {
-        List<ReceiveSendType> receiveSendTypes = new ArrayList<ReceiveSendType>();
+    public boolean delReceiveSendType(Receivesendtype receiveSendType) {
+        boolean ret = false;
         try {
-            SAXReader reader = new SAXReader();
-            Document document = reader.read(getClass().getClassLoader().getResourceAsStream("Template/SaleOrder.xml"));
-            Element root = document.getRootElement();
-            listNodes(root);
+            Ufinterface ufinterface = new Ufinterface();
+            ufinterface.setRoottag("receivesendtype");
+            ufinterface.setSender("001");
+            ufinterface.setReceiver("u8");
+            ufinterface.setProc("delete");
+            ufinterface.setCodeexchanged("N");
+            ufinterface.setExportneedexch("N");
+            ufinterface.setVersion("2.0");
+            ufinterface.getReceivesendtype().add(receiveSendType);
+            String result = EAITool.sendXML("http://192.168.3.165/u8eai/import.asp", JAXBUtil.toXML(ufinterface));
+            log.debug(result);
+            ret = true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ret;
+    }
+
+    public boolean changeReceiveSendType(Receivesendtype receiveSendType) {
+        boolean ret = false;
+        try {
+            Ufinterface ufinterface = new Ufinterface();
+            ufinterface.setRoottag("receivesendtype");
+            ufinterface.setSender("001");
+            ufinterface.setReceiver("u8");
+            ufinterface.setProc("edit");
+            ufinterface.setCodeexchanged("N");
+            ufinterface.setExportneedexch("N");
+            ufinterface.setVersion("2.0");
+            ufinterface.getReceivesendtype().add(receiveSendType);
+            String result = EAITool.sendXML("http://192.168.3.165/u8eai/import.asp", JAXBUtil.toXML(ufinterface));
+            log.debug(result);
+            ret = true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ret;
+    }
+
+    public List<Receivesendtype> listReceiveSendTypes() {
+        List<Receivesendtype> receiveSendTypes = new ArrayList<Receivesendtype>();
+        try {
+            Ufinterface ufinterface = new Ufinterface();
+            ufinterface.setRoottag("receivesendtype");
+            ufinterface.setSender("001");
+            ufinterface.setReceiver("u8");
+            ufinterface.setProc("query");
+            ufinterface.setCodeexchanged("N");
+            ufinterface.setExportneedexch("N");
+            ufinterface.setVersion("2.0");
+            String result = EAITool.sendXML("http://192.168.3.165/u8eai/import.asp", JAXBUtil.toXML(ufinterface));
+
+            log.debug(result);
+            Ufinterface receive = JAXBUtil.formXML(Ufinterface.class, result);
+            receiveSendTypes = receive.getReceivesendtype();
         } catch (Exception e) {
             e.printStackTrace();
         }
         return receiveSendTypes;
     }
-    
-    private void listNodes(Element node){  
-        System.out.println("当前节点的名称：" + node.getName());  
-        //首先获取当前节点的所有属性节点  
-        List<Attribute> list = node.attributes();  
-        //遍历属性节点  
-        for(Attribute attribute : list){  
-            System.out.println("属性"+attribute.getName() +":" + attribute.getValue());  
-        }  
-        //如果当前节点内容不为空，则输出  
-        if(!(node.getTextTrim().equals(""))){  
-             System.out.println( node.getName() + "：" + node.getText());    
-        }  
-        //同时迭代当前节点下面的所有子节点  
-        //使用递归  
-        Iterator<Element> iterator = node.elementIterator();  
-        while(iterator.hasNext()){  
-            Element e = iterator.next();  
-            listNodes(e);  
-        }  
-    }  
+
 }

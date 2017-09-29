@@ -8,7 +8,9 @@
     <version>1.3.3.RELEASE</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
+  <groupId>com.hellozjf.test.u8eai</groupId>
   <artifactId>u8eai</artifactId>
+  <version>1.0</version>
   <name>u8eai</name>
   <packaging>war</packaging>
   <dependencies>
@@ -44,20 +46,17 @@
       <artifactId>fastjson</artifactId>
       <version>1.2.38</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+      <optional>true</optional>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <useSystemClassLoader>false</useSystemClassLoader>
-        </configuration>
       </plugin>
     </plugins>
   </build>
