@@ -5,8 +5,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class EAITool {
+    public static final String DEFAULT_URL = "http://192.168.3.165/u8eai/import.asp";
+    public static final String ADD = "add";
+    public static final String DEL = "delete";
+    public static final String EDIT = "edit";
+    public static final String LIST = "query";
+    
     public static String sendXML(String urlString, String xmlString) throws Exception {
-// 发送xml
+        // 发送xml
         URL url = new URL(urlString);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setConnectTimeout(3000000);

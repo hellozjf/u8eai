@@ -1,48 +1,56 @@
 package com.hellozjf.test.u8eai.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.hellozjf.test.u8eai.domain.jaxb.ReceiveSendType.Ufinterface.Receivesendtype;
-import com.hellozjf.test.u8eai.service.ReceiveSendTypeService;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
-import java.util.List;
+import com.alibaba.fastjson.JSON;
+import com.hellozjf.test.u8eai.domain.jaxb.receivesendtype.Ufinterface.Receivesendtype;
+import com.hellozjf.test.u8eai.service.ReceiveSendTypeService;
 
 @RestController
+@RequestMapping("/ReceiveSendType")
 public class ReceiveSendTypeController {
+    
+    private static final Log LOG = LogFactory.getLog(ReceiveSendTypeController.class);
 
     @Autowired
-    private ReceiveSendTypeService receiveSendTypeService;
-
-    @RequestMapping(value = "/ReceiveSendType/list")
-    public ModelAndView listReceiveSendType(HttpServletRequest request) {
-        List<Receivesendtype> receiveSendTypes = receiveSendTypeService.listReceiveSendTypes();
-        String json = JSON.toJSON(receiveSendTypes).toString();
+    private ReceiveSendTypeService service;
+    
+    @RequestMapping("/add")
+    public ModelAndView add(HttpServletRequest request, Receivesendtype receivesendtype) {
+        boolean ret = service.add(receivesendtype);
+        request.getSession().setAttribute("json", ret);
+        return new ModelAndView("jsonview");
+    }
+    
+    @RequestMapping("/del")
+    public ModelAndView del(HttpServletRequest request, Receivesendtype receivesendtype) {
+        boolean ret = service.del(receivesendtype);
+        request.getSession().setAttribute("json", ret);
+        return new ModelAndView("jsonview");
+    }
+    
+    @RequestMapping("/edit")
+    public ModelAndView edit(HttpServletRequest request, Receivesendtype receivesendtype) {
+        boolean ret = service.edit(receivesendtype);
+        request.getSession().setAttribute("json", ret);
+        return new ModelAndView("jsonview");
+    }
+    
+    @RequestMapping("/list")
+    public ModelAndView list(HttpServletRequest request) {
+        List<Receivesendtype> list = service.list();
+        String json = JSON.toJSON(list).toString();
         request.getSession().setAttribute("json", json);
-        return new ModelAndView("ReceiveSendType/list");
+        return new ModelAndView("jsonview");
     }
-
-    @RequestMapping(value = "/ReceiveSendType/del")
-    public ModelAndView delReceiveSendType(HttpServletRequest request, Receivesendtype receivesendtype) {
-        boolean ret = receiveSendTypeService.delReceiveSendType(receivesendtype);
-        request.getSession().setAttribute("ret", ret);
-        return new ModelAndView("ReceiveSendType/del");
-    }
-
-    @RequestMapping(value = "/ReceiveSendType/add")
-    public ModelAndView addReceiveSendType(HttpServletRequest request, Receivesendtype receivesendtype) {
-        boolean ret = receiveSendTypeService.addReceiveSendType(receivesendtype);
-        request.getSession().setAttribute("ret", ret);
-        return new ModelAndView("ReceiveSendType/add");
-    }
-
-    @RequestMapping(value = "/ReceiveSendType/change")
-    public ModelAndView changeReceiveSendType(HttpServletRequest request, Receivesendtype receivesendtype) {
-        boolean ret = receiveSendTypeService.changeReceiveSendType(receivesendtype);
-        request.getSession().setAttribute("ret", ret);
-        return new ModelAndView("ReceiveSendType/change");
-    }
+    
 }

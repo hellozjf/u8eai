@@ -1,8 +1,8 @@
 //
-// ´ËÎÄ¼şÊÇÓÉ JavaTM Architecture for XML Binding (JAXB) ÒıÓÃÊµÏÖ v2.2.8-b130911.1802 Éú³ÉµÄ
-// Çë·ÃÎÊ <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// ÔÚÖØĞÂ±àÒëÔ´Ä£Ê½Ê±, ¶Ô´ËÎÄ¼şµÄËùÓĞĞŞ¸Ä¶¼½«¶ªÊ§¡£
-// Éú³ÉÊ±¼ä: 2017.09.29 Ê±¼ä 08:36:06 PM CST 
+// æ­¤æ–‡ä»¶æ˜¯ç”± JavaTM Architecture for XML Binding (JAXB) å¼•ç”¨å®ç° v2.2.8-b130911.1802 ç”Ÿæˆçš„
+// è¯·è®¿é—® <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// åœ¨é‡æ–°ç¼–è¯‘æºæ¨¡å¼æ—¶, å¯¹æ­¤æ–‡ä»¶çš„æ‰€æœ‰ä¿®æ”¹éƒ½å°†ä¸¢å¤±ã€‚
+// ç”Ÿæˆæ—¶é—´: 2017.09.30 æ—¶é—´ 03:26:45 PM CST 
 //
 
 
@@ -18,9 +18,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>anonymous complex typeµÄ Java Àà¡£
+ * <p>anonymous complex typeçš„ Java ç±»ã€‚
  * 
- * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+ * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
  * 
  * <pre>
  * &lt;complexType>
@@ -235,7 +235,7 @@ public class Ufinterface {
     }
 
     /**
-     * »ñÈ¡roottagÊôĞÔµÄÖµ¡£
+     * è·å–roottagå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -247,7 +247,7 @@ public class Ufinterface {
     }
 
     /**
-     * ÉèÖÃroottagÊôĞÔµÄÖµ¡£
+     * è®¾ç½®roottagå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -259,7 +259,7 @@ public class Ufinterface {
     }
 
     /**
-     * »ñÈ¡billtypeÊôĞÔµÄÖµ¡£
+     * è·å–billtypeå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -271,7 +271,7 @@ public class Ufinterface {
     }
 
     /**
-     * ÉèÖÃbilltypeÊôĞÔµÄÖµ¡£
+     * è®¾ç½®billtypeå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -283,7 +283,7 @@ public class Ufinterface {
     }
 
     /**
-     * »ñÈ¡docidÊôĞÔµÄÖµ¡£
+     * è·å–docidå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -295,7 +295,7 @@ public class Ufinterface {
     }
 
     /**
-     * ÉèÖÃdocidÊôĞÔµÄÖµ¡£
+     * è®¾ç½®docidå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -307,7 +307,7 @@ public class Ufinterface {
     }
 
     /**
-     * »ñÈ¡receiverÊôĞÔµÄÖµ¡£
+     * è·å–receiverå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -319,7 +319,7 @@ public class Ufinterface {
     }
 
     /**
-     * ÉèÖÃreceiverÊôĞÔµÄÖµ¡£
+     * è®¾ç½®receiverå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -331,7 +331,7 @@ public class Ufinterface {
     }
 
     /**
-     * »ñÈ¡senderÊôĞÔµÄÖµ¡£
+     * è·å–senderå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -343,7 +343,7 @@ public class Ufinterface {
     }
 
     /**
-     * ÉèÖÃsenderÊôĞÔµÄÖµ¡£
+     * è®¾ç½®senderå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -355,7 +355,7 @@ public class Ufinterface {
     }
 
     /**
-     * »ñÈ¡procÊôĞÔµÄÖµ¡£
+     * è·å–procå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -367,7 +367,7 @@ public class Ufinterface {
     }
 
     /**
-     * ÉèÖÃprocÊôĞÔµÄÖµ¡£
+     * è®¾ç½®procå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -379,7 +379,7 @@ public class Ufinterface {
     }
 
     /**
-     * »ñÈ¡codeexchangedÊôĞÔµÄÖµ¡£
+     * è·å–codeexchangedå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -391,7 +391,7 @@ public class Ufinterface {
     }
 
     /**
-     * ÉèÖÃcodeexchangedÊôĞÔµÄÖµ¡£
+     * è®¾ç½®codeexchangedå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -403,7 +403,7 @@ public class Ufinterface {
     }
 
     /**
-     * »ñÈ¡exportneedexchÊôĞÔµÄÖµ¡£
+     * è·å–exportneedexchå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -415,7 +415,7 @@ public class Ufinterface {
     }
 
     /**
-     * ÉèÖÃexportneedexchÊôĞÔµÄÖµ¡£
+     * è®¾ç½®exportneedexchå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -427,7 +427,7 @@ public class Ufinterface {
     }
 
     /**
-     * »ñÈ¡versionÊôĞÔµÄÖµ¡£
+     * è·å–versionå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -439,7 +439,7 @@ public class Ufinterface {
     }
 
     /**
-     * ÉèÖÃversionÊôĞÔµÄÖµ¡£
+     * è®¾ç½®versionå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -452,9 +452,9 @@ public class Ufinterface {
 
 
     /**
-     * <p>anonymous complex typeµÄ Java Àà¡£
+     * <p>anonymous complex typeçš„ Java ç±»ã€‚
      * 
-     * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+     * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
      * 
      * <pre>
      * &lt;complexType>
@@ -663,9 +663,9 @@ public class Ufinterface {
 
 
         /**
-         * <p>anonymous complex typeµÄ Java Àà¡£
+         * <p>anonymous complex typeçš„ Java ç±»ã€‚
          * 
-         * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+         * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
          * 
          * <pre>
          * &lt;complexType>
@@ -786,9 +786,9 @@ public class Ufinterface {
 
 
             /**
-             * <p>anonymous complex typeµÄ Java Àà¡£
+             * <p>anonymous complex typeçš„ Java ç±»ã€‚
              * 
-             * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+             * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
              * 
              * <pre>
              * &lt;complexType>
@@ -981,7 +981,7 @@ public class Ufinterface {
                 protected String faprice;
 
                 /**
-                 * »ñÈ¡mainidÊôĞÔµÄÖµ¡£
+                 * è·å–mainidå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -993,7 +993,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃmainidÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®mainidå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1005,7 +1005,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡warehousecodeÊôĞÔµÄÖµ¡£
+                 * è·å–warehousecodeå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1017,7 +1017,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃwarehousecodeÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®warehousecodeå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1029,7 +1029,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡inventorycodeÊôĞÔµÄÖµ¡£
+                 * è·å–inventorycodeå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1041,7 +1041,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃinventorycodeÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®inventorycodeå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1053,7 +1053,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡confirmnumberÊôĞÔµÄÖµ¡£
+                 * è·å–confirmnumberå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1065,7 +1065,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃconfirmnumberÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®confirmnumberå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1077,7 +1077,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡usednumberÊôĞÔµÄÖµ¡£
+                 * è·å–usednumberå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1089,7 +1089,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃusednumberÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®usednumberå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1101,7 +1101,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡wastenumberÊôĞÔµÄÖµ¡£
+                 * è·å–wastenumberå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1113,7 +1113,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃwastenumberÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®wastenumberå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1125,7 +1125,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡confirmquantityÊôĞÔµÄÖµ¡£
+                 * è·å–confirmquantityå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1137,7 +1137,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃconfirmquantityÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®confirmquantityå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1149,7 +1149,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡usedquantityÊôĞÔµÄÖµ¡£
+                 * è·å–usedquantityå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1161,7 +1161,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃusedquantityÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®usedquantityå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1173,7 +1173,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡wastequantityÊôĞÔµÄÖµ¡£
+                 * è·å–wastequantityå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1185,7 +1185,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃwastequantityÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®wastequantityå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1197,7 +1197,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡originalpriceÊôĞÔµÄÖµ¡£
+                 * è·å–originalpriceå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1209,7 +1209,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃoriginalpriceÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®originalpriceå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1221,7 +1221,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡originaltaxedpriceÊôĞÔµÄÖµ¡£
+                 * è·å–originaltaxedpriceå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1233,7 +1233,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃoriginaltaxedpriceÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®originaltaxedpriceå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1245,7 +1245,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡originalmoneyÊôĞÔµÄÖµ¡£
+                 * è·å–originalmoneyå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1257,7 +1257,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃoriginalmoneyÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®originalmoneyå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1269,7 +1269,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡originaltaxÊôĞÔµÄÖµ¡£
+                 * è·å–originaltaxå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1281,7 +1281,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃoriginaltaxÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®originaltaxå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1293,7 +1293,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡originalsumÊôĞÔµÄÖµ¡£
+                 * è·å–originalsumå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1305,7 +1305,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃoriginalsumÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®originalsumå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1317,7 +1317,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡priceÊôĞÔµÄÖµ¡£
+                 * è·å–priceå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1329,7 +1329,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃpriceÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®priceå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1341,7 +1341,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡moneyÊôĞÔµÄÖµ¡£
+                 * è·å–moneyå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1353,7 +1353,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃmoneyÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®moneyå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1365,7 +1365,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡taxÊôĞÔµÄÖµ¡£
+                 * è·å–taxå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1377,7 +1377,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃtaxÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®taxå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1389,7 +1389,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡sumÊôĞÔµÄÖµ¡£
+                 * è·å–sumå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1401,7 +1401,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃsumÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®sumå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1413,7 +1413,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡free1ÊôĞÔµÄÖµ¡£
+                 * è·å–free1å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1425,7 +1425,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfree1ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®free1å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1437,7 +1437,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡free2ÊôĞÔµÄÖµ¡£
+                 * è·å–free2å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1449,7 +1449,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfree2ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®free2å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1461,7 +1461,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡taxrateÊôĞÔµÄÖµ¡£
+                 * è·å–taxrateå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1473,7 +1473,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃtaxrateÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®taxrateå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1485,7 +1485,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡imassdateÊôĞÔµÄÖµ¡£
+                 * è·å–imassdateå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1497,7 +1497,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃimassdateÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®imassdateå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1509,7 +1509,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡cmassunitÊôĞÔµÄÖµ¡£
+                 * è·å–cmassunitå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1521,7 +1521,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃcmassunitÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®cmassunitå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1533,7 +1533,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define22ÊôĞÔµÄÖµ¡£
+                 * è·å–define22å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1545,7 +1545,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine22ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define22å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1557,7 +1557,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define23ÊôĞÔµÄÖµ¡£
+                 * è·å–define23å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1569,7 +1569,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine23ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define23å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1581,7 +1581,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define24ÊôĞÔµÄÖµ¡£
+                 * è·å–define24å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1593,7 +1593,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine24ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define24å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1605,7 +1605,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define25ÊôĞÔµÄÖµ¡£
+                 * è·å–define25å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1617,7 +1617,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine25ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define25å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1629,7 +1629,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define26ÊôĞÔµÄÖµ¡£
+                 * è·å–define26å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1641,7 +1641,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine26ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define26å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1653,7 +1653,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define27ÊôĞÔµÄÖµ¡£
+                 * è·å–define27å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1665,7 +1665,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine27ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define27å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1677,7 +1677,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define28ÊôĞÔµÄÖµ¡£
+                 * è·å–define28å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1689,7 +1689,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine28ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define28å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1701,7 +1701,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define29ÊôĞÔµÄÖµ¡£
+                 * è·å–define29å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1713,7 +1713,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine29ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define29å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1725,7 +1725,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define30ÊôĞÔµÄÖµ¡£
+                 * è·å–define30å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1737,7 +1737,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine30ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define30å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1749,7 +1749,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define31ÊôĞÔµÄÖµ¡£
+                 * è·å–define31å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1761,7 +1761,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine31ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define31å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1773,7 +1773,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define32ÊôĞÔµÄÖµ¡£
+                 * è·å–define32å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1785,7 +1785,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine32ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define32å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1797,7 +1797,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define33ÊôĞÔµÄÖµ¡£
+                 * è·å–define33å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1809,7 +1809,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine33ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define33å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1821,7 +1821,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define34ÊôĞÔµÄÖµ¡£
+                 * è·å–define34å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1833,7 +1833,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine34ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define34å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1845,7 +1845,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define35ÊôĞÔµÄÖµ¡£
+                 * è·å–define35å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1857,7 +1857,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine35ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define35å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1869,7 +1869,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define36ÊôĞÔµÄÖµ¡£
+                 * è·å–define36å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1881,7 +1881,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine36ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define36å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1893,7 +1893,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡define37ÊôĞÔµÄÖµ¡£
+                 * è·å–define37å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1905,7 +1905,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃdefine37ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®define37å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1917,7 +1917,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡itemclasscodeÊôĞÔµÄÖµ¡£
+                 * è·å–itemclasscodeå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1929,7 +1929,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃitemclasscodeÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®itemclasscodeå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1941,7 +1941,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡itemcodeÊôĞÔµÄÖµ¡£
+                 * è·å–itemcodeå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1953,7 +1953,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃitemcodeÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®itemcodeå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1965,7 +1965,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡itemnameÊôĞÔµÄÖµ¡£
+                 * è·å–itemnameå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -1977,7 +1977,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃitemnameÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®itemnameå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -1989,7 +1989,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡free3ÊôĞÔµÄÖµ¡£
+                 * è·å–free3å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2001,7 +2001,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfree3ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®free3å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2013,7 +2013,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡free4ÊôĞÔµÄÖµ¡£
+                 * è·å–free4å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2025,7 +2025,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfree4ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®free4å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2037,7 +2037,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡free5ÊôĞÔµÄÖµ¡£
+                 * è·å–free5å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2049,7 +2049,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfree5ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®free5å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2061,7 +2061,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡free6ÊôĞÔµÄÖµ¡£
+                 * è·å–free6å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2073,7 +2073,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfree6ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®free6å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2085,7 +2085,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡free7ÊôĞÔµÄÖµ¡£
+                 * è·å–free7å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2097,7 +2097,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfree7ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®free7å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2109,7 +2109,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡free8ÊôĞÔµÄÖµ¡£
+                 * è·å–free8å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2121,7 +2121,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfree8ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®free8å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2133,7 +2133,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡free9ÊôĞÔµÄÖµ¡£
+                 * è·å–free9å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2145,7 +2145,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfree9ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®free9å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2157,7 +2157,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡free10ÊôĞÔµÄÖµ¡£
+                 * è·å–free10å±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2169,7 +2169,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfree10ÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®free10å±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2181,7 +2181,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡unitidÊôĞÔµÄÖµ¡£
+                 * è·å–unitidå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2193,7 +2193,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃunitidÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®unitidå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2205,7 +2205,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡serialÊôĞÔµÄÖµ¡£
+                 * è·å–serialå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2217,7 +2217,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃserialÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®serialå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2229,7 +2229,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡makedateÊôĞÔµÄÖµ¡£
+                 * è·å–makedateå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2241,7 +2241,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃmakedateÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®makedateå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2253,7 +2253,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡invaliddateÊôĞÔµÄÖµ¡£
+                 * è·å–invaliddateå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2265,7 +2265,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃinvaliddateÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®invaliddateå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2277,7 +2277,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡isotypeÊôĞÔµÄÖµ¡£
+                 * è·å–isotypeå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2289,7 +2289,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃisotypeÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®isotypeå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2301,7 +2301,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡facostÊôĞÔµÄÖµ¡£
+                 * è·å–facostå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2313,7 +2313,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfacostÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®facostå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2325,7 +2325,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * »ñÈ¡fapriceÊôĞÔµÄÖµ¡£
+                 * è·å–fapriceå±æ€§çš„å€¼ã€‚
                  * 
                  * @return
                  *     possible object is
@@ -2337,7 +2337,7 @@ public class Ufinterface {
                 }
 
                 /**
-                 * ÉèÖÃfapriceÊôĞÔµÄÖµ¡£
+                 * è®¾ç½®fapriceå±æ€§çš„å€¼ã€‚
                  * 
                  * @param value
                  *     allowed object is
@@ -2354,9 +2354,9 @@ public class Ufinterface {
 
 
         /**
-         * <p>anonymous complex typeµÄ Java Àà¡£
+         * <p>anonymous complex typeçš„ Java ç±»ã€‚
          * 
-         * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+         * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
          * 
          * <pre>
          * &lt;complexType>
@@ -2489,7 +2489,7 @@ public class Ufinterface {
             protected String define16;
 
             /**
-             * »ñÈ¡idÊôĞÔµÄÖµ¡£
+             * è·å–idå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2501,7 +2501,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃidÊôĞÔµÄÖµ¡£
+             * è®¾ç½®idå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2513,7 +2513,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡codeÊôĞÔµÄÖµ¡£
+             * è·å–codeå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2525,7 +2525,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃcodeÊôĞÔµÄÖµ¡£
+             * è®¾ç½®codeå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2537,7 +2537,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡businesstypeÊôĞÔµÄÖµ¡£
+             * è·å–businesstypeå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2549,7 +2549,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃbusinesstypeÊôĞÔµÄÖµ¡£
+             * è®¾ç½®businesstypeå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2561,7 +2561,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡vouchtypeÊôĞÔµÄÖµ¡£
+             * è·å–vouchtypeå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2573,7 +2573,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃvouchtypeÊôĞÔµÄÖµ¡£
+             * è®¾ç½®vouchtypeå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2585,7 +2585,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡purchasetypecodeÊôĞÔµÄÖµ¡£
+             * è·å–purchasetypecodeå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2597,7 +2597,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃpurchasetypecodeÊôĞÔµÄÖµ¡£
+             * è®¾ç½®purchasetypecodeå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2609,7 +2609,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡dateÊôĞÔµÄÖµ¡£
+             * è·å–dateå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2621,7 +2621,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdateÊôĞÔµÄÖµ¡£
+             * è®¾ç½®dateå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2633,7 +2633,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡vendorcodeÊôĞÔµÄÖµ¡£
+             * è·å–vendorcodeå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2645,7 +2645,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃvendorcodeÊôĞÔµÄÖµ¡£
+             * è®¾ç½®vendorcodeå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2657,7 +2657,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡departmentcodeÊôĞÔµÄÖµ¡£
+             * è·å–departmentcodeå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2669,7 +2669,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdepartmentcodeÊôĞÔµÄÖµ¡£
+             * è®¾ç½®departmentcodeå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2681,7 +2681,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡personcodeÊôĞÔµÄÖµ¡£
+             * è·å–personcodeå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2693,7 +2693,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃpersoncodeÊôĞÔµÄÖµ¡£
+             * è®¾ç½®personcodeå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2705,7 +2705,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡payconditioncodeÊôĞÔµÄÖµ¡£
+             * è·å–payconditioncodeå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2717,7 +2717,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃpayconditioncodeÊôĞÔµÄÖµ¡£
+             * è®¾ç½®payconditioncodeå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2729,7 +2729,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡statperiodÊôĞÔµÄÖµ¡£
+             * è·å–statperiodå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2741,7 +2741,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃstatperiodÊôĞÔµÄÖµ¡£
+             * è®¾ç½®statperiodå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2753,7 +2753,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡foreigncurrencyÊôĞÔµÄÖµ¡£
+             * è·å–foreigncurrencyå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2765,7 +2765,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃforeigncurrencyÊôĞÔµÄÖµ¡£
+             * è®¾ç½®foreigncurrencyå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2777,7 +2777,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡foreigncurrencyrateÊôĞÔµÄÖµ¡£
+             * è·å–foreigncurrencyrateå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2789,7 +2789,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃforeigncurrencyrateÊôĞÔµÄÖµ¡£
+             * è®¾ç½®foreigncurrencyrateå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2801,7 +2801,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡discounttaxtypeÊôĞÔµÄÖµ¡£
+             * è·å–discounttaxtypeå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2813,7 +2813,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdiscounttaxtypeÊôĞÔµÄÖµ¡£
+             * è®¾ç½®discounttaxtypeå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2825,7 +2825,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡taxrateÊôĞÔµÄÖµ¡£
+             * è·å–taxrateå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2837,7 +2837,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃtaxrateÊôĞÔµÄÖµ¡£
+             * è®¾ç½®taxrateå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2849,7 +2849,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡makerÊôĞÔµÄÖµ¡£
+             * è·å–makerå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2861,7 +2861,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃmakerÊôĞÔµÄÖµ¡£
+             * è®¾ç½®makerå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2873,7 +2873,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡memoÊôĞÔµÄÖµ¡£
+             * è·å–memoå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2885,7 +2885,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃmemoÊôĞÔµÄÖµ¡£
+             * è®¾ç½®memoå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2897,7 +2897,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡pufirstÊôĞÔµÄÖµ¡£
+             * è·å–pufirstå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2909,7 +2909,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃpufirstÊôĞÔµÄÖµ¡£
+             * è®¾ç½®pufirstå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2921,7 +2921,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡iafirstÊôĞÔµÄÖµ¡£
+             * è·å–iafirstå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2933,7 +2933,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃiafirstÊôĞÔµÄÖµ¡£
+             * è®¾ç½®iafirstå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2945,7 +2945,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡crdcodeÊôĞÔµÄÖµ¡£
+             * è·å–crdcodeå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2957,7 +2957,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃcrdcodeÊôĞÔµÄÖµ¡£
+             * è®¾ç½®crdcodeå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2969,7 +2969,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡venpuomprotocolÊôĞÔµÄÖµ¡£
+             * è·å–venpuomprotocolå±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -2981,7 +2981,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃvenpuomprotocolÊôĞÔµÄÖµ¡£
+             * è®¾ç½®venpuomprotocolå±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -2993,7 +2993,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define1ÊôĞÔµÄÖµ¡£
+             * è·å–define1å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3005,7 +3005,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine1ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define1å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3017,7 +3017,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define2ÊôĞÔµÄÖµ¡£
+             * è·å–define2å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3029,7 +3029,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine2ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define2å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3041,7 +3041,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define3ÊôĞÔµÄÖµ¡£
+             * è·å–define3å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3053,7 +3053,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine3ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define3å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3065,7 +3065,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define4ÊôĞÔµÄÖµ¡£
+             * è·å–define4å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3077,7 +3077,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine4ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define4å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3089,7 +3089,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define5ÊôĞÔµÄÖµ¡£
+             * è·å–define5å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3101,7 +3101,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine5ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define5å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3113,7 +3113,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define6ÊôĞÔµÄÖµ¡£
+             * è·å–define6å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3125,7 +3125,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine6ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define6å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3137,7 +3137,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define7ÊôĞÔµÄÖµ¡£
+             * è·å–define7å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3149,7 +3149,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine7ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define7å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3161,7 +3161,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define8ÊôĞÔµÄÖµ¡£
+             * è·å–define8å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3173,7 +3173,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine8ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define8å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3185,7 +3185,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define9ÊôĞÔµÄÖµ¡£
+             * è·å–define9å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3197,7 +3197,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine9ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define9å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3209,7 +3209,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define10ÊôĞÔµÄÖµ¡£
+             * è·å–define10å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3221,7 +3221,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine10ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define10å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3233,7 +3233,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define11ÊôĞÔµÄÖµ¡£
+             * è·å–define11å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3245,7 +3245,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine11ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define11å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3257,7 +3257,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define12ÊôĞÔµÄÖµ¡£
+             * è·å–define12å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3269,7 +3269,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine12ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define12å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3281,7 +3281,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define13ÊôĞÔµÄÖµ¡£
+             * è·å–define13å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3293,7 +3293,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine13ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define13å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3305,7 +3305,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define14ÊôĞÔµÄÖµ¡£
+             * è·å–define14å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3317,7 +3317,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine14ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define14å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3329,7 +3329,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define15ÊôĞÔµÄÖµ¡£
+             * è·å–define15å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3341,7 +3341,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine15ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define15å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
@@ -3353,7 +3353,7 @@ public class Ufinterface {
             }
 
             /**
-             * »ñÈ¡define16ÊôĞÔµÄÖµ¡£
+             * è·å–define16å±æ€§çš„å€¼ã€‚
              * 
              * @return
              *     possible object is
@@ -3365,7 +3365,7 @@ public class Ufinterface {
             }
 
             /**
-             * ÉèÖÃdefine16ÊôĞÔµÄÖµ¡£
+             * è®¾ç½®define16å±æ€§çš„å€¼ã€‚
              * 
              * @param value
              *     allowed object is
