@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="unitaccount" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="caccountnumber" type="xs:string" />
+            <xs:attribute name="cpayunitid" type="xs:string" />
+            <xs:attribute name="bisdefault" type="xs:string" />
+            <xs:attribute name="cbankid" type="xs:string" />
+            <xs:attribute name="cbankname" type="xs:string" />
+            <xs:attribute name="cprinvince" type="xs:string" />
+            <xs:attribute name="ccity" type="xs:string" />
+            <xs:attribute name="caccname" type="xs:string" />
+            <xs:attribute name="ccbbdepid" type="xs:string" />
+            <xs:attribute name="cbranchid" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

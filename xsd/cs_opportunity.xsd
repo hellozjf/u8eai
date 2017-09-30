@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cs_opportunity" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="header" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="coppcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="coppname" type="xs:string" minOccurs="0" />
+                    <xs:element name="coppstate" type="xs:string" minOccurs="0" />
+                    <xs:element name="cexchname" type="xs:string" minOccurs="0" />
+                    <xs:element name="fexchrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="csalmodename" type="xs:string" minOccurs="0" />
+                    <xs:element name="csalphasename" type="xs:string" minOccurs="0" />
+                    <xs:element name="coppgradename" type="xs:string" minOccurs="0" />
+                    <xs:element name="coppsourcename" type="xs:string" minOccurs="0" />
+                    <xs:element name="coppprincipalname" type="xs:string" minOccurs="0" />
+                    <xs:element name="dprestartdate" type="xs:string" minOccurs="0" />
+                    <xs:element name="dpreenddate" type="xs:string" minOccurs="0" />
+                    <xs:element name="ccuscode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdepname" type="xs:string" minOccurs="0" />
+                    <xs:element name="fsucceedrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="mintendsaleroom" type="xs:string" minOccurs="0" />
+                    <xs:element name="mintendnatsaleroom" type="xs:string" minOccurs="0" />
+                    <xs:element name="ccontactname" type="xs:string" minOccurs="0" />
+                    <xs:element name="coppmemo" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine1" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine2" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine3" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine4" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine5" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine6" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine7" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine8" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine9" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine10" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine11" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine12" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine13" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine14" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine15" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine16" type="xs:string" minOccurs="0" />
+                    <xs:element name="ccreator" type="xs:string" minOccurs="0" />
+                    <xs:element name="dcreatdate" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="body" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="entry" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="cinvcode" type="xs:string" minOccurs="0" />
+                          <xs:element name="coppunitcode" type="xs:string" minOccurs="0" />
+                          <xs:element name="foppinvquan" type="xs:string" minOccurs="0" />
+                          <xs:element name="ioppnum" type="xs:string" minOccurs="0" />
+                          <xs:element name="ioppchangrate" type="xs:string" minOccurs="0" />
+                          <xs:element name="foppinvprice" type="xs:string" minOccurs="0" />
+                          <xs:element name="minvintendsaleroom" type="xs:string" minOccurs="0" />
+                          <xs:element name="foppinvnatprice" type="xs:string" minOccurs="0" />
+                          <xs:element name="minvintendnatsaleroom" type="xs:string" minOccurs="0" />
+                          <xs:element name="cfree1" type="xs:string" minOccurs="0" />
+                          <xs:element name="cfree2" type="xs:string" minOccurs="0" />
+                          <xs:element name="cfree3" type="xs:string" minOccurs="0" />
+                          <xs:element name="cfree4" type="xs:string" minOccurs="0" />
+                          <xs:element name="cfree5" type="xs:string" minOccurs="0" />
+                          <xs:element name="cfree6" type="xs:string" minOccurs="0" />
+                          <xs:element name="cfree7" type="xs:string" minOccurs="0" />
+                          <xs:element name="cfree8" type="xs:string" minOccurs="0" />
+                          <xs:element name="cfree9" type="xs:string" minOccurs="0" />
+                          <xs:element name="cfree10" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine22" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine23" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine24" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine25" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine26" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine27" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine28" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine29" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine30" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine31" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine32" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine33" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine34" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine35" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine36" type="xs:string" minOccurs="0" />
+                          <xs:element name="cdefine37" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

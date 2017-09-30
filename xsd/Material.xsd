@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="material" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="departmentno" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="productno" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="inventoryno" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="serial" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+              <xs:element name="price" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+              <xs:element name="quantity" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+              <xs:element name="period" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+              <xs:element name="totalmoney" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+              <xs:element name="free1" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+              <xs:element name="free2" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+              <xs:element name="free3" type="xs:string" minOccurs="0" msdata:Ordinal="10" />
+              <xs:element name="free4" type="xs:string" minOccurs="0" msdata:Ordinal="11" />
+              <xs:element name="free5" type="xs:string" minOccurs="0" msdata:Ordinal="12" />
+              <xs:element name="free6" type="xs:string" minOccurs="0" msdata:Ordinal="13" />
+              <xs:element name="free7" type="xs:string" minOccurs="0" msdata:Ordinal="14" />
+              <xs:element name="free8" type="xs:string" minOccurs="0" msdata:Ordinal="15" />
+              <xs:element name="free9" type="xs:string" minOccurs="0" msdata:Ordinal="16" />
+              <xs:element name="free10" type="xs:string" minOccurs="0" msdata:Ordinal="17" />
+              <xs:element name="bomver" type="xs:string" minOccurs="0" msdata:Ordinal="18" />
+              <xs:element name="bomvertd" type="xs:string" minOccurs="0" msdata:Ordinal="19" />
+              <xs:element name="moroutesn" type="xs:string" minOccurs="0" msdata:Ordinal="20" />
+              <xs:element name="mocode" type="xs:string" minOccurs="0" msdata:Ordinal="21" />
+              <xs:element name="mosubsn" type="xs:string" minOccurs="0" msdata:Ordinal="22" />
+              <xs:element name="ompflag" type="xs:string" minOccurs="0" msdata:Ordinal="23" />
+              <xs:element name="sfree1" type="xs:string" minOccurs="0" msdata:Ordinal="24" />
+              <xs:element name="sfree2" type="xs:string" minOccurs="0" msdata:Ordinal="25" />
+              <xs:element name="sfree3" type="xs:string" minOccurs="0" msdata:Ordinal="26" />
+              <xs:element name="sfree4" type="xs:string" minOccurs="0" msdata:Ordinal="27" />
+              <xs:element name="sfree5" type="xs:string" minOccurs="0" msdata:Ordinal="28" />
+              <xs:element name="sfree6" type="xs:string" minOccurs="0" msdata:Ordinal="29" />
+              <xs:element name="sfree7" type="xs:string" minOccurs="0" msdata:Ordinal="30" />
+              <xs:element name="sfree8" type="xs:string" minOccurs="0" msdata:Ordinal="31" />
+              <xs:element name="sfree9" type="xs:string" minOccurs="0" msdata:Ordinal="32" />
+              <xs:element name="sfree10" type="xs:string" minOccurs="0" msdata:Ordinal="33" />
+              <xs:element name="badjust" type="xs:string" minOccurs="0" msdata:Ordinal="34" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="salecuspricejust" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="header" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id" type="xs:string" minOccurs="0" />
+                    <xs:element name="ddate" type="xs:string" minOccurs="0" />
+                    <xs:element name="ccode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cmaker" type="xs:string" minOccurs="0" />
+                    <xs:element name="cpersoncode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cmainmemo" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdepcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine1" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine2" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine3" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine4" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine5" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine6" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine7" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine8" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine9" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine10" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine11" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine12" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine13" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine14" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine15" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine16" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="body" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id" type="xs:string" minOccurs="0" />
+                    <xs:element name="operationtype" type="xs:string" minOccurs="0" />
+                    <xs:element name="ipriceid" type="xs:string" minOccurs="0" />
+                    <xs:element name="ccuscode" type="xs:string" minOccurs="0" />
+                    <xs:element name="ccusccode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cinvcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cfree1" type="xs:string" minOccurs="0" />
+                    <xs:element name="cfree2" type="xs:string" minOccurs="0" />
+                    <xs:element name="cfree3" type="xs:string" minOccurs="0" />
+                    <xs:element name="cfree4" type="xs:string" minOccurs="0" />
+                    <xs:element name="cfree5" type="xs:string" minOccurs="0" />
+                    <xs:element name="cfree6" type="xs:string" minOccurs="0" />
+                    <xs:element name="cfree7" type="xs:string" minOccurs="0" />
+                    <xs:element name="cfree8" type="xs:string" minOccurs="0" />
+                    <xs:element name="cfree9" type="xs:string" minOccurs="0" />
+                    <xs:element name="cfree10" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine22" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine23" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine24" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine25" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine26" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine27" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine28" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine29" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine30" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine31" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine32" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine33" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine34" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine35" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine36" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine37" type="xs:string" minOccurs="0" />
+                    <xs:element name="dstartdate" type="xs:string" minOccurs="0" />
+                    <xs:element name="denddate" type="xs:string" minOccurs="0" />
+                    <xs:element name="cbodymemo" type="xs:string" minOccurs="0" />
+                    <xs:element name="iinvscost" type="xs:string" minOccurs="0" />
+                    <xs:element name="iinvsalecost" type="xs:string" minOccurs="0" />
+                    <xs:element name="bsales" type="xs:string" minOccurs="0" />
+                    <xs:element name="icusdisrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="iinvnowcost" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdesc" type="xs:string" minOccurs="0" />
+                    <xs:element name="fcusminprice" type="xs:string" minOccurs="0" />
+                    <xs:element name="fminquantity" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

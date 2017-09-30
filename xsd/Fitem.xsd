@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="fitem" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="structure" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="field" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="citem_sqr" type="xs:string" />
+                        <xs:attribute name="cfield_name" type="xs:string" />
+                        <xs:attribute name="ctext" type="xs:string" />
+                        <xs:attribute name="imode" type="xs:string" />
+                        <xs:attribute name="itype" type="xs:string" />
+                        <xs:attribute name="ilength" type="xs:string" />
+                        <xs:attribute name="iscale" type="xs:string" />
+                        <xs:attribute name="blist" type="xs:string" />
+                        <xs:attribute name="bsum" type="xs:string" />
+                        <xs:attribute name="bref" type="xs:string" />
+                        <xs:attribute name="isubitem" type="xs:string" />
+                        <xs:attribute name="idefine" type="xs:string" />
+                        <xs:attribute name="bprimarykey" type="xs:string" />
+                        <xs:attribute name="isource" type="xs:string" />
+                        <xs:attribute name="ctablename" type="xs:string" />
+                        <xs:attribute name="cfieldname" type="xs:string" />
+                        <xs:attribute name="iwidth" type="xs:string" />
+                        <xs:attribute name="ialign" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="itemclass" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="citemccode" type="xs:string" />
+                  <xs:attribute name="citemcname" type="xs:string" />
+                  <xs:attribute name="iitemcgrade" type="xs:string" />
+                  <xs:attribute name="bitemcend" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="citem_class" type="xs:string" />
+            <xs:attribute name="citem_name" type="xs:string" />
+            <xs:attribute name="citem_text" type="xs:string" />
+            <xs:attribute name="crule" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

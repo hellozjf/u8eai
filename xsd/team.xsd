@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="team" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cCode" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="vName" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="cDepCode" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="cLeader" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+              <xs:element name="bMOTeam" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+              <xs:element name="wccode" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+              <xs:element name="bPRTeam" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+              <xs:element name="dEstablisheDate" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+              <xs:element name="dWithdrawalDate" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+              <xs:element name="cTeamDefine1" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+              <xs:element name="cTeamDefine2" type="xs:string" minOccurs="0" msdata:Ordinal="10" />
+              <xs:element name="cTeamDefine3" type="xs:string" minOccurs="0" msdata:Ordinal="11" />
+              <xs:element name="cTeamDefine4" type="xs:string" minOccurs="0" msdata:Ordinal="12" />
+              <xs:element name="cTeamDefine5" type="xs:string" minOccurs="0" msdata:Ordinal="13" />
+              <xs:element name="cTeamDefine6" type="xs:string" minOccurs="0" msdata:Ordinal="14" />
+              <xs:element name="cTeamDefine7" type="xs:string" minOccurs="0" msdata:Ordinal="15" />
+              <xs:element name="cTeamDefine8" type="xs:string" minOccurs="0" msdata:Ordinal="16" />
+              <xs:element name="cTeamDefine9" type="xs:string" minOccurs="0" msdata:Ordinal="17" />
+              <xs:element name="cTeamDefine10" type="xs:string" minOccurs="0" msdata:Ordinal="18" />
+              <xs:element name="cTeamDefine11" type="xs:string" minOccurs="0" msdata:Ordinal="19" />
+              <xs:element name="cTeamDefine12" type="xs:string" minOccurs="0" msdata:Ordinal="20" />
+              <xs:element name="cTeamDefine13" type="xs:string" minOccurs="0" msdata:Ordinal="21" />
+              <xs:element name="cTeamDefine14" type="xs:string" minOccurs="0" msdata:Ordinal="22" />
+              <xs:element name="cTeamDefine15" type="xs:string" minOccurs="0" msdata:Ordinal="23" />
+              <xs:element name="cTeamDefine16" type="xs:string" minOccurs="0" msdata:Ordinal="24" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

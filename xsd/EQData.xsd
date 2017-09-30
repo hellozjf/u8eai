@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="eqdata" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="header" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ceqcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="ceqname" type="xs:string" minOccurs="0" />
+                    <xs:element name="cabccode" type="xs:string" minOccurs="0" />
+                    <xs:element name="ceqtypecode" type="xs:string" minOccurs="0" />
+                    <xs:element name="csupeqcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cstacode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cpcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdepcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cseq" type="xs:string" minOccurs="0" />
+                    <xs:element name="cpiccode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cvencode" type="xs:string" minOccurs="0" />
+                    <xs:element name="dtccdate" type="xs:string" minOccurs="0" />
+                    <xs:element name="dtgmdate" type="xs:string" minOccurs="0" />
+                    <xs:element name="dtazdate" type="xs:string" minOccurs="0" />
+                    <xs:element name="dtsydate" type="xs:string" minOccurs="0" />
+                    <xs:element name="intsynx" type="xs:string" minOccurs="0" />
+                    <xs:element name="dtbxdate" type="xs:string" minOccurs="0" />
+                    <xs:element name="dbldjgl" type="xs:string" minOccurs="0" />
+                    <xs:element name="intdjnum" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdjdw" type="xs:string" minOccurs="0" />
+                    <xs:element name="dblzdsj" type="xs:string" minOccurs="0" />
+                    <xs:element name="cassetnum" type="xs:string" minOccurs="0" />
+                    <xs:element name="cmaker" type="xs:string" minOccurs="0" />
+                    <xs:element name="dtdate" type="xs:string" minOccurs="0" />
+                    <xs:element name="cchecker" type="xs:string" minOccurs="0" />
+                    <xs:element name="dtaudit" type="xs:string" minOccurs="0" />
+                    <xs:element name="cmemo" type="xs:string" minOccurs="0" />
+                    <xs:element name="vt_id" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine1" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine2" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine3" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine4" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine5" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine6" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine7" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine8" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine9" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine10" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine11" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine12" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine13" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine14" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine15" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdefine16" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

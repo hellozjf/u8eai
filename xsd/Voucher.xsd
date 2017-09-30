@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="voucher" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="voucher_head" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="company" type="xs:string" minOccurs="0" />
+                    <xs:element name="voucher_type" type="xs:string" minOccurs="0" />
+                    <xs:element name="fiscal_year" type="xs:string" minOccurs="0" />
+                    <xs:element name="accounting_period" type="xs:string" minOccurs="0" />
+                    <xs:element name="voucher_id" type="xs:string" minOccurs="0" />
+                    <xs:element name="attachment_number" type="xs:string" minOccurs="0" />
+                    <xs:element name="date" type="xs:string" minOccurs="0" />
+                    <xs:element name="enter" type="xs:string" minOccurs="0" />
+                    <xs:element name="cashier" type="xs:string" minOccurs="0" />
+                    <xs:element name="signature" type="xs:string" minOccurs="0" />
+                    <xs:element name="checker" type="xs:string" minOccurs="0" />
+                    <xs:element name="posting_date" type="xs:string" minOccurs="0" />
+                    <xs:element name="posting_person" type="xs:string" minOccurs="0" />
+                    <xs:element name="voucher_making_system" type="xs:string" minOccurs="0" />
+                    <xs:element name="memo1" type="xs:string" minOccurs="0" />
+                    <xs:element name="memo2" type="xs:string" minOccurs="0" />
+                    <xs:element name="reserve1" type="xs:string" minOccurs="0" />
+                    <xs:element name="reserve2" type="xs:string" minOccurs="0" />
+                    <xs:element name="revokeflag" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="voucher_body" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="entry" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="entry_id" type="xs:string" minOccurs="0" />
+                          <xs:element name="account_code" type="xs:string" minOccurs="0" />
+                          <xs:element name="abstract" type="xs:string" minOccurs="0" />
+                          <xs:element name="settlement" type="xs:string" minOccurs="0" />
+                          <xs:element name="document_id" type="xs:string" minOccurs="0" />
+                          <xs:element name="document_date" type="xs:string" minOccurs="0" />
+                          <xs:element name="currency" type="xs:string" minOccurs="0" />
+                          <xs:element name="unit_price" type="xs:string" minOccurs="0" />
+                          <xs:element name="exchange_rate1" type="xs:string" minOccurs="0" />
+                          <xs:element name="exchange_rate2" type="xs:string" minOccurs="0" />
+                          <xs:element name="debit_quantity" type="xs:string" minOccurs="0" />
+                          <xs:element name="primary_debit_amount" type="xs:string" minOccurs="0" />
+                          <xs:element name="secondary_debit_amount" type="xs:string" minOccurs="0" />
+                          <xs:element name="natural_debit_currency" type="xs:string" minOccurs="0" />
+                          <xs:element name="credit_quantity" type="xs:string" minOccurs="0" />
+                          <xs:element name="primary_credit_amount" type="xs:string" minOccurs="0" />
+                          <xs:element name="secondary_credit_amount" type="xs:string" minOccurs="0" />
+                          <xs:element name="natural_credit_currency" type="xs:string" minOccurs="0" />
+                          <xs:element name="bill_type" type="xs:string" minOccurs="0" />
+                          <xs:element name="bill_id" type="xs:string" minOccurs="0" />
+                          <xs:element name="bill_date" type="xs:string" minOccurs="0" />
+                          <xs:element name="auxiliary_accounting" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element ref="item" minOccurs="0" maxOccurs="unbounded" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="detail" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="cash_flow_statement" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="cash_flow" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:attribute name="cash_item" type="xs:string" />
+                                          <xs:attribute name="natural_debit_currency" type="xs:string" />
+                                          <xs:attribute name="natural_credit_currency" type="xs:string" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="code_remark_statement" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="code_remark" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element ref="item" minOccurs="0" maxOccurs="unbounded" />
+                                          </xs:sequence>
+                                          <xs:attribute name="i_id" type="xs:string" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="renewproofno" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="item" />
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

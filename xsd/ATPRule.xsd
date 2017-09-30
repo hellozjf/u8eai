@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ufinterface" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ATPRules">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ATPRule" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ATPCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="Description" type="xs:string" minOccurs="0" />
+                    <xs:element name="OverDemandDays" type="xs:string" minOccurs="0" />
+                    <xs:element name="OverSupplyDays" type="xs:string" minOccurs="0" />
+                    <xs:element name="InfiniteSupplyDays" type="xs:string" minOccurs="0" />
+                    <xs:element name="DemandFlag" type="xs:string" minOccurs="0" />
+                    <xs:element name="SupplyFlag" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

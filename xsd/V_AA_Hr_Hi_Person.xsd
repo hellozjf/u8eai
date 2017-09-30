@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="v_aa_hr_hi_person" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="name" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="cPsn_NameEN" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="JobNumber" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+              <xs:element name="cpsnproperty" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+              <xs:element name="rsex" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+              <xs:element name="rEmployState" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+              <xs:element name="rpersontype" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+              <xs:element name="EmploymentForm" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+              <xs:element name="cdutyclass" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+              <xs:element name="cjobcode" type="xs:string" minOccurs="0" msdata:Ordinal="10" />
+              <xs:element name="cjobgradecode" type="xs:string" minOccurs="0" msdata:Ordinal="11" />
+              <xs:element name="cjobrankcode" type="xs:string" minOccurs="0" msdata:Ordinal="12" />
+              <xs:element name="rIDType" type="xs:string" minOccurs="0" msdata:Ordinal="13" />
+              <xs:element name="vIDNo" type="xs:string" minOccurs="0" msdata:Ordinal="14" />
+              <xs:element name="bpsnperson" type="xs:string" minOccurs="0" msdata:Ordinal="15" />
+              <xs:element name="cdept_num" type="xs:string" minOccurs="0" msdata:Ordinal="16" />
+              <xs:element name="cpsnbankcode" type="xs:string" minOccurs="0" msdata:Ordinal="17" />
+              <xs:element name="cpsnaccount" type="xs:string" minOccurs="0" msdata:Ordinal="18" />
+              <xs:element name="dbirthdate" type="xs:string" minOccurs="0" msdata:Ordinal="19" />
+              <xs:element name="cpsnmobilephone" type="xs:string" minOccurs="0" msdata:Ordinal="20" />
+              <xs:element name="cpsnfphone" type="xs:string" minOccurs="0" msdata:Ordinal="21" />
+              <xs:element name="cpsnophone" type="xs:string" minOccurs="0" msdata:Ordinal="22" />
+              <xs:element name="cpsninphone" type="xs:string" minOccurs="0" msdata:Ordinal="23" />
+              <xs:element name="cpsnemail" type="xs:string" minOccurs="0" msdata:Ordinal="24" />
+              <xs:element name="cpsnfaddr" type="xs:string" minOccurs="0" msdata:Ordinal="25" />
+              <xs:element name="cpsnpostcode" type="xs:string" minOccurs="0" msdata:Ordinal="26" />
+              <xs:element name="cpsnpostaddr" type="xs:string" minOccurs="0" msdata:Ordinal="27" />
+              <xs:element name="cpsnqqcode" type="xs:string" minOccurs="0" msdata:Ordinal="28" />
+              <xs:element name="cpsnurl" type="xs:string" minOccurs="0" msdata:Ordinal="29" />
+              <xs:element name="cpsnoseat" type="xs:string" minOccurs="0" msdata:Ordinal="30" />
+              <xs:element name="cpersonprop" type="xs:string" minOccurs="0" msdata:Ordinal="31" />
+              <xs:element name="cdepcode" type="xs:string" minOccurs="0" msdata:Ordinal="32" />
+              <xs:element name="fcreditquantity" type="xs:string" minOccurs="0" msdata:Ordinal="33" />
+              <xs:element name="icredate" type="xs:string" minOccurs="0" msdata:Ordinal="34" />
+              <xs:element name="ccregrade" type="xs:string" minOccurs="0" msdata:Ordinal="35" />
+              <xs:element name="dpvaliddate" type="xs:string" minOccurs="0" msdata:Ordinal="36" />
+              <xs:element name="dpinvaliddate" type="xs:string" minOccurs="0" msdata:Ordinal="37" />
+              <xs:element name="rNativePlace" type="xs:string" minOccurs="0" msdata:Ordinal="38" />
+              <xs:element name="rNational" type="xs:string" minOccurs="0" msdata:Ordinal="39" />
+              <xs:element name="rhealthStatus" type="xs:string" minOccurs="0" msdata:Ordinal="40" />
+              <xs:element name="rMarriStatus" type="xs:string" minOccurs="0" msdata:Ordinal="41" />
+              <xs:element name="MPicture" type="xs:string" minOccurs="0" msdata:Ordinal="42" />
+              <xs:element name="rPerResidence" type="xs:string" minOccurs="0" msdata:Ordinal="43" />
+              <xs:element name="vAliaName" type="xs:string" minOccurs="0" msdata:Ordinal="44" />
+              <xs:element name="dJoinworkDate" type="xs:string" minOccurs="0" msdata:Ordinal="45" />
+              <xs:element name="dEnterDate" type="xs:string" minOccurs="0" msdata:Ordinal="46" />
+              <xs:element name="dRegularDate" type="xs:string" minOccurs="0" msdata:Ordinal="47" />
+              <xs:element name="vSSNo" type="xs:string" minOccurs="0" msdata:Ordinal="48" />
+              <xs:element name="dEnterUnitDate" type="xs:string" minOccurs="0" msdata:Ordinal="49" />
+              <xs:element name="bProbation" type="xs:string" minOccurs="0" msdata:Ordinal="50" />
+            </xs:sequence>
+            <xs:attribute name="tablename" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

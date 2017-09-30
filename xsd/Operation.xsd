@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Operation" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OperationDetail" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OperationId" type="xs:string" minOccurs="0" />
+                    <xs:element name="OpCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="Description" type="xs:string" minOccurs="0" />
+                    <xs:element name="WcCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="RltOptionFlag" type="xs:string" minOccurs="0" />
+                    <xs:element name="SubFlag" type="xs:string" minOccurs="0" />
+                    <xs:element name="SVendorCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                    <xs:element name="OperationInspId" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define22" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define23" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define24" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define25" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define26" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define27" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define28" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define29" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define30" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define31" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define32" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define33" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define34" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define35" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define36" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define37" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="OperationRes" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OperationResId" type="xs:string" minOccurs="0" />
+                    <xs:element name="OperationId" type="xs:string" minOccurs="0" />
+                    <xs:element name="SortSeq" type="xs:string" minOccurs="0" />
+                    <xs:element name="ResCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="BaseType" type="xs:string" minOccurs="0" />
+                    <xs:element name="BaseQtyN" type="xs:string" minOccurs="0" />
+                    <xs:element name="BaseQtyD" type="xs:string" minOccurs="0" />
+                    <xs:element name="PlanFlag" type="xs:string" minOccurs="0" />
+                    <xs:element name="ResActivity" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="OperationInsp" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OperationInspId" type="xs:string" minOccurs="0" />
+                    <xs:element name="QTMethod" type="xs:string" minOccurs="0" />
+                    <xs:element name="DtMethod" type="xs:string" minOccurs="0" />
+                    <xs:element name="DtRate" type="xs:string" minOccurs="0" />
+                    <xs:element name="DtNum" type="xs:string" minOccurs="0" />
+                    <xs:element name="DtStyle" type="xs:string" minOccurs="0" />
+                    <xs:element name="QcProjectCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="QtLevel" type="xs:string" minOccurs="0" />
+                    <xs:element name="AqlVal" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="vendor" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="name" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="abbrname" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="sort_code" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+              <xs:element name="domain_code" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+              <xs:element name="industry" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+              <xs:element name="address" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+              <xs:element name="postcode" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+              <xs:element name="tax_reg_code" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+              <xs:element name="bank_open" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+              <xs:element name="bank_acc_number" type="xs:string" minOccurs="0" msdata:Ordinal="10" />
+              <xs:element name="seed_date" type="xs:string" minOccurs="0" msdata:Ordinal="11" />
+              <xs:element name="legal_man" type="xs:string" minOccurs="0" msdata:Ordinal="12" />
+              <xs:element name="phone" type="xs:string" minOccurs="0" msdata:Ordinal="13" />
+              <xs:element name="fax" type="xs:string" minOccurs="0" msdata:Ordinal="14" />
+              <xs:element name="email" type="xs:string" minOccurs="0" msdata:Ordinal="15" />
+              <xs:element name="contact" type="xs:string" minOccurs="0" msdata:Ordinal="16" />
+              <xs:element name="bp" type="xs:string" minOccurs="0" msdata:Ordinal="17" />
+              <xs:element name="mobile" type="xs:string" minOccurs="0" msdata:Ordinal="18" />
+              <xs:element name="spec_operator" type="xs:string" minOccurs="0" msdata:Ordinal="19" />
+              <xs:element name="discount_rate" type="xs:string" minOccurs="0" msdata:Ordinal="20" />
+              <xs:element name="credit_rank" type="xs:string" minOccurs="0" msdata:Ordinal="21" />
+              <xs:element name="credit_amount" type="xs:string" minOccurs="0" msdata:Ordinal="22" />
+              <xs:element name="credit_deadline" type="xs:string" minOccurs="0" msdata:Ordinal="23" />
+              <xs:element name="pay_condition" type="xs:string" minOccurs="0" msdata:Ordinal="24" />
+              <xs:element name="receive_site" type="xs:string" minOccurs="0" msdata:Ordinal="25" />
+              <xs:element name="receive_mode" type="xs:string" minOccurs="0" msdata:Ordinal="26" />
+              <xs:element name="head_corp_code" type="xs:string" minOccurs="0" msdata:Ordinal="27" />
+              <xs:element name="rec_warehouse" type="xs:string" minOccurs="0" msdata:Ordinal="28" />
+              <xs:element name="super_dept" type="xs:string" minOccurs="0" msdata:Ordinal="29" />
+              <xs:element name="ap_rest" type="xs:string" minOccurs="0" msdata:Ordinal="30" />
+              <xs:element name="last_tr_date" type="xs:string" minOccurs="0" msdata:Ordinal="31" />
+              <xs:element name="last_tr_money" type="xs:string" minOccurs="0" msdata:Ordinal="32" />
+              <xs:element name="last_pay_date" type="xs:string" minOccurs="0" msdata:Ordinal="33" />
+              <xs:element name="last_pay_amount" type="xs:string" minOccurs="0" msdata:Ordinal="34" />
+              <xs:element name="end_date" type="xs:string" minOccurs="0" msdata:Ordinal="35" />
+              <xs:element name="tr_frequency" type="xs:string" minOccurs="0" msdata:Ordinal="36" />
+              <xs:element name="tax_in_price_flag" type="xs:string" minOccurs="0" msdata:Ordinal="37" />
+              <xs:element name="CreatePerson" type="xs:string" minOccurs="0" msdata:Ordinal="38" />
+              <xs:element name="ModifyPerson" type="xs:string" minOccurs="0" msdata:Ordinal="39" />
+              <xs:element name="ModifyDate" type="xs:string" minOccurs="0" msdata:Ordinal="40" />
+              <xs:element name="auth_class" type="xs:string" minOccurs="0" msdata:Ordinal="41" />
+              <xs:element name="barcode" type="xs:string" minOccurs="0" msdata:Ordinal="42" />
+              <xs:element name="self_define1" type="xs:string" minOccurs="0" msdata:Ordinal="43" />
+              <xs:element name="self_define2" type="xs:string" minOccurs="0" msdata:Ordinal="44" />
+              <xs:element name="self_define3" type="xs:string" minOccurs="0" msdata:Ordinal="45" />
+              <xs:element name="self_define4" type="xs:string" minOccurs="0" msdata:Ordinal="46" />
+              <xs:element name="self_define5" type="xs:string" minOccurs="0" msdata:Ordinal="47" />
+              <xs:element name="self_define6" type="xs:string" minOccurs="0" msdata:Ordinal="48" />
+              <xs:element name="self_define7" type="xs:string" minOccurs="0" msdata:Ordinal="49" />
+              <xs:element name="self_define8" type="xs:string" minOccurs="0" msdata:Ordinal="50" />
+              <xs:element name="self_define9" type="xs:string" minOccurs="0" msdata:Ordinal="51" />
+              <xs:element name="self_define10" type="xs:string" minOccurs="0" msdata:Ordinal="52" />
+              <xs:element name="self_define11" type="xs:string" minOccurs="0" msdata:Ordinal="53" />
+              <xs:element name="self_define12" type="xs:string" minOccurs="0" msdata:Ordinal="54" />
+              <xs:element name="self_define13" type="xs:string" minOccurs="0" msdata:Ordinal="55" />
+              <xs:element name="self_define14" type="xs:string" minOccurs="0" msdata:Ordinal="56" />
+              <xs:element name="self_define15" type="xs:string" minOccurs="0" msdata:Ordinal="57" />
+              <xs:element name="self_define16" type="xs:string" minOccurs="0" msdata:Ordinal="58" />
+              <xs:element name="RegistFund" type="xs:string" minOccurs="0" msdata:Ordinal="59" />
+              <xs:element name="EmployeeNum" type="xs:string" minOccurs="0" msdata:Ordinal="60" />
+              <xs:element name="GradeABC" type="xs:string" minOccurs="0" msdata:Ordinal="61" />
+              <xs:element name="Memo" type="xs:string" minOccurs="0" msdata:Ordinal="62" />
+              <xs:element name="LicenceDate" type="xs:string" minOccurs="0" msdata:Ordinal="63" />
+              <xs:element name="LicenceSDate" type="xs:string" minOccurs="0" msdata:Ordinal="64" />
+              <xs:element name="LicenceEDate" type="xs:string" minOccurs="0" msdata:Ordinal="65" />
+              <xs:element name="LicenceADays" type="xs:string" minOccurs="0" msdata:Ordinal="66" />
+              <xs:element name="BusinessDate" type="xs:string" minOccurs="0" msdata:Ordinal="67" />
+              <xs:element name="BusinessSDate" type="xs:string" minOccurs="0" msdata:Ordinal="68" />
+              <xs:element name="BusinessEDate" type="xs:string" minOccurs="0" msdata:Ordinal="69" />
+              <xs:element name="BusinessADays" type="xs:string" minOccurs="0" msdata:Ordinal="70" />
+              <xs:element name="ProxyDate" type="xs:string" minOccurs="0" msdata:Ordinal="71" />
+              <xs:element name="ProxySDate" type="xs:string" minOccurs="0" msdata:Ordinal="72" />
+              <xs:element name="ProxyEDate" type="xs:string" minOccurs="0" msdata:Ordinal="73" />
+              <xs:element name="ProxyADays" type="xs:string" minOccurs="0" msdata:Ordinal="74" />
+              <xs:element name="PassGMP" type="xs:string" minOccurs="0" msdata:Ordinal="75" />
+              <xs:element name="bvencargo" type="xs:string" minOccurs="0" msdata:Ordinal="76" />
+              <xs:element name="bproxyforeign" type="xs:string" minOccurs="0" msdata:Ordinal="77" />
+              <xs:element name="bvenservice" type="xs:string" minOccurs="0" msdata:Ordinal="78" />
+              <xs:element name="cVenTradeCCode" type="xs:string" minOccurs="0" msdata:Ordinal="79" />
+              <xs:element name="cvenbankcode" type="xs:string" minOccurs="0" msdata:Ordinal="80" />
+              <xs:element name="cRelCustomer" type="xs:string" minOccurs="0" msdata:Ordinal="81" />
+              <xs:element name="cvenexch_name" type="xs:string" minOccurs="0" msdata:Ordinal="82" />
+              <xs:element name="ivengsptype" type="xs:string" minOccurs="0" msdata:Ordinal="83" />
+              <xs:element name="ivengspauth" type="xs:string" minOccurs="0" msdata:Ordinal="84" />
+              <xs:element name="cvengspauthno" type="xs:string" minOccurs="0" msdata:Ordinal="85" />
+              <xs:element name="cvenbusinessno" type="xs:string" minOccurs="0" msdata:Ordinal="86" />
+              <xs:element name="cvenlicenceno" type="xs:string" minOccurs="0" msdata:Ordinal="87" />
+              <xs:element name="bvenoverseas" type="xs:string" minOccurs="0" msdata:Ordinal="88" />
+              <xs:element name="bvenaccperiodmng" type="xs:string" minOccurs="0" msdata:Ordinal="89" />
+              <xs:element name="cvenpuomprotocol" type="xs:string" minOccurs="0" msdata:Ordinal="90" />
+              <xs:element name="cvenotherprotocol" type="xs:string" minOccurs="0" msdata:Ordinal="91" />
+              <xs:element name="cvencountrycode" type="xs:string" minOccurs="0" msdata:Ordinal="92" />
+              <xs:element name="cvenenname" type="xs:string" minOccurs="0" msdata:Ordinal="93" />
+              <xs:element name="cvenenaddr1" type="xs:string" minOccurs="0" msdata:Ordinal="94" />
+              <xs:element name="cvenenaddr2" type="xs:string" minOccurs="0" msdata:Ordinal="95" />
+              <xs:element name="cvenenaddr3" type="xs:string" minOccurs="0" msdata:Ordinal="96" />
+              <xs:element name="cvenenaddr4" type="xs:string" minOccurs="0" msdata:Ordinal="97" />
+              <xs:element name="cvenportcode" type="xs:string" minOccurs="0" msdata:Ordinal="98" />
+              <xs:element name="cvenprimaryven" type="xs:string" minOccurs="0" msdata:Ordinal="99" />
+              <xs:element name="fvencommisionrate" type="xs:string" minOccurs="0" msdata:Ordinal="100" />
+              <xs:element name="fveninsuerate" type="xs:string" minOccurs="0" msdata:Ordinal="101" />
+              <xs:element name="bvenhomebranch" type="xs:string" minOccurs="0" msdata:Ordinal="102" />
+              <xs:element name="cvenbranchaddr" type="xs:string" minOccurs="0" msdata:Ordinal="103" />
+              <xs:element name="cvenbranchphone" type="xs:string" minOccurs="0" msdata:Ordinal="104" />
+              <xs:element name="cvenbranchperson" type="xs:string" minOccurs="0" msdata:Ordinal="105" />
+              <xs:element name="cvensscode" type="xs:string" minOccurs="0" msdata:Ordinal="106" />
+              <xs:element name="comwhcode" type="xs:string" minOccurs="0" msdata:Ordinal="107" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

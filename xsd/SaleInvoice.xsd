@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="saleinvoice" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="header" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id" type="xs:string" minOccurs="0" />
+                    <xs:element name="outid" type="xs:string" minOccurs="0" />
+                    <xs:element name="invoiceno" type="xs:string" minOccurs="0" />
+                    <xs:element name="vouchertype" type="xs:string" minOccurs="0" />
+                    <xs:element name="saletypecode" type="xs:string" minOccurs="0" />
+                    <xs:element name="date" type="xs:string" minOccurs="0" />
+                    <xs:element name="receivetype" type="xs:string" minOccurs="0" />
+                    <xs:element name="departmentcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="personcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="customercode" type="xs:string" minOccurs="0" />
+                    <xs:element name="payconditioncode" type="xs:string" minOccurs="0" />
+                    <xs:element name="foreigncurrency" type="xs:string" minOccurs="0" />
+                    <xs:element name="memory" type="xs:string" minOccurs="0" />
+                    <xs:element name="currencyrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="taxrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="isnegative" type="xs:string" minOccurs="0" />
+                    <xs:element name="bankcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="invoiceversion" type="xs:string" minOccurs="0" />
+                    <xs:element name="maker" type="xs:string" minOccurs="0" />
+                    <xs:element name="businesstype" type="xs:string" minOccurs="0" />
+                    <xs:element name="isfirst" type="xs:string" minOccurs="0" />
+                    <xs:element name="itemclasscode" type="xs:string" minOccurs="0" />
+                    <xs:element name="itemcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="define1" type="xs:string" minOccurs="0" />
+                    <xs:element name="define2" type="xs:string" minOccurs="0" />
+                    <xs:element name="define3" type="xs:string" minOccurs="0" />
+                    <xs:element name="define4" type="xs:string" minOccurs="0" />
+                    <xs:element name="define5" type="xs:string" minOccurs="0" />
+                    <xs:element name="define6" type="xs:string" minOccurs="0" />
+                    <xs:element name="define7" type="xs:string" minOccurs="0" />
+                    <xs:element name="define8" type="xs:string" minOccurs="0" />
+                    <xs:element name="define9" type="xs:string" minOccurs="0" />
+                    <xs:element name="define10" type="xs:string" minOccurs="0" />
+                    <xs:element name="ispayedfirst" type="xs:string" minOccurs="0" />
+                    <xs:element name="customername" type="xs:string" minOccurs="0" />
+                    <xs:element name="define11" type="xs:string" minOccurs="0" />
+                    <xs:element name="define12" type="xs:string" minOccurs="0" />
+                    <xs:element name="define13" type="xs:string" minOccurs="0" />
+                    <xs:element name="define14" type="xs:string" minOccurs="0" />
+                    <xs:element name="define15" type="xs:string" minOccurs="0" />
+                    <xs:element name="define16" type="xs:string" minOccurs="0" />
+                    <xs:element name="ccusaccount" type="xs:string" minOccurs="0" />
+                    <xs:element name="cbaccount" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdeliverunit" type="xs:string" minOccurs="0" />
+                    <xs:element name="cdeliveradd" type="xs:string" minOccurs="0" />
+                    <xs:element name="ccontactname" type="xs:string" minOccurs="0" />
+                    <xs:element name="cofficephone" type="xs:string" minOccurs="0" />
+                    <xs:element name="cmobilephone" type="xs:string" minOccurs="0" />
+                    <xs:element name="caddcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cgatheringplan" type="xs:string" minOccurs="0" />
+                    <xs:element name="dcreditstart" type="xs:string" minOccurs="0" />
+                    <xs:element name="icreditdays" type="xs:string" minOccurs="0" />
+                    <xs:element name="dgatheringdate" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcredit" type="xs:string" minOccurs="0" />
+                    <xs:element name="csource" type="xs:string" minOccurs="0" />
+                    <xs:element name="ccusbank" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="body" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="mainid" type="xs:string" minOccurs="0" />
+                    <xs:element name="warehousecode" type="xs:string" minOccurs="0" />
+                    <xs:element name="inventorycode" type="xs:string" minOccurs="0" />
+                    <xs:element name="quantity" type="xs:string" minOccurs="0" />
+                    <xs:element name="number" type="xs:string" minOccurs="0" />
+                    <xs:element name="quotedprice" type="xs:string" minOccurs="0" />
+                    <xs:element name="originalprice" type="xs:string" minOccurs="0" />
+                    <xs:element name="originaltaxedprice" type="xs:string" minOccurs="0" />
+                    <xs:element name="originalmoney" type="xs:string" minOccurs="0" />
+                    <xs:element name="originaltax" type="xs:string" minOccurs="0" />
+                    <xs:element name="originaldiscount" type="xs:string" minOccurs="0" />
+                    <xs:element name="price" type="xs:string" minOccurs="0" />
+                    <xs:element name="money" type="xs:string" minOccurs="0" />
+                    <xs:element name="tax" type="xs:string" minOccurs="0" />
+                    <xs:element name="sum" type="xs:string" minOccurs="0" />
+                    <xs:element name="assistantunit" type="xs:string" minOccurs="0" />
+                    <xs:element name="discount" type="xs:string" minOccurs="0" />
+                    <xs:element name="moneysum" type="xs:string" minOccurs="0" />
+                    <xs:element name="accountclue" type="xs:string" minOccurs="0" />
+                    <xs:element name="memory" type="xs:string" minOccurs="0" />
+                    <xs:element name="serial" type="xs:string" minOccurs="0" />
+                    <xs:element name="free1" type="xs:string" minOccurs="0" />
+                    <xs:element name="free2" type="xs:string" minOccurs="0" />
+                    <xs:element name="amend" type="xs:string" minOccurs="0" />
+                    <xs:element name="invaliddate" type="xs:string" minOccurs="0" />
+                    <xs:element name="amendquantity" type="xs:string" minOccurs="0" />
+                    <xs:element name="amendnumber" type="xs:string" minOccurs="0" />
+                    <xs:element name="accountrate1" type="xs:string" minOccurs="0" />
+                    <xs:element name="accountrate2" type="xs:string" minOccurs="0" />
+                    <xs:element name="inventoryname" type="xs:string" minOccurs="0" />
+                    <xs:element name="taxrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="define22" type="xs:string" minOccurs="0" />
+                    <xs:element name="define23" type="xs:string" minOccurs="0" />
+                    <xs:element name="define24" type="xs:string" minOccurs="0" />
+                    <xs:element name="define25" type="xs:string" minOccurs="0" />
+                    <xs:element name="define26" type="xs:string" minOccurs="0" />
+                    <xs:element name="define27" type="xs:string" minOccurs="0" />
+                    <xs:element name="retailprice" type="xs:string" minOccurs="0" />
+                    <xs:element name="retailmoney" type="xs:string" minOccurs="0" />
+                    <xs:element name="itemclasscode" type="xs:string" minOccurs="0" />
+                    <xs:element name="itemcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="itemname" type="xs:string" minOccurs="0" />
+                    <xs:element name="itemclassname" type="xs:string" minOccurs="0" />
+                    <xs:element name="free3" type="xs:string" minOccurs="0" />
+                    <xs:element name="free4" type="xs:string" minOccurs="0" />
+                    <xs:element name="free5" type="xs:string" minOccurs="0" />
+                    <xs:element name="free6" type="xs:string" minOccurs="0" />
+                    <xs:element name="free7" type="xs:string" minOccurs="0" />
+                    <xs:element name="free8" type="xs:string" minOccurs="0" />
+                    <xs:element name="free9" type="xs:string" minOccurs="0" />
+                    <xs:element name="free10" type="xs:string" minOccurs="0" />
+                    <xs:element name="define28" type="xs:string" minOccurs="0" />
+                    <xs:element name="define29" type="xs:string" minOccurs="0" />
+                    <xs:element name="define30" type="xs:string" minOccurs="0" />
+                    <xs:element name="define31" type="xs:string" minOccurs="0" />
+                    <xs:element name="define32" type="xs:string" minOccurs="0" />
+                    <xs:element name="define33" type="xs:string" minOccurs="0" />
+                    <xs:element name="define34" type="xs:string" minOccurs="0" />
+                    <xs:element name="define35" type="xs:string" minOccurs="0" />
+                    <xs:element name="define36" type="xs:string" minOccurs="0" />
+                    <xs:element name="define37" type="xs:string" minOccurs="0" />
+                    <xs:element name="exchangerate" type="xs:string" minOccurs="0" />
+                    <xs:element name="unitid" type="xs:string" minOccurs="0" />
+                    <xs:element name="cordercode" type="xs:string" minOccurs="0" />
+                    <xs:element name="iorderrowno" type="xs:string" minOccurs="0" />
+                    <xs:element name="cvmivencode" type="xs:string" minOccurs="0" />
+                    <xs:element name="irowno" type="xs:string" minOccurs="0" />
+                    <xs:element name="ExpirationDate" type="xs:string" minOccurs="0" />
+                    <xs:element name="ExpiratDateCalcu" type="xs:string" minOccurs="0" />
+                    <xs:element name="ExpirationItem" type="xs:string" minOccurs="0" />
+                    <xs:element name="originalsum" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -21,18 +21,26 @@ public class SaleOrderService {
     public List<Saleorder> list() {
         List<Saleorder> list = new ArrayList<Saleorder>();
         try {
+            // 创建需要发送的Ufinterface
             Ufinterface sendUfinterface = new Ufinterface();
             sendUfinterface.setRoottag(ROOTTAG);
-            sendUfinterface.setSender("001");
-            sendUfinterface.setReceiver("u8");
-            sendUfinterface.setProc(EAITool.LIST);
-            sendUfinterface.setCodeexchanged("N");
-            sendUfinterface.setExportneedexch("N");
-            sendUfinterface.setVersion("2.0");
-            String result = EAITool.sendXML(EAITool.DEFAULT_URL, JAXBUtil.toXML(sendUfinterface));
-            LOG.debug(result);
+            sendUfinterface.setSender(EAITool.SENDER);
+            sendUfinterface.setReceiver(EAITool.RECEIVER);
+            sendUfinterface.setProc(EAITool.PROC_LIST);
+            sendUfinterface.setCodeexchanged(EAITool.CODEEXCHANGED);
+            sendUfinterface.setExportneedexch(EAITool.EXPORTNEEDEXCH);
+            sendUfinterface.setVersion(EAITool.VERSION);
             
-            Ufinterface recvUfinterface = JAXBUtil.formXML(Ufinterface.class, result);
+            // 将Ufinterface转化为XML字符串
+            String sendXML = EAITool.sendXML(EAITool.DEFAULT_URL, JAXBUtil.toXML(sendUfinterface));
+            LOG.debug(sendXML);
+            
+            // 将XML发送给EAI服务器，并获取返回的XML
+            String recvXML = EAITool.sendXML(EAITool.DEFAULT_URL, sendXML);
+            LOG.debug("recvXML: " + recvXML);
+            
+            // 将查询得到XML结果转换成Ufinterface，返回里面的列表
+            Ufinterface recvUfinterface = JAXBUtil.formXML(Ufinterface.class, sendXML);
             list = recvUfinterface.getSaleorder();
         } catch (Exception e) {
             e.printStackTrace();

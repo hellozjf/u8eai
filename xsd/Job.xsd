@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="job" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="jobcode" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="jobname" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="depcode" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="suporior" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+              <xs:element name="builddate" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+              <xs:element name="abortdate" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+              <xs:element name="jobseries" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+              <xs:element name="jobrank" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+              <xs:element name="worksumm" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+              <xs:element name="jobrankclasscode" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+              <xs:element name="jobrankbegin" type="xs:string" minOccurs="0" msdata:Ordinal="10" />
+              <xs:element name="jobrankend" type="xs:string" minOccurs="0" msdata:Ordinal="11" />
+              <xs:element name="jobgradebegin" type="xs:string" minOccurs="0" msdata:Ordinal="12" />
+              <xs:element name="jobgradeend" type="xs:string" minOccurs="0" msdata:Ordinal="13" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

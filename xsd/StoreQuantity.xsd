@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="storequantity" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" type="xs:string" minOccurs="0" />
+              <xs:element name="now" type="xs:string" minOccurs="0" />
+              <xs:element name="asked" type="xs:string" minOccurs="0" />
+              <xs:element name="orderonroad" type="xs:string" minOccurs="0" />
+              <xs:element name="arrivedgoods" type="xs:string" minOccurs="0" />
+              <xs:element name="production" type="xs:string" minOccurs="0" />
+              <xs:element name="moveonroad" type="xs:string" minOccurs="0" />
+              <xs:element name="ordered" type="xs:string" minOccurs="0" />
+              <xs:element name="consignment" type="xs:string" minOccurs="0" />
+              <xs:element name="arrangedplan" type="xs:string" minOccurs="0" />
+              <xs:element name="translation" type="xs:string" minOccurs="0" />
+              <xs:element name="expect" type="xs:string" minOccurs="0" />
+              <xs:element name="frozen" type="xs:string" minOccurs="0" />
+              <xs:element name="disqualification" type="xs:string" minOccurs="0" />
+              <xs:element name="useable" type="xs:string" minOccurs="0" />
+              <xs:element name="safeline" type="xs:string" minOccurs="0" />
+              <xs:element name="dispersion" type="xs:string" minOccurs="0" />
+              <xs:element name="headline" type="xs:string" minOccurs="0" />
+              <xs:element name="overtake" type="xs:string" minOccurs="0" />
+              <xs:element name="deadline" type="xs:string" minOccurs="0" />
+              <xs:element name="shortage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

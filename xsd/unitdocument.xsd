@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="unitdocument" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="cunitid" type="xs:string" />
+            <xs:attribute name="cunitname" type="xs:string" />
+            <xs:attribute name="cunitsname" type="xs:string" />
+            <xs:attribute name="cclass" type="xs:string" />
+            <xs:attribute name="ccusid" type="xs:string" />
+            <xs:attribute name="csupid" type="xs:string" />
+            <xs:attribute name="caddress" type="xs:string" />
+            <xs:attribute name="cpostcode" type="xs:string" />
+            <xs:attribute name="ctelephone" type="xs:string" />
+            <xs:attribute name="ctelefax" type="xs:string" />
+            <xs:attribute name="cbp" type="xs:string" />
+            <xs:attribute name="cmobiletele" type="xs:string" />
+            <xs:attribute name="cemail" type="xs:string" />
+            <xs:attribute name="clinkman" type="xs:string" />
+            <xs:attribute name="cremark" type="xs:string" />
+            <xs:attribute name="cbankcode" type="xs:string" />
+            <xs:attribute name="cdepid" type="xs:string" />
+            <xs:attribute name="cpersonid" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Version">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="BomId" type="xs:string" minOccurs="0" />
+        <xs:element name="BomType" type="xs:string" minOccurs="0" />
+        <xs:element name="VersionDesc" type="xs:string" minOccurs="0" />
+        <xs:element name="VersionEffDate" type="xs:string" minOccurs="0" />
+        <xs:element name="IdentCode" type="xs:string" minOccurs="0" />
+        <xs:element name="IdentDesc" type="xs:string" minOccurs="0" />
+        <xs:element name="Define1" type="xs:string" minOccurs="0" />
+        <xs:element name="Define2" type="xs:string" minOccurs="0" />
+        <xs:element name="Define3" type="xs:string" minOccurs="0" />
+        <xs:element name="Define4" type="xs:string" minOccurs="0" />
+        <xs:element name="Define5" type="xs:string" minOccurs="0" />
+        <xs:element name="Define6" type="xs:string" minOccurs="0" />
+        <xs:element name="Define7" type="xs:string" minOccurs="0" />
+        <xs:element name="Define8" type="xs:string" minOccurs="0" />
+        <xs:element name="Define9" type="xs:string" minOccurs="0" />
+        <xs:element name="Define10" type="xs:string" minOccurs="0" />
+        <xs:element name="Define11" type="xs:string" minOccurs="0" />
+        <xs:element name="Define12" type="xs:string" minOccurs="0" />
+        <xs:element name="Define13" type="xs:string" minOccurs="0" />
+        <xs:element name="Define14" type="xs:string" minOccurs="0" />
+        <xs:element name="Define15" type="xs:string" minOccurs="0" />
+        <xs:element name="Define16" type="xs:string" minOccurs="0" />
+        <xs:element name="Status" type="xs:string" minOccurs="0" />
+        <xs:element ref="Version" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Bom" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="Version" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="Parent" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="BomId" type="xs:string" minOccurs="0" />
+                    <xs:element name="InvCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free1" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free2" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free3" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free4" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free5" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free6" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free7" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free8" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free9" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free10" type="xs:string" minOccurs="0" />
+                    <xs:element name="ParentScrap" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Component" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OpComponentId" type="xs:string" minOccurs="0" />
+                    <xs:element name="BomId" type="xs:string" minOccurs="0" />
+                    <xs:element name="SortSeq" type="xs:string" minOccurs="0" />
+                    <xs:element name="OpSeq" type="xs:string" minOccurs="0" />
+                    <xs:element name="InvCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free1" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free2" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free3" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free4" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free5" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free6" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free7" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free8" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free9" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free10" type="xs:string" minOccurs="0" />
+                    <xs:element name="EffBegDate" type="xs:string" minOccurs="0" />
+                    <xs:element name="EffEndDate" type="xs:string" minOccurs="0" />
+                    <xs:element name="FVFlag" type="xs:string" minOccurs="0" />
+                    <xs:element name="BaseQtyN" type="xs:string" minOccurs="0" />
+                    <xs:element name="BaseQtyD" type="xs:string" minOccurs="0" />
+                    <xs:element name="CompScrap" type="xs:string" minOccurs="0" />
+                    <xs:element name="ByproductFlag" type="xs:string" minOccurs="0" />
+                    <xs:element name="OptionsId" type="xs:string" minOccurs="0" />
+                    <xs:element name="AuxUnitCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="ChangeRate" type="xs:string" minOccurs="0" />
+                    <xs:element name="AuxBaseQtyN" type="xs:string" minOccurs="0" />
+                    <xs:element name="ProductType" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define22" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define23" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define24" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define25" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define26" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define27" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define28" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define29" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define30" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define31" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define32" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define33" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define34" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define35" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define36" type="xs:string" minOccurs="0" />
+                    <xs:element name="Define37" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ComponentOpt" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OptionsId" type="xs:string" minOccurs="0" />
+                    <xs:element name="Offset" type="xs:string" minOccurs="0" />
+                    <xs:element name="WIPType" type="xs:string" minOccurs="0" />
+                    <xs:element name="AccuCostFlag" type="xs:string" minOccurs="0" />
+                    <xs:element name="DrawDeptCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="Whcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="OptionalFlag" type="xs:string" minOccurs="0" />
+                    <xs:element name="MutexRule" type="xs:string" minOccurs="0" />
+                    <xs:element name="PlanFactor" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ComponentSub" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ComponentSubId" type="xs:string" minOccurs="0" />
+                    <xs:element name="OpComponentId" type="xs:string" minOccurs="0" />
+                    <xs:element name="Sequence" type="xs:string" minOccurs="0" />
+                    <xs:element name="InvCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free1" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free2" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free3" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free4" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free5" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free6" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free7" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free8" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free9" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free10" type="xs:string" minOccurs="0" />
+                    <xs:element name="Factor" type="xs:string" minOccurs="0" />
+                    <xs:element name="EffBegDate" type="xs:string" minOccurs="0" />
+                    <xs:element name="EffEndDate" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ComponentRmk" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="RemarkId" type="xs:string" minOccurs="0" />
+                    <xs:element name="OpComponentId" type="xs:string" minOccurs="0" />
+                    <xs:element name="SortSeq" type="xs:string" minOccurs="0" />
+                    <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ComponentLoc" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="LocationId" type="xs:string" minOccurs="0" />
+                    <xs:element name="OpComponentId" type="xs:string" minOccurs="0" />
+                    <xs:element name="SortSeq" type="xs:string" minOccurs="0" />
+                    <xs:element name="Loc" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Version" />
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="vendorcontact" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" type="xs:string" minOccurs="0" />
+              <xs:element name="name" type="xs:string" minOccurs="0" />
+              <xs:element name="of_vendor" type="xs:string" minOccurs="0" />
+              <xs:element name="title" type="xs:string" minOccurs="0" />
+              <xs:element name="sex" type="xs:string" minOccurs="0" />
+              <xs:element name="birthday" type="xs:string" minOccurs="0" />
+              <xs:element name="native" type="xs:string" minOccurs="0" />
+              <xs:element name="position" type="xs:string" minOccurs="0" />
+              <xs:element name="direct_leader" type="xs:string" minOccurs="0" />
+              <xs:element name="mobile" type="xs:string" minOccurs="0" />
+              <xs:element name="office_phone" type="xs:string" minOccurs="0" />
+              <xs:element name="family_phone" type="xs:string" minOccurs="0" />
+              <xs:element name="bp" type="xs:string" minOccurs="0" />
+              <xs:element name="email" type="xs:string" minOccurs="0" />
+              <xs:element name="web" type="xs:string" minOccurs="0" />
+              <xs:element name="work_address" type="xs:string" minOccurs="0" />
+              <xs:element name="postcode" type="xs:string" minOccurs="0" />
+              <xs:element name="marriage" type="xs:string" minOccurs="0" />
+              <xs:element name="family_member" type="xs:string" minOccurs="0" />
+              <xs:element name="family_address" type="xs:string" minOccurs="0" />
+              <xs:element name="favorite" type="xs:string" minOccurs="0" />
+              <xs:element name="be_main_linker" type="xs:string" minOccurs="0" />
+              <xs:element name="charge_person" type="xs:string" minOccurs="0" />
+              <xs:element name="memo" type="xs:string" minOccurs="0" />
+              <xs:element name="founder" type="xs:string" minOccurs="0" />
+              <xs:element name="fondertime" type="xs:string" minOccurs="0" />
+              <xs:element name="change_person" type="xs:string" minOccurs="0" />
+              <xs:element name="change_time" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define1" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define2" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define3" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define4" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define5" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define6" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define7" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define8" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define9" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define10" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define11" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define12" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define13" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define14" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define15" type="xs:string" minOccurs="0" />
+              <xs:element name="self_define16" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="im_order" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="header" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="code" type="xs:string" minOccurs="0" />
+                    <xs:element name="date" type="xs:string" minOccurs="0" />
+                    <xs:element name="vencode" type="xs:string" minOccurs="0" />
+                    <xs:element name="bargainno" type="xs:string" minOccurs="0" />
+                    <xs:element name="depcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="personcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="imbustype" type="xs:string" minOccurs="0" />
+                    <xs:element name="ptcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="tmcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="incotermcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="paycode" type="xs:string" minOccurs="0" />
+                    <xs:element name="payitem" type="xs:string" minOccurs="0" />
+                    <xs:element name="sscode" type="xs:string" minOccurs="0" />
+                    <xs:element name="gatheringplan" type="xs:string" minOccurs="0" />
+                    <xs:element name="creditstart" type="xs:string" minOccurs="0" />
+                    <xs:element name="gatheringdate" type="xs:string" minOccurs="0" />
+                    <xs:element name="creditdays" type="xs:string" minOccurs="0" />
+                    <xs:element name="exch_name" type="xs:string" minOccurs="0" />
+                    <xs:element name="exchrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="sportcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="aportcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="sccode" type="xs:string" minOccurs="0" />
+                    <xs:element name="arrivalplace" type="xs:string" minOccurs="0" />
+                    <xs:element name="lastladedate" type="xs:string" minOccurs="0" />
+                    <xs:element name="generaloverflowrange" type="xs:string" minOccurs="0" />
+                    <xs:element name="planarrivaldate" type="xs:string" minOccurs="0" />
+                    <xs:element name="memo" type="xs:string" minOccurs="0" />
+                    <xs:element name="invgeneraldesc" type="xs:string" minOccurs="0" />
+                    <xs:element name="summoney" type="xs:string" minOccurs="0" />
+                    <xs:element name="chinesesummoney" type="xs:string" minOccurs="0" />
+                    <xs:element name="englishsummoney" type="xs:string" minOccurs="0" />
+                    <xs:element name="natsummoney" type="xs:string" minOccurs="0" />
+                    <xs:element name="define1" type="xs:string" minOccurs="0" />
+                    <xs:element name="define2" type="xs:string" minOccurs="0" />
+                    <xs:element name="define3" type="xs:string" minOccurs="0" />
+                    <xs:element name="define4" type="xs:string" minOccurs="0" />
+                    <xs:element name="define5" type="xs:string" minOccurs="0" />
+                    <xs:element name="define6" type="xs:string" minOccurs="0" />
+                    <xs:element name="define7" type="xs:string" minOccurs="0" />
+                    <xs:element name="define8" type="xs:string" minOccurs="0" />
+                    <xs:element name="define9" type="xs:string" minOccurs="0" />
+                    <xs:element name="define10" type="xs:string" minOccurs="0" />
+                    <xs:element name="define11" type="xs:string" minOccurs="0" />
+                    <xs:element name="define12" type="xs:string" minOccurs="0" />
+                    <xs:element name="define13" type="xs:string" minOccurs="0" />
+                    <xs:element name="define14" type="xs:string" minOccurs="0" />
+                    <xs:element name="define15" type="xs:string" minOccurs="0" />
+                    <xs:element name="define16" type="xs:string" minOccurs="0" />
+                    <xs:element name="venname" type="xs:string" minOccurs="0" />
+                    <xs:element name="venabbname" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine1" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine2" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine3" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine4" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine5" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine6" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine7" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine8" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine9" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine10" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine11" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine12" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine13" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine14" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine15" type="xs:string" minOccurs="0" />
+                    <xs:element name="vendefine16" type="xs:string" minOccurs="0" />
+                    <xs:element name="depname" type="xs:string" minOccurs="0" />
+                    <xs:element name="personname" type="xs:string" minOccurs="0" />
+                    <xs:element name="imbustypename" type="xs:string" minOccurs="0" />
+                    <xs:element name="ptname" type="xs:string" minOccurs="0" />
+                    <xs:element name="tmname" type="xs:string" minOccurs="0" />
+                    <xs:element name="payname" type="xs:string" minOccurs="0" />
+                    <xs:element name="exch_code" type="xs:string" minOccurs="0" />
+                    <xs:element name="sportname" type="xs:string" minOccurs="0" />
+                    <xs:element name="aportname" type="xs:string" minOccurs="0" />
+                    <xs:element name="scname" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="body" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="invcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="changrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="quantity" type="xs:string" minOccurs="0" />
+                    <xs:element name="invname" type="xs:string" minOccurs="0" />
+                    <xs:element name="englishname" type="xs:string" minOccurs="0" />
+                    <xs:element name="invstd" type="xs:string" minOccurs="0" />
+                    <xs:element name="invaddcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="comunitcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="comunitname" type="xs:string" minOccurs="0" />
+                    <xs:element name="pucomunitcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="pucomunitname" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine1" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine2" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine3" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine4" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine5" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine6" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine7" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine8" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine9" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine10" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine11" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine12" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine13" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine14" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine15" type="xs:string" minOccurs="0" />
+                    <xs:element name="invdefine16" type="xs:string" minOccurs="0" />
+                    <xs:element name="grouptype" type="xs:string" minOccurs="0" />
+                    <xs:element name="groupcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="overflowrange" type="xs:string" minOccurs="0" />
+                    <xs:element name="num" type="xs:string" minOccurs="0" />
+                    <xs:element name="price" type="xs:string" minOccurs="0" />
+                    <xs:element name="money" type="xs:string" minOccurs="0" />
+                    <xs:element name="natprice" type="xs:string" minOccurs="0" />
+                    <xs:element name="natmoney" type="xs:string" minOccurs="0" />
+                    <xs:element name="arrivedate" type="xs:string" minOccurs="0" />
+                    <xs:element name="gsp" type="xs:string" minOccurs="0" />
+                    <xs:element name="packinfo" type="xs:string" minOccurs="0" />
+                    <xs:element name="free1" type="xs:string" minOccurs="0" />
+                    <xs:element name="free2" type="xs:string" minOccurs="0" />
+                    <xs:element name="free3" type="xs:string" minOccurs="0" />
+                    <xs:element name="free4" type="xs:string" minOccurs="0" />
+                    <xs:element name="free5" type="xs:string" minOccurs="0" />
+                    <xs:element name="free6" type="xs:string" minOccurs="0" />
+                    <xs:element name="free7" type="xs:string" minOccurs="0" />
+                    <xs:element name="free8" type="xs:string" minOccurs="0" />
+                    <xs:element name="free9" type="xs:string" minOccurs="0" />
+                    <xs:element name="free10" type="xs:string" minOccurs="0" />
+                    <xs:element name="define22" type="xs:string" minOccurs="0" />
+                    <xs:element name="define23" type="xs:string" minOccurs="0" />
+                    <xs:element name="define24" type="xs:string" minOccurs="0" />
+                    <xs:element name="define25" type="xs:string" minOccurs="0" />
+                    <xs:element name="define26" type="xs:string" minOccurs="0" />
+                    <xs:element name="define27" type="xs:string" minOccurs="0" />
+                    <xs:element name="define28" type="xs:string" minOccurs="0" />
+                    <xs:element name="define29" type="xs:string" minOccurs="0" />
+                    <xs:element name="define30" type="xs:string" minOccurs="0" />
+                    <xs:element name="define31" type="xs:string" minOccurs="0" />
+                    <xs:element name="define32" type="xs:string" minOccurs="0" />
+                    <xs:element name="define33" type="xs:string" minOccurs="0" />
+                    <xs:element name="define34" type="xs:string" minOccurs="0" />
+                    <xs:element name="define35" type="xs:string" minOccurs="0" />
+                    <xs:element name="define36" type="xs:string" minOccurs="0" />
+                    <xs:element name="define37" type="xs:string" minOccurs="0" />
+                    <xs:element name="item_class" type="xs:string" minOccurs="0" />
+                    <xs:element name="item_name" type="xs:string" minOccurs="0" />
+                    <xs:element name="itemcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="itemname" type="xs:string" minOccurs="0" />
+                    <xs:element name="iciqbookid" type="xs:string" minOccurs="0" />
+                    <xs:element name="cciqbookcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cciqcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="fciqchangrate" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

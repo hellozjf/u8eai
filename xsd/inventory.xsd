@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="inventory" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="header" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="code" type="xs:string" minOccurs="0" />
+                    <xs:element name="name" type="xs:string" minOccurs="0" />
+                    <xs:element name="InvAddCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="specs" type="xs:string" minOccurs="0" />
+                    <xs:element name="sort_code" type="xs:string" minOccurs="0" />
+                    <xs:element name="main_supplier" type="xs:string" minOccurs="0" />
+                    <xs:element name="main_measure" type="xs:string" minOccurs="0" />
+                    <xs:element name="assist_measure" type="xs:string" minOccurs="0" />
+                    <xs:element name="switch_item" type="xs:string" minOccurs="0" />
+                    <xs:element name="inv_position" type="xs:string" minOccurs="0" />
+                    <xs:element name="sale_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="purchase_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="selfmake_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="prod_consu_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="in_making_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="tax_serv_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="suit_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="exchange_rate" type="xs:string" minOccurs="0" />
+                    <xs:element name="tax_rate" type="xs:string" minOccurs="0" />
+                    <xs:element name="unit_weight" type="xs:string" minOccurs="0" />
+                    <xs:element name="unit_volume" type="xs:string" minOccurs="0" />
+                    <xs:element name="pro_sale_price" type="xs:string" minOccurs="0" />
+                    <xs:element name="ref_cost" type="xs:string" minOccurs="0" />
+                    <xs:element name="ref_sale_price" type="xs:string" minOccurs="0" />
+                    <xs:element name="bottom_sale_price" type="xs:string" minOccurs="0" />
+                    <xs:element name="new_cost" type="xs:string" minOccurs="0" />
+                    <xs:element name="advance_period" type="xs:string" minOccurs="0" />
+                    <xs:element name="ecnomic_batch" type="xs:string" minOccurs="0" />
+                    <xs:element name="safe_stock" type="xs:string" minOccurs="0" />
+                    <xs:element name="top_stock" type="xs:string" minOccurs="0" />
+                    <xs:element name="bottom_stock" type="xs:string" minOccurs="0" />
+                    <xs:element name="backlog" type="xs:string" minOccurs="0" />
+                    <xs:element name="ABC_type" type="xs:string" minOccurs="0" />
+                    <xs:element name="qlty_guarantee_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="batch_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="entrust_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="backlog_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="start_date" type="xs:string" minOccurs="0" />
+                    <xs:element name="end_date" type="xs:string" minOccurs="0" />
+                    <xs:element name="free_item1" type="xs:string" minOccurs="0" />
+                    <xs:element name="free_item2" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define1" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define2" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define3" type="xs:string" minOccurs="0" />
+                    <xs:element name="discount_flag" type="xs:string" minOccurs="0" />
+                    <xs:element name="top_source_price" type="xs:string" minOccurs="0" />
+                    <xs:element name="quality" type="xs:string" minOccurs="0" />
+                    <xs:element name="retailprice" type="xs:string" minOccurs="0" />
+                    <xs:element name="price1" type="xs:string" minOccurs="0" />
+                    <xs:element name="price2" type="xs:string" minOccurs="0" />
+                    <xs:element name="price3" type="xs:string" minOccurs="0" />
+                    <xs:element name="CreatePerson" type="xs:string" minOccurs="0" />
+                    <xs:element name="ModifyPerson" type="xs:string" minOccurs="0" />
+                    <xs:element name="ModifyDate" type="xs:string" minOccurs="0" />
+                    <xs:element name="subscribe_point" type="xs:string" minOccurs="0" />
+                    <xs:element name="avgquantity" type="xs:string" minOccurs="0" />
+                    <xs:element name="pricetype" type="xs:string" minOccurs="0" />
+                    <xs:element name="bfixunit" type="xs:string" minOccurs="0" />
+                    <xs:element name="outline" type="xs:string" minOccurs="0" />
+                    <xs:element name="inline" type="xs:string" minOccurs="0" />
+                    <xs:element name="overdate" type="xs:string" minOccurs="0" />
+                    <xs:element name="warndays" type="xs:string" minOccurs="0" />
+                    <xs:element name="expense_rate" type="xs:string" minOccurs="0" />
+                    <xs:element name="btrack" type="xs:string" minOccurs="0" />
+                    <xs:element name="bserial" type="xs:string" minOccurs="0" />
+                    <xs:element name="bbarcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="barcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="auth_class" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define4" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define5" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define6" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define7" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define8" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define9" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define10" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define11" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define12" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define13" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define14" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define15" type="xs:string" minOccurs="0" />
+                    <xs:element name="self_define16" type="xs:string" minOccurs="0" />
+                    <xs:element name="free_item3" type="xs:string" minOccurs="0" />
+                    <xs:element name="free_item4" type="xs:string" minOccurs="0" />
+                    <xs:element name="free_item5" type="xs:string" minOccurs="0" />
+                    <xs:element name="free_item6" type="xs:string" minOccurs="0" />
+                    <xs:element name="free_item7" type="xs:string" minOccurs="0" />
+                    <xs:element name="free_item8" type="xs:string" minOccurs="0" />
+                    <xs:element name="free_item9" type="xs:string" minOccurs="0" />
+                    <xs:element name="free_item10" type="xs:string" minOccurs="0" />
+                    <xs:element name="unitgroup_type" type="xs:string" minOccurs="0" />
+                    <xs:element name="unitgroup_code" type="xs:string" minOccurs="0" />
+                    <xs:element name="puunit_code" type="xs:string" minOccurs="0" />
+                    <xs:element name="saunit_code" type="xs:string" minOccurs="0" />
+                    <xs:element name="stunit_code" type="xs:string" minOccurs="0" />
+                    <xs:element name="caunit_code" type="xs:string" minOccurs="0" />
+                    <xs:element name="unitgroup_name" type="xs:string" minOccurs="0" />
+                    <xs:element name="puunit_name" type="xs:string" minOccurs="0" />
+                    <xs:element name="saunit_name" type="xs:string" minOccurs="0" />
+                    <xs:element name="stunit_name" type="xs:string" minOccurs="0" />
+                    <xs:element name="caunit_name" type="xs:string" minOccurs="0" />
+                    <xs:element name="puunit_ichangrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="saunit_ichangrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="stunit_ichangrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="caunit_ichangrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="check_frequency" type="xs:string" minOccurs="0" />
+                    <xs:element name="frequency" type="xs:string" minOccurs="0" />
+                    <xs:element name="check_day" type="xs:string" minOccurs="0" />
+                    <xs:element name="lastcheck_date" type="xs:string" minOccurs="0" />
+                    <xs:element name="wastage" type="xs:string" minOccurs="0" />
+                    <xs:element name="solitude" type="xs:string" minOccurs="0" />
+                    <xs:element name="enterprise" type="xs:string" minOccurs="0" />
+                    <xs:element name="address" type="xs:string" minOccurs="0" />
+                    <xs:element name="file" type="xs:string" minOccurs="0" />
+                    <xs:element name="brand" type="xs:string" minOccurs="0" />
+                    <xs:element name="checkout_no" type="xs:string" minOccurs="0" />
+                    <xs:element name="licence" type="xs:string" minOccurs="0" />
+                    <xs:element name="specialties" type="xs:string" minOccurs="0" />
+                    <xs:element name="defwarehouse" type="xs:string" minOccurs="0" />
+                    <xs:element name="salerate" type="xs:string" minOccurs="0" />
+                    <xs:element name="advanceDate" type="xs:string" minOccurs="0" />
+                    <xs:element name="currencyName" type="xs:string" minOccurs="0" />
+                    <xs:element name="ProduceAddress" type="xs:string" minOccurs="0" />
+                    <xs:element name="produceNation" type="xs:string" minOccurs="0" />
+                    <xs:element name="RegisterNo" type="xs:string" minOccurs="0" />
+                    <xs:element name="EnterNo" type="xs:string" minOccurs="0" />
+                    <xs:element name="PackingType" type="xs:string" minOccurs="0" />
+                    <xs:element name="EnglishName" type="xs:string" minOccurs="0" />
+                    <xs:element name="PropertyCheck" type="xs:string" minOccurs="0" />
+                    <xs:element name="PreparationType" type="xs:string" minOccurs="0" />
+                    <xs:element name="Commodity" type="xs:string" minOccurs="0" />
+                    <xs:element name="RecipeBatch" type="xs:string" minOccurs="0" />
+                    <xs:element name="NotPatentName" type="xs:string" minOccurs="0" />
+                    <xs:element name="cAssComunitCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="ROPMethod" type="xs:string" minOccurs="0" />
+                    <xs:element name="SubscribePoint" type="xs:string" minOccurs="0" />
+                    <xs:element name="BatchRule" type="xs:string" minOccurs="0" />
+                    <xs:element name="AssureProvideDays" type="xs:string" minOccurs="0" />
+                    <xs:element name="VagQuantity" type="xs:string" minOccurs="0" />
+                    <xs:element name="TestStyle" type="xs:string" minOccurs="0" />
+                    <xs:element name="DTMethod" type="xs:string" minOccurs="0" />
+                    <xs:element name="DTRate" type="xs:string" minOccurs="0" />
+                    <xs:element name="DTNum" type="xs:string" minOccurs="0" />
+                    <xs:element name="DTUnit" type="xs:string" minOccurs="0" />
+                    <xs:element name="DTStyle" type="xs:string" minOccurs="0" />
+                    <xs:element name="QTMethod" type="xs:string" minOccurs="0" />
+                    <xs:element name="iPlanPolicy" type="xs:string" minOccurs="0" />
+                    <xs:element name="iROPMethod" type="xs:string" minOccurs="0" />
+                    <xs:element name="iBatchRule" type="xs:string" minOccurs="0" />
+                    <xs:element name="fBatchIncrement" type="xs:string" minOccurs="0" />
+                    <xs:element name="iAssureProvideDays" type="xs:string" minOccurs="0" />
+                    <xs:element name="iTestStyle" type="xs:string" minOccurs="0" />
+                    <xs:element name="iDTMethod" type="xs:string" minOccurs="0" />
+                    <xs:element name="fDTRate" type="xs:string" minOccurs="0" />
+                    <xs:element name="fDTNum" type="xs:string" minOccurs="0" />
+                    <xs:element name="cDTUnit" type="xs:string" minOccurs="0" />
+                    <xs:element name="iDTStyle" type="xs:string" minOccurs="0" />
+                    <xs:element name="iQTMethod" type="xs:string" minOccurs="0" />
+                    <xs:element name="bPlanInv" type="xs:string" minOccurs="0" />
+                    <xs:element name="bProxyForeign" type="xs:string" minOccurs="0" />
+                    <xs:element name="bATOModel" type="xs:string" minOccurs="0" />
+                    <xs:element name="bCheckItem" type="xs:string" minOccurs="0" />
+                    <xs:element name="bPTOModel" type="xs:string" minOccurs="0" />
+                    <xs:element name="bequipment" type="xs:string" minOccurs="0" />
+                    <xs:element name="cProductUnit" type="xs:string" minOccurs="0" />
+                    <xs:element name="fOrderUpLimit" type="xs:string" minOccurs="0" />
+                    <xs:element name="cMassUnit" type="xs:string" minOccurs="0" />
+                    <xs:element name="fRetailPrice" type="xs:string" minOccurs="0" />
+                    <xs:element name="cInvDepCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="iAlterAdvance" type="xs:string" minOccurs="0" />
+                    <xs:element name="fAlterBaseNum" type="xs:string" minOccurs="0" />
+                    <xs:element name="cPlanMethod" type="xs:string" minOccurs="0" />
+                    <xs:element name="bMPS" type="xs:string" minOccurs="0" />
+                    <xs:element name="bROP" type="xs:string" minOccurs="0" />
+                    <xs:element name="bRePlan" type="xs:string" minOccurs="0" />
+                    <xs:element name="cSRPolicy" type="xs:string" minOccurs="0" />
+                    <xs:element name="bBillUnite" type="xs:string" minOccurs="0" />
+                    <xs:element name="iSupplyDay" type="xs:string" minOccurs="0" />
+                    <xs:element name="fSupplyMulti" type="xs:string" minOccurs="0" />
+                    <xs:element name="fMinSupply" type="xs:string" minOccurs="0" />
+                    <xs:element name="bCutMantissa" type="xs:string" minOccurs="0" />
+                    <xs:element name="cInvPersonCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="iInvTfId" type="xs:string" minOccurs="0" />
+                    <xs:element name="cEngineerFigNo" type="xs:string" minOccurs="0" />
+                    <xs:element name="bInTotalCost" type="xs:string" minOccurs="0" />
+                    <xs:element name="iSupplyType" type="xs:string" minOccurs="0" />
+                    <xs:element name="bConfigFree1" type="xs:string" minOccurs="0" />
+                    <xs:element name="bConfigFree2" type="xs:string" minOccurs="0" />
+                    <xs:element name="bConfigFree3" type="xs:string" minOccurs="0" />
+                    <xs:element name="bConfigFree4" type="xs:string" minOccurs="0" />
+                    <xs:element name="bConfigFree5" type="xs:string" minOccurs="0" />
+                    <xs:element name="bConfigFree6" type="xs:string" minOccurs="0" />
+                    <xs:element name="bConfigFree7" type="xs:string" minOccurs="0" />
+                    <xs:element name="bConfigFree8" type="xs:string" minOccurs="0" />
+                    <xs:element name="bConfigFree9" type="xs:string" minOccurs="0" />
+                    <xs:element name="bConfigFree10" type="xs:string" minOccurs="0" />
+                    <xs:element name="iDTLevel" type="xs:string" minOccurs="0" />
+                    <xs:element name="cDTAQL" type="xs:string" minOccurs="0" />
+                    <xs:element name="bOutInvDT" type="xs:string" minOccurs="0" />
+                    <xs:element name="bPeriodDT" type="xs:string" minOccurs="0" />
+                    <xs:element name="cDTPeriod" type="xs:string" minOccurs="0" />
+                    <xs:element name="bBackInvDT" type="xs:string" minOccurs="0" />
+                    <xs:element name="iEndDTStyle" type="xs:string" minOccurs="0" />
+                    <xs:element name="bDTWarnInv" type="xs:string" minOccurs="0" />
+                    <xs:element name="fBackTaxRate" type="xs:string" minOccurs="0" />
+                    <xs:element name="cEnglishName" type="xs:string" minOccurs="0" />
+                    <xs:element name="cCIQCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cWGroupCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cWUnit" type="xs:string" minOccurs="0" />
+                    <xs:element name="fGrossW" type="xs:string" minOccurs="0" />
+                    <xs:element name="cVGroupCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="cVUnit" type="xs:string" minOccurs="0" />
+                    <xs:element name="fLength" type="xs:string" minOccurs="0" />
+                    <xs:element name="fWidth" type="xs:string" minOccurs="0" />
+                    <xs:element name="fHeight" type="xs:string" minOccurs="0" />
+                    <xs:element name="cpurpersoncode" type="xs:string" minOccurs="0" />
+                    <xs:element name="iimptaxrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="iexptaxrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="bexpsale" type="xs:string" minOccurs="0" />
+                    <xs:element name="idrawbatch" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckbsatp" type="xs:string" minOccurs="0" />
+                    <xs:element name="cinvprojectcode" type="xs:string" minOccurs="0" />
+                    <xs:element name="itestrule" type="xs:string" minOccurs="0" />
+                    <xs:element name="crulecode" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckfree1" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckfree2" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckfree3" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckfree4" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckfree5" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckfree6" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckfree7" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckfree8" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckfree9" type="xs:string" minOccurs="0" />
+                    <xs:element name="bcheckfree10" type="xs:string" minOccurs="0" />
+                    <xs:element name="bbommain" type="xs:string" minOccurs="0" />
+                    <xs:element name="bbomsub" type="xs:string" minOccurs="0" />
+                    <xs:element name="bproductbill" type="xs:string" minOccurs="0" />
+                    <xs:element name="icheckatp" type="xs:string" minOccurs="0" />
+                    <xs:element name="iinvatpid" type="xs:string" minOccurs="0" />
+                    <xs:element name="iplantfday" type="xs:string" minOccurs="0" />
+                    <xs:element name="ioverlapday" type="xs:string" minOccurs="0" />
+                    <xs:element name="fmaxsupply" type="xs:string" minOccurs="0" />
+                    <xs:element name="bpiece" type="xs:string" minOccurs="0" />
+                    <xs:element name="bsrvitem" type="xs:string" minOccurs="0" />
+                    <xs:element name="bsrvfittings" type="xs:string" minOccurs="0" />
+                    <xs:element name="fminsplit" type="xs:string" minOccurs="0" />
+                    <xs:element name="bspecialorder" type="xs:string" minOccurs="0" />
+                    <xs:element name="btracksalebill" type="xs:string" minOccurs="0" />
+                    <xs:element name="fbuyexcess" type="xs:string" minOccurs="0" />
+                    <xs:element name="isurenesstype" type="xs:string" minOccurs="0" />
+                    <xs:element name="idatetype" type="xs:string" minOccurs="0" />
+                    <xs:element name="idatesum" type="xs:string" minOccurs="0" />
+                    <xs:element name="idynamicsurenesstype" type="xs:string" minOccurs="0" />
+                    <xs:element name="ibestrowsum" type="xs:string" minOccurs="0" />
+                    <xs:element name="ipercentumsum" type="xs:string" minOccurs="0" />
+                    <xs:element name="bPUQuota" type="xs:string" minOccurs="0" />
+                    <xs:element name="bInvROHS" type="xs:string" minOccurs="0" />
+                    <xs:element name="fPrjMatLimit" type="xs:string" minOccurs="0" />
+                    <xs:element name="bPrjMat" type="xs:string" minOccurs="0" />
+                    <xs:element name="bInvAsset" type="xs:string" minOccurs="0" />
+                    <xs:element name="bSrvProduct" type="xs:string" minOccurs="0" />
+                    <xs:element name="iAcceptDelayDays" type="xs:string" minOccurs="0" />
+                    <xs:element name="cInvMnemCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="iPlanCheckDay" type="xs:string" minOccurs="0" />
+                    <xs:element name="iMaterialsCycle" type="xs:string" minOccurs="0" />
+                    <xs:element name="idrawtype" type="xs:string" minOccurs="0" />
+                    <xs:element name="bSCkeyProjections" type="xs:string" minOccurs="0" />
+                    <xs:element name="iSupplyPeriodType" type="xs:string" minOccurs="0" />
+                    <xs:element name="iTimeBucketId" type="xs:string" minOccurs="0" />
+                    <xs:element name="iAvailabilityDate" type="xs:string" minOccurs="0" />
+                    <xs:element name="iBigMonth" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="iBigDay" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="iSmallMonth" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="iSmallDay" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="cshopunit" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="bimportmedicine" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="bfirstbusimedicine" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="bforeexpland" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="cinvplancode" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="fconvertrate" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="dreplacedate" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="binvmodel" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="bkccutmantissa" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="body" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="entry" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="partid" type="xs:string" minOccurs="0" />
+                          <xs:element name="invcode" type="xs:string" minOccurs="0" />
+                          <xs:element name="free1" type="xs:string" minOccurs="0" />
+                          <xs:element name="free2" type="xs:string" minOccurs="0" />
+                          <xs:element name="free3" type="xs:string" minOccurs="0" />
+                          <xs:element name="free4" type="xs:string" minOccurs="0" />
+                          <xs:element name="free5" type="xs:string" minOccurs="0" />
+                          <xs:element name="free6" type="xs:string" minOccurs="0" />
+                          <xs:element name="free7" type="xs:string" minOccurs="0" />
+                          <xs:element name="free8" type="xs:string" minOccurs="0" />
+                          <xs:element name="free9" type="xs:string" minOccurs="0" />
+                          <xs:element name="free10" type="xs:string" minOccurs="0" />
+                          <xs:element name="safeqty" type="xs:string" minOccurs="0" />
+                          <xs:element name="minqty" type="xs:string" minOccurs="0" />
+                          <xs:element name="mulqty" type="xs:string" minOccurs="0" />
+                          <xs:element name="fixqty" type="xs:string" minOccurs="0" />
+                          <xs:element name="cbasengineerfigno" type="xs:string" minOccurs="0" />
+                          <xs:element name="fbasmaxsupply" type="xs:string" minOccurs="0" />
+                          <xs:element name="isurenesstype" type="xs:string" minOccurs="0" />
+                          <xs:element name="idatetype" type="xs:string" minOccurs="0" />
+                          <xs:element name="idatesum" type="xs:string" minOccurs="0" />
+                          <xs:element name="idynamicsurenesstype" type="xs:string" minOccurs="0" />
+                          <xs:element name="ibestrowsum" type="xs:string" minOccurs="0" />
+                          <xs:element name="ipercentumsum" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

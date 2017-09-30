@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PartProLine" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Header" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PartProLineId" type="xs:string" minOccurs="0" />
+                    <xs:element name="InvCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free1" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free2" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free3" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free4" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free5" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free6" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free7" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free8" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free9" type="xs:string" minOccurs="0" />
+                    <xs:element name="Free10" type="xs:string" minOccurs="0" />
+                    <xs:element name="AuxUnitCode" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Body" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PartProLineDId" type="xs:string" minOccurs="0" />
+                    <xs:element name="PartProLineId" type="xs:string" minOccurs="0" />
+                    <xs:element name="WcCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="Priority" type="xs:string" minOccurs="0" />
+                    <xs:element name="DailyQty" type="xs:string" minOccurs="0" />
+                    <xs:element name="AuxDailyQty" type="xs:string" minOccurs="0" />
+                    <xs:element name="IdentCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="ChangeRate" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

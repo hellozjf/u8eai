@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="codebalance" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="account_code" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="auxiliary_accounting" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="date" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="voucher_type" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+              <xs:element name="voucher_id" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+              <xs:element name="abstract" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+              <xs:element name="currency" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+              <xs:element name="direction" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+              <xs:element name="debit_quantity" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+              <xs:element name="primary_debit_currency" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+              <xs:element name="natural_debit_currency" type="xs:string" minOccurs="0" msdata:Ordinal="10" />
+              <xs:element name="credit_quantity" type="xs:string" minOccurs="0" msdata:Ordinal="11" />
+              <xs:element name="primary_credit_currency" type="xs:string" minOccurs="0" msdata:Ordinal="12" />
+              <xs:element name="natural_credit_currency" type="xs:string" minOccurs="0" msdata:Ordinal="13" />
+              <xs:element name="end_quantity" type="xs:string" minOccurs="0" msdata:Ordinal="14" />
+              <xs:element name="primary_end_currency" type="xs:string" minOccurs="0" msdata:Ordinal="15" />
+              <xs:element name="natural_end_currency" type="xs:string" minOccurs="0" msdata:Ordinal="16" />
+              <xs:element name="departmentcode" type="xs:string" minOccurs="0" msdata:Ordinal="17" />
+              <xs:element name="personcode" type="xs:string" minOccurs="0" msdata:Ordinal="18" />
+              <xs:element name="customercode" type="xs:string" minOccurs="0" msdata:Ordinal="19" />
+              <xs:element name="suppliercode" type="xs:string" minOccurs="0" msdata:Ordinal="20" />
+              <xs:element name="item_class" type="xs:string" minOccurs="0" msdata:Ordinal="21" />
+              <xs:element name="item_id" type="xs:string" minOccurs="0" msdata:Ordinal="22" />
+              <xs:element name="operator" type="xs:string" minOccurs="0" msdata:Ordinal="23" />
+              <xs:element name="bill_type" type="xs:string" minOccurs="0" msdata:Ordinal="24" />
+              <xs:element name="bill_id" type="xs:string" minOccurs="0" msdata:Ordinal="25" />
+              <xs:element name="bill_date" type="xs:string" minOccurs="0" msdata:Ordinal="26" />
+              <xs:element name="reserve1" type="xs:string" minOccurs="0" msdata:Ordinal="27" />
+              <xs:element name="reserve2" type="xs:string" minOccurs="0" msdata:Ordinal="28" />
+            </xs:sequence>
+            <xs:attribute name="code" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+      <xs:attribute name="renewproofno" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

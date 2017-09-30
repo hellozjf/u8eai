@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ufinterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="budgetSub" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="iverid" type="xs:string" minOccurs="0" />
+              <xs:element name="citemcode" type="xs:string" minOccurs="0" />
+              <xs:element name="ckeycode1" type="xs:string" minOccurs="0" />
+              <xs:element name="ckeycode2" type="xs:string" minOccurs="0" />
+              <xs:element name="celementcode" type="xs:string" minOccurs="0" />
+              <xs:element name="ccodemx" type="xs:string" minOccurs="0" />
+              <xs:element name="inumber" type="xs:string" minOccurs="0" />
+              <xs:element name="inumbersum" type="xs:string" minOccurs="0" />
+              <xs:element name="inumberctl" type="xs:string" minOccurs="0" />
+              <xs:element name="iuprice" type="xs:string" minOccurs="0" />
+              <xs:element name="ibudget" type="xs:string" minOccurs="0" />
+              <xs:element name="imoneysum" type="xs:string" minOccurs="0" />
+              <xs:element name="imoneyctl" type="xs:string" minOccurs="0" />
+              <xs:element name="inumberadd" type="xs:string" minOccurs="0" />
+              <xs:element name="ibudgetadd" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="roottag" type="xs:string" />
+      <xs:attribute name="billtype" type="xs:string" />
+      <xs:attribute name="docid" type="xs:string" />
+      <xs:attribute name="receiver" type="xs:string" />
+      <xs:attribute name="sender" type="xs:string" />
+      <xs:attribute name="proc" type="xs:string" />
+      <xs:attribute name="codeexchanged" type="xs:string" />
+      <xs:attribute name="exportneedexch" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ufinterface" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
