@@ -78,7 +78,7 @@ public static void main(String[] args) throws Exception {
 
 ### sender
 
-**注意，我的demo代码使用了001作为sender，所以EAI服务器必须有这个账号。**添加这个账号的方法如下：
+**注意，我的demo代码使用了001作为sender，所以EAI服务器必须有这个账号。** 添加这个账号的方法如下：
 ![](http://ody3ivli2.bkt.clouddn.com/2017/09/30/TIM截图20170930192625.png)
 
 ![](http://ody3ivli2.bkt.clouddn.com/2017/09/30/TIM截图20170930192841.png)
